@@ -1,0 +1,10 @@
+[DEBUG] 2023-11-12 16:09:54.822 [main] Client - ru.sfedu.assessmentHealth.api.Client [0]: starting application.........
+[INFO ] 2023-11-12 16:09:54.825 [main] Client - Launching the application...
+[INFO ] 2023-11-12 16:09:54.825 [main] Client - Operating System: Windows 11 10.0
+[INFO ] 2023-11-12 16:09:54.825 [main] Client - JRE: 19.0.1
+[INFO ] 2023-11-12 16:09:54.826 [main] Client - Java Launched From: C:\Users\79897\.jdks\openjdk-19.0.1
+[INFO ] 2023-11-12 16:09:54.826 [main] Client - Class Path: D:\Рабочий стол\assessmentHealth\assessmentHealth\target\classes;C:\Users\79897\.m2\repository\org\apache\logging\log4j\log4j-slf4j-impl\2.20.0\log4j-slf4j-impl-2.20.0.jar;C:\Users\79897\.m2\repository\org\apache\logging\log4j\log4j-api\2.20.0\log4j-api-2.20.0.jar;C:\Users\79897\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\79897\.m2\repository\org\apache\logging\log4j\log4j-core\2.20.0\log4j-core-2.20.0.jar;C:\Users\79897\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar
+[INFO ] 2023-11-12 16:09:54.826 [main] Client - Library Path: C:\Users\79897\.jdks\openjdk-19.0.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\Рабочий стол\Nodejs\;C:\Program Files\Git\cmd;D:\python\Scripts\;D:\python\;C:\Users\79897\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\JetBrains\PyCharm Community Edition 2022.3\bin;;D:\java\IntelliJ IDEA 2022.3.2\bin;;D:\VsCode\Microsoft VS Code\bin;C:\Users\79897\AppData\Roaming\npm;.
+[INFO ] 2023-11-12 16:09:54.827 [main] Client - User Home Directory: C:\Users\79897
+[INFO ] 2023-11-12 16:09:54.827 [main] Client - User Working Directory: D:\Рабочий стол\assessmentHealth\assessmentHealth
+[INFO ] 2023-11-12 16:09:54.827 [main] Client - Test INFO logging.
