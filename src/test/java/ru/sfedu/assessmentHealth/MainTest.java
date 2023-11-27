@@ -10,7 +10,8 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.Properties;
+import java.util.*;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class MainTest {
@@ -29,7 +30,7 @@ class MainTest {
         }
 
         System.out.println(properties.values());
-
+        System.out.println(properties.stringPropertyNames());
 
         for (String key : properties.stringPropertyNames())
         {
@@ -38,8 +39,7 @@ class MainTest {
     }
 
     @Test
-    @DisplayName("ffewfw")
-    void ConstTest() {
+    void ConstTest(){
 
         File file = new File(CONST.PATH_CONST_PROPERTIES);
         Properties properties = new Properties();
@@ -49,20 +49,18 @@ class MainTest {
         }catch (IOException e){
             log.error("Ошибка файла");
         }
-
-
+        
         properties.setProperty("KeyTest","ValueTest");
         assertEquals(properties.getProperty("KeyTest"),"ValueTest");
         log.info("assertEquals() KeyTest == ValueTest [0] - success");
 
-        System.out.println("Список переменных = " + properties.values());
-        System.out.println("Список ключей = " + properties.stringPropertyNames());
+        Set<String> key = properties.stringPropertyNames();
+        log.info("setProperty value = {} [1] - success", properties.values());
+        log.info("setProperty key = {} [2] - success",key);
 
         properties.remove("KeyTest");
         assertEquals(properties.getProperty("KeyTest"),null);
-        log.info("assertEquals() KeyTest ==> del [1] - success");
-
-
+        log.info("assertEquals() KeyTest ==> del [3] - success");
 
         try {
             properties.store(new FileWriter(file), "Updated properties");

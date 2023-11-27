@@ -83,3 +83,89 @@
 2023-11-14 22:25:29 INFO  MainTest:60 - assertEquals() KeyTest ==> del [1] - success
 2023-11-14 22:27:00 INFO  MainTest:56 - assertEquals() KeyTest == ValueTest [0] - success
 2023-11-14 22:27:00 INFO  MainTest:63 - assertEquals() KeyTest ==> del [1] - success
+2023-11-14 22:33:58 INFO  MainTest:55 - assertEquals() KeyTest == ValueTest [0] - success
+2023-11-14 22:33:58 INFO  MainTest:62 - assertEquals() KeyTest ==> del [1] - success
+2023-11-14 22:43:28 INFO  MainTest:57 - assertEquals() KeyTest == ValueTest [0] - success
+2023-11-14 22:47:35 INFO  MainTest:57 - assertEquals() KeyTest == ValueTest [0] - success
+2023-11-14 22:47:35 INFO  MainTest:61 - setProperty value = [Artem, "//localhost:2020", ValueTest] [1]
+2023-11-14 22:47:35 INFO  MainTest:62 - setProperty key = [dataBase.username, dataBase.url, KeyTest] [2]
+2023-11-14 22:47:35 INFO  MainTest:68 - assertEquals() KeyTest ==> del [3] - success
+2023-11-14 23:19:40 INFO  MainTest:55 - assertEquals() KeyTest == ValueTest [0] - success
+2023-11-14 23:19:40 INFO  MainTest:58 - setProperty value = [Artem, "//localhost:2020", ValueTest, 1234] [1] - success
+2023-11-14 23:19:40 INFO  MainTest:59 - setProperty key = [dataBase.username, dataBase.url, KeyTest, dataBasw.password] [2] - success
+2023-11-14 23:19:40 INFO  MainTest:63 - assertEquals() KeyTest ==> del [3] - success
+2023-11-14 23:20:20 INFO  MainTest:55 - assertEquals() KeyTest == ValueTest [0] - success
+2023-11-14 23:20:20 INFO  MainTest:58 - setProperty value = [Artem, "//localhost:2020", ValueTest, 1234] [1] - success
+2023-11-14 23:20:20 INFO  MainTest:59 - setProperty key = [dataBase.username, dataBase.url, KeyTest, dataBasw.password] [2] - success
+2023-11-14 23:20:20 INFO  MainTest:63 - assertEquals() KeyTest ==> del [3] - success
+2023-11-14 23:20:28 ERROR Planets:29 - Ошибка = {}
+java.io.FileNotFoundException: D:\Рабочий стол\assessmentHealth\assessmentHealth\file.xml (Не удается найти указанный файл)
+	at java.io.FileInputStream.open0(Native Method) ~[?:?]
+	at java.io.FileInputStream.open(FileInputStream.java:219) ~[?:?]
+	at java.io.FileInputStream.<init>(FileInputStream.java:158) ~[?:?]
+	at java.io.FileInputStream.<init>(FileInputStream.java:112) ~[?:?]
+	at sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86) ~[?:?]
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:189) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:653) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150) ~[?:?]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:861) ~[?:?]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825) ~[?:?]
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141) ~[?:?]
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:247) ~[?:?]
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:342) ~[?:?]
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:206) ~[?:?]
+	at ru.sfedu.assessmentHealth.api.Planets.getPlanet(Planets.java:25) [classes/:?]
+	at ru.sfedu.assessmentHealth.Main.main(Main.java:9) [classes/:?]
+2023-11-15 01:10:09 INFO  Planets:21 - Начало getPlanetTest().....
+2023-11-15 01:10:09 INFO  Planets:29 -  assertEquals(pl_list.get(i),testArrPl.get(i)) [0]  - success 
+2023-11-15 16:12:36 DEBUG MainTest:21 - [0] Начало процесса ru.sfedu.assessmentHealth.MainTest
+2023-11-15 16:12:36 INFO  MainTest:55 - assertEquals() KeyTest == ValueTest [0] - success
+2023-11-15 16:12:36 INFO  MainTest:58 - setProperty value = [Artem, "//localhost:2020", ValueTest, 1234] [1] - success
+2023-11-15 16:12:36 INFO  MainTest:59 - setProperty key = [dataBase.username, dataBase.url, KeyTest, dataBasw.password] [2] - success
+2023-11-15 16:12:36 INFO  MainTest:63 - assertEquals() KeyTest ==> del [3] - success
+2023-11-15 16:13:06 INFO  Planets:21 - Начало getPlanetTest().....
+2023-11-15 16:13:06 INFO  Planets:29 -  assertEquals(pl_list.get(i),testArrPl.get(i)) [0]  - success 
+2023-11-15 16:14:34 DEBUG Client:14 - ru.sfedu.assessmentHealth.api.Client [0]: starting application.........
+2023-11-15 16:14:34 INFO  Client:19 - Launching the application...
+2023-11-15 16:14:34 INFO  Client:20 - Operating System: Windows 11 10.0
+2023-11-15 16:14:34 INFO  Client:24 - JRE: 19.0.1
+2023-11-15 16:14:34 INFO  Client:25 - Java Launched From: C:\Users\79897\.jdks\openjdk-19.0.1
+2023-11-15 16:14:34 INFO  Client:26 - Class Path: C:\Users\79897\.m2\repository\org\junit\platform\junit-platform-launcher\1.9.2\junit-platform-launcher-1.9.2.jar;D:\java\IntelliJ IDEA 2022.3.2\lib\idea_rt.jar;D:\java\IntelliJ IDEA 2022.3.2\plugins\junit\lib\junit5-rt.jar;D:\java\IntelliJ IDEA 2022.3.2\plugins\junit\lib\junit-rt.jar;D:\Рабочий стол\assessmentHealth\assessmentHealth\target\test-classes;D:\Рабочий стол\assessmentHealth\assessmentHealth\target\classes;C:\Users\79897\.m2\repository\org\apache\logging\log4j\log4j-slf4j-impl\2.20.0\log4j-slf4j-impl-2.20.0.jar;C:\Users\79897\.m2\repository\org\apache\logging\log4j\log4j-api\2.20.0\log4j-api-2.20.0.jar;C:\Users\79897\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\79897\.m2\repository\org\apache\logging\log4j\log4j-core\2.20.0\log4j-core-2.20.0.jar;C:\Users\79897\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\79897\.m2\repository\org\junit\jupiter\junit-jupiter\5.9.2\junit-jupiter-5.9.2.jar;C:\Users\79897\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.2\junit-jupiter-api-5.9.2.jar;C:\Users\79897\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\79897\.m2\repository\org\junit\platform\junit-platform-commons\1.9.2\junit-platform-commons-1.9.2.jar;C:\Users\79897\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\79897\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.2\junit-jupiter-params-5.9.2.jar;C:\Users\79897\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.2\junit-jupiter-engine-5.9.2.jar;C:\Users\79897\.m2\repository\org\junit\platform\junit-platform-engine\1.9.2\junit-platform-engine-1.9.2.jar;C:\Users\79897\.m2\repository\org\yaml\snakeyaml\1.21\snakeyaml-1.21.jar
+2023-11-15 16:14:34 INFO  Client:27 - Library Path: C:\Users\79897\.jdks\openjdk-19.0.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\Рабочий стол\Nodejs\;C:\Program Files\Git\cmd;D:\python\Scripts\;D:\python\;C:\Users\79897\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\JetBrains\PyCharm Community Edition 2022.3\bin;;D:\java\IntelliJ IDEA 2022.3.2\bin;;D:\VsCode\Microsoft VS Code\bin;C:\Users\79897\AppData\Roaming\npm;.
+2023-11-15 16:14:34 INFO  Client:28 - User Home Directory: C:\Users\79897
+2023-11-15 16:14:34 INFO  Client:29 - User Working Directory: D:\Рабочий стол\assessmentHealth\assessmentHealth
+2023-11-15 16:14:34 INFO  Client:30 - Test INFO logging.
+2023-11-15 16:14:34 INFO  Client:14 - Debug = true
+2023-11-15 16:14:34 INFO  Client:15 - Error = true
+2023-11-15 16:14:34 INFO  Client:16 - Info = true
+2023-11-15 16:14:34 ERROR Client:17 - dwq
+2023-11-15 16:16:59 DEBUG Client:14 - ru.sfedu.assessmentHealth.api.Client [0]: starting application.........
+2023-11-15 16:16:59 INFO  Client:19 - Launching the application...
+2023-11-15 16:16:59 INFO  Client:20 - Operating System: Windows 11 10.0
+2023-11-15 16:16:59 INFO  Client:24 - JRE: 19.0.1
+2023-11-15 16:16:59 INFO  Client:25 - Java Launched From: C:\Users\79897\.jdks\openjdk-19.0.1
+2023-11-15 16:16:59 INFO  Client:26 - Class Path: C:\Users\79897\.m2\repository\org\junit\platform\junit-platform-launcher\1.9.2\junit-platform-launcher-1.9.2.jar;D:\java\IntelliJ IDEA 2022.3.2\lib\idea_rt.jar;D:\java\IntelliJ IDEA 2022.3.2\plugins\junit\lib\junit5-rt.jar;D:\java\IntelliJ IDEA 2022.3.2\plugins\junit\lib\junit-rt.jar;D:\Рабочий стол\assessmentHealth\assessmentHealth\target\test-classes;D:\Рабочий стол\assessmentHealth\assessmentHealth\target\classes;C:\Users\79897\.m2\repository\org\apache\logging\log4j\log4j-slf4j-impl\2.20.0\log4j-slf4j-impl-2.20.0.jar;C:\Users\79897\.m2\repository\org\apache\logging\log4j\log4j-api\2.20.0\log4j-api-2.20.0.jar;C:\Users\79897\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\79897\.m2\repository\org\apache\logging\log4j\log4j-core\2.20.0\log4j-core-2.20.0.jar;C:\Users\79897\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\79897\.m2\repository\org\junit\jupiter\junit-jupiter\5.9.2\junit-jupiter-5.9.2.jar;C:\Users\79897\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.2\junit-jupiter-api-5.9.2.jar;C:\Users\79897\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\79897\.m2\repository\org\junit\platform\junit-platform-commons\1.9.2\junit-platform-commons-1.9.2.jar;C:\Users\79897\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\79897\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.2\junit-jupiter-params-5.9.2.jar;C:\Users\79897\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.2\junit-jupiter-engine-5.9.2.jar;C:\Users\79897\.m2\repository\org\junit\platform\junit-platform-engine\1.9.2\junit-platform-engine-1.9.2.jar;C:\Users\79897\.m2\repository\org\yaml\snakeyaml\1.21\snakeyaml-1.21.jar
+2023-11-15 16:16:59 INFO  Client:27 - Library Path: C:\Users\79897\.jdks\openjdk-19.0.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\Рабочий стол\Nodejs\;C:\Program Files\Git\cmd;D:\python\Scripts\;D:\python\;C:\Users\79897\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\JetBrains\PyCharm Community Edition 2022.3\bin;;D:\java\IntelliJ IDEA 2022.3.2\bin;;D:\VsCode\Microsoft VS Code\bin;C:\Users\79897\AppData\Roaming\npm;.
+2023-11-15 16:16:59 INFO  Client:28 - User Home Directory: C:\Users\79897
+2023-11-15 16:16:59 INFO  Client:29 - User Working Directory: D:\Рабочий стол\assessmentHealth\assessmentHealth
+2023-11-15 16:16:59 INFO  Client:30 - Test INFO logging.
+2023-11-15 16:16:59 INFO  Client:14 - Debug = true
+2023-11-15 16:16:59 INFO  Client:15 - Error = true
+2023-11-15 16:16:59 INFO  Client:16 - Info = true
+2023-11-15 16:16:59 ERROR Client:17 - dwq
+2023-11-15 16:17:46 INFO  MainTest:55 - assertEquals() KeyTest == ValueTest [0] - success
+2023-11-15 16:17:46 INFO  MainTest:58 - setProperty value = [Artem, "//localhost:2020", ValueTest, 1234] [1] - success
+2023-11-15 16:17:46 INFO  MainTest:59 - setProperty key = [dataBase.username, dataBase.url, KeyTest, dataBasw.password] [2] - success
+2023-11-15 16:17:46 INFO  MainTest:63 - assertEquals() KeyTest ==> del [3] - success
+2023-11-15 16:18:55 INFO  Planets:21 - Начало getPlanetTest().....
+2023-11-15 16:18:55 INFO  Planets:29 -  assertEquals(pl_list.get(i),testArrPl.get(i)) [0]  - success 
+2023-11-15 16:25:22 DEBUG MainTest:21 - [0] Начало процесса ru.sfedu.assessmentHealth.MainTest
+2023-11-15 16:25:22 INFO  MainTest:55 - assertEquals() KeyTest == ValueTest [0] - success
+2023-11-15 16:25:22 INFO  MainTest:58 - setProperty value = [Artem, "//localhost:2020", ValueTest, 1234] [1] - success
+2023-11-15 16:25:22 INFO  MainTest:59 - setProperty key = [dataBase.username, dataBase.url, KeyTest, dataBasw.password] [2] - success
+2023-11-15 16:25:22 INFO  MainTest:63 - assertEquals() KeyTest ==> del [3] - success
+2023-11-15 16:26:14 DEBUG MainTest:21 - [0] Начало процесса ru.sfedu.assessmentHealth.MainTest
+2023-11-20 23:02:16 ERROR DataProviderMongo:27 - Unrecognized field "sda" (class ru.sfedu.assessmentHealth.api.Cat), not marked as ignorable (2 known properties: "name", "age"])
+ at [Source: UNKNOWN; byte offset: #UNKNOWN] (through reference chain: java.util.ArrayList[0]->ru.sfedu.assessmentHealth.api.Cat["sda"])
+2023-11-20 23:02:38 ERROR DataProviderMongo:27 - Unrecognized field "sda" (class ru.sfedu.assessmentHealth.api.Cat), not marked as ignorable (2 known properties: "name", "age"])
+ at [Source: UNKNOWN; byte offset: #UNKNOWN] (through reference chain: java.util.ArrayList[0]->ru.sfedu.assessmentHealth.api.Cat["sda"])

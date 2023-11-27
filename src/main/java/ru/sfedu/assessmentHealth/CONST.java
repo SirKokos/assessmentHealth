@@ -7,6 +7,9 @@ public class CONST {
     public static final String PATH_CONST_XML = "src/main/resources/CONST.xml";
     public static final String PATH_CONST_YML = "src/main/resources/CONST.yml";
 
+
+    public static final String NAME_ACTOR_HISTORY = "system";
+
     public static final  String EXAMPLE = "ru.sfedu.";
 
 }
