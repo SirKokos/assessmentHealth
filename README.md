@@ -2,11 +2,11 @@
 ___
 ## Диаграммы
 ### Диаграмма классов
-![Диаграмма классов](assessmentHealth/doc/2.jpg)
+![Диаграмма классов](https://github.com/SirKokos/assessmentHealth/blob/main/doc/2.jpg)
 
 
 ### Диаграмма использования
-![Диаграмма классов](assessmentHealth/doc/1.jpg)
+![Диаграмма классов](https://github.com/SirKokos/assessmentHealth/blob/main/doc/1.jpg)
 
 ### Таблица детализации
 <table>
