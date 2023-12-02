@@ -13,7 +13,7 @@ public class Client {
     public Client(){
         log.debug((Client.class.getName())+" [0]: starting application.........");
         logBasicSystemInfo();
-     }
+    }
 
     private void logBasicSystemInfo() {
         log.info("Launching the application...");

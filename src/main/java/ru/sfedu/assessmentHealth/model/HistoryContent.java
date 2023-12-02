@@ -6,6 +6,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import ru.sfedu.assessmentHealth.CONST;
 
+import java.lang.reflect.Field;
 import java.util.*;
 
 public class HistoryContent {
@@ -15,7 +16,9 @@ public class HistoryContent {
     private String actor;
     private String methodName;
     private Map<String, Object> object;
+//    private String object;
     private StatusHistory status;
+
 
 
     private static final Logger log = LogManager.getLogger(HistoryContent.class.getName());
@@ -41,17 +44,23 @@ public class HistoryContent {
     public StatusHistory getStatus(){return status;}
     public void setStatus(StatusHistory status){this.status = status;}
 
-    public Map<String,Object> setObject(){
-        object = new HashMap<>();
-        object.put("id",id);
-        object.put("className",className);
-        object.put("createdDate",createdDate);
-        object.put("actor",actor);
-        object.put("methodName",methodName);
-        object.put("status",status);
-        return object;
-    }
+    public Map<String, Object> getObject(){return object;}
+    public <T> void setObject (T object){this.object = convertClassToMap(object);}
 
+    protected <T> Map<String, Object>  convertClassToMap (T object) {
+        Map<String, Object> map = new HashMap<>();
+        Class<?> clazz = object.getClass();
+        Field[] fields = clazz.getDeclaredFields();
+        for (Field field : fields) {
+            field.setAccessible(true);
+            try {
+                map.put(field.getName(), field.get(object));
+            } catch (IllegalAccessException e) {
+                e.printStackTrace();
+            }
+        }
+        return map;
+    }
     @Override
     public String toString() {
         return "HistoryContent: { " +
@@ -66,10 +75,15 @@ public class HistoryContent {
     }
 
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof HistoryContent that)) return false;
+        return Objects.equals(id, that.id) && Objects.equals(className, that.className) && Objects.equals(createdDate, that.createdDate) && Objects.equals(actor, that.actor) && Objects.equals(methodName, that.methodName) && Objects.equals(object, that.object) && status == that.status;
+    }
 
-
-
-
-
-
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, className, createdDate, actor, methodName, object, status);
+    }
 }

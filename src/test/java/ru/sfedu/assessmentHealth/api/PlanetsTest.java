@@ -18,7 +18,7 @@ class PlanetsTest {
     private static final Logger log = LogManager.getLogger(Planets.class.getName());
     @Test
     void getPlanetTest() throws ParserConfigurationException, IOException, SAXException {
-        log.info("Начало getPlanetTest().....");
+        log.info("Begin getPlanetTest()[1].....");
         List<String> testArrPl = Arrays.asList("Зeмля", "Сатурн", "Марс", "Венера");
         Planets planets = new Planets();
         Document doc = planets.getXml();
@@ -26,7 +26,7 @@ class PlanetsTest {
         for(int i = 0 ; i < pl_list.size();i++){
             assertEquals(pl_list.get(i),testArrPl.get(i));
         }
-        log.info(" assertEquals(pl_list.get(i),testArrPl.get(i)) [0]  - success ");
+        log.info("assertEquals(pl_list.get(i),testArrPl.get(i)) [1]  - success ");
 
 
 

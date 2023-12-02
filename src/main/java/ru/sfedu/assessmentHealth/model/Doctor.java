@@ -1,10 +1,14 @@
 package ru.sfedu.assessmentHealth.model;
 
+import java.util.Objects;
+
 public class Doctor extends Person{
     private int Experience;
+
     private double AvgPatient;
     private String Qualification;
     private  String Specialization;
+
 
     public int getExperience(){return Experience;}
     public double getAvgPatient() {return AvgPatient;}
@@ -29,5 +33,17 @@ public class Doctor extends Person{
                 ",Qualification = " + Qualification +
                 ",Specialization = " + Specialization +
                 "}";
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Doctor doctor)) return false;
+        return Experience == doctor.Experience && Double.compare(doctor.AvgPatient, AvgPatient) == 0 && Objects.equals(Qualification, doctor.Qualification) && Objects.equals(Specialization, doctor.Specialization);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(Experience, AvgPatient, Qualification, Specialization);
     }
 }
