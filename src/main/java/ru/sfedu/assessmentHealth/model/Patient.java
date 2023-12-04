@@ -1,6 +1,7 @@
 package ru.sfedu.assessmentHealth.model;
 
 public class Patient extends Person{
+    private Integer Patient_ID;
     private double CellsBlood;
     private double Hemoglobin;
     private double Platelets;
@@ -9,6 +10,8 @@ public class Patient extends Person{
     private double Cholesterol;
     private short ArterialPress;
     private StatusVisit statusVisit;
+
+    public Integer getDoctor_ID(){return Patient_ID;}
 
     public double getCellsBlood(){return CellsBlood;}
     public double getHemoglobin(){return Hemoglobin;}
@@ -19,6 +22,7 @@ public class Patient extends Person{
     public short getArterialPress(){return ArterialPress;}
     public StatusVisit getStatusVisit(){return statusVisit;}
 
+    public void setDoctor_ID(Integer Patient_ID){this.Patient_ID = Patient_ID;}
     public void setCellsBlood(double CellsBlood){this.CellsBlood = CellsBlood;}
     public void setHemoglobin(double Hemoglobin){this.Hemoglobin = Hemoglobin;}
     public void setPlatelets(double Platelets){this.Platelets = Platelets;}

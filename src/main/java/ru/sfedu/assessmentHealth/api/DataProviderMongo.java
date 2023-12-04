@@ -23,7 +23,7 @@ import java.util.Date;
 
 
 
-public class DataProviderMongo {
+public class DataProviderMongo{
     private static final Logger log = LogManager.getLogger(DataProviderMongo.class.getName());
     MongoClient mongoClient;
     MongoDatabase database;
@@ -48,7 +48,6 @@ public class DataProviderMongo {
         log.debug("objectToJson [1]: Result {}",jsonString);
         return jsonString;
     }
-
 
     public <T> void save(CommandType command, String bdName, T obj){
         log.debug("save [0]: command = {},object = {}, dbName = {}", command,  obj, bdName);
@@ -78,6 +77,5 @@ public class DataProviderMongo {
 
         }
     }
-
 
 }

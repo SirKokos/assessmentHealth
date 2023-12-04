@@ -1,6 +1,9 @@
 package ru.sfedu.assessmentHealth.model;
 
+import java.net.Inet4Address;
+
 public class Person {
+//    protected Integer Person_ID;
     protected String Name;
     protected String Surname;
     protected String SecondName;
@@ -11,6 +14,7 @@ public class Person {
     public Person(){
     }
 
+//    public Integer getPersonID(){return Person_ID;}
     public String getName(){return Name;}
     public String getSurname(){return Surname;}
     public String getSecondName(){return SecondName;}
@@ -18,6 +22,8 @@ public class Person {
     public char getGender() {return Gender;}
     public StatusPerson getStatus() {return Status;}
 
+
+//    public void setPerson_ID(Integer Person_ID){this.Person_ID = Person_ID;}
     public void setName(String Name){this.Name = Name;}
     public void setSurname(String Surname ){ this.Surname = Surname;}
     public void setSecondName(String SecondName) {this.SecondName = SecondName;}
