@@ -3,20 +3,20 @@ package ru.sfedu.assessmentHealth.model;
 import java.util.Objects;
 
 public class Doctor extends Person{
-    protected Integer Doctor_ID;
+//    protected Integer Doctor_ID;
     private int Experience;
     private double AvgPatient;
     private String Qualification;
     private  String Specialization;
 
 
-    public Integer getDoctor_ID(){return Doctor_ID;}
+//    public Integer getDoctor_ID(){return Doctor_ID;}
     public int getExperience(){return Experience;}
     public double getAvgPatient() {return AvgPatient;}
     public String getQualification(){return Qualification;}
     public String getSpecialization(){return Specialization;}
 
-    public void setDoctor_ID(Integer Doctor_ID){this.Doctor_ID = Doctor_ID;}
+//    public void setDoctor_ID(Integer Doctor_ID){this.Doctor_ID = Doctor_ID;}
     public void setExperience(int Experience){this.Experience = Experience;}
     public void setAvgPatient(double AvgPatient) {this.AvgPatient =  AvgPatient;}
     public void setQualification(String Qualification){this.Qualification = Qualification;}

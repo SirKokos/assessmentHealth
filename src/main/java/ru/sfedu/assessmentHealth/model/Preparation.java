@@ -1,14 +1,16 @@
 package ru.sfedu.assessmentHealth.model;
 
 import javax.xml.crypto.Data;
+import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Objects;
 
 public class Preparation {
     private Integer Preparation_ID;
-    private List<Integer> FkPreparationToDoctor;
+    private List<Integer> FkPreparationToDoctor = new ArrayList<>();
     private String NamePrep;
-    private Data DateEnd;
+    private Date DateEnd;
     private double Dosage;
     private  StatusVisitPreparation statusVisitPreparation;
     private String AboutPrep;
@@ -19,7 +21,7 @@ public class Preparation {
     public Integer getPreparation_ID(){return Preparation_ID;}
     public List<Integer> getFkPreparationToDoctor(){return FkPreparationToDoctor;}
     public String getNamePrep(){return NamePrep;}
-    public Data getDateEnd(){return DateEnd;}
+    public Date getDateEnd(){return DateEnd;}
     public double getDosage(){return  Dosage;}
     public StatusVisitPreparation getStatusVisitPreparation(){return statusVisitPreparation;}
     public String getAboutPrep(){return AboutPrep;}
@@ -29,7 +31,7 @@ public class Preparation {
     public void setPreparation_ID(Integer Preparation_ID){this.Preparation_ID = Preparation_ID;}
     public void setFkPreparationToDoctor(Integer FkPreparationToDoctor){this.FkPreparationToDoctor.add(FkPreparationToDoctor);}
     public void setNamePrep(String NamePrep){this.NamePrep = NamePrep;}
-    public void setDateEnd(Data DateEnd){this.DateEnd = DateEnd;}
+    public void setDateEnd(Date DateEnd){this.DateEnd = DateEnd;}
     public void setDosage(double Dosage){this.Dosage = Dosage;}
     public void setStatusVisitPreparation(StatusVisitPreparation statusVisitPreparation){
         this.statusVisitPreparation = statusVisitPreparation;}

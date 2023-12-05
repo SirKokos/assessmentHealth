@@ -1645,3 +1645,1450 @@ java.lang.IllegalStateException: state should be: open
 2023-11-29 22:03:35 DEBUG connection:56 - Connection pool closed for localhost:27017
 2023-11-29 22:03:35 DEBUG DataProviderMongo:75 - close [4]: закрытие mongoClient
 2023-11-29 22:03:35 DEBUG DataProviderMongo:36 - saveTest[2]: Тестирование завершено закрытие MONGO
+2023-12-04 22:03:39 ERROR DataProviderPostgres:40 - DataProviderPostgres - initialization error {}
+org.postgresql.util.PSQLException: ОШИБКА: ошибка синтаксиса (примерное положение: "CONSTRAINT")
+  Позиция: 348
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2712) ~[postgresql-42.7.0.jar:42.7.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2400) ~[postgresql-42.7.0.jar:42.7.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:367) ~[postgresql-42.7.0.jar:42.7.0]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:507) ~[postgresql-42.7.0.jar:42.7.0]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:424) ~[postgresql-42.7.0.jar:42.7.0]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:344) ~[postgresql-42.7.0.jar:42.7.0]
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:330) ~[postgresql-42.7.0.jar:42.7.0]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:306) ~[postgresql-42.7.0.jar:42.7.0]
+	at org.postgresql.jdbc.PgStatement.executeUpdate(PgStatement.java:279) ~[postgresql-42.7.0.jar:42.7.0]
+	at ru.sfedu.assessmentHealth.api.DataProviderPostgres.createTables(DataProviderPostgres.java:32) ~[classes/:?]
+	at ru.sfedu.assessmentHealth.api.DataProviderPostgres.<init>(DataProviderPostgres.java:21) ~[classes/:?]
+	at ru.sfedu.assessmentHealth.api.DataProviderPostgresTest.createTables(DataProviderPostgresTest.java:38) ~[test-classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727) ~[junit-platform-commons-1.9.2.jar:1.9.2]
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60) ~[junit-jupiter-engine-5.9.2.jar:5.9.2]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131) ~[junit-jupiter-engine-5.9.2.jar:5.9.2]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156) ~[junit-jupiter-engine-5.9.2.jar:5.9.2]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147) ~[junit-jupiter-engine-5.9.2.jar:5.9.2]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86) ~[junit-jupiter-engine-5.9.2.jar:5.9.2]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103) ~[junit-jupiter-engine-5.9.2.jar:5.9.2]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93) ~[junit-jupiter-engine-5.9.2.jar:5.9.2]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106) ~[junit-jupiter-engine-5.9.2.jar:5.9.2]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64) ~[junit-jupiter-engine-5.9.2.jar:5.9.2]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45) ~[junit-jupiter-engine-5.9.2.jar:5.9.2]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37) ~[junit-jupiter-engine-5.9.2.jar:5.9.2]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92) ~[junit-jupiter-engine-5.9.2.jar:5.9.2]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86) ~[junit-jupiter-engine-5.9.2.jar:5.9.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:217) ~[junit-jupiter-engine-5.9.2.jar:5.9.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.2.jar:1.9.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213) ~[junit-jupiter-engine-5.9.2.jar:5.9.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138) ~[junit-jupiter-engine-5.9.2.jar:5.9.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68) ~[junit-jupiter-engine-5.9.2.jar:5.9.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151) ~[junit-platform-engine-1.9.2.jar:1.9.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.2.jar:1.9.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.9.2.jar:1.9.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.9.2.jar:1.9.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.9.2.jar:1.9.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.2.jar:1.9.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.9.2.jar:1.9.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.9.2.jar:1.9.2]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.9.2.jar:1.9.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.9.2.jar:1.9.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.2.jar:1.9.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.9.2.jar:1.9.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.9.2.jar:1.9.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.9.2.jar:1.9.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.2.jar:1.9.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.9.2.jar:1.9.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.9.2.jar:1.9.2]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.9.2.jar:1.9.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.9.2.jar:1.9.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.2.jar:1.9.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.9.2.jar:1.9.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.9.2.jar:1.9.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.9.2.jar:1.9.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.2.jar:1.9.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.9.2.jar:1.9.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.9.2.jar:1.9.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.9.2.jar:1.9.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.9.2.jar:1.9.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.9.2.jar:1.9.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:147) ~[junit-platform-launcher-1.9.2.jar:1.9.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:127) ~[junit-platform-launcher-1.9.2.jar:1.9.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:90) ~[junit-platform-launcher-1.9.2.jar:1.9.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:55) ~[junit-platform-launcher-1.9.2.jar:1.9.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:102) [junit-platform-launcher-1.9.2.jar:1.9.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:54) [junit-platform-launcher-1.9.2.jar:1.9.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114) [junit-platform-launcher-1.9.2.jar:1.9.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86) [junit-platform-launcher-1.9.2.jar:1.9.2]
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86) [junit-platform-launcher-1.9.2.jar:1.9.2]
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53) [junit-platform-launcher-1.9.2.jar:1.9.2]
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57) [junit5-rt.jar:?]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38) [junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11) [idea_rt.jar:?]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35) [junit-rt.jar:?]
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235) [junit-rt.jar:?]
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54) [junit-rt.jar:?]
+2023-12-04 22:04:48 ERROR DataProviderPostgres:40 - DataProviderPostgres - initialization error {}
+org.postgresql.util.PSQLException: ОШИБКА: ошибка синтаксиса (примерное положение: "CONSTRAINT")
+  Позиция: 348
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2712) ~[postgresql-42.7.0.jar:42.7.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2400) ~[postgresql-42.7.0.jar:42.7.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:367) ~[postgresql-42.7.0.jar:42.7.0]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:507) ~[postgresql-42.7.0.jar:42.7.0]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:424) ~[postgresql-42.7.0.jar:42.7.0]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:344) ~[postgresql-42.7.0.jar:42.7.0]
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:330) ~[postgresql-42.7.0.jar:42.7.0]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:306) ~[postgresql-42.7.0.jar:42.7.0]
+	at org.postgresql.jdbc.PgStatement.executeUpdate(PgStatement.java:279) ~[postgresql-42.7.0.jar:42.7.0]
+	at ru.sfedu.assessmentHealth.api.DataProviderPostgres.createTables(DataProviderPostgres.java:32) ~[classes/:?]
+	at ru.sfedu.assessmentHealth.api.DataProviderPostgres.<init>(DataProviderPostgres.java:21) ~[classes/:?]
+	at ru.sfedu.assessmentHealth.api.DataProviderPostgresTest.createTables(DataProviderPostgresTest.java:38) ~[test-classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727) ~[junit-platform-commons-1.9.2.jar:1.9.2]
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60) ~[junit-jupiter-engine-5.9.2.jar:5.9.2]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131) ~[junit-jupiter-engine-5.9.2.jar:5.9.2]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156) ~[junit-jupiter-engine-5.9.2.jar:5.9.2]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147) ~[junit-jupiter-engine-5.9.2.jar:5.9.2]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86) ~[junit-jupiter-engine-5.9.2.jar:5.9.2]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103) ~[junit-jupiter-engine-5.9.2.jar:5.9.2]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93) ~[junit-jupiter-engine-5.9.2.jar:5.9.2]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106) ~[junit-jupiter-engine-5.9.2.jar:5.9.2]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64) ~[junit-jupiter-engine-5.9.2.jar:5.9.2]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45) ~[junit-jupiter-engine-5.9.2.jar:5.9.2]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37) ~[junit-jupiter-engine-5.9.2.jar:5.9.2]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92) ~[junit-jupiter-engine-5.9.2.jar:5.9.2]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86) ~[junit-jupiter-engine-5.9.2.jar:5.9.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:217) ~[junit-jupiter-engine-5.9.2.jar:5.9.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.2.jar:1.9.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213) ~[junit-jupiter-engine-5.9.2.jar:5.9.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138) ~[junit-jupiter-engine-5.9.2.jar:5.9.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68) ~[junit-jupiter-engine-5.9.2.jar:5.9.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151) ~[junit-platform-engine-1.9.2.jar:1.9.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.2.jar:1.9.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.9.2.jar:1.9.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.9.2.jar:1.9.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.9.2.jar:1.9.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.2.jar:1.9.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.9.2.jar:1.9.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.9.2.jar:1.9.2]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.9.2.jar:1.9.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.9.2.jar:1.9.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.2.jar:1.9.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.9.2.jar:1.9.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.9.2.jar:1.9.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.9.2.jar:1.9.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.2.jar:1.9.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.9.2.jar:1.9.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.9.2.jar:1.9.2]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.9.2.jar:1.9.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.9.2.jar:1.9.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.2.jar:1.9.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.9.2.jar:1.9.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.9.2.jar:1.9.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.9.2.jar:1.9.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.9.2.jar:1.9.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.9.2.jar:1.9.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.9.2.jar:1.9.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.9.2.jar:1.9.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.9.2.jar:1.9.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.9.2.jar:1.9.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:147) ~[junit-platform-launcher-1.9.2.jar:1.9.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:127) ~[junit-platform-launcher-1.9.2.jar:1.9.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:90) ~[junit-platform-launcher-1.9.2.jar:1.9.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:55) ~[junit-platform-launcher-1.9.2.jar:1.9.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:102) [junit-platform-launcher-1.9.2.jar:1.9.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:54) [junit-platform-launcher-1.9.2.jar:1.9.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114) [junit-platform-launcher-1.9.2.jar:1.9.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86) [junit-platform-launcher-1.9.2.jar:1.9.2]
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86) [junit-platform-launcher-1.9.2.jar:1.9.2]
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53) [junit-platform-launcher-1.9.2.jar:1.9.2]
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57) [junit5-rt.jar:?]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38) [junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11) [idea_rt.jar:?]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35) [junit-rt.jar:?]
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235) [junit-rt.jar:?]
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54) [junit-rt.jar:?]
+2023-12-04 22:05:09 ERROR DataProviderPostgres:40 - DataProviderPostgres - initialization error ОШИБКА: ошибка синтаксиса (примерное положение: "CONSTRAINT")
+  Позиция: 348
+2023-12-04 22:06:53 ERROR DataProviderPostgres:40 - DataProviderPostgres - initialization error ОШИБКА: ошибка синтаксиса (примерное положение: "CONSTRAINT")
+  Позиция: 350
+2023-12-04 22:07:52 ERROR DataProviderPostgres:40 - DataProviderPostgres - initialization error ОШИБКА: ошибка синтаксиса (примерное положение: "CONSTRAINT")
+  Позиция: 350
+2023-12-04 22:08:20 ERROR DataProviderPostgres:40 - DataProviderPostgres - initialization error ОШИБКА: ошибка синтаксиса (примерное положение: "CONSTRAINT")
+  Позиция: 350
+2023-12-04 22:09:50 ERROR DataProviderPostgres:40 - DataProviderPostgres - initialization error ОШИБКА: ошибка синтаксиса (примерное положение: "PRIMARY")
+  Позиция: 51
+2023-12-04 22:10:41 ERROR DataProviderPostgres:40 - DataProviderPostgres - initialization error ОШИБКА: ошибка синтаксиса (примерное положение: "PRIMARY")
+  Позиция: 51
+2023-12-04 22:11:09 ERROR DataProviderPostgres:40 - DataProviderPostgres - initialization error ОШИБКА: ошибка синтаксиса (примерное положение: "PRIMARY")
+  Позиция: 51
+2023-12-04 22:13:04 ERROR DataProviderPostgres:40 - DataProviderPostgres - initialization error ОШИБКА: ошибка синтаксиса (примерное положение: "PRIMARY")
+  Позиция: 53
+2023-12-04 22:13:37 ERROR DataProviderPostgres:40 - DataProviderPostgres - initialization error ОШИБКА: ошибка синтаксиса (примерное положение: "CONSTRAINT")
+  Позиция: 350
+2023-12-04 22:14:47 ERROR DataProviderPostgres:40 - DataProviderPostgres - initialization error ОШИБКА: ошибка синтаксиса (примерное положение: "CONSTRAINT")
+  Позиция: 350
+2023-12-04 22:51:53 INFO  DataProviderPostgresTest:52 - createTables [1]: - test started
+2023-12-04 22:51:54 INFO  DataProviderPostgresTest:68 - nameTabTest [2]: actual data = [calcreport, doctor, patient, preparation, schedule]
+2023-12-04 22:51:54 INFO  DataProviderPostgresTest:69 - testTab [3]: expected  data = [calcreport, doctor, patient, preparation, schedule]
+2023-12-04 22:51:54 INFO  DataProviderPostgresTest:71 - createTables [4]: - test succeeded
+2023-12-04 22:57:09 INFO  DataProviderPostgresTest:52 - createTables [1]: - test started
+2023-12-04 22:57:09 DEBUG DataProviderPostgres:32 - createTables [1] - start working method 
+2023-12-04 22:57:09 DEBUG DataProviderPostgres:52 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-04 22:57:09 INFO  DataProviderPostgresTest:68 - nameTabTest [2]: actual data = [calcreport, doctor, patient, preparation, schedule]
+2023-12-04 22:57:09 INFO  DataProviderPostgresTest:69 - testTab [3]: expected  data = [calcreport, doctor, patient, preparation, schedule]
+2023-12-04 22:57:09 INFO  DataProviderPostgresTest:71 - createTables [4]: - test succeeded
+2023-12-05 00:38:44 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 00:38:44 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 00:38:44 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 00:38:44 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 00:38:44 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 00:38:44 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 00:39:29 DEBUG HistoryContent:18 - convertClassToMap [0]: Начало теста по конвертации объекта в Map
+2023-12-05 00:39:29 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 00:39:29 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 00:39:29 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 00:39:29 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 00:39:29 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 00:39:29 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 00:39:29 DEBUG HistoryContent:35 - convertClassToMap [1]: Тесты прошли успешно конвертация = {name=Artem, age=12}
+2023-12-05 00:41:51 DEBUG HistoryContent:18 - convertClassToMap [0]: Начало теста по конвертации объекта в Map
+2023-12-05 00:41:51 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 00:41:51 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 00:41:51 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 00:41:51 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 00:41:51 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 00:41:51 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 00:41:51 DEBUG HistoryContent:35 - convertClassToMap [1]: Тесты прошли успешно конвертация = {name=Artem, age=12}
+2023-12-05 00:42:02 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 00:42:02 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 00:42:02 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 00:42:02 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 00:42:02 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 00:42:02 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 00:42:57 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 00:42:57 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 00:42:57 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 00:42:57 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 00:42:57 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 00:42:57 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 00:53:23 INFO  DataProviderPostgresTest:52 - createTables [1]: - test started
+2023-12-05 00:53:24 INFO  DataProviderPostgresTest:68 - nameTabTest [2]: actual data = [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 00:53:24 INFO  DataProviderPostgresTest:69 - testTab [3]: expected  data = [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 00:53:24 INFO  DataProviderPostgresTest:71 - createTables [4]: - test succeeded
+2023-12-05 00:56:42 DEBUG DataProviderPostgres:39 - createTables [1] - start working method 
+2023-12-05 00:56:42 DEBUG DataProviderPostgres:58 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 00:56:42 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 00:56:42 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 00:56:42 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 00:56:42 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 00:56:42 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 00:56:42 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 00:56:42 DEBUG DataProviderPostgres:67 - InsertDataDoctor [1]: - start working method
+2023-12-05 00:56:42 ERROR DataProviderPostgres:83 - InsertDataDoctor [2]: - error Соединение уже было закрыто
+2023-12-05 01:04:08 DEBUG DataProviderPostgres:39 - createTables [1] - start working method 
+2023-12-05 01:04:08 DEBUG DataProviderPostgres:57 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 01:04:08 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 01:04:08 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 01:04:08 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 01:04:08 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 01:04:08 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 01:04:08 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 01:04:08 DEBUG DataProviderPostgres:66 - InsertDataDoctor [1]: - start working method
+2023-12-05 01:05:55 DEBUG DataProviderPostgres:39 - createTables [1] - start working method 
+2023-12-05 01:05:55 DEBUG DataProviderPostgres:58 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 01:05:55 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 01:05:55 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 01:05:55 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 01:05:55 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 01:05:55 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 01:05:55 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 01:05:55 DEBUG DataProviderPostgres:67 - InsertDataDoctor [1]: - start working method
+2023-12-05 01:06:27 DEBUG DataProviderPostgres:39 - createTables [1] - start working method 
+2023-12-05 01:06:28 DEBUG DataProviderPostgres:58 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 01:07:05 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 01:07:05 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 01:07:05 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 01:07:05 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 01:07:05 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 01:07:05 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 01:07:05 DEBUG DataProviderPostgres:67 - InsertDataDoctor [1]: - start working method
+2023-12-05 01:07:20 DEBUG DataProviderPostgres:39 - createTables [1] - start working method 
+2023-12-05 01:07:20 DEBUG DataProviderPostgres:58 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 01:07:20 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 01:07:20 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 01:07:20 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 01:07:20 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 01:07:20 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 01:07:20 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 01:07:20 DEBUG DataProviderPostgres:67 - InsertDataDoctor [1]: - start working method
+2023-12-05 01:08:57 DEBUG DataProviderPostgres:39 - createTables [1] - start working method 
+2023-12-05 01:08:57 DEBUG DataProviderPostgres:58 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 01:08:57 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 01:08:57 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 01:08:57 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 01:08:57 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 01:08:57 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 01:08:57 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 01:08:57 DEBUG DataProviderPostgres:67 - InsertDataDoctor [1]: - start working method
+2023-12-05 01:10:16 DEBUG DataProviderPostgres:39 - createTables [1] - start working method 
+2023-12-05 01:10:16 DEBUG DataProviderPostgres:58 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 01:10:16 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 01:10:16 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 01:10:16 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 01:10:16 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 01:10:16 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 01:10:16 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 01:10:16 DEBUG DataProviderPostgres:67 - InsertDataDoctor [1]: - start working method
+2023-12-05 01:10:16 ERROR DataProviderPostgres:83 - InsertDataDoctor [2]: - error Индекс колонки вне диапазона: 1. Допустимые значения: 1..0
+2023-12-05 01:12:19 DEBUG DataProviderPostgres:39 - createTables [1] - start working method 
+2023-12-05 01:12:19 DEBUG DataProviderPostgres:58 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 01:12:19 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 01:12:19 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 01:12:19 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 01:12:19 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 01:12:19 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 01:12:19 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 01:12:19 DEBUG DataProviderPostgres:67 - InsertDataDoctor [1]: - start working method
+2023-12-05 01:12:19 ERROR DataProviderPostgres:83 - InsertDataDoctor [2]: - error Индекс колонки вне диапазона: 1. Допустимые значения: 1..0
+2023-12-05 01:14:14 DEBUG DataProviderPostgres:39 - createTables [1] - start working method 
+2023-12-05 01:14:14 DEBUG DataProviderPostgres:58 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 01:14:14 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 01:14:14 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 01:14:14 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 01:14:14 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 01:14:14 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 01:14:14 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 01:14:14 DEBUG DataProviderPostgres:67 - InsertDataDoctor [1]: - start working method
+2023-12-05 01:14:14 ERROR DataProviderPostgres:84 - InsertDataDoctor [2]: - error Индекс колонки вне диапазона: 1. Допустимые значения: 1..0
+2023-12-05 01:14:36 DEBUG DataProviderPostgres:39 - createTables [1] - start working method 
+2023-12-05 01:14:36 DEBUG DataProviderPostgres:58 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 01:14:36 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 01:14:36 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 01:14:36 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 01:14:36 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 01:14:36 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 01:14:36 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 01:14:36 DEBUG DataProviderPostgres:67 - InsertDataDoctor [1]: - start working method
+2023-12-05 01:14:36 ERROR DataProviderPostgres:84 - InsertDataDoctor [2]: - error Индекс колонки вне диапазона: 0. Допустимые значения: 1..0
+2023-12-05 01:15:03 DEBUG DataProviderPostgres:39 - createTables [1] - start working method 
+2023-12-05 01:15:03 DEBUG DataProviderPostgres:58 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 01:15:03 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 01:15:03 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 01:15:03 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 01:15:03 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 01:15:03 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 01:15:03 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 01:15:03 DEBUG DataProviderPostgres:67 - InsertDataDoctor [1]: - start working method
+2023-12-05 01:15:03 ERROR DataProviderPostgres:85 - InsertDataDoctor [2]: - error Индекс колонки вне диапазона: 1. Допустимые значения: 1..0
+2023-12-05 01:18:14 DEBUG DataProviderPostgres:39 - createTables [1] - start working method 
+2023-12-05 01:18:15 DEBUG DataProviderPostgres:58 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 01:18:15 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 01:18:15 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 01:18:15 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 01:18:15 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 01:18:15 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 01:18:15 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 01:18:15 DEBUG DataProviderPostgres:67 - InsertDataDoctor [1]: - start working method
+2023-12-05 01:19:02 DEBUG DataProviderPostgres:39 - createTables [1] - start working method 
+2023-12-05 01:19:02 DEBUG DataProviderPostgres:58 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 01:19:02 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 01:19:02 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 01:19:02 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 01:19:02 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 01:19:02 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 01:19:02 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 01:19:02 DEBUG DataProviderPostgres:67 - InsertDataDoctor [1]: - start working method
+2023-12-05 01:19:27 DEBUG DataProviderPostgres:39 - createTables [1] - start working method 
+2023-12-05 01:19:27 DEBUG DataProviderPostgres:58 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 01:19:27 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 01:19:27 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 01:19:27 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 01:19:27 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 01:19:27 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 01:19:27 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 01:19:27 DEBUG DataProviderPostgres:67 - InsertDataDoctor [1]: - start working method
+2023-12-05 01:19:27 ERROR DataProviderPostgres:85 - InsertDataDoctor [2]: - error Индекс колонки вне диапазона: 1. Допустимые значения: 1..0
+2023-12-05 01:20:46 DEBUG DataProviderPostgres:39 - createTables [1] - start working method 
+2023-12-05 01:20:46 DEBUG DataProviderPostgres:58 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 01:20:46 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 01:20:46 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 01:20:46 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 01:20:46 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 01:20:46 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 01:20:46 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 01:20:46 DEBUG DataProviderPostgres:67 - InsertDataDoctor [1]: - start working method
+2023-12-05 01:21:52 DEBUG DataProviderPostgres:39 - createTables [1] - start working method 
+2023-12-05 01:21:52 DEBUG DataProviderPostgres:58 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 01:21:52 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 01:21:52 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 01:21:52 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 01:21:52 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 01:21:52 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 01:21:52 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 01:21:52 DEBUG DataProviderPostgres:67 - InsertDataDoctor [1]: - start working method
+2023-12-05 01:23:07 DEBUG DataProviderPostgres:39 - createTables [1] - start working method 
+2023-12-05 01:23:07 DEBUG DataProviderPostgres:58 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 01:23:07 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 01:23:07 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 01:23:07 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 01:23:07 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 01:23:07 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 01:23:07 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 01:23:07 DEBUG DataProviderPostgres:67 - InsertDataDoctor [1]: - start working method
+2023-12-05 01:23:52 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 01:23:52 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 01:23:52 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 01:23:52 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 01:23:52 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 01:23:52 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 01:24:58 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 01:24:58 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 01:24:58 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 01:24:58 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 01:24:58 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 01:24:58 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 01:25:09 DEBUG DataProviderPostgres:39 - createTables [1] - start working method 
+2023-12-05 01:25:09 DEBUG DataProviderPostgres:58 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 01:25:09 INFO  DataProviderPostgresTest:64 - createTables [1]: - test started
+2023-12-05 01:25:09 INFO  DataProviderPostgresTest:79 - nameTabTest [2]: actual data = [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 01:25:09 INFO  DataProviderPostgresTest:80 - testTab [3]: expected  data = [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 01:25:09 INFO  DataProviderPostgresTest:82 - createTables [4]: - test succeeded
+2023-12-05 01:25:15 DEBUG DataProviderPostgres:39 - createTables [1] - start working method 
+2023-12-05 01:25:15 DEBUG DataProviderPostgres:58 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 01:25:15 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 01:25:15 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 01:25:15 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 01:25:15 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 01:25:15 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 01:25:15 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 01:25:15 DEBUG DataProviderPostgres:67 - InsertDataDoctor [1]: - start working method
+2023-12-05 01:25:48 DEBUG DataProviderPostgres:39 - createTables [1] - start working method 
+2023-12-05 01:25:48 DEBUG DataProviderPostgres:58 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 01:25:48 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 01:25:48 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 01:25:48 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 01:25:48 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 01:25:48 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 01:25:48 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 01:25:48 DEBUG DataProviderPostgres:67 - InsertDataDoctor [1]: - start working method
+2023-12-05 01:26:11 DEBUG DataProviderPostgres:39 - createTables [1] - start working method 
+2023-12-05 01:26:11 DEBUG DataProviderPostgres:58 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 01:26:11 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 01:26:11 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 01:26:11 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 01:26:11 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 01:26:11 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 01:26:11 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 01:26:11 DEBUG DataProviderPostgres:67 - InsertDataDoctor [1]: - start working method
+2023-12-05 01:27:58 DEBUG DataProviderPostgres:39 - createTables [1] - start working method 
+2023-12-05 01:27:58 DEBUG DataProviderPostgres:58 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 01:27:58 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 01:27:58 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 01:27:58 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 01:27:58 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 01:27:58 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 01:27:58 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 01:27:58 DEBUG DataProviderPostgres:67 - InsertDataDoctor [1]: - start working method
+2023-12-05 01:30:06 DEBUG DataProviderPostgres:39 - createTables [1] - start working method 
+2023-12-05 01:30:06 DEBUG DataProviderPostgres:58 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 01:30:06 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 01:30:06 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 01:30:06 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 01:30:06 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 01:30:06 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 01:30:06 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 01:30:06 DEBUG DataProviderPostgres:67 - InsertDataDoctor [1]: - start working method
+2023-12-05 01:32:04 DEBUG DataProviderPostgres:39 - createTables [1] - start working method 
+2023-12-05 01:32:04 DEBUG DataProviderPostgres:58 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 01:32:04 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 01:32:04 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 01:32:04 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 01:32:04 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 01:32:04 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 01:32:04 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 01:32:04 DEBUG DataProviderPostgres:67 - InsertDataDoctor [1]: - start working method
+2023-12-05 01:33:09 DEBUG DataProviderPostgres:39 - createTables [1] - start working method 
+2023-12-05 01:33:09 DEBUG DataProviderPostgres:58 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 01:33:09 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 01:33:09 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 01:33:09 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 01:33:09 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 01:33:09 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 01:33:09 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 01:33:09 DEBUG DataProviderPostgres:67 - InsertDataDoctor [1]: - start working method
+2023-12-05 01:33:09 DEBUG DataProviderPostgres:90 - InsertDataDoctor [3]: insert Data successfully {Status=DOCTOR, Experience=3, Qualification=Доктор, Specialization=Genekolog, AvgPatient=23.5, Person_ID=1, Gender=M, Surname=Sim, SecondName=Evgeni, Age=20, Name=Artem}
+2023-12-05 01:37:27 DEBUG DataProviderPostgres:39 - createTables [1] - start working method 
+2023-12-05 01:37:27 DEBUG DataProviderPostgres:58 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 01:37:27 DEBUG DataProviderPostgresTest:92 - insertDataDoctor [1]: - insert Data Doctor test started Postgres
+2023-12-05 01:37:27 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 01:37:27 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 01:37:27 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 01:37:27 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 01:37:27 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 01:37:27 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 01:37:27 DEBUG DataProviderPostgres:67 - InsertDataDoctor [1]: - start working method
+2023-12-05 01:37:27 ERROR DataProviderPostgres:83 - InsertDataDoctor [2]: - error ОШИБКА: повторяющееся значение ключа нарушает ограничение уникальности "doctor_pkey"
+  Подробности: Ключ "(doctor_id)=(1)" уже существует.
+2023-12-05 01:37:27 DEBUG DataProviderPostgresTest:110 - insertDataDoctor [3]: - insert Data Doctor test succeeded Postgres
+2023-12-05 16:20:38 DEBUG DataProviderPostgres:40 - createTables [1] - start working method 
+2023-12-05 16:20:38 DEBUG DataProviderPostgres:59 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 16:20:38 DEBUG DataProviderPostgresTest:110 - insertDataPatient [1]: - insert Data Patient test started Postgres
+2023-12-05 16:20:38 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 16:20:38 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 16:20:38 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 16:20:38 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 16:20:38 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 16:20:38 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 16:20:38 DEBUG DataProviderPostgres:97 - InsertDataDoctor [1]: - start working method
+2023-12-05 16:20:38 ERROR DataProviderPostgresTest:130 - insertDataPatient [2]: - error TEST class java.lang.Short cannot be cast to class java.lang.Integer (java.lang.Short and java.lang.Integer are in module java.base of loader 'bootstrap')
+2023-12-05 16:20:38 DEBUG DataProviderPostgresTest:132 - insertDataPatient [3]: - insert Data Patient test succeeded Postgres
+2023-12-05 16:23:18 DEBUG DataProviderPostgres:40 - createTables [1] - start working method 
+2023-12-05 16:23:18 DEBUG DataProviderPostgres:59 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 16:23:18 DEBUG DataProviderPostgresTest:110 - insertDataPatient [1]: - insert Data Patient test started Postgres
+2023-12-05 16:23:18 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 16:23:18 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 16:23:18 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 16:23:18 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 16:23:18 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 16:23:18 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 16:23:18 DEBUG DataProviderPostgres:97 - InsertDataPatient [1]: - start working method
+2023-12-05 16:23:18 ERROR DataProviderPostgresTest:130 - insertDataPatient [2]: - error TEST class java.lang.Short cannot be cast to class java.lang.Integer (java.lang.Short and java.lang.Integer are in module java.base of loader 'bootstrap')
+2023-12-05 16:23:18 DEBUG DataProviderPostgresTest:132 - insertDataPatient [3]: - insert Data Patient test succeeded Postgres
+2023-12-05 16:24:37 DEBUG DataProviderPostgres:40 - createTables [1] - start working method 
+2023-12-05 16:24:37 DEBUG DataProviderPostgres:59 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 16:24:37 DEBUG DataProviderPostgresTest:110 - insertDataPatient [1]: - insert Data Patient test started Postgres
+2023-12-05 16:24:37 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 16:24:37 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 16:24:37 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 16:24:37 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 16:24:37 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 16:24:37 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 16:24:37 DEBUG DataProviderPostgres:97 - InsertDataPatient [1]: - start working method
+2023-12-05 16:24:37 ERROR DataProviderPostgresTest:130 - insertDataPatient [2]: - error TEST class java.lang.Short cannot be cast to class java.lang.Integer (java.lang.Short and java.lang.Integer are in module java.base of loader 'bootstrap')
+2023-12-05 16:24:37 DEBUG DataProviderPostgresTest:132 - insertDataPatient [3]: - insert Data Patient test succeeded Postgres
+2023-12-05 16:26:37 DEBUG DataProviderPostgres:40 - createTables [1] - start working method 
+2023-12-05 16:26:37 DEBUG DataProviderPostgres:59 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 16:26:37 DEBUG DataProviderPostgresTest:110 - insertDataPatient [1]: - insert Data Patient test started Postgres
+2023-12-05 16:26:37 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 16:26:37 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 16:26:37 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 16:26:37 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 16:26:37 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 16:26:37 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 16:26:37 DEBUG DataProviderPostgres:97 - InsertDataPatient [1]: - start working method
+2023-12-05 16:26:37 ERROR DataProviderPostgresTest:130 - insertDataPatient [2]: - error TEST class java.lang.Short cannot be cast to class java.lang.Integer (java.lang.Short and java.lang.Integer are in module java.base of loader 'bootstrap')
+2023-12-05 16:26:37 DEBUG DataProviderPostgresTest:132 - insertDataPatient [3]: - insert Data Patient test succeeded Postgres
+2023-12-05 16:27:13 DEBUG DataProviderPostgres:40 - createTables [1] - start working method 
+2023-12-05 16:27:13 DEBUG DataProviderPostgres:59 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 16:27:13 DEBUG DataProviderPostgresTest:110 - insertDataPatient [1]: - insert Data Patient test started Postgres
+2023-12-05 16:27:13 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 16:27:13 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 16:27:13 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 16:27:13 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 16:27:13 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 16:27:13 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 16:27:13 DEBUG DataProviderPostgres:97 - InsertDataPatient [1]: - start working method
+2023-12-05 16:27:13 ERROR DataProviderPostgresTest:130 - insertDataPatient [2]: - error TEST class java.lang.Short cannot be cast to class java.lang.Integer (java.lang.Short and java.lang.Integer are in module java.base of loader 'bootstrap')
+2023-12-05 16:27:13 DEBUG DataProviderPostgresTest:132 - insertDataPatient [3]: - insert Data Patient test succeeded Postgres
+2023-12-05 16:27:34 DEBUG DataProviderPostgres:40 - createTables [1] - start working method 
+2023-12-05 16:27:34 DEBUG DataProviderPostgres:59 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 16:27:34 DEBUG DataProviderPostgresTest:110 - insertDataPatient [1]: - insert Data Patient test started Postgres
+2023-12-05 16:27:34 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 16:27:34 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 16:27:34 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 16:27:34 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 16:27:34 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 16:27:34 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 16:27:34 DEBUG DataProviderPostgres:97 - InsertDataPatient [1]: - start working method
+2023-12-05 16:27:34 ERROR DataProviderPostgresTest:130 - insertDataPatient [2]: - error TEST class java.lang.Short cannot be cast to class java.lang.Integer (java.lang.Short and java.lang.Integer are in module java.base of loader 'bootstrap')
+2023-12-05 16:27:34 DEBUG DataProviderPostgresTest:132 - insertDataPatient [3]: - insert Data Patient test succeeded Postgres
+2023-12-05 16:28:11 DEBUG DataProviderPostgres:40 - createTables [1] - start working method 
+2023-12-05 16:28:12 DEBUG DataProviderPostgres:59 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 16:28:12 DEBUG DataProviderPostgresTest:110 - insertDataPatient [1]: - insert Data Patient test started Postgres
+2023-12-05 16:28:12 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 16:28:12 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 16:28:12 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 16:28:12 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 16:28:12 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 16:28:12 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 16:28:12 DEBUG DataProviderPostgres:97 - InsertDataPatient [1]: - start working method
+2023-12-05 16:28:12 ERROR DataProviderPostgresTest:130 - insertDataPatient [2]: - error TEST class java.lang.Short cannot be cast to class java.lang.Integer (java.lang.Short and java.lang.Integer are in module java.base of loader 'bootstrap')
+2023-12-05 16:28:12 DEBUG DataProviderPostgresTest:132 - insertDataPatient [3]: - insert Data Patient test succeeded Postgres
+2023-12-05 16:28:37 DEBUG DataProviderPostgres:40 - createTables [1] - start working method 
+2023-12-05 16:28:37 DEBUG DataProviderPostgres:59 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 16:28:37 DEBUG DataProviderPostgresTest:110 - insertDataPatient [1]: - insert Data Patient test started Postgres
+2023-12-05 16:28:37 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 16:28:37 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 16:28:37 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 16:28:37 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 16:28:37 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 16:28:37 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 16:28:37 DEBUG DataProviderPostgres:97 - InsertDataPatient [1]: - start working method
+2023-12-05 16:28:37 DEBUG DataProviderPostgres:122 - InsertDataPatient [3]: insert Data successfully {Status=PATIENT, CellsBlood=1.5, statusVisit=IN, Person_ID=1, Gender=M, Glucose=12.23, ArterialPress=103, SecondName=Evgeni, Cholesterol=12.23, Name=Artem_2, Testosterone=12.31, Hemoglobin=1.4, Platelets=12.3, Surname=Sim, Age=20}
+2023-12-05 16:28:37 DEBUG DataProviderPostgresTest:132 - insertDataPatient [3]: - insert Data Patient test succeeded Postgres
+2023-12-05 16:43:38 DEBUG DataProviderPostgres:40 - createTables [1] - start working method 
+2023-12-05 16:43:39 DEBUG DataProviderPostgres:59 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 16:43:39 DEBUG DataProviderPostgresTest:105 - insertDataPatient [1]: - insert Data Patient test started Postgres
+2023-12-05 16:43:39 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 16:43:39 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 16:43:39 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 16:43:39 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 16:43:39 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 16:43:39 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 16:43:39 DEBUG DataProviderPostgres:97 - InsertDataPatient [1]: - start working method
+2023-12-05 16:43:39 ERROR DataProviderPostgres:118 - InsertDataPatient  [2]: - error ОШИБКА: повторяющееся значение ключа нарушает ограничение уникальности "patient_pkey"
+  Подробности: Ключ "(patient_id)=(1)" уже существует.
+2023-12-05 16:43:39 DEBUG DataProviderPostgresTest:124 - insertDataPatient [3]: - insert Data Patient test succeeded Postgres
+2023-12-05 17:08:29 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 17:08:29 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 17:08:29 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 17:08:29 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 17:08:29 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 17:08:29 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 17:08:48 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 17:08:48 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 17:08:48 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 17:08:48 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 17:08:48 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 17:08:48 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 17:14:35 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 17:14:35 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 17:14:35 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 17:14:35 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 17:14:35 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 17:14:35 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 17:14:52 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 17:14:52 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 17:14:52 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 17:14:52 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 17:14:52 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 17:14:52 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 17:15:37 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 17:15:37 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 17:15:37 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 17:15:37 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 17:15:37 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 17:15:37 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 17:16:35 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 17:16:35 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 17:16:35 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 17:16:35 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 17:16:35 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 17:16:35 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 17:18:34 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 17:18:34 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 17:18:34 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 17:18:34 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 17:18:34 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 17:18:34 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 17:20:48 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 17:20:48 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 17:20:48 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 17:20:48 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 17:20:48 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 17:20:48 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 17:24:10 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 17:24:10 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 17:24:10 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 17:24:10 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 17:24:10 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 17:24:10 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 17:25:36 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 17:25:36 DEBUG DataProviderPostgres:56 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 17:25:36 DEBUG DataProviderPostgresTest:135 - insertDataPreparation [1]: - insert Data Preparation test started Postgres
+2023-12-05 17:25:37 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 17:25:37 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 17:25:37 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 17:25:37 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 17:25:37 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 17:25:37 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 17:25:37 DEBUG DataProviderPostgres:126 - InsertDataPreparation [1]: - start working method
+2023-12-05 17:25:37 ERROR DataProviderPostgres:140 - InsertDataPreparation  [2]: - error ОШИБКА: столбец "dateend" имеет тип date, а выражение - character varying
+  Подсказка: Перепишите выражение или преобразуйте его тип.
+  Позиция: 152
+2023-12-05 17:25:37 DEBUG DataProviderPostgresTest:150 - insertDataPatient [3]: - insert Data Patient test succeeded Postgres
+2023-12-05 17:26:06 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 17:26:06 DEBUG DataProviderPostgres:56 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 17:26:06 DEBUG DataProviderPostgresTest:135 - insertDataPreparation [1]: - insert Data Preparation test started Postgres
+2023-12-05 17:26:06 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 17:26:06 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 17:26:06 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 17:26:06 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 17:26:06 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 17:26:06 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 17:26:06 DEBUG DataProviderPostgres:126 - InsertDataPreparation [1]: - start working method
+2023-12-05 17:26:06 ERROR DataProviderPostgres:140 - InsertDataPreparation  [2]: - error ОШИБКА: столбец "dateend" имеет тип date, а выражение - character varying
+  Подсказка: Перепишите выражение или преобразуйте его тип.
+  Позиция: 152
+2023-12-05 17:26:06 DEBUG DataProviderPostgresTest:150 - insertDataPatient [3]: - insert Data Patient test succeeded Postgres
+2023-12-05 17:30:03 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 17:30:03 DEBUG DataProviderPostgres:56 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 17:30:03 DEBUG DataProviderPostgresTest:135 - insertDataPreparation [1]: - insert Data Preparation test started Postgres
+2023-12-05 17:30:03 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 17:30:03 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 17:30:03 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 17:30:03 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 17:30:03 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 17:30:03 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 17:30:03 DEBUG DataProviderPostgres:126 - InsertDataPreparation [1]: - start working method
+2023-12-05 17:30:03 DEBUG DataProviderPostgres:143 - InsertDataPreparation [3]: insert Data successfully {DateEnd=null, NamePrep=ddw, Preparation_ID=1, FkPreparationToDoctor=[1], Dosage=12.123, statusVisitPreparation=LOW, AboutPrep=dwdqdwdqdqdqdw, CountPrep=12}
+2023-12-05 17:30:03 DEBUG DataProviderPostgresTest:151 - insertDataPatient [3]: - insert Data Patient test succeeded Postgres
+2023-12-05 17:32:45 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 17:32:45 DEBUG DataProviderPostgres:56 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 17:32:45 DEBUG DataProviderPostgresTest:135 - insertDataPreparation [1]: - insert Data Preparation test started Postgres
+2023-12-05 17:32:45 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 17:32:45 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 17:32:45 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 17:32:45 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 17:32:45 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 17:32:45 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 17:32:45 DEBUG DataProviderPostgres:127 - InsertDataPreparation [1]: - start working method
+2023-12-05 17:32:46 ERROR DataProviderPostgres:141 - InsertDataPreparation  [2]: - error ОШИБКА: повторяющееся значение ключа нарушает ограничение уникальности "preparation_pkey"
+  Подробности: Ключ "(preparation_id)=(1)" уже существует.
+2023-12-05 17:32:46 DEBUG DataProviderPostgresTest:149 - insertDataPatient [3]: - insert Data Patient test succeeded Postgres
+2023-12-05 17:33:11 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 17:33:11 DEBUG DataProviderPostgres:56 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 17:33:11 DEBUG DataProviderPostgresTest:135 - insertDataPreparation [1]: - insert Data Preparation test started Postgres
+2023-12-05 17:33:11 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 17:33:11 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 17:33:11 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 17:33:11 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 17:33:11 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 17:33:11 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 17:33:11 DEBUG DataProviderPostgres:127 - InsertDataPreparation [1]: - start working method
+2023-12-05 17:33:11 DEBUG DataProviderPostgresTest:149 - insertDataPatient [3]: - insert Data Patient test succeeded Postgres
+2023-12-05 17:35:40 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 17:35:40 DEBUG DataProviderPostgres:56 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 17:35:40 DEBUG DataProviderPostgresTest:135 - insertDataPreparation [1]: - insert Data Preparation test started Postgres
+2023-12-05 17:35:40 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 17:35:40 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 17:35:40 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 17:35:40 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 17:35:40 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 17:35:40 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 17:35:40 DEBUG DataProviderPostgres:127 - InsertDataPreparation [1]: - start working method
+2023-12-05 17:35:40 DEBUG DataProviderPostgresTest:149 - insertDataPatient [3]: - insert Data Patient test succeeded Postgres
+2023-12-05 17:36:52 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 17:36:52 DEBUG DataProviderPostgres:56 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 17:36:52 DEBUG DataProviderPostgresTest:135 - insertDataPreparation [1]: - insert Data Preparation test started Postgres
+2023-12-05 17:36:52 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 17:36:52 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 17:36:52 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 17:36:52 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 17:36:53 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 17:36:53 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 17:36:53 DEBUG DataProviderPostgres:124 - InsertDataPreparation [1]: - start working method
+2023-12-05 17:36:53 ERROR DataProviderPostgres:137 - InsertDataPreparation  [2]: - error ОШИБКА: повторяющееся значение ключа нарушает ограничение уникальности "preparation_pkey"
+  Подробности: Ключ "(preparation_id)=(2)" уже существует.
+2023-12-05 17:36:53 DEBUG DataProviderPostgresTest:149 - insertDataPatient [3]: - insert Data Patient test succeeded Postgres
+2023-12-05 17:37:47 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 17:37:47 DEBUG DataProviderPostgres:56 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 17:37:47 DEBUG DataProviderPostgresTest:135 - insertDataPreparation [1]: - insert Data Preparation test started Postgres
+2023-12-05 17:37:47 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 17:37:47 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 17:37:47 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 17:37:47 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 17:37:47 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 17:37:47 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 17:37:47 DEBUG DataProviderPostgres:126 - InsertDataPreparation [1]: - start working method
+2023-12-05 17:37:47 DEBUG DataProviderPostgresTest:149 - insertDataPatient [3]: - insert Data Patient test succeeded Postgres
+2023-12-05 17:38:21 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 17:38:21 DEBUG DataProviderPostgres:56 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 17:38:21 DEBUG DataProviderPostgresTest:105 - insertDataPatient [1]: - insert Data Patient test started Postgres
+2023-12-05 17:38:21 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 17:38:21 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 17:38:21 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 17:38:21 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 17:38:21 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 17:38:21 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 17:38:21 DEBUG DataProviderPostgres:94 - InsertDataPatient [1]: - start working method
+2023-12-05 17:38:21 ERROR DataProviderPostgres:115 - InsertDataPatient  [2]: - error ОШИБКА: повторяющееся значение ключа нарушает ограничение уникальности "patient_pkey"
+  Подробности: Ключ "(patient_id)=(1)" уже существует.
+2023-12-05 17:38:21 DEBUG DataProviderPostgresTest:128 - insertDataPatient [3]: - insert Data Patient test succeeded Postgres
+2023-12-05 17:39:15 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 17:39:15 DEBUG DataProviderPostgres:56 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 17:39:15 DEBUG DataProviderPostgresTest:134 - insertDataPreparation [1]: - insert Data Preparation test started Postgres
+2023-12-05 17:39:15 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 17:39:15 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 17:39:15 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 17:39:15 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 17:39:15 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 17:39:15 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 17:39:15 DEBUG DataProviderPostgres:126 - InsertDataPreparation [1]: - start working method
+2023-12-05 17:39:15 DEBUG DataProviderPostgresTest:148 - insertDataPatient [3]: - insert Data Patient test succeeded Postgres
+2023-12-05 18:45:12 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 18:45:12 DEBUG DataProviderPostgres:56 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 18:45:12 DEBUG DataProviderPostgresTest:155 - insertDataSchedule [1]: - insert Data Schedule test started Postgres
+2023-12-05 18:45:12 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 18:45:12 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 18:45:12 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 18:45:12 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 18:45:12 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 18:45:12 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 18:45:12 ERROR DataProviderPostgresTest:164 - insertDataPatient [2]: - error TEST null
+2023-12-05 18:45:12 DEBUG DataProviderPostgresTest:166 - insertDataPatient [3]: - insert Data Patient test succeeded Postgres
+2023-12-05 18:46:08 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 18:46:08 DEBUG DataProviderPostgres:56 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 18:46:08 DEBUG DataProviderPostgresTest:155 - insertDataSchedule [1]: - insert Data Schedule test started Postgres
+2023-12-05 18:46:08 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 18:46:08 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 18:46:08 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 18:46:08 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 18:46:08 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 18:46:08 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 18:46:08 ERROR DataProviderPostgresTest:164 - insertDataPatient [2]: - error TEST null
+2023-12-05 18:46:08 DEBUG DataProviderPostgresTest:166 - insertDataPatient [3]: - insert Data Patient test succeeded Postgres
+2023-12-05 18:46:20 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 18:46:21 DEBUG DataProviderPostgres:56 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 18:46:21 DEBUG DataProviderPostgresTest:155 - insertDataSchedule [1]: - insert Data Schedule test started Postgres
+2023-12-05 18:46:21 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 18:46:21 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 18:46:21 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 18:46:21 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 18:46:21 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 18:46:21 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 18:46:21 ERROR DataProviderPostgresTest:164 - insertDataPatient [2]: - error TEST null
+2023-12-05 18:46:21 DEBUG DataProviderPostgresTest:166 - insertDataPatient [3]: - insert Data Patient test succeeded Postgres
+2023-12-05 18:47:34 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 18:47:34 DEBUG DataProviderPostgres:56 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 18:47:34 DEBUG DataProviderPostgresTest:155 - insertDataSchedule [1]: - insert Data Schedule test started Postgres
+2023-12-05 18:47:34 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 18:47:34 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 18:47:34 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 18:47:34 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 18:47:34 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 18:47:34 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 18:47:34 ERROR DataProviderPostgresTest:164 - insertDataPatient [2]: - error TEST null
+2023-12-05 18:47:34 DEBUG DataProviderPostgresTest:166 - insertDataPatient [3]: - insert Data Patient test succeeded Postgres
+2023-12-05 18:48:29 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 18:48:29 DEBUG DataProviderPostgres:56 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 18:48:29 DEBUG DataProviderPostgresTest:155 - insertDataSchedule [1]: - insert Data Schedule test started Postgres
+2023-12-05 18:48:29 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 18:48:29 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 18:48:29 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 18:48:29 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 18:48:29 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 18:48:29 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 18:48:29 ERROR DataProviderPostgresTest:164 - insertDataPatient [2]: - error TEST null
+2023-12-05 18:48:29 DEBUG DataProviderPostgresTest:166 - insertDataPatient [3]: - insert Data Patient test succeeded Postgres
+2023-12-05 18:50:22 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 18:50:22 DEBUG DataProviderPostgres:56 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 18:50:22 DEBUG DataProviderPostgresTest:155 - insertDataSchedule [1]: - insert Data Schedule test started Postgres
+2023-12-05 18:50:22 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 18:50:22 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 18:50:22 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 18:50:22 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 18:50:22 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 18:50:22 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 18:50:22 ERROR DataProviderPostgresTest:164 - insertDataPatient [2]: - error TEST null
+2023-12-05 18:50:22 DEBUG DataProviderPostgresTest:166 - insertDataPatient [3]: - insert Data Patient test succeeded Postgres
+2023-12-05 19:03:19 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 19:03:19 DEBUG DataProviderPostgres:56 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 19:03:19 DEBUG DataProviderPostgresTest:155 - insertDataSchedule [1]: - insert Data Schedule test started Postgres
+2023-12-05 19:03:19 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 19:03:19 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 19:03:19 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 19:03:19 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 19:03:19 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 19:03:19 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 19:03:19 DEBUG DataProviderPostgres:154 - InsertDataSchedule [1]: - start working method
+2023-12-05 19:03:19 ERROR DataProviderPostgres:167 - InsertDataSchedule [2]: - error ОШИБКА: столбец "timebegin" имеет тип time without time zone, а выражение - character varying
+  Подсказка: Перепишите выражение или преобразуйте его тип.
+  Позиция: 124
+2023-12-05 19:03:19 DEBUG DataProviderPostgresTest:166 - insertDataPatient [3]: - insert Data Patient test succeeded Postgres
+2023-12-05 19:04:01 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 19:04:01 DEBUG DataProviderPostgres:56 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 19:04:01 DEBUG DataProviderPostgresTest:155 - insertDataSchedule [1]: - insert Data Schedule test started Postgres
+2023-12-05 19:04:01 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 19:04:01 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 19:04:01 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 19:04:01 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 19:04:01 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 19:04:01 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 19:04:01 DEBUG DataProviderPostgres:154 - InsertDataSchedule [1]: - start working method
+2023-12-05 19:04:01 ERROR DataProviderPostgresTest:164 - insertDataPatient [2]: - error TEST class java.lang.String cannot be cast to class java.sql.Time (java.lang.String is in module java.base of loader 'bootstrap'; java.sql.Time is in module java.sql of loader 'platform')
+2023-12-05 19:04:01 DEBUG DataProviderPostgresTest:166 - insertDataPatient [3]: - insert Data Patient test succeeded Postgres
+2023-12-05 19:06:15 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 19:06:15 DEBUG DataProviderPostgres:56 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 19:06:16 DEBUG DataProviderPostgresTest:155 - insertDataSchedule [1]: - insert Data Schedule test started Postgres
+2023-12-05 19:06:16 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 19:06:16 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 19:06:16 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 19:06:16 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 19:06:16 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 19:06:16 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 19:06:16 DEBUG DataProviderPostgres:154 - InsertDataSchedule [1]: - start working method
+2023-12-05 19:06:16 ERROR DataProviderPostgresTest:164 - insertDataPatient [2]: - error TEST class java.lang.String cannot be cast to class java.sql.Time (java.lang.String is in module java.base of loader 'bootstrap'; java.sql.Time is in module java.sql of loader 'platform')
+2023-12-05 19:06:16 DEBUG DataProviderPostgresTest:166 - insertDataPatient [3]: - insert Data Patient test succeeded Postgres
+2023-12-05 19:13:39 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 19:13:39 DEBUG DataProviderPostgres:56 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 19:13:39 DEBUG DataProviderPostgresTest:155 - insertDataSchedule [1]: - insert Data Schedule test started Postgres
+2023-12-05 19:13:39 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 19:13:39 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 19:13:39 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 19:13:39 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 19:13:39 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 19:13:39 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 19:13:39 DEBUG DataProviderPostgres:154 - InsertDataSchedule [1]: - start working method
+2023-12-05 19:13:39 ERROR DataProviderPostgresTest:164 - insertDataPatient [2]: - error TEST class java.lang.String cannot be cast to class java.sql.Date (java.lang.String is in module java.base of loader 'bootstrap'; java.sql.Date is in module java.sql of loader 'platform')
+2023-12-05 19:13:39 DEBUG DataProviderPostgresTest:166 - insertDataPatient [3]: - insert Data Patient test succeeded Postgres
+2023-12-05 19:15:08 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 19:15:08 DEBUG DataProviderPostgres:56 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 19:15:08 DEBUG DataProviderPostgresTest:155 - insertDataSchedule [1]: - insert Data Schedule test started Postgres
+2023-12-05 19:15:08 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 19:15:08 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 19:15:08 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 19:15:08 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 19:15:08 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 19:15:08 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 19:15:08 DEBUG DataProviderPostgres:154 - InsertDataSchedule [1]: - start working method
+2023-12-05 19:15:08 ERROR DataProviderPostgresTest:164 - insertDataPatient [2]: - error TEST class java.sql.Time cannot be cast to class java.sql.Date (java.sql.Time and java.sql.Date are in module java.sql of loader 'platform')
+2023-12-05 19:15:08 DEBUG DataProviderPostgresTest:166 - insertDataPatient [3]: - insert Data Patient test succeeded Postgres
+2023-12-05 19:15:49 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 19:15:49 DEBUG DataProviderPostgres:56 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 19:15:49 DEBUG DataProviderPostgresTest:155 - insertDataSchedule [1]: - insert Data Schedule test started Postgres
+2023-12-05 19:15:49 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 19:15:49 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 19:15:49 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 19:15:49 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 19:15:49 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 19:15:49 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 19:15:49 DEBUG DataProviderPostgres:154 - InsertDataSchedule [1]: - start working method
+2023-12-05 19:15:49 DEBUG DataProviderPostgresTest:166 - insertDataPatient [3]: - insert Data Patient test succeeded Postgres
+2023-12-05 19:18:14 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 19:18:14 DEBUG DataProviderPostgres:56 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 19:18:14 DEBUG DataProviderPostgresTest:155 - insertDataSchedule [1]: - insert Data Schedule test started Postgres
+2023-12-05 19:18:14 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 19:18:14 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 19:18:14 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 19:18:14 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 19:18:14 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 19:18:14 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 19:18:14 DEBUG DataProviderPostgres:154 - InsertDataSchedule [1]: - start working method
+2023-12-05 19:18:14 DEBUG DataProviderPostgresTest:166 - insertDataPatient [3]: - insert Data Patient test succeeded Postgres
+2023-12-05 19:25:52 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 19:25:52 DEBUG DataProviderPostgres:56 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 19:25:52 DEBUG DataProviderPostgresTest:155 - insertDataSchedule [1]: - insert Data Schedule test started Postgres
+2023-12-05 19:25:52 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 19:25:52 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 19:25:52 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 19:25:52 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 19:25:52 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 19:25:52 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 19:25:52 DEBUG DataProviderPostgres:155 - InsertDataSchedule [1]: - start working method
+2023-12-05 19:25:53 ERROR DataProviderPostgres:167 - InsertDataSchedule [2]: - error ОШИБКА: повторяющееся значение ключа нарушает ограничение уникальности "schedule_pkey"
+  Подробности: Ключ "(schedule_id)=(1)" уже существует.
+2023-12-05 19:25:53 DEBUG DataProviderPostgresTest:166 - insertDataPatient [3]: - insert Data Patient test succeeded Postgres
+2023-12-05 19:39:17 DEBUG DataProviderPostgres:38 - createTables [1] - start working method 
+2023-12-05 19:39:17 DEBUG DataProviderPostgres:57 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 19:39:17 DEBUG DataProviderPostgresTest:174 - insertDataCalcReport[1]: - insert Data Calc Report test started Postgres
+2023-12-05 19:39:17 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 19:39:17 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 19:39:17 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 19:39:17 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 19:39:17 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 19:39:17 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 19:39:17 DEBUG DataProviderPostgres:178 - InsertDataCalcReport [1]: - start working method
+2023-12-05 19:39:17 ERROR DataProviderPostgres:193 - InsertDataCalcReport [2]: - error Индекс колонки вне диапазона: 8. Допустимые значения: 1..7
+2023-12-05 19:39:17 DEBUG DataProviderPostgres:195 - InsertDataCalcReport [3]: insert Data successfully {NameDoctor=Artem, Report_ID=1, FkToDoctor=1, price=123.4, HormoneAnalyse=true, ArterialAnalyse=true, FkToPatient=1, PatientName=Artem_2, BloodAnalyse=true, GlucoseAnalyse=true}
+2023-12-05 19:39:17 DEBUG DataProviderPostgresTest:192 - insertDataCalcReport [3]: - insert Data Calc Report test succeeded Postgres
+2023-12-05 19:40:04 DEBUG DataProviderPostgres:38 - createTables [1] - start working method 
+2023-12-05 19:40:04 DEBUG DataProviderPostgres:57 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 19:40:04 DEBUG DataProviderPostgresTest:174 - insertDataCalcReport[1]: - insert Data Calc Report test started Postgres
+2023-12-05 19:40:04 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 19:40:04 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 19:40:04 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 19:40:04 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 19:40:04 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 19:40:04 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 19:40:04 DEBUG DataProviderPostgres:178 - InsertDataCalcReport [1]: - start working method
+2023-12-05 19:40:04 DEBUG DataProviderPostgres:195 - InsertDataCalcReport [3]: insert Data successfully {NameDoctor=Artem, Report_ID=1, FkToDoctor=1, price=123.4, HormoneAnalyse=true, ArterialAnalyse=true, FkToPatient=1, PatientName=Artem_2, BloodAnalyse=true, GlucoseAnalyse=true}
+2023-12-05 19:40:04 DEBUG DataProviderPostgresTest:192 - insertDataCalcReport [3]: - insert Data Calc Report test succeeded Postgres
+2023-12-05 20:42:31 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 20:42:32 DEBUG DataProviderPostgres:55 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 20:43:42 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 20:43:42 DEBUG DataProviderPostgres:55 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 20:52:25 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 20:52:26 DEBUG DataProviderPostgres:55 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 20:52:51 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 20:52:51 DEBUG DataProviderPostgres:55 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 20:53:03 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 20:53:03 DEBUG DataProviderPostgres:55 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 20:53:31 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 20:53:31 DEBUG DataProviderPostgres:55 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 20:53:54 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 20:53:54 DEBUG DataProviderPostgres:55 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 20:54:24 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 20:54:24 DEBUG DataProviderPostgres:55 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 20:54:49 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 20:54:49 DEBUG DataProviderPostgres:55 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 20:55:16 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 20:55:16 DEBUG DataProviderPostgres:55 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 20:57:18 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 20:57:18 DEBUG DataProviderPostgres:55 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 20:57:57 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 20:57:57 DEBUG DataProviderPostgres:55 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 21:00:45 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 21:00:45 DEBUG DataProviderPostgres:55 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 21:08:50 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 21:08:50 DEBUG DataProviderPostgres:55 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 21:08:50 DEBUG DataProviderPostgres:199 - selectDoctorId [1]: - start working method
+2023-12-05 21:08:50 DEBUG DataProviderPostgres:219 - createResultSetToObject [1]: - start working method
+2023-12-05 21:08:50 DEBUG DataProviderPostgres:234 - createResultSetToObject [3]: - successfully end work
+2023-12-05 21:08:50 DEBUG DataProviderPostgres:212 - selectDoctorId [3]: - SELECT DATA DOCTOR successfully
+2023-12-05 21:16:39 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 21:16:39 DEBUG DataProviderPostgres:55 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 21:16:39 DEBUG DataProviderPostgresTest:199 - selectDoctorId [1]: TEST started SELECT
+2023-12-05 21:16:39 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 21:16:39 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 21:16:39 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 21:16:39 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 21:16:39 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 21:16:39 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 21:16:39 DEBUG DataProviderPostgres:199 - selectDoctorId [1]: - start working method
+2023-12-05 21:16:39 DEBUG DataProviderPostgres:219 - createResultSetToObject [1]: - start working method
+2023-12-05 21:16:39 DEBUG DataProviderPostgres:234 - createResultSetToObject [3]: - successfully end work
+2023-12-05 21:16:39 DEBUG DataProviderPostgres:212 - selectDoctorId [3]: - SELECT DATA DOCTOR successfully
+2023-12-05 21:16:39 INFO  DataProviderPostgresTest:216 - selectDoctorId [2]: actual data = {secondname=Evgeni, doctor_id=1, qualification=Доктор, gender=M, surname=Sim, name=Artem, avgpatient=23.5, specialization=Genekolog, experience=3, age=20, status=DOCTOR}
+2023-12-05 21:16:39 INFO  DataProviderPostgresTest:217 - selectDoctorId [3]: expected data = {Status=DOCTOR, Experience=3, Qualification=Доктор, Specialization=Genekolog, AvgPatient=23.5, Person_ID=1, Gender=M, Surname=Sim, SecondName=Evgeni, Age=20, Name=Artem}
+2023-12-05 21:17:35 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 21:17:35 DEBUG DataProviderPostgres:55 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 21:17:35 DEBUG DataProviderPostgresTest:199 - selectDoctorId [1]: TEST started SELECT
+2023-12-05 21:17:35 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 21:17:35 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 21:17:35 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 21:17:35 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 21:17:35 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 21:17:35 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 21:17:35 DEBUG DataProviderPostgres:199 - selectDoctorId [1]: - start working method
+2023-12-05 21:17:35 DEBUG DataProviderPostgres:219 - createResultSetToObject [1]: - start working method
+2023-12-05 21:17:35 DEBUG DataProviderPostgres:234 - createResultSetToObject [3]: - successfully end work
+2023-12-05 21:17:35 DEBUG DataProviderPostgres:212 - selectDoctorId [3]: - SELECT DATA DOCTOR successfully
+2023-12-05 21:17:35 INFO  DataProviderPostgresTest:216 - selectDoctorId [2]: actual data = {secondname=Evgeni, doctor_id=1, qualification=Доктор, gender=M, surname=Sim, name=Artem, avgpatient=23.5, specialization=Genekolog, experience=3, age=20, status=DOCTOR}
+2023-12-05 21:17:35 INFO  DataProviderPostgresTest:217 - selectDoctorId [3]: expected data = {Status=DOCTOR, Experience=3, Qualification=Доктор, Specialization=Genekolog, AvgPatient=23.5, Person_ID=1, Gender=M, Surname=Sim, SecondName=Evgeni, Age=20, Name=Artem}
+2023-12-05 21:18:55 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 21:18:55 DEBUG DataProviderPostgres:55 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 21:18:55 DEBUG DataProviderPostgresTest:199 - selectDoctorId [1]: TEST started SELECT
+2023-12-05 21:18:55 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 21:18:55 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 21:18:55 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 21:18:55 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 21:18:55 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 21:18:55 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 21:18:55 DEBUG DataProviderPostgres:199 - selectDoctorId [1]: - start working method
+2023-12-05 21:18:55 DEBUG DataProviderPostgres:219 - createResultSetToObject [1]: - start working method
+2023-12-05 21:18:55 DEBUG DataProviderPostgres:234 - createResultSetToObject [3]: - successfully end work
+2023-12-05 21:18:55 DEBUG DataProviderPostgres:212 - selectDoctorId [3]: - SELECT DATA DOCTOR successfully
+2023-12-05 21:18:55 INFO  DataProviderPostgresTest:216 - selectDoctorId [2]: actual data = {secondname=Evgeni, doctor_id=1, qualification=Доктор, gender=M, surname=Sim, name=Artem, avgpatient=23.5, specialization=Genekolog, experience=3, age=20, status=DOCTOR}
+2023-12-05 21:18:55 INFO  DataProviderPostgresTest:217 - selectDoctorId [3]: expected data = {Status=DOCTOR, Experience=3, Qualification=Доктор, Specialization=Genekolog, AvgPatient=23.5, Person_ID=1, Gender=M, Surname=Sim, SecondName=Evgeni, Age=20, Name=Artem}
+2023-12-05 21:24:03 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 21:24:03 DEBUG DataProviderPostgres:55 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 21:24:03 DEBUG DataProviderPostgresTest:199 - selectDoctorId [1]: TEST started SELECT
+2023-12-05 21:24:03 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 21:24:03 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 21:24:03 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 21:24:03 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 21:24:03 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 21:24:03 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 21:24:03 DEBUG DataProviderPostgres:199 - selectDoctorId [1]: - start working method
+2023-12-05 21:24:03 DEBUG DataProviderPostgres:219 - createResultSetToObject [1]: - start working method
+2023-12-05 21:24:03 DEBUG DataProviderPostgres:234 - createResultSetToObject [3]: - successfully end work
+2023-12-05 21:24:03 DEBUG DataProviderPostgres:212 - selectDoctorId [3]: - SELECT DATA DOCTOR successfully
+2023-12-05 21:24:03 INFO  DataProviderPostgresTest:216 - selectDoctorId [2]: actual data = {secondname=Evgeni, doctor_id=1, qualification=Доктор, gender=M, surname=Sim, name=Artem, avgpatient=23.5, specialization=Genekolog, experience=3, age=20, status=DOCTOR}
+2023-12-05 21:24:03 INFO  DataProviderPostgresTest:217 - selectDoctorId [3]: expected data = {Status=DOCTOR, Experience=3, Qualification=Доктор, Specialization=Genekolog, AvgPatient=23.5, Person_ID=1, Gender=M, Surname=Sim, SecondName=Evgeni, Age=20, Name=Artem}
+2023-12-05 21:26:15 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 21:26:15 DEBUG DataProviderPostgres:55 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 21:26:15 DEBUG DataProviderPostgresTest:199 - selectDoctorId [1]: TEST started SELECT
+2023-12-05 21:26:15 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 21:26:15 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 21:26:15 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 21:26:15 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 21:26:15 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 21:26:15 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 21:26:15 DEBUG DataProviderPostgres:199 - selectDoctorId [1]: - start working method
+2023-12-05 21:26:15 DEBUG DataProviderPostgres:219 - createResultSetToObject [1]: - start working method
+2023-12-05 21:26:15 DEBUG DataProviderPostgres:234 - createResultSetToObject [3]: - successfully end work
+2023-12-05 21:26:15 DEBUG DataProviderPostgres:212 - selectDoctorId [3]: - SELECT DATA DOCTOR successfully
+2023-12-05 21:26:15 INFO  DataProviderPostgresTest:216 - selectDoctorId [2]: actual data = {secondname=Evgeni, doctor_id=1, qualification=Доктор, gender=M, surname=Sim, name=Artem, avgpatient=23.5, specialization=Genekolog, experience=3, age=20, status=DOCTOR}
+2023-12-05 21:26:15 INFO  DataProviderPostgresTest:217 - selectDoctorId [3]: expected data = {Status=DOCTOR, Experience=3, Qualification=Доктор, Specialization=Genekolog, AvgPatient=23.5, Person_ID=1, Gender=M, Surname=Sim, SecondName=Evgeni, Age=20, Name=Artem}
+2023-12-05 21:28:13 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 21:28:13 DEBUG DataProviderPostgres:55 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 21:28:13 DEBUG DataProviderPostgresTest:200 - selectDoctorId [1]: TEST started SELECT
+2023-12-05 21:28:13 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 21:28:13 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 21:28:13 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 21:28:13 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 21:28:13 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 21:28:13 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 21:28:13 DEBUG DataProviderPostgres:199 - selectDoctorId [1]: - start working method
+2023-12-05 21:28:13 DEBUG DataProviderPostgres:219 - createResultSetToObject [1]: - start working method
+2023-12-05 21:28:13 DEBUG DataProviderPostgres:234 - createResultSetToObject [3]: - successfully end work
+2023-12-05 21:28:13 DEBUG DataProviderPostgres:212 - selectDoctorId [3]: - SELECT DATA DOCTOR successfully
+2023-12-05 21:28:13 INFO  DataProviderPostgresTest:217 - selectDoctorId [2]: actual data = {secondname=Evgeni, doctor_id=1, qualification=Доктор, gender=M, surname=Sim, name=Artem, avgpatient=23.5, specialization=Genekolog, experience=3, age=20, status=DOCTOR}
+2023-12-05 21:28:13 INFO  DataProviderPostgresTest:218 - selectDoctorId [3]: expected data = {Status=DOCTOR, Experience=3, Qualification=Доктор, Specialization=Genekolog, AvgPatient=23.5, Person_ID=1, Gender=M, Surname=Sim, SecondName=Evgeni, Age=20, Name=Artem}
+2023-12-05 21:29:09 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 21:29:09 DEBUG DataProviderPostgres:55 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 21:29:09 DEBUG DataProviderPostgresTest:200 - selectDoctorId [1]: TEST started SELECT
+2023-12-05 21:29:09 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 21:29:09 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 21:29:09 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 21:29:09 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 21:29:09 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 21:29:09 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 21:29:09 DEBUG DataProviderPostgres:199 - selectDoctorId [1]: - start working method
+2023-12-05 21:29:09 DEBUG DataProviderPostgres:219 - createResultSetToObject [1]: - start working method
+2023-12-05 21:29:09 DEBUG DataProviderPostgres:234 - createResultSetToObject [3]: - successfully end work
+2023-12-05 21:29:09 DEBUG DataProviderPostgres:212 - selectDoctorId [3]: - SELECT DATA DOCTOR successfully
+2023-12-05 21:29:09 INFO  DataProviderPostgresTest:217 - selectDoctorId [2]: actual data = {secondname=Evgeni, doctor_id=1, qualification=Доктор, gender=M, surname=Sim, name=Artem, avgpatient=23.5, specialization=Genekolog, experience=3, age=20, status=DOCTOR}
+2023-12-05 21:29:09 INFO  DataProviderPostgresTest:218 - selectDoctorId [3]: expected data = {Status=DOCTOR, Experience=3, Qualification=Доктор, Specialization=Genekolog, AvgPatient=23.5, Person_ID=1, Gender=M, Surname=Sim, SecondName=Evgeni, Age=20, Name=Artem}
+2023-12-05 21:30:32 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 21:30:32 DEBUG DataProviderPostgres:55 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 21:30:32 DEBUG DataProviderPostgresTest:200 - selectDoctorId [1]: TEST started SELECT
+2023-12-05 21:30:32 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 21:30:32 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 21:30:32 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 21:30:32 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 21:30:32 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 21:30:32 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 21:30:32 DEBUG DataProviderPostgres:199 - selectDoctorId [1]: - start working method
+2023-12-05 21:30:32 DEBUG DataProviderPostgres:219 - createResultSetToObject [1]: - start working method
+2023-12-05 21:30:32 DEBUG DataProviderPostgres:234 - createResultSetToObject [3]: - successfully end work
+2023-12-05 21:30:32 DEBUG DataProviderPostgres:212 - selectDoctorId [3]: - SELECT DATA DOCTOR successfully
+2023-12-05 21:30:32 INFO  DataProviderPostgresTest:217 - selectDoctorId [2]: actual data = {secondname=Evgeni, doctor_id=1, qualification=Доктор, gender=M, surname=Sim, name=Artem, avgpatient=23.5, specialization=Genekolog, experience=3, age=20, status=DOCTOR}
+2023-12-05 21:30:32 INFO  DataProviderPostgresTest:218 - selectDoctorId [3]: expected data = {Status=DOCTOR, Experience=3, Qualification=Доктор, Specialization=Genekolog, AvgPatient=23.5, Person_ID=1, Gender=M, Surname=Sim, SecondName=Evgeni, Age=20, Name=Artem}
+2023-12-05 21:33:35 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 21:33:35 DEBUG DataProviderPostgres:55 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 21:33:35 DEBUG DataProviderPostgresTest:200 - selectDoctorId [1]: TEST started SELECT
+2023-12-05 21:33:35 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 21:33:35 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 21:33:35 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 21:33:35 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 21:33:35 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 21:33:35 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 21:33:35 DEBUG DataProviderPostgres:199 - selectDoctorId [1]: - start working method
+2023-12-05 21:33:35 DEBUG DataProviderPostgres:219 - createResultSetToObject [1]: - start working method
+2023-12-05 21:33:35 DEBUG DataProviderPostgres:234 - createResultSetToObject [3]: - successfully end work
+2023-12-05 21:33:35 DEBUG DataProviderPostgres:212 - selectDoctorId [3]: - SELECT DATA DOCTOR successfully
+2023-12-05 21:33:35 INFO  DataProviderPostgresTest:217 - selectDoctorId [2]: actual data = {secondname=Evgeni, doctor_id=1, qualification=Доктор, gender=M, surname=Sim, name=Artem, avgpatient=23.5, specialization=Genekolog, experience=3, age=20, status=DOCTOR}
+2023-12-05 21:33:35 INFO  DataProviderPostgresTest:218 - selectDoctorId [3]: expected data = {Status=DOCTOR, Experience=3, Qualification=Доктор, Specialization=Genekolog, AvgPatient=23.5, Person_ID=1, Gender=M, Surname=Sim, SecondName=Evgeni, Age=20, Name=Artem}
+2023-12-05 21:34:33 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 21:34:33 DEBUG DataProviderPostgres:55 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 21:34:33 DEBUG DataProviderPostgresTest:201 - selectDoctorId [1]: TEST started SELECT
+2023-12-05 21:34:33 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 21:34:33 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 21:34:33 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 21:34:33 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 21:34:33 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 21:34:33 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 21:34:33 DEBUG DataProviderPostgres:199 - selectDoctorId [1]: - start working method
+2023-12-05 21:34:33 DEBUG DataProviderPostgres:219 - createResultSetToObject [1]: - start working method
+2023-12-05 21:34:33 DEBUG DataProviderPostgres:234 - createResultSetToObject [3]: - successfully end work
+2023-12-05 21:34:33 DEBUG DataProviderPostgres:212 - selectDoctorId [3]: - SELECT DATA DOCTOR successfully
+2023-12-05 21:34:33 INFO  DataProviderPostgresTest:218 - selectDoctorId [2]: actual data = {secondname=Evgeni, doctor_id=1, qualification=Доктор, gender=M, surname=Sim, name=Artem, avgpatient=23.5, specialization=Genekolog, experience=3, age=20, status=DOCTOR}
+2023-12-05 21:34:33 INFO  DataProviderPostgresTest:219 - selectDoctorId [3]: expected data = {Status=DOCTOR, Experience=3, Qualification=Доктор, Specialization=Genekolog, AvgPatient=23.5, Person_ID=1, Gender=M, Surname=Sim, SecondName=Evgeni, Age=20, Name=Artem}
+2023-12-05 21:36:39 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 21:36:39 DEBUG DataProviderPostgres:55 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 21:36:39 DEBUG DataProviderPostgresTest:201 - selectDoctorId [1]: TEST started SELECT
+2023-12-05 21:36:39 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 21:36:39 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 21:36:39 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 21:36:39 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 21:36:39 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 21:36:39 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 21:36:39 DEBUG DataProviderPostgres:199 - selectDoctorId [1]: - start working method
+2023-12-05 21:36:39 DEBUG DataProviderPostgres:219 - createResultSetToObject [1]: - start working method
+2023-12-05 21:36:39 DEBUG DataProviderPostgres:234 - createResultSetToObject [3]: - successfully end work
+2023-12-05 21:36:39 DEBUG DataProviderPostgres:212 - selectDoctorId [3]: - SELECT DATA DOCTOR successfully
+2023-12-05 21:36:39 INFO  DataProviderPostgresTest:218 - selectDoctorId [2]: actual data = {secondname=Evgeni, doctor_id=1, qualification=Доктор, gender=M, surname=Sim, name=Artem, avgpatient=23.5, specialization=Genekolog, experience=3, age=20, status=DOCTOR}
+2023-12-05 21:36:39 INFO  DataProviderPostgresTest:219 - selectDoctorId [3]: expected data = {Status=DOCTOR, Experience=3, Qualification=Доктор, Specialization=Genekolog, AvgPatient=23.5, Person_ID=1, Gender=M, Surname=Sim, SecondName=Evgeni, Age=20, Name=Artem}
+2023-12-05 21:40:39 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 21:40:39 DEBUG DataProviderPostgres:55 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 21:40:39 DEBUG DataProviderPostgresTest:201 - selectDoctorId [1]: TEST started SELECT
+2023-12-05 21:40:39 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 21:40:39 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 21:40:39 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 21:40:39 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 21:40:39 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 21:40:39 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 21:40:39 DEBUG DataProviderPostgres:199 - selectDoctorId [1]: - start working method
+2023-12-05 21:40:39 DEBUG DataProviderPostgres:219 - createResultSetToObject [1]: - start working method
+2023-12-05 21:40:39 DEBUG DataProviderPostgres:234 - createResultSetToObject [3]: - successfully end work
+2023-12-05 21:40:39 DEBUG DataProviderPostgres:212 - selectDoctorId [3]: - SELECT DATA DOCTOR successfully
+2023-12-05 21:40:39 INFO  DataProviderPostgresTest:218 - selectDoctorId [2]: actual data = {secondname=Evgeni, doctor_id=1, qualification=Доктор, gender=M, surname=Sim, name=Artem, avgpatient=23.5, specialization=Genekolog, experience=3, age=20, status=DOCTOR}
+2023-12-05 21:40:39 INFO  DataProviderPostgresTest:219 - selectDoctorId [3]: expected data = {Status=DOCTOR, Experience=3, Qualification=Доктор, Specialization=Genekolog, AvgPatient=23.5, Person_ID=1, Gender=M, Surname=Sim, SecondName=Evgeni, Age=20, Name=Artem}
+2023-12-05 21:41:44 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 21:41:44 DEBUG DataProviderPostgres:55 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 21:41:44 DEBUG DataProviderPostgresTest:201 - selectDoctorId [1]: TEST started SELECT
+2023-12-05 21:41:44 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 21:41:44 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 21:41:44 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 21:41:44 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 21:41:44 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 21:41:44 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 21:41:44 DEBUG DataProviderPostgres:199 - selectDoctorId [1]: - start working method
+2023-12-05 21:41:44 DEBUG DataProviderPostgres:219 - createResultSetToObject [1]: - start working method
+2023-12-05 21:41:44 DEBUG DataProviderPostgres:234 - createResultSetToObject [3]: - successfully end work
+2023-12-05 21:41:44 DEBUG DataProviderPostgres:212 - selectDoctorId [3]: - SELECT DATA DOCTOR successfully
+2023-12-05 21:41:44 INFO  DataProviderPostgresTest:218 - selectDoctorId [2]: actual data = {secondname=Evgeni, doctor_id=1, qualification=Доктор, gender=M, surname=Sim, name=Artem, avgpatient=23.5, specialization=Genekolog, experience=3, age=20, status=DOCTOR}
+2023-12-05 21:41:44 INFO  DataProviderPostgresTest:219 - selectDoctorId [3]: expected data = {Status=DOCTOR, Experience=3, Qualification=Доктор, Specialization=Genekolog, AvgPatient=23.5, Person_ID=1, Gender=M, Surname=Sim, SecondName=Evgeni, Age=20, Name=Artem}
+2023-12-05 21:41:44 DEBUG DataProviderPostgresTest:226 - selectDoctorId [2]: TEST select data succeeded 
+2023-12-05 21:42:21 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 21:42:21 DEBUG DataProviderPostgres:55 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 21:42:21 DEBUG DataProviderPostgresTest:201 - selectDoctorId [1]: TEST started SELECT
+2023-12-05 21:42:21 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 21:42:21 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 21:42:21 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 21:42:21 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 21:42:21 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 21:42:21 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 21:42:21 DEBUG DataProviderPostgres:199 - selectDoctorId [1]: - start working method
+2023-12-05 21:42:21 DEBUG DataProviderPostgres:219 - createResultSetToObject [1]: - start working method
+2023-12-05 21:42:21 DEBUG DataProviderPostgres:234 - createResultSetToObject [3]: - successfully end work
+2023-12-05 21:42:21 DEBUG DataProviderPostgres:212 - selectDoctorId [3]: - SELECT DATA DOCTOR successfully
+2023-12-05 21:42:21 INFO  DataProviderPostgresTest:218 - selectDoctorId [2]: actual data = {secondname=Evgeni, doctor_id=1, qualification=Доктор, gender=M, surname=Sim, name=Artem, avgpatient=23.5, specialization=Genekolog, experience=3, age=20, status=DOCTOR}
+2023-12-05 21:42:21 INFO  DataProviderPostgresTest:219 - selectDoctorId [3]: expected data = {Status=DOCTOR, Experience=3, Qualification=Доктор, Specialization=Genekolog, AvgPatient=23.5, Person_ID=1, Gender=M, Surname=Sim, SecondName=Evgeni, Age=20, Name=Artem}
+2023-12-05 21:42:21 DEBUG DataProviderPostgresTest:227 - selectDoctorId [2]: TEST select data succeeded 
+2023-12-05 22:19:05 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 22:19:05 DEBUG DataProviderPostgres:55 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 22:19:05 DEBUG DataProviderPostgresTest:226 - selectPatientId [1]: TEST started SELECT
+2023-12-05 22:19:05 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 22:19:05 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 22:19:05 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 22:19:05 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 22:19:05 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 22:19:05 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 22:19:05 DEBUG DataProviderPostgres:219 - selectPatientId [1]: - start working method
+2023-12-05 22:19:05 DEBUG DataProviderPostgres:240 - createResultSetToObject [1]: - start working method
+2023-12-05 22:19:05 DEBUG DataProviderPostgres:255 - createResultSetToObject [3]: - successfully end work
+2023-12-05 22:19:05 DEBUG DataProviderPostgres:232 - selectPatientId [3]: - SELECT DATA Patient successfully
+2023-12-05 22:19:05 INFO  DataProviderPostgresTest:248 - selectPatientId [2]: actual data = {glucose=12.23, gender=M, testosterone=12.31, arterialpress=103, hemoglobin=1.4, platelets=12.3, secondname=Evgeni, cellsblood=1.5, patient_id=1, surname=Sim, name=Artem_2, cholesterol=12.23, statusvisit=IN, age=20, status=PATIENT}
+2023-12-05 22:19:06 INFO  DataProviderPostgresTest:249 - selectPatientId [3]: expected data = {Status=PATIENT, CellsBlood=1.5, statusVisit=IN, Person_ID=1, Gender=M, Glucose=12.23, ArterialPress=103, SecondName=Evgeni, Cholesterol=12.23, Name=Artem_2, Testosterone=12.31, Hemoglobin=1.4, Platelets=12.3, Surname=Sim, Age=20}
+2023-12-05 22:25:15 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 22:25:15 DEBUG DataProviderPostgres:55 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 22:25:15 DEBUG DataProviderPostgresTest:204 - selectDoctorId [1]: TEST started SELECT
+2023-12-05 22:25:15 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 22:25:15 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 22:25:15 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 22:25:15 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 22:25:15 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 22:25:15 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 22:25:15 DEBUG DataProviderPostgres:199 - selectDoctorId [1]: - start working method
+2023-12-05 22:25:15 DEBUG DataProviderPostgres:240 - createResultSetToObject [1]: - start working method
+2023-12-05 22:25:15 DEBUG DataProviderPostgres:255 - createResultSetToObject [3]: - successfully end work
+2023-12-05 22:25:15 DEBUG DataProviderPostgres:212 - selectDoctorId [3]: - SELECT DATA DOCTOR successfully
+2023-12-05 22:25:15 INFO  DataProviderPostgresTest:222 - selectDoctorId [2]: actual data = {secondname=Evgeni, doctor_id=1, qualification=Доктор, gender=M, surname=Sim, name=Artem, avgpatient=23.5, specialization=Genekolog, experience=3, age=20, status=DOCTOR}
+2023-12-05 22:25:15 INFO  DataProviderPostgresTest:223 - selectDoctorId [3]: expected data = {Status=DOCTOR, Experience=3, Qualification=Доктор, Specialization=Genekolog, AvgPatient=23.5, Person_ID=1, Gender=M, Surname=Sim, SecondName=Evgeni, Age=20, Name=Artem}
+2023-12-05 22:25:15 DEBUG DataProviderPostgresTest:194 - checkActualExpectedPerson [1]: started checking object 
+2023-12-05 22:25:15 DEBUG DataProviderPostgresTest:198 - checkActualExpectedPerson [2]: succeeded
+2023-12-05 22:25:15 DEBUG DataProviderPostgresTest:232 - selectDoctorId [2]: TEST select data succeeded 
+2023-12-05 22:25:47 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 22:25:47 DEBUG DataProviderPostgres:55 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 22:25:47 DEBUG DataProviderPostgresTest:234 - selectPatientId [1]: TEST started SELECT
+2023-12-05 22:25:47 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 22:25:47 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 22:25:47 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 22:25:47 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 22:25:47 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 22:25:47 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 22:25:47 DEBUG DataProviderPostgres:219 - selectPatientId [1]: - start working method
+2023-12-05 22:25:47 DEBUG DataProviderPostgres:240 - createResultSetToObject [1]: - start working method
+2023-12-05 22:25:47 DEBUG DataProviderPostgres:255 - createResultSetToObject [3]: - successfully end work
+2023-12-05 22:25:47 DEBUG DataProviderPostgres:232 - selectPatientId [3]: - SELECT DATA Patient successfully
+2023-12-05 22:25:48 INFO  DataProviderPostgresTest:256 - selectPatientId [2]: actual data = {glucose=12.23, gender=M, testosterone=12.31, arterialpress=103, hemoglobin=1.4, platelets=12.3, secondname=Evgeni, cellsblood=1.5, patient_id=1, surname=Sim, name=Artem_2, cholesterol=12.23, statusvisit=IN, age=20, status=PATIENT}
+2023-12-05 22:25:48 INFO  DataProviderPostgresTest:257 - selectPatientId [3]: expected data = {Status=PATIENT, CellsBlood=1.5, statusVisit=IN, Person_ID=1, Gender=M, Glucose=12.23, ArterialPress=103, SecondName=Evgeni, Cholesterol=12.23, Name=Artem_2, Testosterone=12.31, Hemoglobin=1.4, Platelets=12.3, Surname=Sim, Age=20}
+2023-12-05 22:25:48 DEBUG DataProviderPostgresTest:194 - checkActualExpectedPerson [1]: started checking object 
+2023-12-05 22:25:48 DEBUG DataProviderPostgresTest:198 - checkActualExpectedPerson [2]: succeeded
+2023-12-05 22:39:08 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 22:39:08 DEBUG DataProviderPostgres:55 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 22:39:08 DEBUG DataProviderPostgresTest:103 - insertDataDoctor [1]: - insert Data Doctor test started Postgres
+2023-12-05 22:39:08 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 22:39:08 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 22:39:08 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 22:39:08 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 22:39:08 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 22:39:08 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 22:39:08 DEBUG DataProviderPostgres:65 - InsertDataDoctor [1]: - start working method
+2023-12-05 22:39:08 ERROR DataProviderPostgres:81 - InsertDataDoctor [2]: - error ОШИБКА: повторяющееся значение ключа нарушает ограничение уникальности "doctor_pkey"
+  Подробности: Ключ "(doctor_id)=(1)" уже существует.
+2023-12-05 22:39:08 DEBUG DataProviderPostgresTest:110 - insertDataDoctor [3]: - insert Data Doctor test succeeded Postgres
+2023-12-05 22:46:27 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 22:46:27 DEBUG DataProviderPostgres:55 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 22:46:27 DEBUG DataProviderPostgresTest:227 - selectDoctorId [1]: TEST started SELECT
+2023-12-05 22:46:27 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 22:46:27 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 22:46:27 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 22:46:27 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 22:46:27 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 22:46:27 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 22:46:27 DEBUG DataProviderPostgres:218 - selectDoctorId [1]: - start working method
+2023-12-05 22:46:27 DEBUG DataProviderPostgres:198 - createResultSetToObject [1]: - start working method
+2023-12-05 22:46:27 DEBUG DataProviderPostgres:213 - createResultSetToObject [3]: - successfully end work
+2023-12-05 22:46:27 DEBUG DataProviderPostgres:231 - selectDoctorId [3]: - SELECT DATA DOCTOR successfully
+2023-12-05 22:46:27 INFO  DataProviderPostgresTest:232 - selectDoctorId [2]: actual data = {secondname=Evgeni, doctor_id=1, qualification=Доктор, gender=M, surname=Sim, name=Artem, avgpatient=23.5, specialization=Genekolog, experience=3, age=20, status=DOCTOR}
+2023-12-05 22:46:27 INFO  DataProviderPostgresTest:233 - selectDoctorId [3]: expected data = {Status=DOCTOR, Experience=3, Qualification=Доктор, Specialization=Genekolog, AvgPatient=23.5, Person_ID=1, Gender=M, Surname=Sim, SecondName=Evgeni, Age=20, Name=Artem}
+2023-12-05 22:46:27 DEBUG DataProviderPostgresTest:217 - checkActualExpectedPerson [1]: started checking object 
+2023-12-05 22:46:27 DEBUG DataProviderPostgresTest:221 - checkActualExpectedPerson [2]: succeeded
+2023-12-05 22:46:27 DEBUG DataProviderPostgresTest:239 - selectDoctorId [2]: TEST select data succeeded 
+2023-12-05 22:48:10 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 22:48:10 DEBUG DataProviderPostgres:55 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 22:48:10 DEBUG DataProviderPostgresTest:244 - selectPatientId [1]: TEST started SELECT
+2023-12-05 22:48:10 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 22:48:10 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 22:48:10 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 22:48:10 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 22:48:10 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 22:48:10 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 22:48:10 DEBUG DataProviderPostgres:238 - selectPatientId [1]: - start working method
+2023-12-05 22:48:10 DEBUG DataProviderPostgres:198 - createResultSetToObject [1]: - start working method
+2023-12-05 22:48:10 DEBUG DataProviderPostgres:213 - createResultSetToObject [3]: - successfully end work
+2023-12-05 22:48:10 DEBUG DataProviderPostgres:251 - selectPatientId [3]: - SELECT DATA Patient successfully
+2023-12-05 22:48:10 INFO  DataProviderPostgresTest:249 - selectPatientId [2]: actual data = {glucose=12.23, gender=M, testosterone=12.31, arterialpress=103, hemoglobin=1.4, platelets=12.3, secondname=Evgeni, cellsblood=1.5, patient_id=1, surname=Sim, name=Artem_2, cholesterol=12.23, statusvisit=IN, age=20, status=PATIENT}
+2023-12-05 22:48:10 INFO  DataProviderPostgresTest:250 - selectPatientId [3]: expected data = {Status=PATIENT, CellsBlood=1.5, statusVisit=IN, Person_ID=1, Gender=M, Glucose=12.23, ArterialPress=103, SecondName=Evgeni, Cholesterol=12.23, Name=Artem_2, Testosterone=12.31, Hemoglobin=1.4, Platelets=12.3, Surname=Sim, Age=20}
+2023-12-05 22:48:10 DEBUG DataProviderPostgresTest:217 - checkActualExpectedPerson [1]: started checking object 
+2023-12-05 22:48:10 DEBUG DataProviderPostgresTest:221 - checkActualExpectedPerson [2]: succeeded
+2023-12-05 22:49:43 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 22:49:43 DEBUG DataProviderPostgres:55 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 22:49:43 DEBUG DataProviderPostgresTest:261 - selectPreparationId [1]: TEST started SELECT
+2023-12-05 22:49:43 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 22:49:43 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 22:49:43 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 22:49:43 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 22:49:43 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 22:49:43 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 22:49:43 DEBUG DataProviderPostgres:256 - selectPreparationId [1]: - start working method
+2023-12-05 22:49:43 DEBUG DataProviderPostgres:198 - createResultSetToObject [1]: - start working method
+2023-12-05 22:49:43 DEBUG DataProviderPostgres:213 - createResultSetToObject [3]: - successfully end work
+2023-12-05 22:49:43 DEBUG DataProviderPostgres:269 - selectPreparationId[3]: - SELECT DATA Patient successfully
+2023-12-05 22:49:43 INFO  DataProviderPostgresTest:267 - selectPatientId [3]: expected data = {Status=PATIENT, CellsBlood=1.5, statusVisit=IN, Person_ID=1, Gender=M, Glucose=12.23, ArterialPress=103, SecondName=Evgeni, Cholesterol=12.23, Name=Artem_2, Testosterone=12.31, Hemoglobin=1.4, Platelets=12.3, Surname=Sim, Age=20}
+2023-12-05 22:50:08 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 22:50:08 DEBUG DataProviderPostgres:55 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 22:50:08 DEBUG DataProviderPostgresTest:261 - selectPreparationId [1]: TEST started SELECT
+2023-12-05 22:50:08 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 22:50:08 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 22:50:08 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 22:50:08 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 22:50:08 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 22:50:08 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 22:50:08 DEBUG DataProviderPostgres:256 - selectPreparationId [1]: - start working method
+2023-12-05 22:50:08 DEBUG DataProviderPostgres:198 - createResultSetToObject [1]: - start working method
+2023-12-05 22:50:08 DEBUG DataProviderPostgres:213 - createResultSetToObject [3]: - successfully end work
+2023-12-05 22:50:08 DEBUG DataProviderPostgres:269 - selectPreparationId[3]: - SELECT DATA Patient successfully
+2023-12-05 22:50:08 INFO  DataProviderPostgresTest:267 - selectPatientId [3]: expected data = {DateEnd=null, NamePrep=ddw, Preparation_ID=1, FkPreparationToDoctor=[1], Dosage=12.123, statusVisitPreparation=LOW, AboutPrep=dwdqdwdqdqdqdw, CountPrep=12}
+2023-12-05 22:54:27 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 22:54:27 DEBUG DataProviderPostgres:55 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 22:54:27 DEBUG DataProviderPostgresTest:261 - selectPreparationId [1]: TEST started SELECT
+2023-12-05 22:54:27 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 22:54:27 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 22:54:27 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 22:54:27 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 22:54:27 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 22:54:27 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 22:54:27 DEBUG DataProviderPostgres:256 - selectPreparationId [1]: - start working method
+2023-12-05 22:54:27 DEBUG DataProviderPostgres:198 - createResultSetToObject [1]: - start working method
+2023-12-05 22:54:27 DEBUG DataProviderPostgres:213 - createResultSetToObject [3]: - successfully end work
+2023-12-05 22:54:27 DEBUG DataProviderPostgres:269 - selectPreparationId[3]: - SELECT DATA Preparation successfully
+2023-12-05 22:56:44 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 22:56:44 DEBUG DataProviderPostgres:55 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 22:56:44 DEBUG DataProviderPostgresTest:261 - selectPreparationId [1]: TEST started SELECT
+2023-12-05 22:56:44 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 22:56:44 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 22:56:44 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 22:56:44 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 22:56:44 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 22:56:44 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 22:56:44 DEBUG DataProviderPostgres:256 - selectPreparationId [1]: - start working method
+2023-12-05 22:56:44 DEBUG DataProviderPostgres:198 - createResultSetToObject [1]: - start working method
+2023-12-05 22:56:44 DEBUG DataProviderPostgres:213 - createResultSetToObject [3]: - successfully end work
+2023-12-05 22:56:44 DEBUG DataProviderPostgres:269 - selectPreparationId[3]: - SELECT DATA Preparation successfully
+2023-12-05 22:56:44 INFO  DataProviderPostgresTest:268 - selectPatientId [3]: expected data = {DateEnd=null, NamePrep=ddw, Preparation_ID=1, FkPreparationToDoctor=[1], Dosage=12.123, statusVisitPreparation=LOW, AboutPrep=dwdqdwdqdqdqdw, CountPrep=12}
+2023-12-05 22:56:44 DEBUG DataProviderPostgresTest:272 - selectPreparationId [4]: TEST select data succeeded 
+2023-12-05 23:04:29 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 23:04:29 DEBUG DataProviderPostgres:55 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 23:04:29 DEBUG DataProviderPostgresTest:277 - selectScheduleId [1]: TEST started SELECT
+2023-12-05 23:04:29 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 23:04:29 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 23:04:29 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 23:04:29 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 23:04:29 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 23:04:29 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 23:04:29 DEBUG DataProviderPostgres:274 - selectPreparationId [1]: - start working method
+2023-12-05 23:04:29 ERROR DataProviderPostgres:284 - selectPreparationId [2]: - ERROR ОШИБКА: ошибка синтаксиса (примерное положение: "SELCT")
+  Позиция: 1
+2023-12-05 23:05:53 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 23:05:53 DEBUG DataProviderPostgres:55 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 23:05:53 DEBUG DataProviderPostgresTest:277 - selectScheduleId [1]: TEST started SELECT
+2023-12-05 23:05:53 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 23:05:53 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 23:05:53 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 23:05:53 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 23:05:53 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 23:05:53 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 23:05:53 DEBUG DataProviderPostgres:274 - selectPreparationId [1]: - start working method
+2023-12-05 23:05:53 DEBUG DataProviderPostgres:198 - createResultSetToObject [1]: - start working method
+2023-12-05 23:05:53 DEBUG DataProviderPostgres:213 - createResultSetToObject [3]: - successfully end work
+2023-12-05 23:05:53 DEBUG DataProviderPostgres:287 - selectPreparationId[3]: - SELECT DATA Preparation successfully
+2023-12-05 23:05:53 INFO  DataProviderPostgresTest:284 - selectScheduleId [3]: expected data = {Schedule_ID=1, FkToDoctor=1, TimeEnd=null, statusSchedule=PROCESS, DateSchedule=null, dateWeek=MONDAY, TimeBegin=null}
+2023-12-05 23:05:53 DEBUG DataProviderPostgresTest:289 - selectScheduleId [4]: TEST select data succeeded 
+2023-12-05 23:07:13 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 23:07:13 DEBUG DataProviderPostgres:55 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 23:07:13 DEBUG DataProviderPostgresTest:277 - selectScheduleId [1]: TEST started SELECT
+2023-12-05 23:07:13 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 23:07:13 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 23:07:13 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 23:07:13 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 23:07:13 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 23:07:13 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 23:07:13 DEBUG DataProviderPostgres:274 - selectPreparationId [1]: - start working method
+2023-12-05 23:07:13 DEBUG DataProviderPostgres:198 - createResultSetToObject [1]: - start working method
+2023-12-05 23:07:13 DEBUG DataProviderPostgres:213 - createResultSetToObject [3]: - successfully end work
+2023-12-05 23:07:13 DEBUG DataProviderPostgres:287 - selectPreparationId[3]: - SELECT DATA Preparation successfully
+2023-12-05 23:07:13 INFO  DataProviderPostgresTest:284 - selectScheduleId [3]: expected data = {Schedule_ID=1, FkToDoctor=1, TimeEnd=null, statusSchedule=PROCESS, DateSchedule=null, dateWeek=MONDAY, TimeBegin=null}
+2023-12-05 23:07:13 DEBUG DataProviderPostgresTest:290 - selectScheduleId [4]: TEST select data succeeded 
+2023-12-05 23:14:39 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 23:14:39 DEBUG DataProviderPostgres:55 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 23:14:39 DEBUG DataProviderPostgresTest:294 - selectCalcReportId [1]: TEST started SELECT
+2023-12-05 23:14:39 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 23:14:39 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 23:14:39 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 23:14:39 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 23:14:39 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 23:14:39 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 23:14:39 DEBUG DataProviderPostgres:274 - selectPreparationId [1]: - start working method
+2023-12-05 23:14:39 DEBUG DataProviderPostgres:198 - createResultSetToObject [1]: - start working method
+2023-12-05 23:14:39 DEBUG DataProviderPostgres:213 - createResultSetToObject [3]: - successfully end work
+2023-12-05 23:14:39 DEBUG DataProviderPostgres:287 - selectPreparationId[3]: - SELECT DATA Preparation successfully
+2023-12-05 23:14:39 INFO  DataProviderPostgresTest:301 - selectCalcReportId [3]: expected data = {NameDoctor=Artem, Report_ID=1, FkToDoctor=1, price=123.4, HormoneAnalyse=true, ArterialAnalyse=true, FkToPatient=1, PatientName=Artem_2, BloodAnalyse=true, GlucoseAnalyse=true}
+2023-12-05 23:15:18 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 23:15:18 DEBUG DataProviderPostgres:55 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 23:15:18 DEBUG DataProviderPostgresTest:294 - selectCalcReportId [1]: TEST started SELECT
+2023-12-05 23:15:18 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 23:15:18 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 23:15:18 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 23:15:18 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 23:15:18 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 23:15:18 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 23:15:18 DEBUG DataProviderPostgres:274 - selectPreparationId [1]: - start working method
+2023-12-05 23:15:18 DEBUG DataProviderPostgres:198 - createResultSetToObject [1]: - start working method
+2023-12-05 23:15:18 DEBUG DataProviderPostgres:213 - createResultSetToObject [3]: - successfully end work
+2023-12-05 23:15:18 DEBUG DataProviderPostgres:287 - selectPreparationId[3]: - SELECT DATA Preparation successfully
+2023-12-05 23:15:18 INFO  DataProviderPostgresTest:301 - selectCalcReportId [3]: expected data = {NameDoctor=Artem, Report_ID=1, FkToDoctor=1, price=123.4, HormoneAnalyse=true, ArterialAnalyse=true, FkToPatient=1, PatientName=Artem_2, BloodAnalyse=true, GlucoseAnalyse=true}
+2023-12-05 23:15:50 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 23:15:50 DEBUG DataProviderPostgres:55 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 23:15:50 DEBUG DataProviderPostgresTest:294 - selectCalcReportId [1]: TEST started SELECT
+2023-12-05 23:15:50 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 23:15:50 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 23:15:50 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 23:15:50 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 23:15:50 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 23:15:50 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 23:15:50 DEBUG DataProviderPostgres:292 - selectCalcReportId [1]: - start working method
+2023-12-05 23:15:50 DEBUG DataProviderPostgres:198 - createResultSetToObject [1]: - start working method
+2023-12-05 23:15:50 DEBUG DataProviderPostgres:213 - createResultSetToObject [3]: - successfully end work
+2023-12-05 23:15:50 DEBUG DataProviderPostgres:305 - selectCalcReportId[3]: - SELECT DATA Preparation successfully
+2023-12-05 23:15:50 INFO  DataProviderPostgresTest:300 - selectCalcReportId [2]: actual data = {patientname=Artem_2, arterialanalyse=true, report_id=1, fktodoctor=1, price=123.4, bloodanalyse=true, hormoneanalyse=true, glucoseanalyse=true, namedoctor=Artem, fktopatient=1}
+2023-12-05 23:15:50 INFO  DataProviderPostgresTest:301 - selectCalcReportId [3]: expected data = {NameDoctor=Artem, Report_ID=1, FkToDoctor=1, price=123.4, HormoneAnalyse=true, ArterialAnalyse=true, FkToPatient=1, PatientName=Artem_2, BloodAnalyse=true, GlucoseAnalyse=true}
+2023-12-05 23:15:50 DEBUG DataProviderPostgresTest:310 - selectScheduleId [4]: TEST select data succeeded 

@@ -49,7 +49,7 @@ public class CONST {
     public static final String SQL_TABLE_NAME_SCHEDULE = "SCHEDULE";
 
 
-    public static final String SQL_TABLE_CREATE_DOCTOR= "CREATE TABLE IF NOT EXISTS ".concat(SQL_TABLE_NAME_DOCTOR).concat("(").concat(KEY_DOCTOR).concat("SERIAL PRIMARY KEY,").concat("Name VARCHAR(30)," +
+    public static final String SQL_TABLE_CREATE_DOCTOR= "CREATE TABLE IF NOT EXISTS ".concat(SQL_TABLE_NAME_DOCTOR).concat("(").concat(KEY_DOCTOR).concat(" SERIAL PRIMARY KEY,").concat("Name VARCHAR(30)," +
             "Surname VARCHAR(30)," +
             "SecondName VARCHAR(30)," +
             "Age INT,Gender CHAR(1)," +
@@ -58,7 +58,7 @@ public class CONST {
             "AvgPatient DECIMAL," +
             "Qualification VARCHAR(60)," +
             "Specialization VARCHAR(60)").concat(");");
-    public static final String SQL_TABLE_CREATE_PATIENT= "CREATE TABLE IF NOT EXISTS ".concat(SQL_TABLE_NAME_PATIENT).concat("(").concat(KEY_PATIENT).concat("SERIAL PRIMARY KEY,\n" +
+    public static final String SQL_TABLE_CREATE_PATIENT= "CREATE TABLE IF NOT EXISTS ".concat(SQL_TABLE_NAME_PATIENT).concat("(").concat(KEY_PATIENT).concat(" SERIAL PRIMARY KEY,\n" +
             "Name VARCHAR(30),\n" +
             "Surname VARCHAR(30),\n" +
             "SecondName VARCHAR(30),\n" +
@@ -83,8 +83,8 @@ public class CONST {
             "HormoneAnalyse BOOLEAN,\n" +
             "ArterialAnalyse BOOLEAN,\n" +
             "price DECIMAL,\n" +
-            "".concat("CONSTRAINT ").concat(FK_CALC_REPORT_TO_DOC).concat(" FOREIGN KEY ").concat(" (").concat(FK_CALC_REPORT_TO_DOC).concat(") ").concat(" REFERENCES ").concat(SQL_TABLE_NAME_DOCTOR).concat("(").concat(KEY_DOCTOR).concat(")") +"\n"+
-            "".concat("CONSTRAINT ").concat(FK_CALC_REPORT_TO_PAT).concat(" FOREIGN KEY ").concat(" (").concat(FK_CALC_REPORT_TO_PAT).concat(") ").concat(" REFERENCES ").concat(SQL_TABLE_NAME_PATIENT).concat("(").concat(KEY_PATIENT).concat(")")+ "" +
+            "".concat(" CONSTRAINT ").concat(FK_CALC_REPORT_TO_DOC).concat(" FOREIGN KEY ").concat(" (").concat(FK_CALC_REPORT_TO_DOC).concat(") ").concat(" REFERENCES ").concat(SQL_TABLE_NAME_DOCTOR).concat("(").concat(KEY_DOCTOR).concat("),") +"\n"+
+            "".concat(" CONSTRAINT ").concat(FK_CALC_REPORT_TO_PAT).concat(" FOREIGN KEY ").concat(" (").concat(FK_CALC_REPORT_TO_PAT).concat(") ").concat(" REFERENCES ").concat(SQL_TABLE_NAME_PATIENT).concat("(").concat(KEY_PATIENT).concat(")")+ "" +
             "".concat(");")
     );
     public static final String SQL_TABLE_CREATE_PREPARATION= "CREATE TABLE IF NOT EXISTS ".concat(SQL_TABLE_NAME_PREPARATION).concat("(").concat(KEY_PREPARATION).concat(" SERIAL PRIMARY KEY,\n" +
@@ -105,20 +105,28 @@ public class CONST {
             "statusSchedule VARCHAR(20),\n" +
             "CONSTRAINT ".concat(FK_SCHEDULE_TO_DOC).concat(" FOREIGN KEY").concat(" (").concat(FK_SCHEDULE_TO_DOC).concat(" )").concat("  REFERENCES ").concat(SQL_TABLE_NAME_DOCTOR).concat("(").concat(KEY_DOCTOR).concat(")").concat(" ON DELETE CASCADE").concat(");"));
 
-    public static final String SELECT_DOCTOR_TO_ID = String.format("SELECT * FROM %s WHERE %s",SQL_TABLE_NAME_DOCTOR,KEY_DOCTOR).concat(" = %d");
-    public static final String SELECT_PATIENT_TO_ID = String.format("SELECT * FROM %s WHERE %s",SQL_TABLE_NAME_PATIENT,KEY_PATIENT).concat(" = %d");
-    public static final String SELECT_PREPARATION_TO_ID = String.format("SELECT * FROM %s WHERE %s",SQL_TABLE_NAME_PREPARATION,KEY_PREPARATION).concat(" = %d");
-    public static final String SELECT_SCHEDULE_TO_ID = String.format("SELCT * FROM %s WHERE %s",SQL_TABLE_NAME_SCHEDULE,KEY_SCHEDULE).concat(" = %d");
-    public static final String SELECT_CALC_REPORT_TO_ID = String.format("SELECT * FROM %s WHERE %s",SQL_TABLE_NAME_CALC_REPORT,KEY_CALC_REPORT).concat(" = %d");
-    public static final String SELECT_CALC_REPORT_TO_ID_DOCTOR = String.format("SELECT * FROM %s WHERE %s",SQL_TABLE_NAME_CALC_REPORT,FK_CALC_REPORT_TO_DOC).concat(" = %d");
+    public static final String SELECT_DOCTOR_TO_ID = String.format("SELECT * FROM %s WHERE %s",SQL_TABLE_NAME_DOCTOR,KEY_DOCTOR).concat(" = ?");
+    public static final String SELECT_PATIENT_TO_ID = String.format("SELECT * FROM %s WHERE %s",SQL_TABLE_NAME_PATIENT,KEY_PATIENT).concat(" = ?");
+    public static final String SELECT_PREPARATION_TO_ID = String.format("SELECT * FROM %s WHERE %s",SQL_TABLE_NAME_PREPARATION,KEY_PREPARATION).concat(" = ?");
+    public static final String SELECT_SCHEDULE_TO_ID = String.format("SELECT * FROM %s WHERE %s",SQL_TABLE_NAME_SCHEDULE,KEY_SCHEDULE).concat(" = ?");
+    public static final String SELECT_CALC_REPORT_TO_ID = String.format("SELECT * FROM %s WHERE %s",SQL_TABLE_NAME_CALC_REPORT,KEY_CALC_REPORT).concat(" = ?");
+    public static final String SELECT_CALC_REPORT_TO_ID_DOCTOR = String.format("SELECT * FROM %s WHERE %s",SQL_TABLE_NAME_CALC_REPORT,FK_CALC_REPORT_TO_DOC).concat(" = ?");
 
 
-    public static final String INSERT_DOCTOR = String.format("INSERT INTO %s (Doctor_ID, Name, Surname, SecondName, Age, Gender, Status, Experience, AvgPatient, Qualification, Specialization) ",SQL_TABLE_NAME_DOCTOR).concat("\nVALUES (%d, '%s', '%s', '%s', %d, '%c', '%s', %d, %.2f, '%s', '%s')");
-    public static final String INSERT_PATIENT = String.format("INSERT INTO %s (Patient_ID, Name, Surname, SecondName, Age, Gender, Status, CellsBlood, Hemoglobin, Platelets, Testosterone, Glucose, Cholesterol, ArterialPress, statusVisit) ",SQL_TABLE_NAME_PATIENT).concat("\nVALUES (%d, '%s', '%s', '%s', %d, '%c', '%s', %.2f, %.2f, %.2f, %.2f, %.2f,%.2f,%d,'%s')");
-    public static final String INSERT_PREPARATION = String.format("INSERT INTO %s (Preparation_ID,FkPreparationToDoctor,NamePrep,DateEnd,Dosage,statusVisitPreparation,AboutPrep,countprep) ",SQL_TABLE_NAME_PREPARATION).concat("\nVALUES (%d, %d, '%s', '%s', %.2f, '%s', '%s', %d)");
-    public static final String INSERT_SCHEDULE = String.format("INSERT INTO %s (schedule_id,FkToDoctor,dateweek,dateschedule,timebegin,timeend,statusschedule)",SQL_TABLE_NAME_SCHEDULE).concat("\nVALUES(%d, %d,'%s', '%s', '%s', '%s', '%s')");
-    public static final String INSERT_CALC_REPORT = String.format("INSERT INTO %s (Report_ID, FkToDoctor, FkToPatient, PatientName, NameDoctor, BloodAnalyse, GlucoseAnalyse, HormoneAnalyse, ArterialAnalyse, price) ",SQL_TABLE_NAME_CALC_REPORT).concat("\nVALUES (%d, %d, %d, '%s', '%s', %b, %b, %b, %b, %.2f)");
+//    public static final String INSERT_DOCTOR = String.format("INSERT INTO %s (Doctor_ID, Name, Surname, SecondName, Age, Gender, Status, Experience, AvgPatient, Qualification, Specialization) ",SQL_TABLE_NAME_DOCTOR).concat("\nVALUES (%d, '%s', '%s', '%s', %d, '%c', '%s', %d, %.2f, '%s', '%s')");
+    public static final String INSERT_DOCTOR = String.format("INSERT INTO %s (Doctor_ID, Name, Surname, SecondName, Age, Gender, Status, Experience, AvgPatient, Qualification, Specialization) ",SQL_TABLE_NAME_DOCTOR).concat("\nVALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);");
 
+//    public static final String INSERT_PATIENT = String.format("INSERT INTO %s (Patient_ID, Name, Surname, SecondName, Age, Gender, Status, CellsBlood, Hemoglobin, Platelets, Testosterone, Glucose, Cholesterol, ArterialPress, statusVisit) ",SQL_TABLE_NAME_PATIENT).concat("\nVALUES (%d, '%s', '%s', '%s', %d, '%c', '%s', %.2f, %.2f, %.2f, %.2f, %.2f,%.2f,%d,'%s')");
+    public static final String INSERT_PATIENT = String.format("INSERT INTO %s (Patient_ID, Name, Surname, SecondName, Age, Gender, Status, CellsBlood, Hemoglobin, Platelets, Testosterone, Glucose, Cholesterol, ArterialPress, statusVisit) ",SQL_TABLE_NAME_PATIENT).concat("\nVALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,?,?,?)");
+
+//    public static final String INSERT_PREPARATION = String.format("INSERT INTO %s (Preparation_ID,FkPreparationToDoctor,NamePrep,DateEnd,Dosage,statusVisitPreparation,AboutPrep,countprep) ",SQL_TABLE_NAME_PREPARATION).concat("\nVALUES (%d, %d, '%s', '%s', %.2f, '%s', '%s', %d)");
+    public static final String INSERT_PREPARATION = String.format("INSERT INTO %s (Preparation_ID,FkPreparationToDoctor,NamePrep,DateEnd,Dosage,statusVisitPreparation,AboutPrep,countprep) ",SQL_TABLE_NAME_PREPARATION).concat("\nVALUES (?, ?, ?, ?, ?, ?, ?, ?)");
+
+//    public static final String INSERT_SCHEDULE = String.format("INSERT INTO %s (schedule_id,FkToDoctor,dateweek,dateschedule,timebegin,timeend,statusschedule)",SQL_TABLE_NAME_SCHEDULE).concat("\nVALUES(%d, %d,'%s', '%s', '%s', '%s', '%s')");
+    public static final String INSERT_SCHEDULE = String.format("INSERT INTO %s (schedule_id,FkToDoctor,dateweek,dateschedule,timebegin,timeend,statusschedule)",SQL_TABLE_NAME_SCHEDULE).concat("\nVALUES(?, ?,?, ?, ?, ?, ?)");
+
+//    public static final String INSERT_CALC_REPORT = String.format("INSERT INTO %s (Report_ID, FkToDoctor, FkToPatient, PatientName, NameDoctor, BloodAnalyse, GlucoseAnalyse, HormoneAnalyse, ArterialAnalyse, price) ",SQL_TABLE_NAME_CALC_REPORT).concat("\nVALUES (%d, %d, %d, '%s', '%s', %b, %b, %b, %b, %.2f)");
+    public static final String INSERT_CALC_REPORT = String.format("INSERT INTO %s (Report_ID, FkToDoctor, FkToPatient, PatientName, NameDoctor, BloodAnalyse, GlucoseAnalyse, HormoneAnalyse, ArterialAnalyse, price) ",SQL_TABLE_NAME_CALC_REPORT).concat("\nVALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
 
 
     public static final String DELETE_DOCTOR_TO_ID = String.format("DELETE FROM %s WHERE %s",SQL_TABLE_NAME_DOCTOR,KEY_DOCTOR).concat(" = %d");

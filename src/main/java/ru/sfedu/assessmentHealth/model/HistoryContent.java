@@ -47,18 +47,46 @@ public class HistoryContent {
     public Map<String, Object> getObject(){return object;}
     public <T> void setObject (T object){this.object = convertClassToMap(object);}
 
-    protected <T> Map<String, Object>  convertClassToMap (T object) {
+//    protected <T> Map<String, Object>  convertClassToMap (T object) {
+//        Map<String, Object> map = new HashMap<>();
+//        Class<?> clazz = object.getClass();
+//
+//        Field[] fields = clazz.getDeclaredFields();
+//        for (Field field : fields) {
+//            field.setAccessible(true);
+//            try {
+//                map.put(field.getName(), field.get(object));
+//            } catch (IllegalAccessException e) {
+//                e.printStackTrace();
+//            }
+//        }
+//        return map;
+//    }
+    private <T> Map<String, Object> generateObjMap(Class<?> obj,T object){
+        log.debug("generateObjMap [1]: - Mapping fields of the class beginning");
         Map<String, Object> map = new HashMap<>();
-        Class<?> clazz = object.getClass();
-        Field[] fields = clazz.getDeclaredFields();
+        Field[] fields = obj.getDeclaredFields();
         for (Field field : fields) {
             field.setAccessible(true);
             try {
                 map.put(field.getName(), field.get(object));
             } catch (IllegalAccessException e) {
-                e.printStackTrace();
+                log.error("generateObjMap [2]: error - {}",e.getMessage());
             }
         }
+        log.debug("generateObjMap [3]: - The mapping was successful ");
+        return map;
+    }
+
+    protected <T> Map<String, Object> convertClassToMap(T object) {
+        log.debug("convertClassToMap [1]: - Converting the entire object to a map");
+        Map<String, Object> map = new HashMap<>();
+        Class<?> clazzCh = object.getClass();
+        Class<?> clazzPer = clazzCh.getSuperclass();
+           map.putAll(generateObjMap(clazzPer,object));
+           map.putAll(generateObjMap(clazzCh,object));
+
+        log.debug("convertClassToMap [2]: The conversion of the entire object to map is successful");
         return map;
     }
     @Override

@@ -5,7 +5,7 @@ import java.util.Objects;
 
 public class CalcReport {
     private Integer Report_ID;
-    private List<Integer> FkToDoctor;
+    private Integer FkToDoctor;
     private Integer FkToPatient;
     private String PatientName;
     private String NameDoctor;
@@ -17,10 +17,10 @@ public class CalcReport {
 
 
     public Integer getReport_ID() {return Report_ID;}
-    public List<Integer> getFkToDoctor(){return FkToDoctor;}
+    public Integer getFkToDoctor(){return FkToDoctor;}
     public Integer getFkToPatient(){return FkToPatient;}
     public String getPatientName(){return PatientName;}
-    public String getNameName(){return NameDoctor;}
+    public String getNameDoctor(){return NameDoctor;}
     public boolean getBloodAnalyse(){return BloodAnalyse;}
     public Boolean getGlucoseAnalyse(){return GlucoseAnalyse;}
     public Boolean getHormoneAnalyse(){return HormoneAnalyse;}
@@ -29,10 +29,10 @@ public class CalcReport {
 
 
     public void setReport_ID(Integer Report_ID){this.Report_ID = Report_ID;}
-    public void setFkToDoctor(Integer FkToDoctor){this.FkToDoctor.add(FkToDoctor);}
+    public void setFkToDoctor(Integer FkToDoctor){this.FkToDoctor = (FkToDoctor);}
     public void setFkToPatient(Integer FkToPatient){this.FkToPatient = FkToPatient;}
     public void setPatientName(String PatientName){this.PatientName = PatientName;}
-    public void setNameName(String NameDoctor){this.NameDoctor = NameDoctor;}
+    public void setNameDoctor(String NameDoctor){this.NameDoctor = NameDoctor;}
     public void setBloodAnalyse(Boolean BloodAnalyse){ this.BloodAnalyse = BloodAnalyse;}
     public void setGlucoseAnalyse(Boolean GlucoseAnalyse){this.GlucoseAnalyse = GlucoseAnalyse;}
     public void setHormoneAnalyse(Boolean HormoneAnalyse){this.HormoneAnalyse = HormoneAnalyse;}

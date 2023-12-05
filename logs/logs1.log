@@ -1,0 +1,16 @@
+2023-12-05 23:16:58 DEBUG DataProviderPostgres:37 - createTables [1] - start working method 
+2023-12-05 23:16:58 DEBUG DataProviderPostgres:55 - createTables [3]: - successfully [calcreport, doctor, patient, preparation, schedule]
+2023-12-05 23:16:59 DEBUG DataProviderPostgresTest:294 - selectCalcReportId [1]: TEST started SELECT
+2023-12-05 23:16:59 DEBUG HistoryContent:82 - convertClassToMap [1]: - Converting the entire object to a map
+2023-12-05 23:16:59 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 23:16:59 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 23:16:59 DEBUG HistoryContent:66 - generateObjMap [1]: - Mapping fields of the class beginning
+2023-12-05 23:16:59 DEBUG HistoryContent:77 - generateObjMap [3]: - The mapping was successful 
+2023-12-05 23:16:59 DEBUG HistoryContent:89 - convertClassToMap [2]: The conversion of the entire object to map is successful
+2023-12-05 23:16:59 DEBUG DataProviderPostgres:292 - selectCalcReportId [1]: - start working method
+2023-12-05 23:16:59 DEBUG DataProviderPostgres:198 - createResultSetToObject [1]: - start working method
+2023-12-05 23:16:59 DEBUG DataProviderPostgres:213 - createResultSetToObject [3]: - successfully end work
+2023-12-05 23:16:59 DEBUG DataProviderPostgres:305 - selectCalcReportId[3]: - SELECT DATA Preparation successfully
+2023-12-05 23:16:59 INFO  DataProviderPostgresTest:300 - selectCalcReportId [2]: actual data = {patientname=Artem_2, arterialanalyse=true, report_id=1, fktodoctor=1, price=123.4, bloodanalyse=true, hormoneanalyse=true, glucoseanalyse=true, namedoctor=Artem, fktopatient=1}
+2023-12-05 23:16:59 INFO  DataProviderPostgresTest:301 - selectCalcReportId [3]: expected data = {NameDoctor=Artem, Report_ID=1, FkToDoctor=1, price=123.4, HormoneAnalyse=true, ArterialAnalyse=true, FkToPatient=1, PatientName=Artem_2, BloodAnalyse=true, GlucoseAnalyse=true}
+2023-12-05 23:16:59 DEBUG DataProviderPostgresTest:307 - selectScheduleId [4]: TEST select data succeeded 
