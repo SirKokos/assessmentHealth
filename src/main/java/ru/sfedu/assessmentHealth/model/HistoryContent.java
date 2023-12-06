@@ -47,21 +47,6 @@ public class HistoryContent {
     public Map<String, Object> getObject(){return object;}
     public <T> void setObject (T object){this.object = convertClassToMap(object);}
 
-//    protected <T> Map<String, Object>  convertClassToMap (T object) {
-//        Map<String, Object> map = new HashMap<>();
-//        Class<?> clazz = object.getClass();
-//
-//        Field[] fields = clazz.getDeclaredFields();
-//        for (Field field : fields) {
-//            field.setAccessible(true);
-//            try {
-//                map.put(field.getName(), field.get(object));
-//            } catch (IllegalAccessException e) {
-//                e.printStackTrace();
-//            }
-//        }
-//        return map;
-//    }
     private <T> Map<String, Object> generateObjMap(Class<?> obj,T object){
         log.debug("generateObjMap [1]: - Mapping fields of the class beginning");
         Map<String, Object> map = new HashMap<>();

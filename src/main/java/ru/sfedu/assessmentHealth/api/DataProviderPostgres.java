@@ -194,7 +194,7 @@ public class DataProviderPostgres implements DataCommandCrud{
         log.debug("InsertDataCalcReport [3]: insert Data successfully {}",mapObj);
     }
 
-    protected  Map<String,Object> createResultSetToObject(ResultSet result) throws SQLException {
+    public Map<String,Object> createResultSetToObject(ResultSet result) throws SQLException {
         log.debug("createResultSetToObject [1]: - start working method");
         Map<String,Object> resultSet = new HashMap<>();
         ResultSetMetaData metaData = result.getMetaData();
@@ -213,7 +213,7 @@ public class DataProviderPostgres implements DataCommandCrud{
         log.debug("createResultSetToObject [3]: - successfully end work");
         return resultSet;
     }
-
+    @Override
     public Map<String,Object> selectDoctorId(Integer Doctor_Id){
         log.debug("selectDoctorId [1]: - start working method");
         Map<String,Object> resultSet;
@@ -234,6 +234,7 @@ public class DataProviderPostgres implements DataCommandCrud{
         return resultSet;
     }
 
+    @Override
     public Map<String,Object> selectPatientId(Integer Patient_Id){
         log.debug("selectPatientId [1]: - start working method");
         Map<String,Object> resultSet;
@@ -251,7 +252,7 @@ public class DataProviderPostgres implements DataCommandCrud{
         log.debug("selectPatientId [3]: - SELECT DATA Patient successfully");
         return resultSet;
     }
-
+    @Override
     public Map<String,Object> selectPreparationId(Integer Preparation_Id){
         log.debug("selectPreparationId [1]: - start working method");
         Map<String,Object> resultSet;
@@ -269,7 +270,7 @@ public class DataProviderPostgres implements DataCommandCrud{
         log.debug("selectPreparationId[3]: - SELECT DATA Preparation successfully");
         return resultSet;
     }
-
+    @Override
     public Map<String,Object> selectScheduleId(Integer Schedule_Id){
         log.debug("selectPreparationId [1]: - start working method");
         Map<String,Object> resultSet;
@@ -287,7 +288,7 @@ public class DataProviderPostgres implements DataCommandCrud{
         log.debug("selectPreparationId[3]: - SELECT DATA Preparation successfully");
         return resultSet;
     }
-
+    @Override
     public Map<String,Object> selectCalcReportId(Integer CalcReport_Id){
         log.debug("selectCalcReportId [1]: - start working method");
         Map<String,Object> resultSet;
@@ -305,7 +306,77 @@ public class DataProviderPostgres implements DataCommandCrud{
         log.debug("selectCalcReportId[3]: - SELECT DATA Preparation successfully");
         return resultSet;
     }
+    @Override
+    public void deleteDataDoctor(Integer Doctor_ID){
+        log.debug("deleteDataDoctor [1]: - start working method");
+        try {
+            PreparedStatement statement = connection.prepareStatement(CONST.DELETE_DOCTOR_TO_ID);
+            statement.setInt(1,Doctor_ID);
+            statement.executeUpdate();
 
+        } catch (SQLException e) {
+            log.error("deleteDataDoctor [2]: - ERROR {}", e.getMessage());
+            throw new RuntimeException(e);
+        }
+        log.debug("deleteDataDoctor [3]: - DELETE DATA Doctor successfully");
+    }
+    @Override
+    public void deleteDataPatient(Integer Patient_ID){
+        log.debug("deleteDataPatient [1]: - start working method");
+        try {
+            PreparedStatement statement = connection.prepareStatement(CONST.DELETE_PATIENT_TO_ID);
+            statement.setInt(1,Patient_ID);
+            statement.executeUpdate();
+
+        } catch (SQLException e) {
+            log.error("deleteDataPatient [2]: - ERROR {}", e.getMessage());
+            throw new RuntimeException(e);
+        }
+        log.debug("deleteDataPatient [3]: - DELETE DATA Patient successfully");
+    }
+    @Override
+    public void deleteDataPreparation(Integer Preparation_ID){
+        log.debug("deleteDataPreparation [1]: - start working method");
+        try {
+            PreparedStatement statement = connection.prepareStatement(CONST.DELETE_PREPARATION_TO_ID);
+            statement.setInt(1,Preparation_ID);
+            statement.executeUpdate();
+
+        } catch (SQLException e) {
+            log.error("deleteDataPreparation [2]: - ERROR {}", e.getMessage());
+            throw new RuntimeException(e);
+        }
+        log.debug("deleteDataPreparation [3]: - DELETE DATA Preparation successfully");
+    }
+    @Override
+    public void deleteDataSchedule(Integer Schedule_ID){
+        log.debug("deleteDataSchedule [1]: - start working method");
+        try {
+            PreparedStatement statement = connection.prepareStatement(CONST.DELETE_SCHEDULE_TO_ID);
+            statement.setInt(1,Schedule_ID);
+            statement.executeUpdate();
+
+        } catch (SQLException e) {
+            log.error("deleteDataSchedule [2]: - ERROR {}", e.getMessage());
+            throw new RuntimeException(e);
+        }
+        log.debug("deleteDataSchedule [3]: - DELETE DATA Schedule successfully");
+    }
+
+    @Override
+    public void deleteDataCalcReport(Integer CalcReport_ID){
+        log.debug("deleteDataCalcReport [1]: - start working method");
+        try {
+            PreparedStatement statement = connection.prepareStatement(CONST.DELETE_CALC_REPORT_TO_ID);
+            statement.setInt(1,CalcReport_ID);
+            statement.executeUpdate();
+
+        } catch (SQLException e) {
+            log.error("deleteDataCalcReport [2]: - ERROR {}", e.getMessage());
+            throw new RuntimeException(e);
+        }
+        log.debug("deleteDataCalcReport [3]: - DELETE DATA CalcReport successfully");
+    }
 
 
 }

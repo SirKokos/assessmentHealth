@@ -94,8 +94,8 @@ public class CONST {
             "Dosage DECIMAL,\n" +
             "statusVisitPreparation VARCHAR(50),\n" +
             "AboutPrep TEXT,\n" +
-            "CountPrep INT,\n" +
-            "".concat("CONSTRAINT ").concat(FK_PREPARATION_TO_DOCTOR).concat(" FOREIGN KEY ").concat(" (").concat(FK_PREPARATION_TO_DOCTOR).concat(") ").concat(" REFERENCES ").concat(SQL_TABLE_NAME_DOCTOR).concat("(").concat(KEY_DOCTOR).concat(")").concat(");"));
+            "CountPrep INT ".concat(");"));
+//            "".concat("CONSTRAINT ").concat(FK_PREPARATION_TO_DOCTOR).concat(" FOREIGN KEY ").concat(" (").concat(FK_PREPARATION_TO_DOCTOR).concat(") ").concat(" REFERENCES ").concat(SQL_TABLE_NAME_DOCTOR).concat("(").concat(KEY_DOCTOR).concat(")").concat(");"));
     public static final String SQL_TABLE_CREATE_SCHEDULE= "CREATE TABLE IF NOT EXISTS ".concat(SQL_TABLE_NAME_SCHEDULE).concat(" (").concat(KEY_SCHEDULE).concat(" SERIAL PRIMARY KEY,\n" +
             "FkToDoctor INT,\n" +
             "dateWeek VARCHAR(50),\n" +
@@ -129,11 +129,11 @@ public class CONST {
     public static final String INSERT_CALC_REPORT = String.format("INSERT INTO %s (Report_ID, FkToDoctor, FkToPatient, PatientName, NameDoctor, BloodAnalyse, GlucoseAnalyse, HormoneAnalyse, ArterialAnalyse, price) ",SQL_TABLE_NAME_CALC_REPORT).concat("\nVALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
 
 
-    public static final String DELETE_DOCTOR_TO_ID = String.format("DELETE FROM %s WHERE %s",SQL_TABLE_NAME_DOCTOR,KEY_DOCTOR).concat(" = %d");
-    public static final String DELETE_PATIENT_TO_ID = String.format("DELETE FROM %s WHERE %s",SQL_TABLE_NAME_PATIENT,KEY_PATIENT).concat(" = %d");
-    public static final String DELETE_PREPARATION_TO_ID = String.format("DELETE FROM %s WHERE %s",SQL_TABLE_NAME_PREPARATION,KEY_PREPARATION).concat(" = %d");
-    public static final String DELETE_SCHEDULE_TO_ID = String.format("DELETE FROM %s WHERE %s",SQL_TABLE_NAME_SCHEDULE,KEY_SCHEDULE).concat(" = %d");
-    public static final String DELETE_CALC_REPORT_TO_ID = String.format("DELETE FROM %s WHERE %s",SQL_TABLE_NAME_CALC_REPORT,KEY_CALC_REPORT).concat(" = %d");
+    public static final String DELETE_DOCTOR_TO_ID = String.format("DELETE FROM %s WHERE %s",SQL_TABLE_NAME_DOCTOR,KEY_DOCTOR).concat(" = ?");
+    public static final String DELETE_PATIENT_TO_ID = String.format("DELETE FROM %s WHERE %s",SQL_TABLE_NAME_PATIENT,KEY_PATIENT).concat(" = ?");
+    public static final String DELETE_PREPARATION_TO_ID = String.format("DELETE FROM %s WHERE %s",SQL_TABLE_NAME_PREPARATION,KEY_PREPARATION).concat(" = ?");
+    public static final String DELETE_SCHEDULE_TO_ID = String.format("DELETE FROM %s WHERE %s",SQL_TABLE_NAME_SCHEDULE,KEY_SCHEDULE).concat(" = ?");
+    public static final String DELETE_CALC_REPORT_TO_ID = String.format("DELETE FROM %s WHERE %s",SQL_TABLE_NAME_CALC_REPORT,KEY_CALC_REPORT).concat(" = ?");
 
 
 }
