@@ -99,4 +99,7 @@ public class HistoryContent {
     public int hashCode() {
         return Objects.hash(id, className, createdDate, actor, methodName, object, status);
     }
+
+
 }
+

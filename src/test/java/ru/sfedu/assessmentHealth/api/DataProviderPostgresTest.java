@@ -28,8 +28,6 @@ class DataProviderPostgresTest {
 
     DataProviderPostgres dataProviderPostgres;
 
-
-
     {
         try {
             dataProviderPostgres = new DataProviderPostgres();

@@ -1,16 +1,25 @@
 package ru.sfedu.assessmentHealth.model;
+import com.opencsv.bean.CsvBindByPosition;
+
 import javax.xml.crypto.Data;
 import java.util.Date;
 import java.util.List;
 import java.util.Objects;
 
 public class Schedule {
+    @CsvBindByPosition(position = 0)
     private Integer Schedule_ID;
+    @CsvBindByPosition(position = 1)
     private Integer FkToDoctor;
+    @CsvBindByPosition(position = 2)
     private DateWeek dateWeek;
+    @CsvBindByPosition(position = 3)
     private Date DateSchedule;
+    @CsvBindByPosition(position = 4)
     private Date TimeBegin;
+    @CsvBindByPosition(position = 5)
     private Date TimeEnd;
+    @CsvBindByPosition(position = 6)
     private StatusSchedule statusSchedule;
 
 

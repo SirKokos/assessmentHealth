@@ -1,14 +1,24 @@
 package ru.sfedu.assessmentHealth.model;
 
+import com.opencsv.bean.CsvBindByPosition;
+
 public class Patient extends Person{
 //    private Integer Patient_ID;
+    @CsvBindByPosition(position = 7)
     private double CellsBlood;
+    @CsvBindByPosition(position = 8)
     private double Hemoglobin;
+    @CsvBindByPosition(position = 9)
     private double Platelets;
+    @CsvBindByPosition(position = 10)
     private double Testosterone;
+    @CsvBindByPosition(position = 11)
     private double Glucose;
+    @CsvBindByPosition(position = 12)
     private double Cholesterol;
+    @CsvBindByPosition(position = 13)
     private short ArterialPress;
+    @CsvBindByPosition(position = 14)
     private StatusVisit statusVisit;
 
 //    public Integer getDoctor_ID(){return Patient_ID;}

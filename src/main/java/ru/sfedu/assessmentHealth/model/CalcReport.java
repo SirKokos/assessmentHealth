@@ -1,18 +1,32 @@
 package ru.sfedu.assessmentHealth.model;
 
+import com.opencsv.bean.CsvBindByName;
+import com.opencsv.bean.CsvBindByPosition;
+import ru.sfedu.assessmentHealth.CONST;
+
 import java.util.List;
 import java.util.Objects;
 
 public class CalcReport {
+    @CsvBindByPosition(position = 0)
     private Integer Report_ID;
+    @CsvBindByPosition(position = 1)
     private Integer FkToDoctor;
+    @CsvBindByPosition(position = 2)
     private Integer FkToPatient;
+    @CsvBindByPosition(position = 3)
     private String PatientName;
+    @CsvBindByPosition(position = 4)
     private String NameDoctor;
+    @CsvBindByPosition(position = 5)
     private Boolean BloodAnalyse;
+    @CsvBindByPosition(position = 6)
     private Boolean GlucoseAnalyse;
+    @CsvBindByPosition(position = 7)
     private Boolean HormoneAnalyse;
+    @CsvBindByPosition(position = 8)
     private Boolean ArterialAnalyse;
+    @CsvBindByPosition(position = 9)
     private double price;
 
 

@@ -1,14 +1,26 @@
 package ru.sfedu.assessmentHealth.model;
 
+import com.opencsv.bean.CsvBindByName;
+import com.opencsv.bean.CsvBindByPosition;
+import ru.sfedu.assessmentHealth.CONST;
+
 import java.net.Inet4Address;
 
 public class Person {
+
+    @CsvBindByPosition(position = 0)
     protected Integer Person_ID;
+    @CsvBindByPosition(position = 1)
     protected String Name;
+    @CsvBindByPosition(position = 2)
     protected String Surname;
+    @CsvBindByPosition(position = 3)
     protected String SecondName;
+    @CsvBindByPosition(position = 4)
     protected Integer Age;
+    @CsvBindByPosition(position = 5)
     protected char Gender;
+    @CsvBindByPosition(position = 6)
     protected StatusPerson Status;
 
     public Person(){

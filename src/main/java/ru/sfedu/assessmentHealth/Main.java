@@ -7,6 +7,8 @@ import ru.sfedu.assessmentHealth.api.DataProviderPostgres;
 import ru.sfedu.assessmentHealth.model.*;
 import ru.sfedu.assessmentHealth.utils.PersTestUnit;
 
+import javax.crypto.Cipher;
+import javax.print.Doc;
 import javax.swing.*;
 import javax.xml.crypto.Data;
 import java.lang.reflect.Field;
@@ -64,6 +66,33 @@ public class Main {
 //        Map<String,Object> mapObj = wrap.getObject();
 //        System.out.println(mapObj.values());
 
+
+
+//        Doctor doctorTest = new Doctor();
+//
+//        doctorTest.setGender('M');
+//        doctorTest.setExperience(3);
+//        doctorTest.setAvgPatient(23.5);
+//        doctorTest.setQualification("Доктор");
+//        doctorTest.setSpecialization("Genekolog");
+
+        Person person = new Person();
+        person.setPerson_ID(1);
+        person.setName("Artem");
+        person.setSurname("Sim");
+        person.setSecondName("Evgeni");
+        person.setAge(20);
+        person.setStatus(StatusPerson.DOCTOR);
+
+        person.setGender('M');
+        ((Doctor) person).setExperience(3);
+        ((Doctor) person).setAvgPatient(23.5);
+        ((Doctor) person).setQualification("Доктор");
+        ((Doctor) person).setSpecialization("Genekolog");
+
+
+
+        System.out.println(person);
         String str = "08:03:10";
 
     }

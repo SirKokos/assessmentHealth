@@ -1,5 +1,9 @@
 package ru.sfedu.assessmentHealth.model;
 
+import com.opencsv.bean.CsvBindAndSplitByName;
+import com.opencsv.bean.CsvBindByPosition;
+import com.opencsv.bean.CsvDate;
+
 import javax.xml.crypto.Data;
 import java.util.ArrayList;
 import java.util.Date;
@@ -7,19 +11,29 @@ import java.util.List;
 import java.util.Objects;
 
 public class Preparation {
+    @CsvBindByPosition(position = 0)
     private Integer Preparation_ID;
-    private List<Integer> FkPreparationToDoctor = new ArrayList<>();
+//    @CsvBindAndSplitByName(elementType = Integer.class, splitOn = "/", writeDelimiter = ";")
+    @CsvBindByPosition(position = 1)
+    protected Integer FkPreparationToDoctor;
+    @CsvBindByPosition(position = 2)
     private String NamePrep;
+    @CsvBindByPosition(position = 3)
+    @CsvDate("yyyy-MM-dd")
     private Date DateEnd;
+    @CsvBindByPosition(position = 4)
     private double Dosage;
+    @CsvBindByPosition(position = 5)
     private  StatusVisitPreparation statusVisitPreparation;
+    @CsvBindByPosition(position = 6)
     private String AboutPrep;
+    @CsvBindByPosition(position = 7)
     private Integer CountPrep;
 
 
     public Integer getCountPrep(){return CountPrep;}
     public Integer getPreparation_ID(){return Preparation_ID;}
-    public List<Integer> getFkPreparationToDoctor(){return FkPreparationToDoctor;}
+    public Integer getFkPreparationToDoctor(){return FkPreparationToDoctor;}
     public String getNamePrep(){return NamePrep;}
     public Date getDateEnd(){return DateEnd;}
     public double getDosage(){return  Dosage;}
@@ -29,7 +43,7 @@ public class Preparation {
 
     public void setCountPrep(Integer CountPrep){this.CountPrep = CountPrep;}
     public void setPreparation_ID(Integer Preparation_ID){this.Preparation_ID = Preparation_ID;}
-    public void setFkPreparationToDoctor(Integer FkPreparationToDoctor){this.FkPreparationToDoctor.add(FkPreparationToDoctor);}
+    public void setFkPreparationToDoctor(Integer FkPreparationToDoctor){this.FkPreparationToDoctor = (FkPreparationToDoctor);}
     public void setNamePrep(String NamePrep){this.NamePrep = NamePrep;}
     public void setDateEnd(Date DateEnd){this.DateEnd = DateEnd;}
     public void setDosage(double Dosage){this.Dosage = Dosage;}
