@@ -2,18 +2,24 @@ package ru.sfedu.assessmentHealth.model;
 
 import com.opencsv.bean.CsvBindByName;
 import com.opencsv.bean.CsvBindByPosition;
+import org.simpleframework.xml.Element;
+import org.simpleframework.xml.Root;
 import ru.sfedu.assessmentHealth.CONST;
 
 import java.util.Objects;
-
+@Root
 public class Doctor extends Person{
 //    protected Integer Doctor_ID;
+    @Element
     @CsvBindByPosition(position = 7)
     private int Experience;
+    @Element
     @CsvBindByPosition(position = 8)
     private double AvgPatient;
+    @Element
     @CsvBindByPosition(position = 9)
     private String Qualification;
+    @Element
     @CsvBindByPosition(position = 10)
     private  String Specialization;
 

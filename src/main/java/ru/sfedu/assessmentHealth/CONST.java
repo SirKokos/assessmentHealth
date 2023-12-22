@@ -27,6 +27,11 @@ public class CONST {
     public static final char CSV_DEFAULT_SEPARATOR = ',';
     public static final String CSV_PATH_FOLDER = "csv/";
     public static final String CSV_FILE_TYPE = ".csv";
+//-----------------------------------------------------------------------------------------
+
+    public static final String XML_PATH_FOLDER = "xml/";
+    public static final String XML_FILE_TYPE = ".xml";
+//-----------------------------------------------------------------------------------------
 
 
     public static final String MONGO_FIELD_TIME = "time";

@@ -1,23 +1,34 @@
 package ru.sfedu.assessmentHealth.model;
 
 import com.opencsv.bean.CsvBindByPosition;
+import org.simpleframework.xml.Element;
+import org.simpleframework.xml.Root;
 
+@Root
 public class Patient extends Person{
 //    private Integer Patient_ID;
+    @Element
     @CsvBindByPosition(position = 7)
     private double CellsBlood;
+    @Element
     @CsvBindByPosition(position = 8)
     private double Hemoglobin;
+    @Element
     @CsvBindByPosition(position = 9)
     private double Platelets;
+    @Element
     @CsvBindByPosition(position = 10)
     private double Testosterone;
+    @Element
     @CsvBindByPosition(position = 11)
     private double Glucose;
+    @Element
     @CsvBindByPosition(position = 12)
     private double Cholesterol;
+    @Element
     @CsvBindByPosition(position = 13)
     private short ArterialPress;
+    @Element
     @CsvBindByPosition(position = 14)
     private StatusVisit statusVisit;
 

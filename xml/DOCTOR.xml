@@ -1,0 +1,15 @@
+<xmlWrapper>
+   <object class="ru.sfedu.assessmentHealth.model.Doctor">
+      <Person_ID>1</Person_ID>
+      <Name>Artem</Name>
+      <Surname>Sim</Surname>
+      <SecondName>Evgeni</SecondName>
+      <Age>20</Age>
+      <Gender>M</Gender>
+      <Status>DOCTOR</Status>
+      <Experience>3</Experience>
+      <AvgPatient>23.5</AvgPatient>
+      <Qualification>Доктор</Qualification>
+      <Specialization>Genekolog</Specialization>
+   </object>
+</xmlWrapper>

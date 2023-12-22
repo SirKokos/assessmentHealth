@@ -8310,3 +8310,1361 @@
 2023-12-19 22:26:08 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\csv\SCHEDULE.csv is exists
 2023-12-19 22:26:08 DEBUG DataProviderCSV:398 - generateListFromCsv [1]: - process start ...
 2023-12-19 22:26:08 DEBUG DataProviderCSV:414 - generateListFromCsv [3]: End working [[3], [4], [5], [6], [7], [1, Artem, Sim, Evgeni, 20, M, DOCTOR, 3, 23.5, Доктор, Genekolog]]
+2023-12-20 15:31:56 DEBUG FileUtil:18 - createFileIfNotExists [1]: New file D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml, is created: true
+2023-12-20 15:31:56 DEBUG FileUtil:18 - createFileIfNotExists [1]: New file D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml, is created: true
+2023-12-20 15:31:56 DEBUG FileUtil:18 - createFileIfNotExists [1]: New file D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml, is created: true
+2023-12-20 15:31:56 DEBUG FileUtil:18 - createFileIfNotExists [1]: New file D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml, is created: true
+2023-12-20 15:31:56 DEBUG FileUtil:18 - createFileIfNotExists [1]: New file D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml, is created: true
+2023-12-20 15:31:56 DEBUG DataProviderXML:40 - InsertDataDoctor [1]: - Start method working insert xml
+2023-12-20 15:32:32 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 15:32:32 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 15:32:32 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 15:32:32 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 15:32:32 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 15:36:38 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 15:36:38 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 15:36:38 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 15:36:38 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 15:36:38 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 15:36:38 DEBUG DataProviderXML:40 - InsertDataDoctor [1]: - Start method working insert xml
+2023-12-20 15:41:19 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 15:41:19 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 15:41:19 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 15:41:19 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 15:41:19 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 15:41:20 DEBUG DataProviderXML:40 - InsertDataDoctor [1]: - Start method working insert xml
+2023-12-20 16:06:42 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 16:06:42 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 16:06:42 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 16:06:42 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 16:06:42 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 16:06:42 DEBUG DataProviderXML:40 - InsertDataDoctor [1]: - Start method working insert xml
+2023-12-20 16:07:06 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 16:07:06 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 16:07:06 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 16:07:06 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 16:07:06 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 16:07:06 DEBUG DataProviderXML:40 - InsertDataDoctor [1]: - Start method working insert xml
+2023-12-20 16:33:06 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 16:33:06 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 16:33:06 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 16:33:06 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 16:33:06 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 16:33:28 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 16:33:28 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 16:33:28 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 16:33:28 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 16:33:28 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 16:35:11 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 16:35:11 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 16:35:11 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 16:35:11 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 16:35:11 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 16:48:17 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 16:48:17 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 16:48:17 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 16:48:17 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 16:48:17 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 17:10:45 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 17:10:45 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 17:10:45 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 17:10:45 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 17:10:45 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 17:13:25 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 17:13:25 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 17:13:25 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 17:13:25 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 17:13:25 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 17:15:23 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 17:15:23 DEBUG FileUtil:18 - createFileIfNotExists [1]: New file D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml, is created: true
+2023-12-20 17:15:23 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 17:15:23 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 17:15:23 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 17:19:10 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 17:19:10 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 17:19:10 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 17:19:10 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 17:19:10 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 17:19:33 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 17:19:33 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 17:19:33 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 17:19:33 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 17:19:33 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 17:20:51 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 17:20:51 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 17:20:51 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 17:20:51 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 17:20:51 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 17:21:46 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 17:21:46 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 17:21:46 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 17:21:46 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 17:21:46 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 17:23:07 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 17:23:07 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 17:23:07 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 17:23:07 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 17:23:07 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 17:28:40 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 17:28:40 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 17:28:40 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 17:28:40 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 17:28:40 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 17:29:09 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 17:29:09 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 17:29:09 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 17:29:09 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 17:29:09 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 17:29:36 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 17:29:36 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 17:29:36 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 17:29:36 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 17:29:36 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 17:30:19 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 17:30:19 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 17:30:19 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 17:30:19 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 17:30:19 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 17:42:04 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 17:42:04 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 17:42:04 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 17:42:04 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 17:42:04 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 17:42:04 DEBUG DataProviderCSVTest:56 - insertDataDoctor [1]: start working test
+2023-12-20 17:42:36 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 17:42:36 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 17:42:36 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 17:42:36 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 17:42:36 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 17:42:36 DEBUG DataProviderCSVTest:56 - insertDataDoctor [1]: start working test
+2023-12-20 17:42:57 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 17:42:57 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 17:42:57 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 17:42:57 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 17:42:57 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 17:42:57 DEBUG DataProviderCSVTest:56 - insertDataDoctor [1]: start working test
+2023-12-20 17:58:58 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 17:58:58 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 17:58:58 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 17:58:58 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 17:58:58 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 17:58:58 DEBUG DataProviderCSVTest:58 - insertDataDoctor [1]: start working test
+2023-12-20 17:59:12 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 17:59:12 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 17:59:12 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 17:59:12 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 17:59:12 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 17:59:12 DEBUG DataProviderXML:41 - getXmlWrapper [1]: start working method
+2023-12-20 18:01:03 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 18:01:03 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 18:01:03 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 18:01:03 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 18:01:03 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 18:01:03 DEBUG DataProviderXML:41 - getXmlWrapper [1]: start working method
+2023-12-20 18:02:24 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 18:02:24 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 18:02:24 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 18:02:24 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 18:02:24 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 18:02:24 DEBUG DataProviderXML:41 - getXmlWrapper [1]: start working method
+2023-12-20 18:02:54 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 18:02:54 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 18:02:54 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 18:02:54 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 18:02:54 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 18:02:54 DEBUG DataProviderXML:41 - getXmlWrapper [1]: start working method
+2023-12-20 18:03:26 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 18:03:26 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 18:03:26 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 18:03:26 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 18:03:26 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 18:03:26 DEBUG DataProviderXML:41 - getXmlWrapper [1]: start working method
+2023-12-20 18:05:46 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 18:05:46 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 18:05:46 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 18:05:46 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 18:05:46 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 18:05:46 DEBUG DataProviderXML:41 - getXmlWrapper [1]: start working method
+2023-12-20 18:22:43 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 18:22:43 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 18:22:43 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 18:22:43 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 18:22:43 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 18:22:43 DEBUG DataProviderCSVTest:59 - insertDataDoctor [1]: start working test
+2023-12-20 18:22:44 DEBUG DataProviderXML:41 - getXmlWrapper [1]: start working method
+2023-12-20 18:23:10 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 18:23:10 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 18:23:10 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 18:23:10 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 18:23:10 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 18:23:10 DEBUG DataProviderCSVTest:59 - insertDataDoctor [1]: start working test
+2023-12-20 18:23:10 DEBUG DataProviderXML:41 - getXmlWrapper [1]: start working method
+2023-12-20 18:23:12 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 18:23:12 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 18:23:12 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 18:23:12 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 18:23:12 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 18:23:12 DEBUG DataProviderCSVTest:59 - insertDataDoctor [1]: start working test
+2023-12-20 18:23:12 DEBUG DataProviderXML:41 - getXmlWrapper [1]: start working method
+2023-12-20 18:25:00 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 18:25:00 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 18:25:00 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 18:25:00 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 18:25:00 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 18:25:00 DEBUG DataProviderCSVTest:59 - insertDataDoctor [1]: start working test
+2023-12-20 18:25:01 DEBUG DataProviderXML:41 - getXmlWrapper [1]: start working method
+2023-12-20 18:25:23 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 18:25:23 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 18:25:23 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 18:25:23 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 18:25:23 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 18:25:23 DEBUG DataProviderCSVTest:59 - insertDataDoctor [1]: start working test
+2023-12-20 18:25:24 DEBUG DataProviderXML:41 - getXmlWrapper [1]: start working method
+2023-12-20 18:26:34 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 18:26:34 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 18:26:34 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 18:26:34 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 18:26:34 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 18:26:34 DEBUG DataProviderCSVTest:59 - insertDataDoctor [1]: start working test
+2023-12-20 18:26:35 DEBUG DataProviderXML:41 - getXmlWrapper [1]: start working method
+2023-12-20 18:27:26 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 18:27:26 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 18:27:26 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 18:27:26 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 18:27:26 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 18:27:26 DEBUG DataProviderCSVTest:59 - insertDataDoctor [1]: start working test
+2023-12-20 18:27:27 DEBUG DataProviderXML:41 - getXmlWrapper [1]: start working method
+2023-12-20 18:28:37 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 18:28:37 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 18:28:37 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 18:28:37 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 18:28:37 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 18:28:37 DEBUG DataProviderCSVTest:59 - insertDataDoctor [1]: start working test
+2023-12-20 18:28:37 DEBUG DataProviderXML:41 - getXmlWrapper [1]: start working method
+2023-12-20 18:31:39 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 18:31:39 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 18:31:39 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 18:31:39 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 18:31:39 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 18:31:39 DEBUG DataProviderCSVTest:59 - insertDataDoctor [1]: start working test
+2023-12-20 18:31:40 DEBUG DataProviderXML:41 - getXmlWrapper [1]: start working method
+2023-12-20 18:32:40 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 18:32:40 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 18:32:40 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 18:32:40 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 18:32:40 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 18:32:40 DEBUG DataProviderCSVTest:59 - insertDataDoctor [1]: start working test
+2023-12-20 18:32:41 DEBUG DataProviderXML:41 - getXmlWrapper [1]: start working method
+2023-12-20 18:33:03 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 18:33:03 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 18:33:03 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 18:33:03 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 18:33:03 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 18:33:03 DEBUG DataProviderCSVTest:59 - insertDataDoctor [1]: start working test
+2023-12-20 18:33:03 DEBUG DataProviderXML:41 - getXmlWrapper [1]: start working method
+2023-12-20 18:40:24 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 18:40:24 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 18:40:24 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 18:40:24 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 18:40:24 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 18:40:24 DEBUG DataProviderCSVTest:59 - insertDataDoctor [1]: start working test
+2023-12-20 18:40:24 DEBUG DataProviderXML:41 - getXmlWrapper [1]: start working method
+2023-12-20 18:59:58 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\csv\CALCREPORT.csv is exists
+2023-12-20 18:59:58 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\csv\DOCTOR.csv is exists
+2023-12-20 18:59:58 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\csv\PATIENT.csv is exists
+2023-12-20 18:59:58 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\csv\PREPARATION.csv is exists
+2023-12-20 18:59:58 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\csv\SCHEDULE.csv is exists
+2023-12-20 18:59:58 DEBUG DataProviderCSVTest:67 - insertDataDoctor [1]: - start working test 
+2023-12-20 18:59:58 DEBUG DataProviderCSV:52 - InsertDataDoctor [1]: - Start method working insert csv
+2023-12-20 18:59:58 DEBUG CsvUtil:72 - getObjectLastIdCsv [1]: - Процесс получения последнего ID
+2023-12-20 18:59:58 ERROR CsvUtil:87 - getObjectLastIdCsv [4]: - Процесс получения последнего ID ОШИБКА For input string: ""
+2023-12-20 18:59:58 DEBUG DataProviderCSV:68 - InsertDataDoctor [3]: - Start method working END
+2023-12-20 18:59:58 DEBUG DataProviderCSVTest:71 - insertDataDoctor [2]: - working end succeeded status OK
+2023-12-20 19:00:16 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\csv\CALCREPORT.csv is exists
+2023-12-20 19:00:16 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\csv\DOCTOR.csv is exists
+2023-12-20 19:00:16 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\csv\PATIENT.csv is exists
+2023-12-20 19:00:16 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\csv\PREPARATION.csv is exists
+2023-12-20 19:00:16 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\csv\SCHEDULE.csv is exists
+2023-12-20 19:00:16 DEBUG DataProviderCSVTest:67 - insertDataDoctor [1]: - start working test 
+2023-12-20 19:00:16 DEBUG DataProviderCSV:52 - InsertDataDoctor [1]: - Start method working insert csv
+2023-12-20 19:00:16 DEBUG CsvUtil:72 - getObjectLastIdCsv [1]: - Процесс получения последнего ID
+2023-12-20 19:00:16 ERROR CsvUtil:87 - getObjectLastIdCsv [4]: - Процесс получения последнего ID ОШИБКА For input string: ""
+2023-12-20 19:00:16 DEBUG DataProviderCSV:68 - InsertDataDoctor [3]: - Start method working END
+2023-12-20 19:00:16 DEBUG DataProviderCSVTest:71 - insertDataDoctor [2]: - working end succeeded status OK
+2023-12-20 19:00:30 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\csv\CALCREPORT.csv is exists
+2023-12-20 19:00:30 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\csv\DOCTOR.csv is exists
+2023-12-20 19:00:30 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\csv\PATIENT.csv is exists
+2023-12-20 19:00:30 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\csv\PREPARATION.csv is exists
+2023-12-20 19:00:30 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\csv\SCHEDULE.csv is exists
+2023-12-20 19:00:30 DEBUG DataProviderCSVTest:67 - insertDataDoctor [1]: - start working test 
+2023-12-20 19:00:30 DEBUG DataProviderCSV:52 - InsertDataDoctor [1]: - Start method working insert csv
+2023-12-20 19:00:31 DEBUG CsvUtil:72 - getObjectLastIdCsv [1]: - Процесс получения последнего ID
+2023-12-20 19:00:31 ERROR CsvUtil:84 - getObjectLastIdCsv [3]: - Процесс получения последнего ID ОШИБКА
+2023-12-20 19:00:31 DEBUG DataProviderCSV:68 - InsertDataDoctor [3]: - Start method working END
+2023-12-20 19:00:31 DEBUG DataProviderCSVTest:71 - insertDataDoctor [2]: - working end succeeded status OK
+2023-12-20 19:00:40 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\csv\CALCREPORT.csv is exists
+2023-12-20 19:00:40 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\csv\DOCTOR.csv is exists
+2023-12-20 19:00:40 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\csv\PATIENT.csv is exists
+2023-12-20 19:00:40 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\csv\PREPARATION.csv is exists
+2023-12-20 19:00:40 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\csv\SCHEDULE.csv is exists
+2023-12-20 19:00:41 DEBUG DataProviderCSVTest:67 - insertDataDoctor [1]: - start working test 
+2023-12-20 19:00:41 DEBUG DataProviderCSV:52 - InsertDataDoctor [1]: - Start method working insert csv
+2023-12-20 19:00:41 DEBUG CsvUtil:72 - getObjectLastIdCsv [1]: - Процесс получения последнего ID
+2023-12-20 19:00:41 DEBUG CsvUtil:82 - getObjectLastIdCsv [2]: - Процесс получения последнего ID успешно получен
+2023-12-20 19:00:41 DEBUG DataProviderCSV:68 - InsertDataDoctor [3]: - Start method working END
+2023-12-20 19:00:41 DEBUG DataProviderCSVTest:71 - insertDataDoctor [2]: - working end succeeded status OK
+2023-12-20 19:01:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\csv\CALCREPORT.csv is exists
+2023-12-20 19:01:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\csv\DOCTOR.csv is exists
+2023-12-20 19:01:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\csv\PATIENT.csv is exists
+2023-12-20 19:01:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\csv\PREPARATION.csv is exists
+2023-12-20 19:01:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\csv\SCHEDULE.csv is exists
+2023-12-20 19:01:20 DEBUG DataProviderCSVTest:87 - insertDataPreparation [1]: - start working test 
+2023-12-20 19:01:20 DEBUG DataProviderCSV:97 - InsertDataPreparation [1]: - Start method working insert csv
+2023-12-20 19:01:20 DEBUG CsvUtil:44 - getObjectFkId [1]: - Процесс проверки на ограничение внешнего ключа 
+2023-12-20 19:01:20 DEBUG CsvUtil:61 - getObjectFkId [4] - Такого ключа в файле нет.Попробуйте перепроверить
+2023-12-20 19:01:20 DEBUG CsvUtil:61 - getObjectFkId [4] - Такого ключа в файле нет.Попробуйте перепроверить
+2023-12-20 19:01:20 DEBUG CsvUtil:67 - getObjectFkId [6] - Метод завершил работу
+2023-12-20 19:01:20 WARN  DataProviderCSV:108 - InsertDataPreparation [3]: - FK ERROR search
+2023-12-20 19:01:39 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\csv\CALCREPORT.csv is exists
+2023-12-20 19:01:39 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\csv\DOCTOR.csv is exists
+2023-12-20 19:01:39 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\csv\PATIENT.csv is exists
+2023-12-20 19:01:39 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\csv\PREPARATION.csv is exists
+2023-12-20 19:01:39 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\csv\SCHEDULE.csv is exists
+2023-12-20 19:01:39 DEBUG DataProviderCSVTest:97 - insertDataPreparationNegativity [1]: - start working test Negativity 
+2023-12-20 19:01:39 DEBUG DataProviderCSV:97 - InsertDataPreparation [1]: - Start method working insert csv
+2023-12-20 19:01:39 DEBUG CsvUtil:44 - getObjectFkId [1]: - Процесс проверки на ограничение внешнего ключа 
+2023-12-20 19:01:39 DEBUG CsvUtil:61 - getObjectFkId [4] - Такого ключа в файле нет.Попробуйте перепроверить
+2023-12-20 19:01:39 DEBUG CsvUtil:61 - getObjectFkId [4] - Такого ключа в файле нет.Попробуйте перепроверить
+2023-12-20 19:01:39 DEBUG CsvUtil:67 - getObjectFkId [6] - Метод завершил работу
+2023-12-20 19:01:39 WARN  DataProviderCSV:108 - InsertDataPreparation [3]: - FK ERROR search
+2023-12-20 19:01:39 DEBUG DataProviderCSVTest:101 - insertDataPreparationNegativity [2]: - working end succeeded Negativity status ERROR
+2023-12-20 19:07:38 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 19:07:38 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 19:07:38 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 19:07:38 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 19:07:38 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 19:07:38 DEBUG DataProviderCSVTest:59 - insertDataDoctor [1]: start working test
+2023-12-20 19:07:38 DEBUG DataProviderXML:59 - InsertDataDoctor [1]: - Start method working insert xml
+2023-12-20 19:07:39 DEBUG DataProviderXML:89 - insertDataDoctor [3] - error Value for @org.simpleframework.xml.Element(name="", type=void.class, data=false, required=true) on field 'Person_ID' protected java.lang.Integer ru.sfedu.assessmentHealth.model.Person.Person_ID is null in class ru.sfedu.assessmentHealth.model.Doctor
+2023-12-20 19:09:05 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 19:09:05 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 19:09:05 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 19:09:05 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 19:09:05 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 19:09:05 DEBUG DataProviderCSVTest:59 - insertDataDoctor [1]: start working test
+2023-12-20 19:09:05 DEBUG DataProviderXML:59 - InsertDataDoctor [1]: - Start method working insert xml
+2023-12-20 19:09:17 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 19:09:17 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 19:09:17 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 19:09:17 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 19:09:17 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 19:09:17 DEBUG DataProviderCSVTest:59 - insertDataDoctor [1]: start working test
+2023-12-20 19:09:17 DEBUG DataProviderXML:59 - InsertDataDoctor [1]: - Start method working insert xml
+2023-12-20 19:09:18 DEBUG DataProviderXML:42 - getXmlWrapper [1]: start working method
+2023-12-20 19:09:18 ERROR DataProviderXML:49 - getXmlWrapper [2]: ERROR Unable to satisfy @org.simpleframework.xml.ElementList(entry="", data=false, inline=true, name="", type=void.class, required=true, empty=true) on field 'listObjXml' public java.util.List ru.sfedu.assessmentHealth.model.XmlWrapper.listObjXml for class ru.sfedu.assessmentHealth.model.XmlWrapper at line 1
+2023-12-20 19:09:18 DEBUG DataProviderXML:82 - insertDataDoctor [2] - error null
+2023-12-20 19:09:31 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 19:09:31 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 19:09:31 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 19:09:31 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 19:09:31 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 19:09:31 DEBUG DataProviderCSVTest:59 - insertDataDoctor [1]: start working test
+2023-12-20 19:09:32 DEBUG DataProviderXML:59 - InsertDataDoctor [1]: - Start method working insert xml
+2023-12-20 19:09:32 DEBUG DataProviderXML:42 - getXmlWrapper [1]: start working method
+2023-12-20 19:09:32 ERROR DataProviderXML:49 - getXmlWrapper [2]: ERROR Unable to satisfy @org.simpleframework.xml.ElementList(entry="", data=false, inline=true, name="", type=void.class, required=true, empty=true) on field 'listObjXml' public java.util.List ru.sfedu.assessmentHealth.model.XmlWrapper.listObjXml for class ru.sfedu.assessmentHealth.model.XmlWrapper at line 1
+2023-12-20 19:09:32 DEBUG DataProviderXML:82 - insertDataDoctor [2] - error null
+2023-12-20 19:11:03 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 19:11:03 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 19:11:03 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 19:11:03 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 19:11:03 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 19:11:03 DEBUG DataProviderCSVTest:59 - insertDataDoctor [1]: start working test
+2023-12-20 19:11:03 DEBUG DataProviderXML:59 - InsertDataDoctor [1]: - Start method working insert xml
+2023-12-20 19:11:04 DEBUG DataProviderXML:42 - getXmlWrapper [1]: start working method
+2023-12-20 19:11:04 ERROR DataProviderXML:49 - getXmlWrapper [2]: ERROR Unable to satisfy @org.simpleframework.xml.ElementList(entry="", data=false, inline=true, name="", type=void.class, required=true, empty=true) on field 'listObjXml' public java.util.List ru.sfedu.assessmentHealth.model.XmlWrapper.listObjXml for class ru.sfedu.assessmentHealth.model.XmlWrapper at line 1
+2023-12-20 19:11:04 DEBUG DataProviderXML:83 - insertDataDoctor [2] - error null
+2023-12-20 19:12:22 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 19:12:22 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 19:12:22 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 19:12:22 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 19:12:22 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 19:12:22 DEBUG DataProviderCSVTest:59 - insertDataDoctor [1]: start working test
+2023-12-20 19:12:22 DEBUG DataProviderXML:59 - InsertDataDoctor [1]: - Start method working insert xml
+2023-12-20 19:12:57 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 19:12:57 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 19:12:57 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 19:12:57 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 19:12:57 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 19:12:57 DEBUG DataProviderCSVTest:59 - insertDataDoctor [1]: start working test
+2023-12-20 19:12:57 DEBUG DataProviderXML:59 - InsertDataDoctor [1]: - Start method working insert xml
+2023-12-20 19:12:57 DEBUG DataProviderXML:42 - getXmlWrapper [1]: start working method
+2023-12-20 19:12:57 ERROR DataProviderXML:49 - getXmlWrapper [2]: ERROR Unable to satisfy @org.simpleframework.xml.ElementList(entry="", data=false, inline=true, name="", type=void.class, required=true, empty=true) on field 'listObjXml' public java.util.List ru.sfedu.assessmentHealth.model.XmlWrapper.listObjXml for class ru.sfedu.assessmentHealth.model.XmlWrapper at line 1
+2023-12-20 19:12:57 DEBUG DataProviderXML:83 - insertDataDoctor [2] - error null
+2023-12-20 19:19:04 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 19:19:04 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 19:19:04 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 19:19:04 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 19:19:04 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 19:19:04 DEBUG DataProviderXML:59 - InsertDataDoctor [1]: - Start method working insert xml
+2023-12-20 19:19:21 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 19:19:21 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 19:19:21 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 19:19:21 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 19:19:21 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 19:19:21 DEBUG DataProviderXML:59 - InsertDataDoctor [1]: - Start method working insert xml
+2023-12-20 19:19:21 DEBUG DataProviderXML:42 - getXmlWrapper [1]: start working method
+2023-12-20 19:19:21 ERROR DataProviderXML:49 - getXmlWrapper [2]: ERROR Element 'Person_ID' does not have a match in class ru.sfedu.assessmentHealth.model.XmlWrapper at line 2
+2023-12-20 19:19:21 DEBUG DataProviderXML:83 - insertDataDoctor [2] - error null
+2023-12-20 19:20:28 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 19:20:28 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 19:20:28 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 19:20:28 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 19:20:28 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 19:20:28 DEBUG DataProviderXML:59 - InsertDataDoctor [1]: - Start method working insert xml
+2023-12-20 19:20:28 DEBUG DataProviderXML:42 - getXmlWrapper [1]: start working method
+2023-12-20 19:20:28 ERROR DataProviderXML:49 - getXmlWrapper [2]: ERROR Element 'Person_ID' does not have a match in class ru.sfedu.assessmentHealth.model.XmlWrapper at line 2
+2023-12-20 19:20:28 DEBUG DataProviderXML:83 - insertDataDoctor [2] - error null
+2023-12-20 19:22:38 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 19:22:38 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 19:22:38 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 19:22:38 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 19:22:38 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 19:22:38 DEBUG DataProviderXML:42 - getXmlWrapper [1]: start working method
+2023-12-20 19:22:38 ERROR DataProviderXML:49 - getXmlWrapper [2]: ERROR Element 'Person_ID' does not have a match in class ru.sfedu.assessmentHealth.model.XmlWrapper at line 2
+2023-12-20 19:24:36 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 19:24:36 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 19:24:36 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 19:24:36 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 19:24:36 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 19:24:36 DEBUG DataProviderXML:42 - getXmlWrapper [1]: start working method
+2023-12-20 19:24:37 ERROR DataProviderXML:49 - getXmlWrapper [2]: ERROR Element 'Person_ID' does not have a match in class ru.sfedu.assessmentHealth.model.XmlWrapper at line 2
+2023-12-20 19:27:14 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 19:27:14 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 19:27:14 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 19:27:14 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 19:27:14 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 19:27:14 DEBUG DataProviderXML:42 - getXmlWrapper [1]: start working method
+2023-12-20 19:27:15 ERROR DataProviderXML:49 - getXmlWrapper [2]: ERROR Element 'Person_ID' does not have a match in class ru.sfedu.assessmentHealth.model.XmlWrapper at line 2
+2023-12-20 19:28:34 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 19:28:34 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 19:28:34 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 19:28:34 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 19:28:34 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 19:28:34 DEBUG DataProviderXML:42 - getXmlWrapper [1]: start working method
+2023-12-20 19:28:35 ERROR DataProviderXML:49 - getXmlWrapper [2]: ERROR Element 'Person_ID' does not have a match in class ru.sfedu.assessmentHealth.model.XmlWrapper at line 2
+2023-12-20 19:32:34 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 19:32:34 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 19:32:34 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 19:32:34 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 19:32:34 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 19:32:34 DEBUG DataProviderXML:59 - InsertDataDoctor [1]: - Start method working insert xml
+2023-12-20 19:32:34 DEBUG DataProviderXML:91 - insertDataDoctor [3] - error Cannot invoke "ru.sfedu.assessmentHealth.model.XmlWrapper.addList(Object)" because "dataContainer" is null
+2023-12-20 19:33:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 19:33:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 19:33:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 19:33:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 19:33:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 19:33:20 DEBUG DataProviderXML:59 - InsertDataDoctor [1]: - Start method working insert xml
+2023-12-20 19:33:32 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 19:33:32 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 19:33:32 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 19:33:32 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 19:33:32 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 19:33:32 DEBUG DataProviderXML:59 - InsertDataDoctor [1]: - Start method working insert xml
+2023-12-20 19:33:32 DEBUG DataProviderXML:42 - getXmlWrapper [1]: start working method
+2023-12-20 19:33:32 DEBUG DataProviderXML:76 - 2    = [1]
+2023-12-20 19:33:49 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 19:33:49 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 19:33:49 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 19:33:49 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 19:33:49 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 19:33:49 DEBUG DataProviderXML:59 - InsertDataDoctor [1]: - Start method working insert xml
+2023-12-20 19:33:49 DEBUG DataProviderXML:42 - getXmlWrapper [1]: start working method
+2023-12-20 19:33:49 DEBUG DataProviderXML:76 - 3    = [2]
+2023-12-20 19:47:15 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 19:47:15 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 19:47:15 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 19:47:15 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 19:47:15 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 19:47:15 DEBUG DataProviderXML:59 - InsertDataDoctor [1]: - Start method working insert xml
+2023-12-20 19:47:21 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 19:47:21 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 19:47:21 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 19:47:21 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 19:47:21 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 19:47:21 DEBUG DataProviderXML:59 - InsertDataDoctor [1]: - Start method working insert xml
+2023-12-20 19:47:21 DEBUG DataProviderXML:42 - getXmlWrapper [1]: start working method
+2023-12-20 19:48:32 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 19:48:32 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 19:48:32 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 19:48:32 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 19:48:32 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 19:48:32 DEBUG DataProviderXML:42 - getXmlWrapper [1]: start working method
+2023-12-20 19:48:32 ERROR DataProviderXML:49 - getXmlWrapper [2]: ERROR Unable to satisfy @org.simpleframework.xml.ElementList(entry="", data=false, inline=true, name="", type=void.class, required=true, empty=true) on field 'listObjXml' public java.util.List ru.sfedu.assessmentHealth.model.XmlWrapper.listObjXml for class ru.sfedu.assessmentHealth.model.XmlWrapper at line 1
+2023-12-20 19:50:21 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 19:50:21 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 19:50:21 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 19:50:21 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 19:50:21 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 19:50:21 DEBUG DataProviderXML:59 - InsertDataDoctor [1]: - Start method working insert xml
+2023-12-20 19:50:21 DEBUG DataProviderXML:42 - getXmlWrapper [1]: start working method
+2023-12-20 19:50:22 ERROR DataProviderXML:49 - getXmlWrapper [2]: ERROR Unable to satisfy @org.simpleframework.xml.ElementList(entry="", data=false, inline=true, name="", type=void.class, required=true, empty=true) on field 'listObjXml' public java.util.List ru.sfedu.assessmentHealth.model.XmlWrapper.listObjXml for class ru.sfedu.assessmentHealth.model.XmlWrapper at line 1
+2023-12-20 19:50:22 DEBUG DataProviderXML:80 - insertDataDoctor [2] - error null
+2023-12-20 19:50:22 DEBUG DataProviderXML:42 - getXmlWrapper [1]: start working method
+2023-12-20 19:50:22 ERROR DataProviderXML:49 - getXmlWrapper [2]: ERROR Unable to satisfy @org.simpleframework.xml.ElementList(entry="", data=false, inline=true, name="", type=void.class, required=true, empty=true) on field 'listObjXml' public java.util.List ru.sfedu.assessmentHealth.model.XmlWrapper.listObjXml for class ru.sfedu.assessmentHealth.model.XmlWrapper at line 1
+2023-12-20 19:50:49 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 19:50:49 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 19:50:49 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 19:50:49 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 19:50:49 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 19:50:49 DEBUG DataProviderXML:59 - InsertDataDoctor [1]: - Start method working insert xml
+2023-12-20 19:50:49 DEBUG DataProviderXML:42 - getXmlWrapper [1]: start working method
+2023-12-20 19:50:49 ERROR DataProviderXML:49 - getXmlWrapper [2]: ERROR Unable to satisfy @org.simpleframework.xml.ElementList(entry="", data=false, inline=true, name="", type=void.class, required=true, empty=true) on field 'listObjXml' public java.util.List ru.sfedu.assessmentHealth.model.XmlWrapper.listObjXml for class ru.sfedu.assessmentHealth.model.XmlWrapper at line 1
+2023-12-20 19:50:49 DEBUG DataProviderXML:80 - insertDataDoctor [2] - error null
+2023-12-20 19:51:06 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 19:51:06 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 19:51:06 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 19:51:06 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 19:51:06 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 19:51:06 DEBUG DataProviderXML:59 - InsertDataDoctor [1]: - Start method working insert xml
+2023-12-20 19:52:38 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 19:52:38 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 19:52:38 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 19:52:38 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 19:52:38 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 19:52:51 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 19:52:51 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 19:52:51 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 19:52:51 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 19:52:51 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 19:53:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 19:53:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 19:53:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 19:53:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 19:53:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 19:54:12 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 19:54:12 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 19:54:12 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 19:54:12 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 19:54:12 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 19:54:12 DEBUG DataProviderXML:59 - InsertDataDoctor [1]: - Start method working insert xml
+2023-12-20 19:54:12 DEBUG DataProviderXML:42 - getXmlWrapper [1]: start working method
+2023-12-20 19:55:49 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 19:55:49 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 19:55:49 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 19:55:49 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 19:55:49 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 19:57:00 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 19:57:00 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 19:57:00 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 19:57:00 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 19:57:00 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 19:59:23 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 19:59:23 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 19:59:23 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 19:59:23 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 19:59:23 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 19:59:23 DEBUG DataProviderXML:59 - InsertDataDoctor [1]: - Start method working insert xml
+2023-12-20 19:59:53 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 19:59:53 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 19:59:53 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 19:59:53 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 19:59:53 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 20:02:53 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 20:02:53 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 20:02:53 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 20:02:53 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 20:02:53 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 20:02:53 DEBUG DataProviderXML:59 - InsertDataDoctor [1]: - Start method working insert xml
+2023-12-20 20:02:53 DEBUG DataProviderXML:42 - getXmlWrapper [1]: start working method
+2023-12-20 20:03:05 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 20:03:05 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 20:03:05 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 20:03:05 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 20:03:05 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 20:03:05 DEBUG DataProviderXML:59 - InsertDataDoctor [1]: - Start method working insert xml
+2023-12-20 20:03:05 DEBUG DataProviderXML:42 - getXmlWrapper [1]: start working method
+2023-12-20 20:05:25 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 20:05:25 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 20:05:25 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 20:05:25 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 20:05:25 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 20:05:26 DEBUG DataProviderXML:59 - InsertDataDoctor [1]: - Start method working insert xml
+2023-12-20 20:05:36 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-20 20:05:36 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-20 20:05:36 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-20 20:05:36 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-20 20:05:36 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-20 20:05:36 DEBUG DataProviderXML:59 - InsertDataDoctor [1]: - Start method working insert xml
+2023-12-20 20:05:36 DEBUG DataProviderXML:42 - getXmlWrapper [1]: start working method
+2023-12-22 20:04:08 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 20:04:08 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 20:04:08 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 20:04:08 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 20:04:08 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 20:04:08 DEBUG DataProviderXML:98 - InsertDataPatient [1]: - Start method working insert xml
+2023-12-22 20:05:36 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 20:05:36 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 20:05:36 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 20:05:36 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 20:05:36 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 20:05:36 DEBUG DataProviderXML:98 - InsertDataPatient [1]: - Start method working insert xml
+2023-12-22 20:05:36 DEBUG DataProviderXML:42 - getXmlWrapper [1]: start working method
+2023-12-22 20:17:10 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 20:17:10 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 20:17:10 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 20:17:10 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 20:17:10 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 20:17:10 DEBUG DataProviderCSVTest:132 - insertDataPreparationTest [1]: - Start method working insert test xml
+2023-12-22 20:17:10 DEBUG DataProviderXML:139 - InsertDataPatient [1]: - Start method working insert xml
+2023-12-22 20:17:10 DEBUG DataProviderCSVTest:135 - insertDataPreparationTest [1]: - Start method working insert test end xml 
+2023-12-22 20:17:31 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 20:17:31 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 20:17:31 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 20:17:31 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 20:17:31 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 20:17:31 DEBUG DataProviderCSVTest:132 - insertDataPreparationTest [1]: - Start method working insert test xml
+2023-12-22 20:17:31 DEBUG DataProviderXML:139 - InsertDataPatient [1]: - Start method working insert xml
+2023-12-22 20:17:31 DEBUG DataProviderXML:43 - getXmlWrapper [1]: start working method
+2023-12-22 20:17:31 DEBUG DataProviderCSVTest:135 - insertDataPreparationTest [1]: - Start method working insert test end xml 
+2023-12-22 20:32:00 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 20:32:00 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 20:32:00 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 20:32:00 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 20:32:00 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 20:32:00 DEBUG DataProviderXML:43 - getXmlWrapper [1]: start working method
+2023-12-22 20:38:12 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 20:38:12 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 20:38:12 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 20:38:12 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 20:38:12 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 20:38:12 DEBUG DataProviderCSVTest:61 - insertDataDoctorTest [1]: - Start method working insert test xml
+2023-12-22 20:38:12 DEBUG DataProviderXML:61 - InsertDataDoctor [1]: - Start method working insert xml
+2023-12-22 20:38:12 DEBUG XmlUtil:25 - getXmlWrapper [1]: start working method
+2023-12-22 20:38:12 DEBUG DataProviderCSVTest:64 - insertDataDoctorTest [2]: - Start method working test end
+2023-12-22 20:44:06 DEBUG XmlUtil:25 - getXmlWrapper [1]: start working method
+2023-12-22 20:44:29 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 20:44:29 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 20:44:29 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 20:44:29 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 20:44:29 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 20:44:29 DEBUG DataProviderCSVTest:132 - insertDataPreparationTest [1]: - Start method working insert test xml
+2023-12-22 20:44:29 DEBUG DataProviderXML:140 - InsertDataPatient [1]: - Start method working insert xml
+2023-12-22 20:44:29 DEBUG XmlUtil:25 - getXmlWrapper [1]: start working method
+2023-12-22 20:44:29 DEBUG DataProviderCSVTest:135 - insertDataPreparationTest [1]: - Start method working insert test end xml 
+2023-12-22 20:44:29 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 20:44:29 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 20:44:29 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 20:44:29 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 20:44:29 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 20:44:29 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 20:44:29 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 20:44:29 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 20:44:29 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 20:44:29 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 20:44:29 DEBUG DataProviderCSVTest:123 - insertDataPatientTest [1]: - Start method working insert test xml
+2023-12-22 20:44:29 DEBUG DataProviderXML:100 - InsertDataPatient [1]: - Start method working insert xml
+2023-12-22 20:44:29 DEBUG XmlUtil:25 - getXmlWrapper [1]: start working method
+2023-12-22 20:44:29 DEBUG DataProviderCSVTest:126 - insertDataPatientTest [1]: - Start method working insert test end xml 
+2023-12-22 20:44:29 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 20:44:29 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 20:44:29 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 20:44:29 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 20:44:29 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 20:44:29 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 20:44:29 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 20:44:29 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 20:44:29 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 20:44:29 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 20:44:30 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 20:44:30 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 20:44:30 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 20:44:30 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 20:44:30 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 20:44:30 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 20:44:30 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 20:44:30 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 20:44:30 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 20:44:30 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 20:44:30 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 20:44:30 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 20:44:30 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 20:44:30 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 20:44:30 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 20:44:30 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 20:44:30 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 20:44:30 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 20:44:30 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 20:44:30 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 20:44:30 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 20:44:30 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 20:44:30 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 20:44:30 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 20:44:30 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 20:44:30 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 20:44:30 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 20:44:30 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 20:44:30 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 20:44:30 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 20:44:30 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 20:44:30 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 20:44:30 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 20:44:30 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 20:44:30 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 20:44:30 DEBUG DataProviderCSVTest:61 - insertDataDoctorTest [1]: - Start method working insert test xml
+2023-12-22 20:44:30 DEBUG DataProviderXML:61 - InsertDataDoctor [1]: - Start method working insert xml
+2023-12-22 20:44:30 DEBUG XmlUtil:25 - getXmlWrapper [1]: start working method
+2023-12-22 20:44:30 DEBUG DataProviderCSVTest:64 - insertDataDoctorTest [2]: - Start method working test end
+2023-12-22 20:44:30 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 20:44:30 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 20:44:30 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 20:44:30 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 20:44:30 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 20:44:30 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 20:44:30 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 20:44:30 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 20:44:30 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 20:44:30 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 20:44:30 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 20:44:30 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 20:44:30 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 20:44:30 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 20:44:30 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 20:55:49 DEBUG XmlUtil:42 - getObjectFkId [1]: - Процесс проверки на ограничение внешнего ключа 
+2023-12-22 20:55:49 DEBUG XmlUtil:24 - getXmlWrapper [1]: start working method
+2023-12-22 20:56:20 DEBUG XmlUtil:42 - getObjectFkId [1]: - Процесс проверки на ограничение внешнего ключа 
+2023-12-22 20:56:20 DEBUG XmlUtil:24 - getXmlWrapper [1]: start working method
+2023-12-22 20:56:43 DEBUG XmlUtil:42 - getObjectFkId [1]: - Процесс проверки на ограничение внешнего ключа 
+2023-12-22 20:56:43 DEBUG XmlUtil:24 - getXmlWrapper [1]: start working method
+2023-12-22 20:56:54 DEBUG XmlUtil:42 - getObjectFkId [1]: - Процесс проверки на ограничение внешнего ключа 
+2023-12-22 20:56:54 DEBUG XmlUtil:24 - getXmlWrapper [1]: start working method
+2023-12-22 20:57:50 DEBUG XmlUtil:42 - getObjectFkId [1]: - Процесс проверки на ограничение внешнего ключа 
+2023-12-22 20:57:50 DEBUG XmlUtil:24 - getXmlWrapper [1]: start working method
+2023-12-22 20:58:14 DEBUG XmlUtil:42 - getObjectFkId [1]: - Процесс проверки на ограничение внешнего ключа 
+2023-12-22 20:58:14 DEBUG XmlUtil:24 - getXmlWrapper [1]: start working method
+2023-12-22 21:03:15 DEBUG XmlUtil:42 - getObjectFkIdDoctor [1]: - Процесс проверки на ограничение внешнего ключа 
+2023-12-22 21:03:15 DEBUG XmlUtil:24 - getXmlWrapper [1]: start working method
+2023-12-22 21:04:51 DEBUG XmlUtil:43 - getObjectFkIdDoctor [1]: - Процесс проверки на ограничение внешнего ключа 
+2023-12-22 21:04:51 DEBUG XmlUtil:25 - getXmlWrapper [1]: start working method
+2023-12-22 21:04:51 DEBUG XmlUtil:54 - getObjectFkIdDoctor [4] - Такого ключа в файле нет.Попробуйте перепроверить
+2023-12-22 21:08:35 DEBUG XmlUtil:44 - getObjectFkIdDoctor [1]: - Процесс проверки на ограничение внешнего ключа 
+2023-12-22 21:08:35 DEBUG XmlUtil:26 - getXmlWrapper [1]: start working method
+2023-12-22 21:08:35 DEBUG XmlUtil:54 - getObjectFkIdDoctor [2] - Такого ключа в файле нет.Попробуйте перепроверить
+2023-12-22 21:08:35 DEBUG XmlUtil:61 - getObjectFkIdDoctor [4] - Метод завершил свою работу
+2023-12-22 21:21:21 DEBUG XmlUtil:44 - getObjectFkIdDoctor [1]: - Процесс проверки на ограничение внешнего ключа 
+2023-12-22 21:21:21 DEBUG XmlUtil:26 - getXmlWrapper [1]: start working method
+2023-12-22 21:21:21 DEBUG XmlUtil:55 - getObjectFkIdDoctor [2] - Такого ключа в файле нет.Попробуйте перепроверить
+2023-12-22 21:21:21 DEBUG XmlUtil:66 - getObjectFkIdDoctor [4] - Метод завершил свою работу
+2023-12-22 21:27:37 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 21:27:37 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 21:27:37 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 21:27:37 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 21:27:37 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 21:27:37 DEBUG DataProviderCSVTest:145 - insertDataSchedule [1]: - Start method working insert test xml
+2023-12-22 21:27:37 DEBUG DataProviderXML:141 - InsertDataPatient [1]: - Start method working insert xml
+2023-12-22 21:27:37 DEBUG DataProviderCSVTest:151 - insertDataSchedule [1]: - Start method working insert test end xml 
+2023-12-22 21:29:16 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 21:29:16 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 21:29:16 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 21:29:16 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 21:29:16 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 21:29:16 DEBUG DataProviderCSVTest:132 - insertDataPreparationTest [1]: - Start method working insert test xml
+2023-12-22 21:29:16 DEBUG DataProviderXML:141 - InsertDataPatient [1]: - Start method working insert xml
+2023-12-22 21:29:16 DEBUG XmlUtil:26 - getXmlWrapper [1]: start working method
+2023-12-22 21:29:16 DEBUG XmlUtil:44 - getObjectFkIdDoctor [1]: - Процесс проверки на ограничение внешнего ключа 
+2023-12-22 21:29:16 DEBUG XmlUtil:26 - getXmlWrapper [1]: start working method
+2023-12-22 21:29:16 DEBUG XmlUtil:66 - getObjectFkIdDoctor [4] - Метод завершил свою работу
+2023-12-22 21:29:16 DEBUG DataProviderCSVTest:138 - insertDataPreparationTest [1]: - Start method working insert test end xml 
+2023-12-22 21:30:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 21:30:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 21:30:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 21:30:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 21:30:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 21:30:20 DEBUG DataProviderCSVTest:132 - insertDataPreparationTest [1]: - Start method working insert test xml
+2023-12-22 21:30:20 DEBUG DataProviderXML:141 - InsertDataPatient [1]: - Start method working insert xml
+2023-12-22 21:30:20 DEBUG XmlUtil:26 - getXmlWrapper [1]: start working method
+2023-12-22 21:30:20 DEBUG XmlUtil:44 - getObjectFkIdDoctor [1]: - Процесс проверки на ограничение внешнего ключа 
+2023-12-22 21:30:20 DEBUG XmlUtil:26 - getXmlWrapper [1]: start working method
+2023-12-22 21:30:20 DEBUG XmlUtil:66 - getObjectFkIdDoctor [4] - Метод завершил свою работу
+2023-12-22 21:30:20 DEBUG DataProviderCSVTest:138 - insertDataPreparationTest [1]: - Start method working insert test end xml 
+2023-12-22 21:30:45 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 21:30:45 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 21:30:45 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 21:30:45 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 21:30:45 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 21:30:45 DEBUG DataProviderCSVTest:132 - insertDataPreparationTest [1]: - Start method working insert test xml
+2023-12-22 21:30:45 DEBUG DataProviderXML:141 - InsertDataPatient [1]: - Start method working insert xml
+2023-12-22 21:30:45 DEBUG DataProviderCSVTest:138 - insertDataPreparationTest [1]: - Start method working insert test end xml 
+2023-12-22 21:30:56 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 21:30:56 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 21:30:56 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 21:30:56 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 21:30:56 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 21:30:56 DEBUG DataProviderCSVTest:132 - insertDataPreparationTest [1]: - Start method working insert test xml
+2023-12-22 21:30:56 DEBUG DataProviderXML:141 - InsertDataPatient [1]: - Start method working insert xml
+2023-12-22 21:30:56 DEBUG XmlUtil:26 - getXmlWrapper [1]: start working method
+2023-12-22 21:30:57 DEBUG XmlUtil:44 - getObjectFkIdDoctor [1]: - Процесс проверки на ограничение внешнего ключа 
+2023-12-22 21:30:57 DEBUG XmlUtil:26 - getXmlWrapper [1]: start working method
+2023-12-22 21:30:57 DEBUG XmlUtil:66 - getObjectFkIdDoctor [4] - Метод завершил свою работу
+2023-12-22 21:30:57 DEBUG DataProviderCSVTest:138 - insertDataPreparationTest [1]: - Start method working insert test end xml 
+2023-12-22 21:31:35 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 21:31:35 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 21:31:35 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 21:31:35 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 21:31:35 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 21:31:35 DEBUG DataProviderCSVTest:132 - insertDataPreparationTest [1]: - Start method working insert test xml
+2023-12-22 21:31:35 DEBUG DataProviderXML:141 - InsertDataPatient [1]: - Start method working insert xml
+2023-12-22 21:31:35 ERROR DataProviderXML:184 - InsertDataPatient [3] - error Value for @org.simpleframework.xml.Element(name="", type=void.class, data=false, required=true) on field 'FkPreparationToDoctor' protected java.lang.Integer ru.sfedu.assessmentHealth.model.Preparation.FkPreparationToDoctor is null in class ru.sfedu.assessmentHealth.model.Preparation
+2023-12-22 21:32:48 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 21:32:48 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 21:32:48 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 21:32:48 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 21:32:48 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 21:32:48 DEBUG DataProviderCSVTest:132 - insertDataPreparationTest [1]: - Start method working insert test xml
+2023-12-22 21:32:48 DEBUG DataProviderXML:141 - InsertDataPatient [1]: - Start method working insert xml
+2023-12-22 21:32:48 ERROR DataProviderXML:185 - InsertDataPatient [3] - error Value for @org.simpleframework.xml.Element(name="", type=void.class, data=false, required=true) on field 'FkPreparationToDoctor' protected java.lang.Integer ru.sfedu.assessmentHealth.model.Preparation.FkPreparationToDoctor is null in class ru.sfedu.assessmentHealth.model.Preparation
+2023-12-22 21:34:05 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 21:34:05 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 21:34:05 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 21:34:05 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 21:34:05 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 21:34:05 DEBUG DataProviderCSVTest:132 - insertDataPreparationTest [1]: - Start method working insert test xml
+2023-12-22 21:34:05 DEBUG DataProviderXML:141 - InsertDataPatient [1]: - Start method working insert xml
+2023-12-22 21:34:05 DEBUG DataProviderCSVTest:138 - insertDataPreparationTest [1]: - Start method working insert test end xml 
+2023-12-22 21:34:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 21:34:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 21:34:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 21:34:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 21:34:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 21:34:44 DEBUG DataProviderCSVTest:132 - insertDataPreparationTest [1]: - Start method working insert test xml
+2023-12-22 21:34:44 DEBUG DataProviderXML:141 - InsertDataPatient [1]: - Start method working insert xml
+2023-12-22 21:34:45 DEBUG DataProviderCSVTest:138 - insertDataPreparationTest [1]: - Start method working insert test end xml 
+2023-12-22 21:35:56 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 21:35:56 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 21:35:56 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 21:35:56 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 21:35:56 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 21:35:56 DEBUG DataProviderCSVTest:132 - insertDataPreparationTest [1]: - Start method working insert test xml
+2023-12-22 21:35:56 DEBUG DataProviderXML:141 - InsertDataPatient [1]: - Start method working insert xml
+2023-12-22 21:35:56 DEBUG XmlUtil:26 - getXmlWrapper [1]: start working method
+2023-12-22 21:35:56 DEBUG XmlUtil:44 - getObjectFkIdDoctor [1]: - Процесс проверки на ограничение внешнего ключа 
+2023-12-22 21:35:56 DEBUG XmlUtil:26 - getXmlWrapper [1]: start working method
+2023-12-22 21:35:56 DEBUG XmlUtil:66 - getObjectFkIdDoctor [4] - Метод завершил свою работу
+2023-12-22 21:35:56 DEBUG DataProviderCSVTest:138 - insertDataPreparationTest [1]: - Start method working insert test end xml 
+2023-12-22 21:37:45 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 21:37:45 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 21:37:45 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 21:37:45 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 21:37:45 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 21:37:45 DEBUG DataProviderCSVTest:144 - insertDataPreparationNegative [1]: - Start method working insert test xml
+2023-12-22 21:37:45 DEBUG DataProviderXML:142 - InsertDataPatient [1]: - Start method working insert xml
+2023-12-22 21:37:45 DEBUG XmlUtil:26 - getXmlWrapper [1]: start working method
+2023-12-22 21:37:45 DEBUG XmlUtil:44 - getObjectFkIdDoctor [1]: - Процесс проверки на ограничение внешнего ключа 
+2023-12-22 21:37:45 DEBUG XmlUtil:26 - getXmlWrapper [1]: start working method
+2023-12-22 21:37:45 DEBUG XmlUtil:55 - getObjectFkIdDoctor [2] - Такого ключа в файле нет.Попробуйте перепроверить
+2023-12-22 21:37:45 DEBUG XmlUtil:66 - getObjectFkIdDoctor [4] - Метод завершил свою работу
+2023-12-22 21:37:45 DEBUG DataProviderCSVTest:150 - insertDataPreparationNegative [1]: - Start method working insert test end xml 
+2023-12-22 21:39:37 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 21:39:37 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 21:39:37 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 21:39:37 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 21:39:37 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 21:39:37 DEBUG DataProviderCSVTest:144 - insertDataPreparationNegative [1]: - Start method working insert test xml
+2023-12-22 21:39:37 DEBUG DataProviderXML:142 - InsertDataPatient [1]: - Start method working insert xml
+2023-12-22 21:39:37 DEBUG XmlUtil:26 - getXmlWrapper [1]: start working method
+2023-12-22 21:39:37 DEBUG XmlUtil:44 - getObjectFkIdDoctor [1]: - Процесс проверки на ограничение внешнего ключа 
+2023-12-22 21:39:37 DEBUG XmlUtil:26 - getXmlWrapper [1]: start working method
+2023-12-22 21:39:37 DEBUG XmlUtil:55 - getObjectFkIdDoctor [2] - Такого ключа в файле нет.Попробуйте перепроверить
+2023-12-22 21:39:37 DEBUG XmlUtil:66 - getObjectFkIdDoctor [4] - Метод завершил свою работу
+2023-12-22 21:39:37 DEBUG DataProviderCSVTest:150 - insertDataPreparationNegative [1]: - Start method working insert test end xml 
+2023-12-22 21:56:04 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 21:56:04 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 21:56:04 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 21:56:04 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 21:56:04 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 21:56:04 DEBUG DataProviderCSVTest:104 - insertDataSchedule [1]: - Start method working insert test xml
+2023-12-22 21:56:04 DEBUG DataProviderXML:193 - InsertDataSchedule [1]: - Start method working insert xml
+2023-12-22 21:56:05 DEBUG DataProviderXML:237 - InsertDataSchedule [4]: - END method working insert xml
+2023-12-22 21:56:24 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 21:56:24 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 21:56:24 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 21:56:24 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 21:56:24 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 21:56:24 DEBUG DataProviderCSVTest:104 - insertDataSchedule [1]: - Start method working insert test xml
+2023-12-22 21:56:24 DEBUG DataProviderXML:193 - InsertDataSchedule [1]: - Start method working insert xml
+2023-12-22 21:56:24 DEBUG XmlUtil:26 - getXmlWrapper [1]: start working method
+2023-12-22 21:56:24 DEBUG XmlUtil:44 - getObjectFkIdDoctor [1]: - Процесс проверки на ограничение внешнего ключа 
+2023-12-22 21:56:24 DEBUG XmlUtil:26 - getXmlWrapper [1]: start working method
+2023-12-22 21:56:24 DEBUG XmlUtil:66 - getObjectFkIdDoctor [4] - Метод завершил свою работу
+2023-12-22 21:56:24 DEBUG DataProviderXML:237 - InsertDataSchedule [4]: - END method working insert xml
+2023-12-22 21:56:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 21:56:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 21:56:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 21:56:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 21:56:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 21:56:44 DEBUG DataProviderCSVTest:104 - insertDataSchedule [1]: - Start method working insert test xml
+2023-12-22 21:56:44 DEBUG DataProviderXML:193 - InsertDataSchedule [1]: - Start method working insert xml
+2023-12-22 21:56:44 DEBUG XmlUtil:26 - getXmlWrapper [1]: start working method
+2023-12-22 21:56:45 DEBUG XmlUtil:44 - getObjectFkIdDoctor [1]: - Процесс проверки на ограничение внешнего ключа 
+2023-12-22 21:56:45 DEBUG XmlUtil:26 - getXmlWrapper [1]: start working method
+2023-12-22 21:56:45 DEBUG XmlUtil:66 - getObjectFkIdDoctor [4] - Метод завершил свою работу
+2023-12-22 21:56:45 DEBUG DataProviderXML:237 - InsertDataSchedule [4]: - END method working insert xml
+2023-12-22 21:56:45 DEBUG DataProviderCSVTest:112 - insertDataSchedule [2]: - Start method working insert test end xml 
+2023-12-22 22:01:17 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 22:01:17 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 22:01:17 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 22:01:17 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 22:01:17 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 22:01:17 DEBUG DataProviderCSVTest:119 - insertDataScheduleNegative [1]: - Start method working insert test xml
+2023-12-22 22:01:17 DEBUG DataProviderXML:193 - InsertDataSchedule [1]: - Start method working insert xml
+2023-12-22 22:01:17 DEBUG XmlUtil:26 - getXmlWrapper [1]: start working method
+2023-12-22 22:01:18 DEBUG XmlUtil:44 - getObjectFkIdDoctor [1]: - Процесс проверки на ограничение внешнего ключа 
+2023-12-22 22:01:18 DEBUG XmlUtil:26 - getXmlWrapper [1]: start working method
+2023-12-22 22:01:18 DEBUG XmlUtil:55 - getObjectFkIdDoctor [2] - Такого ключа в файле нет.Попробуйте перепроверить
+2023-12-22 22:01:18 DEBUG XmlUtil:66 - getObjectFkIdDoctor [4] - Метод завершил свою работу
+2023-12-22 22:01:18 DEBUG DataProviderCSVTest:127 - insertDataScheduleNegative [2]: - Start method working insert test end xml 
+2023-12-22 22:18:24 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 22:18:24 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 22:18:24 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 22:18:24 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 22:18:24 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 22:18:24 DEBUG DataProviderCSVTest:134 - insertDataCalcReport [1]: - Start method working insert test xml
+2023-12-22 22:18:24 DEBUG DataProviderXML:245 - InsertDataCalcReport [1]: - Start method working insert xml
+2023-12-22 22:18:24 DEBUG DataProviderXML:297 - InsertDataCalcReport [4]: - END method working insert xml
+2023-12-22 22:18:24 DEBUG DataProviderCSVTest:137 - insertDataCalcReport [2]: - Start method working insert test end xml 
+2023-12-22 22:19:48 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 22:19:48 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 22:19:48 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 22:19:48 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 22:19:48 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 22:19:48 DEBUG DataProviderCSVTest:134 - insertDataCalcReport [1]: - Start method working insert test xml
+2023-12-22 22:19:48 DEBUG DataProviderXML:245 - InsertDataCalcReport [1]: - Start method working insert xml
+2023-12-22 22:19:48 DEBUG DataProviderXML:297 - InsertDataCalcReport [4]: - END method working insert xml
+2023-12-22 22:19:48 DEBUG DataProviderCSVTest:137 - insertDataCalcReport [2]: - Start method working insert test end xml 
+2023-12-22 22:20:02 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 22:20:02 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 22:20:02 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 22:20:02 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 22:20:02 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 22:20:02 DEBUG DataProviderCSVTest:134 - insertDataCalcReport [1]: - Start method working insert test xml
+2023-12-22 22:20:02 DEBUG DataProviderXML:245 - InsertDataCalcReport [1]: - Start method working insert xml
+2023-12-22 22:20:02 DEBUG XmlUtil:26 - getXmlWrapper [1]: start working method
+2023-12-22 22:20:02 DEBUG XmlUtil:44 - getObjectFkIdDoctor [1]: - Процесс проверки на ограничение внешнего ключа 
+2023-12-22 22:20:02 DEBUG XmlUtil:26 - getXmlWrapper [1]: start working method
+2023-12-22 22:20:02 DEBUG XmlUtil:61 - getObjectFkIdDoctor [4] - Метод завершил свою работу
+2023-12-22 22:20:02 DEBUG DataProviderXML:297 - InsertDataCalcReport [4]: - END method working insert xml
+2023-12-22 22:20:02 DEBUG DataProviderCSVTest:137 - insertDataCalcReport [2]: - Start method working insert test end xml 
+2023-12-22 22:21:27 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 22:21:27 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 22:21:27 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 22:21:27 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 22:21:27 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 22:21:27 DEBUG DataProviderCSVTest:144 - insertDataCalcReportNegativity [1]: - Start method working insert test xml
+2023-12-22 22:21:27 DEBUG DataProviderXML:245 - InsertDataCalcReport [1]: - Start method working insert xml
+2023-12-22 22:21:27 DEBUG XmlUtil:26 - getXmlWrapper [1]: start working method
+2023-12-22 22:21:27 DEBUG XmlUtil:44 - getObjectFkIdDoctor [1]: - Процесс проверки на ограничение внешнего ключа 
+2023-12-22 22:21:27 DEBUG XmlUtil:26 - getXmlWrapper [1]: start working method
+2023-12-22 22:21:27 DEBUG XmlUtil:61 - getObjectFkIdDoctor [4] - Метод завершил свою работу
+2023-12-22 22:21:27 DEBUG DataProviderXML:297 - InsertDataCalcReport [4]: - END method working insert xml
+2023-12-22 22:22:01 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 22:22:01 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 22:22:01 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 22:22:01 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 22:22:01 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 22:22:01 DEBUG DataProviderCSVTest:144 - insertDataCalcReportNegativity [1]: - Start method working insert test xml
+2023-12-22 22:22:01 DEBUG DataProviderXML:245 - InsertDataCalcReport [1]: - Start method working insert xml
+2023-12-22 22:22:01 DEBUG XmlUtil:26 - getXmlWrapper [1]: start working method
+2023-12-22 22:22:01 DEBUG XmlUtil:44 - getObjectFkIdDoctor [1]: - Процесс проверки на ограничение внешнего ключа 
+2023-12-22 22:22:01 DEBUG XmlUtil:26 - getXmlWrapper [1]: start working method
+2023-12-22 22:22:01 DEBUG XmlUtil:61 - getObjectFkIdDoctor [4] - Метод завершил свою работу
+2023-12-22 22:22:01 DEBUG XmlUtil:44 - getObjectFkIdDoctor [1]: - Процесс проверки на ограничение внешнего ключа 
+2023-12-22 22:22:01 DEBUG XmlUtil:26 - getXmlWrapper [1]: start working method
+2023-12-22 22:22:01 DEBUG XmlUtil:61 - getObjectFkIdDoctor [4] - Метод завершил свою работу
+2023-12-22 22:22:01 DEBUG DataProviderXML:297 - InsertDataCalcReport [4]: - END method working insert xml
+2023-12-22 22:23:00 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 22:23:00 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 22:23:00 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 22:23:00 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 22:23:00 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 22:23:00 DEBUG DataProviderCSVTest:144 - insertDataCalcReportNegativity [1]: - Start method working insert test xml
+2023-12-22 22:23:00 DEBUG DataProviderXML:245 - InsertDataCalcReport [1]: - Start method working insert xml
+2023-12-22 22:23:00 DEBUG DataProviderXML:297 - InsertDataCalcReport [4]: - END method working insert xml
+2023-12-22 22:24:48 DEBUG XmlUtil:44 - getObjectFkIdDoctor [1]: - Процесс проверки на ограничение внешнего ключа 
+2023-12-22 22:24:48 DEBUG XmlUtil:26 - getXmlWrapper [1]: start working method
+2023-12-22 22:24:48 DEBUG XmlUtil:55 - getObjectFkIdDoctor [2] - Такого ключа в файле нет.Попробуйте перепроверить
+2023-12-22 22:24:48 DEBUG XmlUtil:61 - getObjectFkIdDoctor [4] - Метод завершил свою работу
+2023-12-22 22:25:35 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 22:25:35 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 22:25:35 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 22:25:35 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 22:25:35 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 22:25:35 DEBUG DataProviderCSVTest:135 - insertDataCalcReport [1]: - Start method working insert test xml
+2023-12-22 22:25:35 DEBUG DataProviderXML:245 - InsertDataCalcReport [1]: - Start method working insert xml
+2023-12-22 22:25:35 DEBUG XmlUtil:26 - getXmlWrapper [1]: start working method
+2023-12-22 22:25:35 DEBUG XmlUtil:44 - getObjectFkIdDoctor [1]: - Процесс проверки на ограничение внешнего ключа 
+2023-12-22 22:25:35 DEBUG XmlUtil:26 - getXmlWrapper [1]: start working method
+2023-12-22 22:25:35 DEBUG XmlUtil:61 - getObjectFkIdDoctor [4] - Метод завершил свою работу
+2023-12-22 22:25:35 DEBUG XmlUtil:44 - getObjectFkIdDoctor [1]: - Процесс проверки на ограничение внешнего ключа 
+2023-12-22 22:25:35 DEBUG XmlUtil:26 - getXmlWrapper [1]: start working method
+2023-12-22 22:25:35 DEBUG XmlUtil:61 - getObjectFkIdDoctor [4] - Метод завершил свою работу
+2023-12-22 22:25:36 DEBUG DataProviderXML:297 - InsertDataCalcReport [4]: - END method working insert xml
+2023-12-22 22:25:36 DEBUG DataProviderCSVTest:138 - insertDataCalcReport [2]: - Start method working insert test end xml 
+2023-12-22 22:25:51 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 22:25:51 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 22:25:51 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 22:25:51 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 22:25:51 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 22:25:51 DEBUG DataProviderCSVTest:135 - insertDataCalcReport [1]: - Start method working insert test xml
+2023-12-22 22:25:51 DEBUG DataProviderXML:245 - InsertDataCalcReport [1]: - Start method working insert xml
+2023-12-22 22:25:51 DEBUG DataProviderXML:297 - InsertDataCalcReport [4]: - END method working insert xml
+2023-12-22 22:25:51 DEBUG DataProviderCSVTest:138 - insertDataCalcReport [2]: - Start method working insert test end xml 
+2023-12-22 22:26:03 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 22:26:03 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 22:26:03 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 22:26:03 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 22:26:03 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 22:26:03 DEBUG DataProviderCSVTest:144 - insertDataCalcReportNegativity [1]: - Start method working insert test xml
+2023-12-22 22:26:03 DEBUG DataProviderXML:245 - InsertDataCalcReport [1]: - Start method working insert xml
+2023-12-22 22:26:03 DEBUG XmlUtil:26 - getXmlWrapper [1]: start working method
+2023-12-22 22:26:03 DEBUG XmlUtil:44 - getObjectFkIdDoctor [1]: - Процесс проверки на ограничение внешнего ключа 
+2023-12-22 22:26:03 DEBUG XmlUtil:26 - getXmlWrapper [1]: start working method
+2023-12-22 22:26:03 DEBUG XmlUtil:55 - getObjectFkIdDoctor [2] - Такого ключа в файле нет.Попробуйте перепроверить
+2023-12-22 22:26:03 DEBUG XmlUtil:61 - getObjectFkIdDoctor [4] - Метод завершил свою работу
+2023-12-22 22:26:03 DEBUG DataProviderCSVTest:150 - insertDataCalcReportNegativity [2]: - Start method working insert test end xml 
+2023-12-22 22:28:18 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 22:28:18 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 22:28:18 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 22:28:18 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 22:28:18 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 22:28:18 DEBUG DataProviderCSVTest:92 - insertDataPreparationNegative [1]: - Start method working insert test xml
+2023-12-22 22:28:18 DEBUG DataProviderXML:143 - InsertDataPatient [1]: - Start method working insert xml
+2023-12-22 22:28:18 DEBUG DataProviderXML:185 - InsertDataPreparation [4]: - END method working insert xml
+2023-12-22 22:29:14 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 22:29:14 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 22:29:14 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 22:29:14 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 22:29:14 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 22:29:14 DEBUG DataProviderCSVTest:92 - insertDataPreparationNegative [1]: - Start method working insert test xml
+2023-12-22 22:29:14 DEBUG DataProviderXML:143 - InsertDataPatient [1]: - Start method working insert xml
+2023-12-22 22:29:14 DEBUG XmlUtil:44 - getObjectFkIdDoctor [1]: - Процесс проверки на ограничение внешнего ключа 
+2023-12-22 22:29:14 DEBUG XmlUtil:26 - getXmlWrapper [1]: start working method
+2023-12-22 22:29:14 DEBUG XmlUtil:55 - getObjectFkIdDoctor [2] - Такого ключа в файле нет.Попробуйте перепроверить
+2023-12-22 22:29:14 DEBUG XmlUtil:61 - getObjectFkIdDoctor [4] - Метод завершил свою работу
+2023-12-22 22:29:14 DEBUG DataProviderCSVTest:98 - insertDataPreparationNegative [2]: - END method working insert test end xml 
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 22:31:20 DEBUG DataProviderCSVTest:80 - insertDataPreparationTest [1]: - Start method working insert test xml
+2023-12-22 22:31:20 DEBUG DataProviderXML:143 - InsertDataPatient [1]: - Start method working insert xml
+2023-12-22 22:31:20 DEBUG XmlUtil:44 - getObjectFkIdDoctor [1]: - Процесс проверки на ограничение внешнего ключа 
+2023-12-22 22:31:20 DEBUG XmlUtil:26 - getXmlWrapper [1]: start working method
+2023-12-22 22:31:20 DEBUG XmlUtil:61 - getObjectFkIdDoctor [4] - Метод завершил свою работу
+2023-12-22 22:31:20 DEBUG DataProviderXML:190 - InsertDataPreparation [4]: - END method working insert xml
+2023-12-22 22:31:20 DEBUG DataProviderCSVTest:86 - insertDataPreparationTest [2]: - END method working insert test end xml 
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 22:31:20 DEBUG DataProviderCSVTest:71 - insertDataPatientTest [1]: - Start method working insert test xml
+2023-12-22 22:31:20 DEBUG DataProviderXML:103 - InsertDataPatient [1]: - Start method working insert xml
+2023-12-22 22:31:20 DEBUG XmlUtil:26 - getXmlWrapper [1]: start working method
+2023-12-22 22:31:20 DEBUG DataProviderXML:137 - InsertDataPatient [4]: - END method working insert xml
+2023-12-22 22:31:20 DEBUG DataProviderCSVTest:74 - insertDataPatientTest [2]: - END method working insert test end xml 
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 22:31:20 DEBUG DataProviderCSVTest:92 - insertDataPreparationNegative [1]: - Start method working insert test xml
+2023-12-22 22:31:20 DEBUG DataProviderXML:143 - InsertDataPatient [1]: - Start method working insert xml
+2023-12-22 22:31:20 DEBUG XmlUtil:26 - getXmlWrapper [1]: start working method
+2023-12-22 22:31:20 DEBUG XmlUtil:44 - getObjectFkIdDoctor [1]: - Процесс проверки на ограничение внешнего ключа 
+2023-12-22 22:31:20 DEBUG XmlUtil:26 - getXmlWrapper [1]: start working method
+2023-12-22 22:31:20 DEBUG XmlUtil:55 - getObjectFkIdDoctor [2] - Такого ключа в файле нет.Попробуйте перепроверить
+2023-12-22 22:31:20 DEBUG XmlUtil:61 - getObjectFkIdDoctor [4] - Метод завершил свою работу
+2023-12-22 22:31:20 DEBUG DataProviderCSVTest:98 - insertDataPreparationNegative [2]: - END method working insert test end xml 
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 22:31:20 DEBUG DataProviderCSVTest:135 - insertDataCalcReport [1]: - Start method working insert test xml
+2023-12-22 22:31:20 DEBUG DataProviderXML:255 - InsertDataCalcReport [1]: - Start method working insert xml
+2023-12-22 22:31:20 DEBUG XmlUtil:26 - getXmlWrapper [1]: start working method
+2023-12-22 22:31:20 DEBUG XmlUtil:44 - getObjectFkIdDoctor [1]: - Процесс проверки на ограничение внешнего ключа 
+2023-12-22 22:31:20 DEBUG XmlUtil:26 - getXmlWrapper [1]: start working method
+2023-12-22 22:31:20 DEBUG XmlUtil:61 - getObjectFkIdDoctor [4] - Метод завершил свою работу
+2023-12-22 22:31:20 DEBUG XmlUtil:44 - getObjectFkIdDoctor [1]: - Процесс проверки на ограничение внешнего ключа 
+2023-12-22 22:31:20 DEBUG XmlUtil:26 - getXmlWrapper [1]: start working method
+2023-12-22 22:31:20 DEBUG XmlUtil:61 - getObjectFkIdDoctor [4] - Метод завершил свою работу
+2023-12-22 22:31:20 DEBUG DataProviderXML:304 - InsertDataCalcReport [4]: - END method working insert xml
+2023-12-22 22:31:20 DEBUG DataProviderCSVTest:138 - insertDataCalcReport [2]: - END method working insert test end xml 
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 22:31:20 DEBUG DataProviderCSVTest:105 - insertDataSchedule [1]: - Start method working insert test xml
+2023-12-22 22:31:20 DEBUG DataProviderXML:198 - InsertDataSchedule [1]: - Start method working insert xml
+2023-12-22 22:31:20 DEBUG XmlUtil:26 - getXmlWrapper [1]: start working method
+2023-12-22 22:31:20 DEBUG XmlUtil:44 - getObjectFkIdDoctor [1]: - Процесс проверки на ограничение внешнего ключа 
+2023-12-22 22:31:20 DEBUG XmlUtil:26 - getXmlWrapper [1]: start working method
+2023-12-22 22:31:20 DEBUG XmlUtil:61 - getObjectFkIdDoctor [4] - Метод завершил свою работу
+2023-12-22 22:31:20 DEBUG DataProviderXML:247 - InsertDataSchedule [4]: - END method working insert xml
+2023-12-22 22:31:20 DEBUG DataProviderCSVTest:113 - insertDataSchedule [2]: - END method working insert test end xml 
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 22:31:20 DEBUG DataProviderCSVTest:62 - insertDataDoctorTest [1]: - Start method working insert test xml
+2023-12-22 22:31:20 DEBUG DataProviderXML:63 - InsertDataDoctor [1]: - Start method working insert xml
+2023-12-22 22:31:20 DEBUG XmlUtil:26 - getXmlWrapper [1]: start working method
+2023-12-22 22:31:20 DEBUG DataProviderXML:97 - InsertDataDoctor [4]: - END method working insert xml
+2023-12-22 22:31:20 DEBUG DataProviderCSVTest:65 - insertDataDoctorTest [2]: - END method working test end
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 22:31:20 DEBUG DataProviderCSVTest:120 - insertDataScheduleNegative [1]: - Start method working insert test xml
+2023-12-22 22:31:20 DEBUG DataProviderXML:198 - InsertDataSchedule [1]: - Start method working insert xml
+2023-12-22 22:31:20 DEBUG XmlUtil:26 - getXmlWrapper [1]: start working method
+2023-12-22 22:31:20 DEBUG XmlUtil:44 - getObjectFkIdDoctor [1]: - Процесс проверки на ограничение внешнего ключа 
+2023-12-22 22:31:20 DEBUG XmlUtil:26 - getXmlWrapper [1]: start working method
+2023-12-22 22:31:20 DEBUG XmlUtil:55 - getObjectFkIdDoctor [2] - Такого ключа в файле нет.Попробуйте перепроверить
+2023-12-22 22:31:20 DEBUG XmlUtil:61 - getObjectFkIdDoctor [4] - Метод завершил свою работу
+2023-12-22 22:31:20 DEBUG DataProviderCSVTest:128 - insertDataScheduleNegative [2]: - END method working insert test end xml 
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 22:31:20 DEBUG DataProviderCSVTest:144 - insertDataCalcReportNegativity [1]: - Start method working insert test xml
+2023-12-22 22:31:20 DEBUG DataProviderXML:255 - InsertDataCalcReport [1]: - Start method working insert xml
+2023-12-22 22:31:20 DEBUG XmlUtil:26 - getXmlWrapper [1]: start working method
+2023-12-22 22:31:20 DEBUG XmlUtil:44 - getObjectFkIdDoctor [1]: - Процесс проверки на ограничение внешнего ключа 
+2023-12-22 22:31:20 DEBUG XmlUtil:26 - getXmlWrapper [1]: start working method
+2023-12-22 22:31:20 DEBUG XmlUtil:55 - getObjectFkIdDoctor [2] - Такого ключа в файле нет.Попробуйте перепроверить
+2023-12-22 22:31:20 DEBUG XmlUtil:61 - getObjectFkIdDoctor [4] - Метод завершил свою работу
+2023-12-22 22:31:20 DEBUG DataProviderCSVTest:150 - insertDataCalcReportNegativity [2]: - END method working insert test end xml 
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 22:31:20 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 22:35:44 DEBUG DataProviderCSVTest:60 - insertDataDoctorTest [1]: - Start method working insert test xml
+2023-12-22 22:35:44 DEBUG DataProviderXML:63 - InsertDataDoctor [1]: - Start method working insert xml
+2023-12-22 22:35:44 DEBUG DataProviderXML:97 - InsertDataDoctor [4]: - END method working insert xml
+2023-12-22 22:35:44 DEBUG DataProviderCSVTest:63 - insertDataDoctorTest [2]: - END method working test end
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 22:35:44 DEBUG DataProviderCSVTest:70 - insertDataPatientTest [1]: - Start method working insert test xml
+2023-12-22 22:35:44 DEBUG DataProviderXML:103 - InsertDataPatient [1]: - Start method working insert xml
+2023-12-22 22:35:44 DEBUG DataProviderXML:137 - InsertDataPatient [4]: - END method working insert xml
+2023-12-22 22:35:44 DEBUG DataProviderCSVTest:73 - insertDataPatientTest [2]: - END method working insert test end xml 
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 22:35:44 DEBUG DataProviderCSVTest:80 - insertDataPreparationTest [1]: - Start method working insert test xml
+2023-12-22 22:35:44 DEBUG DataProviderXML:143 - InsertDataPatient [1]: - Start method working insert xml
+2023-12-22 22:35:44 DEBUG XmlUtil:44 - getObjectFkIdDoctor [1]: - Процесс проверки на ограничение внешнего ключа 
+2023-12-22 22:35:44 DEBUG XmlUtil:26 - getXmlWrapper [1]: start working method
+2023-12-22 22:35:44 DEBUG XmlUtil:55 - getObjectFkIdDoctor [2] - Такого ключа в файле нет.Попробуйте перепроверить
+2023-12-22 22:35:44 DEBUG XmlUtil:61 - getObjectFkIdDoctor [4] - Метод завершил свою работу
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 22:35:44 DEBUG DataProviderCSVTest:93 - insertDataPreparationNegative [1]: - Start method working insert test xml
+2023-12-22 22:35:44 DEBUG DataProviderXML:143 - InsertDataPatient [1]: - Start method working insert xml
+2023-12-22 22:35:44 DEBUG XmlUtil:44 - getObjectFkIdDoctor [1]: - Процесс проверки на ограничение внешнего ключа 
+2023-12-22 22:35:44 DEBUG XmlUtil:26 - getXmlWrapper [1]: start working method
+2023-12-22 22:35:44 DEBUG XmlUtil:55 - getObjectFkIdDoctor [2] - Такого ключа в файле нет.Попробуйте перепроверить
+2023-12-22 22:35:44 DEBUG XmlUtil:61 - getObjectFkIdDoctor [4] - Метод завершил свою работу
+2023-12-22 22:35:44 DEBUG DataProviderCSVTest:99 - insertDataPreparationNegative [2]: - END method working insert test end xml 
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 22:35:44 DEBUG DataProviderCSVTest:107 - insertDataSchedule [1]: - Start method working insert test xml
+2023-12-22 22:35:44 DEBUG DataProviderXML:198 - InsertDataSchedule [1]: - Start method working insert xml
+2023-12-22 22:35:44 DEBUG XmlUtil:44 - getObjectFkIdDoctor [1]: - Процесс проверки на ограничение внешнего ключа 
+2023-12-22 22:35:44 DEBUG XmlUtil:26 - getXmlWrapper [1]: start working method
+2023-12-22 22:35:44 DEBUG XmlUtil:61 - getObjectFkIdDoctor [4] - Метод завершил свою работу
+2023-12-22 22:35:44 DEBUG DataProviderXML:247 - InsertDataSchedule [4]: - END method working insert xml
+2023-12-22 22:35:44 DEBUG DataProviderCSVTest:115 - insertDataSchedule [2]: - END method working insert test end xml 
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 22:35:44 DEBUG DataProviderCSVTest:123 - insertDataScheduleNegative [1]: - Start method working insert test xml
+2023-12-22 22:35:44 DEBUG DataProviderXML:198 - InsertDataSchedule [1]: - Start method working insert xml
+2023-12-22 22:35:44 DEBUG XmlUtil:26 - getXmlWrapper [1]: start working method
+2023-12-22 22:35:44 DEBUG XmlUtil:44 - getObjectFkIdDoctor [1]: - Процесс проверки на ограничение внешнего ключа 
+2023-12-22 22:35:44 DEBUG XmlUtil:26 - getXmlWrapper [1]: start working method
+2023-12-22 22:35:44 DEBUG XmlUtil:55 - getObjectFkIdDoctor [2] - Такого ключа в файле нет.Попробуйте перепроверить
+2023-12-22 22:35:44 DEBUG XmlUtil:61 - getObjectFkIdDoctor [4] - Метод завершил свою работу
+2023-12-22 22:35:44 DEBUG DataProviderCSVTest:131 - insertDataScheduleNegative [2]: - END method working insert test end xml 
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 22:35:44 DEBUG DataProviderCSVTest:139 - insertDataCalcReport [1]: - Start method working insert test xml
+2023-12-22 22:35:44 DEBUG DataProviderXML:255 - InsertDataCalcReport [1]: - Start method working insert xml
+2023-12-22 22:35:44 DEBUG XmlUtil:44 - getObjectFkIdDoctor [1]: - Процесс проверки на ограничение внешнего ключа 
+2023-12-22 22:35:44 DEBUG XmlUtil:26 - getXmlWrapper [1]: start working method
+2023-12-22 22:35:44 DEBUG XmlUtil:61 - getObjectFkIdDoctor [4] - Метод завершил свою работу
+2023-12-22 22:35:44 DEBUG XmlUtil:44 - getObjectFkIdDoctor [1]: - Процесс проверки на ограничение внешнего ключа 
+2023-12-22 22:35:44 DEBUG XmlUtil:26 - getXmlWrapper [1]: start working method
+2023-12-22 22:35:44 DEBUG XmlUtil:61 - getObjectFkIdDoctor [4] - Метод завершил свою работу
+2023-12-22 22:35:44 DEBUG DataProviderXML:304 - InsertDataCalcReport [4]: - END method working insert xml
+2023-12-22 22:35:44 DEBUG DataProviderCSVTest:142 - insertDataCalcReport [2]: - END method working insert test end xml 
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 22:35:44 DEBUG DataProviderCSVTest:149 - insertDataCalcReportNegativity [1]: - Start method working insert test xml
+2023-12-22 22:35:44 DEBUG DataProviderXML:255 - InsertDataCalcReport [1]: - Start method working insert xml
+2023-12-22 22:35:44 DEBUG XmlUtil:26 - getXmlWrapper [1]: start working method
+2023-12-22 22:35:44 DEBUG XmlUtil:44 - getObjectFkIdDoctor [1]: - Процесс проверки на ограничение внешнего ключа 
+2023-12-22 22:35:44 DEBUG XmlUtil:26 - getXmlWrapper [1]: start working method
+2023-12-22 22:35:44 DEBUG XmlUtil:55 - getObjectFkIdDoctor [2] - Такого ключа в файле нет.Попробуйте перепроверить
+2023-12-22 22:35:44 DEBUG XmlUtil:61 - getObjectFkIdDoctor [4] - Метод завершил свою работу
+2023-12-22 22:35:44 DEBUG DataProviderCSVTest:155 - insertDataCalcReportNegativity [2]: - END method working insert test end xml 
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 22:35:44 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 22:35:59 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 22:35:59 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 22:35:59 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 22:35:59 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 22:35:59 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 22:35:59 DEBUG DataProviderCSVTest:80 - insertDataPreparationTest [1]: - Start method working insert test xml
+2023-12-22 22:35:59 DEBUG DataProviderXML:143 - InsertDataPatient [1]: - Start method working insert xml
+2023-12-22 22:36:00 DEBUG XmlUtil:44 - getObjectFkIdDoctor [1]: - Процесс проверки на ограничение внешнего ключа 
+2023-12-22 22:36:00 DEBUG XmlUtil:26 - getXmlWrapper [1]: start working method
+2023-12-22 22:36:00 DEBUG XmlUtil:55 - getObjectFkIdDoctor [2] - Такого ключа в файле нет.Попробуйте перепроверить
+2023-12-22 22:36:00 DEBUG XmlUtil:61 - getObjectFkIdDoctor [4] - Метод завершил свою работу
+2023-12-22 22:36:23 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\CALCREPORT.xml is exists
+2023-12-22 22:36:23 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\DOCTOR.xml is exists
+2023-12-22 22:36:23 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PATIENT.xml is exists
+2023-12-22 22:36:23 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\PREPARATION.xml is exists
+2023-12-22 22:36:23 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\assessmentHealth\assessmentHealth\xml\SCHEDULE.xml is exists
+2023-12-22 22:36:23 DEBUG DataProviderCSVTest:80 - insertDataPreparationTest [1]: - Start method working insert test xml
+2023-12-22 22:36:23 DEBUG DataProviderXML:143 - InsertDataPatient [1]: - Start method working insert xml
+2023-12-22 22:36:23 DEBUG XmlUtil:44 - getObjectFkIdDoctor [1]: - Процесс проверки на ограничение внешнего ключа 
+2023-12-22 22:36:23 DEBUG XmlUtil:26 - getXmlWrapper [1]: start working method
+2023-12-22 22:36:23 DEBUG XmlUtil:61 - getObjectFkIdDoctor [4] - Метод завершил свою работу
+2023-12-22 22:36:23 DEBUG DataProviderXML:190 - InsertDataPreparation [4]: - END method working insert xml
+2023-12-22 22:36:23 DEBUG DataProviderCSVTest:86 - insertDataPreparationTest [2]: - END method working insert test end xml 
