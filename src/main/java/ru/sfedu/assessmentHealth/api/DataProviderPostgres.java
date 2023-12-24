@@ -8,13 +8,11 @@ import ru.sfedu.assessmentHealth.model.*;
 
 
 import java.sql.*;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.sql.Date;
+import java.util.*;
 
 
-public class DataProviderPostgres implements DataCommandCrud{
+public class DataProviderPostgres implements DataCommandCrud {
     private final Logger log = LogManager.getLogger(DataProviderPostgres.class);
     String url = CONST.BD_POSTGRES_HOST.concat(CONST.BD_POSTGRES_NAME);
     Connection connection;
@@ -57,7 +55,8 @@ public class DataProviderPostgres implements DataCommandCrud{
 
 
     @Override
-    public  void InsertDataDoctor(Doctor obj){
+    public  StatusMethod InsertDataDoctor(Doctor obj){
+        StatusMethod result = StatusMethod.ERROR;
         HistoryContent wrap = new HistoryContent();
         wrap.setObject(obj);
         Map<String,Object> mapObj = wrap.getObject();
@@ -65,28 +64,31 @@ public class DataProviderPostgres implements DataCommandCrud{
         log.debug("InsertDataDoctor [1]: - start working method");
         try {
             PreparedStatement statement = connection.prepareStatement(CONST.INSERT_DOCTOR);
-            statement.setInt(1, (Integer) mapObj.get("Person_ID"));
-            statement.setString(2, (String) mapObj.get("Name"));
-            statement.setString(3, (String) mapObj.get("Surname"));
-            statement.setString(4, (String) mapObj.get("SecondName"));
-            statement.setInt(5, (Integer) mapObj.get("Age"));
-            statement.setString(6, String.valueOf(mapObj.get("Gender")));
-            statement.setString(7, mapObj.get("Status").toString());
-            statement.setInt(8, (Integer) mapObj.get("Experience"));
-            statement.setDouble(9, (Double) mapObj.get("AvgPatient"));
-            statement.setString(10, (String) mapObj.get("Qualification"));
-            statement.setString(11, (String) mapObj.get("Specialization"));
+            statement.setInt(1, (Integer) mapObj.get(CONST.KEY_PERSON));
+            statement.setString(2, (String) mapObj.get(CONST.NAME_FIELD_NAME));
+            statement.setString(3, (String) mapObj.get(CONST.NAME_FIELD_SURNAME));
+            statement.setString(4, (String) mapObj.get(CONST.NAME_FIELD_SECONDNAME));
+            statement.setInt(5, (Integer) mapObj.get(CONST.NAME_FIELD_AGE));
+            statement.setString(6, String.valueOf(mapObj.get(CONST.NAME_FIELD_GENDER)));
+            statement.setString(7, mapObj.get(CONST.NAME_FIELD_STATUS).toString());
+            statement.setInt(8, (Integer) mapObj.get(CONST.NAME_FIELD_DOCTOR_EXPERIENCE));
+            statement.setDouble(9, (Double) mapObj.get(CONST.NAME_FIELD_DOCTOR_AVGPATIENT));
+            statement.setString(10, (String) mapObj.get(CONST.NAME_FIELD_DOCTOR_QUALIFICATION));
+            statement.setString(11, (String) mapObj.get(CONST.NAME_FIELD_DOCTOR_SPECIALIZATION));
             rowsInserted = statement.executeUpdate();
+            result = StatusMethod.OK;
         } catch (SQLException e) {
             log.error("InsertDataDoctor [2]: - error {}" ,e.getMessage());
         }
         if (rowsInserted > 0) {
             log.debug("InsertDataDoctor [3]: insert Data successfully {}",mapObj);
         }
+        return result;
     }
 
     @Override
-    public void InsertDataPatient(Patient obj){
+    public StatusMethod InsertDataPatient(Patient obj){
+        StatusMethod result = StatusMethod.ERROR;
         HistoryContent wrap = new HistoryContent();
         wrap.setObject(obj);
         Map<String,Object> mapObj = wrap.getObject();
@@ -94,106 +96,117 @@ public class DataProviderPostgres implements DataCommandCrud{
         log.debug("InsertDataPatient [1]: - start working method");
         try {
             PreparedStatement statement = connection.prepareStatement(CONST.INSERT_PATIENT);
-            statement.setInt(1, (Integer) mapObj.get("Person_ID"));
-            statement.setString(2, (String) mapObj.get("Name"));
-            statement.setString(3, (String) mapObj.get("Surname"));
-            statement.setString(4, (String) mapObj.get("SecondName"));
-            statement.setInt(5, (Integer) mapObj.get("Age"));
-            statement.setString(6, String.valueOf(mapObj.get("Gender")));
-            statement.setString(7, mapObj.get("Status").toString());
-            statement.setDouble(8, (Double) mapObj.get("CellsBlood"));
-            statement.setDouble(9, (Double) mapObj.get("Hemoglobin"));
-            statement.setDouble(10, (Double) mapObj.get("Platelets"));
-            statement.setDouble(11, (Double) mapObj.get("Testosterone"));
-            statement.setDouble(12, (Double) mapObj.get("Glucose"));
-            statement.setDouble(13, (Double) mapObj.get("Cholesterol"));
-            statement.setInt(14, (short) mapObj.get("ArterialPress"));
-            statement.setString(15, mapObj.get("statusVisit").toString());
+            statement.setInt(1, (Integer) mapObj.get(CONST.KEY_PERSON));
+            statement.setString(2, (String) mapObj.get(CONST.NAME_FIELD_NAME));
+            statement.setString(3, (String) mapObj.get(CONST.NAME_FIELD_SURNAME));
+            statement.setString(4, (String) mapObj.get(CONST.NAME_FIELD_SECONDNAME));
+            statement.setInt(5, (Integer) mapObj.get(CONST.NAME_FIELD_AGE));
+            statement.setString(6, String.valueOf(mapObj.get(CONST.NAME_FIELD_GENDER)));
+            statement.setString(7, mapObj.get(CONST.NAME_FIELD_STATUS).toString());
+            statement.setDouble(8, (Double) mapObj.get(CONST.NAME_FIELD_PATIENT_CELLS_BLOOD));
+            statement.setDouble(9, (Double) mapObj.get(CONST.NAME_FIELD_PATIENT_HEMOGLOBIN));
+            statement.setDouble(10, (Double) mapObj.get(CONST.NAME_FIELD_PATIENT_PLATELETS));
+            statement.setDouble(11, (Double) mapObj.get(CONST.NAME_FIELD_PATIENT_TESTOSTERONE));
+            statement.setDouble(12, (Double) mapObj.get(CONST.NAME_FIELD_PATIENT_GLUCOSE));
+            statement.setDouble(13, (Double) mapObj.get(CONST.NAME_FIELD_PATIENT_CHOLESTEROL));
+            statement.setInt(14, (short) mapObj.get(CONST.NAME_FIELD_PATIENT_ARTERIAL_PRESS));
+            statement.setString(15, mapObj.get(CONST.NAME_FIELD_PATIENT_STATUS_VISIT).toString());
 
             rowsInserted = statement.executeUpdate();
+            result = StatusMethod.OK;
         } catch (SQLException e) {
             log.error("InsertDataPatient  [2]: - error {}" ,e.getMessage());
         }
         if (rowsInserted > 0){
             log.debug("InsertDataPatient [3]: insert Data successfully {}",mapObj);
         }
+        return result;
     }
     @Override
-    public void InsertDataPreparation(Preparation obj, Integer FkPreparationToDoctor, String dateEnd){
+    public StatusMethod InsertDataPreparation(Preparation obj, Integer FkPreparationToDoctor, String dateEnd){
+        StatusMethod result = StatusMethod.ERROR;
         HistoryContent wrap = new HistoryContent();
         wrap.setObject(obj);
         Map<String,Object> mapObj = wrap.getObject();
-        mapObj.put("DateEnd",Date.valueOf(dateEnd));
+        mapObj.put(CONST.NAME_FIELD_PREPARATION_DAE_END,Date.valueOf(dateEnd));
+        mapObj.put(CONST.FK_PREPARATION_TO_DOCTOR,FkPreparationToDoctor);
         log.debug("InsertDataPreparation [1]: - start working method");
         try {
             PreparedStatement statement = connection.prepareStatement(CONST.INSERT_PREPARATION);
-            statement.setInt(1, (Integer) mapObj.get("Preparation_ID"));
-            statement.setInt(2, FkPreparationToDoctor);
-            statement.setString(3, (String) mapObj.get("NamePrep"));
-            statement.setDate(4, (Date) mapObj.get("DateEnd"));
-            statement.setDouble(5,(Double) mapObj.get("Dosage"));
-            statement.setString(6,mapObj.get("statusVisitPreparation").toString());
-            statement.setString(7,mapObj.get("AboutPrep").toString());
-            statement.setInt(8,(Integer) mapObj.get("CountPrep"));
+            statement.setInt(1, (Integer) mapObj.get(CONST.NAME_FIELD_PREPARATION_ID));
+            statement.setInt(2, (Integer) mapObj.get(CONST.FK_PREPARATION_TO_DOCTOR));
+            statement.setString(3, (String) mapObj.get(CONST.NAME_FIELD_PREPARATION_NAME_PREP));
+            statement.setDate(4, (Date) mapObj.get(CONST.NAME_FIELD_PREPARATION_DAE_END));
+            statement.setDouble(5,(Double) mapObj.get(CONST.NAME_FIELD_PREPARATION_DOSAGE));
+            statement.setString(6,mapObj.get(CONST.NAME_FIELD_PREPARATION_STATUS_VISIT_PREPARATION).toString());
+            statement.setString(7,mapObj.get(CONST.NAME_FIELD_PREPARATION_ABOUT_PREP).toString());
+            statement.setInt(8,(Integer) mapObj.get(CONST.NAME_FIELD_PREPARATION_COUNT_PREP));
 
             statement.executeUpdate();
+            result = StatusMethod.OK;
         } catch (SQLException e) {
             log.error("InsertDataPreparation  [2]: - error {}" ,e.getMessage());
         }
             log.debug("InsertDataPreparation [3]: insert Data successfully {}",mapObj);
+        return result;
     }
 
     @Override
-    public void InsertDataSchedule(Schedule obj, String dateSchedule, String timeBegin, String timeEnd){
+    public StatusMethod InsertDataSchedule(Schedule obj, Integer FkScheduleToDoctor,String dateSchedule, String timeBegin, String timeEnd){
+        StatusMethod result = StatusMethod.ERROR;
         HistoryContent wrap = new HistoryContent();
+        obj.setFkToDoctor(FkScheduleToDoctor);
         wrap.setObject(obj);
         Map<String,Object> mapObj = wrap.getObject();
         mapObj.put("DateSchedule",Date.valueOf(dateSchedule));
         mapObj.put("TimeBegin", Time.valueOf(timeBegin));
         mapObj.put("TimeEnd",Time.valueOf(timeEnd));
-
         log.debug("InsertDataSchedule [1]: - start working method");
         try {
             PreparedStatement statement = connection.prepareStatement(CONST.INSERT_SCHEDULE);
-            statement.setInt(1, (Integer) mapObj.get("Schedule_ID"));
-            statement.setInt(2, (Integer) mapObj.get("FkToDoctor"));
-            statement.setString(3, mapObj.get("dateWeek").toString());
-            statement.setDate(4, (Date) mapObj.get("DateSchedule"));
-            statement.setTime(5, (Time) mapObj.get("TimeBegin"));
-            statement.setTime(6, (Time) mapObj.get("TimeEnd"));
-            statement.setString(7,mapObj.get("statusSchedule").toString());
+            statement.setInt(1, (Integer) mapObj.get(CONST.NAME_FIELD_SCHEDULE_ID));
+            statement.setInt(2, (Integer) mapObj.get(CONST.NAME_FIELD_SCHEDULE_FK_TO_DOCTOR));
+            statement.setString(3, mapObj.get(CONST.NAME_FIELD_SCHEDULE_DATE_WEEK).toString());
+            statement.setDate(4, (Date) mapObj.get(CONST.NAME_FIELD_SCHEDULE_DATE_SCHEDULE));
+            statement.setTime(5, (Time) mapObj.get(CONST.NAME_FIELD_SCHEDULE_TIME_BEGIN));
+            statement.setTime(6, (Time) mapObj.get(CONST.NAME_FIELD_SCHEDULE_TIME_END));
+            statement.setString(7,mapObj.get(CONST.NAME_FIELD_SCHEDULE_STATUS_SCHEDULE).toString());
+
             statement.executeUpdate();
+            result = StatusMethod.OK;
         } catch (SQLException e) {
             log.error("InsertDataSchedule [2]: - error {}" ,e.getMessage());
         }
         log.debug("InsertDataSchedule [3]: insert Data successfully {}",mapObj);
+        return result;
     }
 
     @Override
-    public void InsertDataCalcReport(CalcReport obj){
+    public StatusMethod InsertDataCalcReport(CalcReport obj){
+        StatusMethod result = StatusMethod.ERROR;
         HistoryContent wrap = new HistoryContent();
         wrap.setObject(obj);
         Map<String,Object> mapObj = wrap.getObject();
         log.debug("InsertDataCalcReport [1]: - start working method");
         try {
             PreparedStatement statement = connection.prepareStatement(CONST.INSERT_CALC_REPORT);
-            statement.setInt(1, (Integer) mapObj.get("Report_ID"));
-            statement.setInt(2, (Integer) mapObj.get("FkToDoctor"));
-            statement.setInt(3, (Integer) mapObj.get("FkToPatient"));
-            statement.setString(4, (String) mapObj.get("PatientName"));
-            statement.setString(5, (String) mapObj.get("NameDoctor"));
-            statement.setBoolean(6,(Boolean) mapObj.get("BloodAnalyse"));
-            statement.setBoolean(7,(Boolean) mapObj.get("GlucoseAnalyse"));
-            statement.setBoolean(8,(Boolean) mapObj.get("HormoneAnalyse"));
-            statement.setBoolean(9,(Boolean) mapObj.get("ArterialAnalyse"));
-            statement.setDouble(10,(Double) mapObj.get("price"));
+            statement.setInt(1, (Integer) mapObj.get(CONST.NAME_FIELD_REPORT_ID));
+            statement.setInt(2, (Integer) mapObj.get(CONST.NAME_FIELD_REPORT_FK_TO_DOCTOR));
+            statement.setInt(3, (Integer) mapObj.get(CONST.NAME_FIELD_REPORT_FK_TO_PATIENT));
+            statement.setString(4, (String) mapObj.get(CONST.NAME_FIELD_REPORT_NAME_PATIENT));
+            statement.setString(5, (String) mapObj.get(CONST.NAME_FIELD_REPORT_NAME_DOCTOR));
+            statement.setBoolean(6,(Boolean) mapObj.get(CONST.NAME_FIELD_REPORT_BLOOD_ANALYSE));
+            statement.setBoolean(7,(Boolean) mapObj.get(CONST.NAME_FIELD_REPORT_GLUCOSE_ANALYSE));
+            statement.setBoolean(8,(Boolean) mapObj.get(CONST.NAME_FIELD_REPORT_HORMONE_ANALYSE));
+            statement.setBoolean(9,(Boolean) mapObj.get(CONST.NAME_FIELD_REPORT_ARTERIAL_ANALYSE));
+            statement.setDouble(10,(Double) mapObj.get(CONST.NAME_FIELD_REPORT_PRICE));
             statement.executeUpdate();
         } catch (SQLException e) {
             log.error("InsertDataCalcReport [2]: - error {}" ,e.getMessage());
         }
         log.debug("InsertDataCalcReport [3]: insert Data successfully {}",mapObj);
+        return result;
     }
-
     public Map<String,Object> createResultSetToObject(ResultSet result) throws SQLException {
         log.debug("createResultSetToObject [1]: - start working method");
         Map<String,Object> resultSet = new HashMap<>();
@@ -307,75 +320,85 @@ public class DataProviderPostgres implements DataCommandCrud{
         return resultSet;
     }
     @Override
-    public void deleteDataDoctor(Integer Doctor_ID){
+    public StatusMethod deleteDataDoctor(Integer Doctor_ID){
+        StatusMethod result = StatusMethod.ERROR;
         log.debug("deleteDataDoctor [1]: - start working method");
         try {
             PreparedStatement statement = connection.prepareStatement(CONST.DELETE_DOCTOR_TO_ID);
             statement.setInt(1,Doctor_ID);
             statement.executeUpdate();
-
+            result = StatusMethod.OK;
         } catch (SQLException e) {
             log.error("deleteDataDoctor [2]: - ERROR {}", e.getMessage());
             throw new RuntimeException(e);
         }
         log.debug("deleteDataDoctor [3]: - DELETE DATA Doctor successfully");
+        return result;
     }
     @Override
-    public void deleteDataPatient(Integer Patient_ID){
+    public StatusMethod deleteDataPatient(Integer Patient_ID){
+        StatusMethod result = StatusMethod.ERROR;
         log.debug("deleteDataPatient [1]: - start working method");
         try {
             PreparedStatement statement = connection.prepareStatement(CONST.DELETE_PATIENT_TO_ID);
             statement.setInt(1,Patient_ID);
             statement.executeUpdate();
-
+            result = StatusMethod.OK;
         } catch (SQLException e) {
             log.error("deleteDataPatient [2]: - ERROR {}", e.getMessage());
             throw new RuntimeException(e);
         }
         log.debug("deleteDataPatient [3]: - DELETE DATA Patient successfully");
+        return result;
     }
     @Override
-    public void deleteDataPreparation(Integer Preparation_ID){
+    public StatusMethod deleteDataPreparation(Integer Preparation_ID){
+        StatusMethod result = StatusMethod.ERROR;
         log.debug("deleteDataPreparation [1]: - start working method");
         try {
             PreparedStatement statement = connection.prepareStatement(CONST.DELETE_PREPARATION_TO_ID);
             statement.setInt(1,Preparation_ID);
             statement.executeUpdate();
-
+            result = StatusMethod.OK;
         } catch (SQLException e) {
             log.error("deleteDataPreparation [2]: - ERROR {}", e.getMessage());
             throw new RuntimeException(e);
         }
         log.debug("deleteDataPreparation [3]: - DELETE DATA Preparation successfully");
+        return result;
     }
     @Override
-    public void deleteDataSchedule(Integer Schedule_ID){
+    public StatusMethod deleteDataSchedule(Integer Schedule_ID){
+        StatusMethod result = StatusMethod.ERROR;
         log.debug("deleteDataSchedule [1]: - start working method");
         try {
             PreparedStatement statement = connection.prepareStatement(CONST.DELETE_SCHEDULE_TO_ID);
             statement.setInt(1,Schedule_ID);
             statement.executeUpdate();
-
+            result = StatusMethod.OK;
         } catch (SQLException e) {
             log.error("deleteDataSchedule [2]: - ERROR {}", e.getMessage());
             throw new RuntimeException(e);
         }
         log.debug("deleteDataSchedule [3]: - DELETE DATA Schedule successfully");
+        return result;
     }
 
     @Override
-    public void deleteDataCalcReport(Integer CalcReport_ID){
+    public StatusMethod deleteDataCalcReport(Integer CalcReport_ID){
+        StatusMethod result = StatusMethod.OK;
         log.debug("deleteDataCalcReport [1]: - start working method");
         try {
             PreparedStatement statement = connection.prepareStatement(CONST.DELETE_CALC_REPORT_TO_ID);
             statement.setInt(1,CalcReport_ID);
             statement.executeUpdate();
-
+            result = StatusMethod.OK;
         } catch (SQLException e) {
             log.error("deleteDataCalcReport [2]: - ERROR {}", e.getMessage());
             throw new RuntimeException(e);
         }
         log.debug("deleteDataCalcReport [3]: - DELETE DATA CalcReport successfully");
+        return result;
     }
 
 

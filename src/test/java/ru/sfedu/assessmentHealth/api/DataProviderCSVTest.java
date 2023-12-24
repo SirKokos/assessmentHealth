@@ -9,10 +9,7 @@ import com.opencsv.exceptions.CsvException;
 import jdk.jfr.StackTrace;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.junit.jupiter.api.MethodOrderer;
-import org.junit.jupiter.api.Tag;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestMethodOrder;
+import org.junit.jupiter.api.*;
 import ru.sfedu.assessmentHealth.CONST;
 import ru.sfedu.assessmentHealth.model.*;
 
@@ -73,6 +70,7 @@ class DataProviderCSVTest {
 
     @Test
     @Tag("INSERT")
+    @Order(1)
     void insertDataPatient() {
         log.debug("insertDataPatient [1]: - start working test ");
         Patient expected = createPatient();
@@ -83,6 +81,7 @@ class DataProviderCSVTest {
 
     @Test
     @Tag("INSERT")
+    @Order(2)
     void insertDataPreparation() {
         log.debug("insertDataPreparation [1]: - start working test ");
         Preparation expected = createPreparation();
@@ -92,6 +91,7 @@ class DataProviderCSVTest {
     }
 
     @Test
+    @Order(3)
     @Tag("INSERT_NEG")
     void insertDataPreparationNegativity() {
         log.debug("insertDataPreparationNegativity [1]: - start working test Negativity ");
@@ -105,6 +105,7 @@ class DataProviderCSVTest {
 
     @Test
     @Tag("INSERT")
+    @Order(4)
     void insertDataSchedule() {
         log.debug("insertDataSchedule [1]: - start working test Negativity ");
         Schedule expected = createSchedule();
@@ -114,6 +115,7 @@ class DataProviderCSVTest {
     }
     @Test
     @Tag("INSERT_NEG")
+    @Order(5)
     void insertDataScheduleNegativity() {
         log.debug("insertDataScheduleNegativity [1]: - start working test Negativity ");
         Schedule expected = createSchedule();
@@ -124,6 +126,7 @@ class DataProviderCSVTest {
 
     @Test
     @Tag("INSERT")
+    @Order(6)
     void insertDataCalcReport() {
         log.debug("insertDataCalcReport [1]: - start working test ");
         CalcReport expected = createCalcReport();
@@ -131,10 +134,21 @@ class DataProviderCSVTest {
         assertEquals(result,StatusMethod.OK);
         log.debug("insertDataCalcReport [2]: - working end succeeded");
     }
+    @Test
+    @Tag("INSERT")
+    @Order(7)
+    void insertDataCalcReportNegativity() {
+        log.debug("insertDataCalcReportNegativity [1]: - start working test ");
+        CalcReport expected = createCalcReport();
+        StatusMethod result = providerCSV.InsertDataCalcReport(expected);
+        assertEquals(result,StatusMethod.ERROR);
+        log.debug("insertDataCalcReportNegativity [2]: - working end succeeded");
+    }
 
 
     @Test
     @Tag("SELECT")
+    @Order(8)
     void selectDoctorId() {
         log.debug("selectDoctorId [1]: start working test ");
         assertEquals(providerCSV.selectDoctorId(1).get("Person_ID"),1);
@@ -142,6 +156,7 @@ class DataProviderCSVTest {
     }
     @Test
     @Tag("SELECT_NEG")
+    @Order(9)
     void selectDoctorIdNegativity() {
         log.debug("selectDoctorIdNegativity [1]: start working test Negativity  ");
         assertNotEquals(providerCSV.selectDoctorId(1).get(CONST.KEY_PERSON),-1);
@@ -152,6 +167,7 @@ class DataProviderCSVTest {
 
     @Test
     @Tag("SELECT")
+    @Order(10)
     void selectPatientId() {
         log.debug("selectPatientId [1]: start working test");
         assertEquals(providerCSV.selectPatientId(1).get(CONST.KEY_PERSON),1);
@@ -159,6 +175,7 @@ class DataProviderCSVTest {
     }
     @Test
     @Tag("SELECT_NEG")
+    @Order(11)
     void selectPatientIdNegativity() {
         log.debug("selectPatientId [1]: start working test Negativity");
         assertNotEquals(providerCSV.selectPatientId(1).get(CONST.KEY_PERSON),-1);
@@ -167,6 +184,7 @@ class DataProviderCSVTest {
 
     @Test
     @Tag("SELECT")
+    @Order(12)
     void selectPreparationId() {
         log.debug("selectPreparationId [1]: start working test");
         assertEquals(providerCSV.selectPreparationId(1).get(CONST.NAME_FIELD_PREPARATION_ID),1);
@@ -174,6 +192,7 @@ class DataProviderCSVTest {
     }
     @Test
     @Tag("SELECT_NEG")
+    @Order(13)
     void selectPreparationIdNegativity() {
         log.debug("selectPreparationIdNegativity [1]: start working test Negativity");
         assertNotEquals(providerCSV.selectPreparationId(1).get(CONST.NAME_FIELD_PREPARATION_ID),-1);
@@ -182,6 +201,7 @@ class DataProviderCSVTest {
 
     @Test
     @Tag("SELECT")
+    @Order(14)
     void selectScheduleId() {
         log.debug("selectScheduleId [1]: start working test ");
         assertEquals(providerCSV.selectScheduleId(1).get(CONST.NAME_FIELD_SCHEDULE_ID),1);
@@ -190,6 +210,7 @@ class DataProviderCSVTest {
     }
     @Test
     @Tag("SELECT_NEG")
+    @Order(15)
     void selectScheduleIdNegativity() {
         log.debug("selectScheduleIdNegativity [1]: start working test Negativity");
         assertNotEquals(providerCSV.selectScheduleId(1).get(CONST.NAME_FIELD_SCHEDULE_ID),-1);
@@ -197,6 +218,7 @@ class DataProviderCSVTest {
     }
     @Test
     @Tag("SELECT")
+    @Order(16)
     void selectCalcReportId() {
         log.debug("selectScheduleId [1]: start working test");
         assertEquals(providerCSV.selectCalcReportId(1).get(CONST.NAME_FIELD_REPORT_ID),1);
@@ -204,6 +226,7 @@ class DataProviderCSVTest {
     }
     @Test
     @Tag("SELECT_NEG")
+    @Order(17)
     void selectCalcReportIdNegativity() {
         log.debug("selectCalcReportIdNegativity [1]: start working test");
         assertNotEquals(providerCSV.selectCalcReportId(1).get(CONST.NAME_FIELD_REPORT_ID),-1);

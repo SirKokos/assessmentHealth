@@ -24,7 +24,7 @@ import static ru.sfedu.assessmentHealth.utils.CsvUtil.getObjectFkId;
 import static ru.sfedu.assessmentHealth.utils.CsvUtil.getObjectLastIdCsv;
 import static ru.sfedu.assessmentHealth.utils.FileUtil.createFileIfNotExists;
 
-public class DataProviderCSV {
+public class DataProviderCSV implements DataCommandCrud{
     private static final Logger log = LogManager.getLogger(DataProviderCSV.class.getName());
 
     final private String calcReportPath = CONST.CSV_PATH_FOLDER.concat(CONST.SQL_TABLE_NAME_CALC_REPORT).concat(CONST.CSV_FILE_TYPE);
@@ -48,7 +48,8 @@ public class DataProviderCSV {
 
     }
 
-    public StatusMethod InsertDataDoctor(Doctor obj) throws FileNotFoundException {
+    @Override
+    public StatusMethod InsertDataDoctor(Doctor obj){
         log.debug("InsertDataDoctor [1]: - Start method working insert csv");
         StatefulBeanToCsv beanToCsv;
         Writer writer;
@@ -69,7 +70,7 @@ public class DataProviderCSV {
         return result;
     }
 
-
+    @Override
     public StatusMethod InsertDataPatient(Patient obj) {
         log.debug("InsertDataPatient [1]: - Start method working insert csv");
         StatefulBeanToCsv beanToCsv = null;
@@ -92,7 +93,7 @@ public class DataProviderCSV {
         return result;
     }
 
-
+    @Override
     public StatusMethod InsertDataPreparation(Preparation obj, Integer FkPreparationToDoctor, String dateEnd) {
         log.debug("InsertDataPreparation [1]: - Start method working insert csv");
         StatefulBeanToCsv beanToCsv;
@@ -123,7 +124,7 @@ public class DataProviderCSV {
         return result;
     }
 
-
+    @Override
     public StatusMethod InsertDataSchedule(Schedule obj, Integer FkScheduleToDoctor,String dateSchedule, String timeBegin, String timeEnd) {
         log.debug("InsertDataSchedule [1]: - Start method working insert csv");
         StatefulBeanToCsv beanToCsv;
@@ -157,7 +158,7 @@ public class DataProviderCSV {
         return result;
     }
 
-
+    @Override
     public StatusMethod InsertDataCalcReport(CalcReport obj) {
         log.debug("InsertDataCalcReport [1]: - Start method working insert csv");
         StatefulBeanToCsv beanToCsv = null;
@@ -179,7 +180,7 @@ public class DataProviderCSV {
         return result;
     }
 
-
+    @Override
     public Map<String, Object> selectDoctorId(Integer Doctor_Id) {
         log.debug("selectDoctorId [1]: start working method");
         List<List<String>> getListDoctor = generateListFromCsv(doctorPath);
@@ -210,7 +211,7 @@ public class DataProviderCSV {
         return result;
     }
 
-
+    @Override
     public Map<String, Object> selectPatientId(Integer Patient_Id) {
 
         log.debug("selectPatientId [1]: start working method");
@@ -250,7 +251,7 @@ public class DataProviderCSV {
 
     }
 
-
+    @Override
     public Map<String, Object> selectPreparationId(Integer Preparation_Id) {
         log.debug("selectPreparationId [1]: start working method");
         List<List<String>> getListDoctor = generateListFromCsv(preparationPath);
@@ -279,7 +280,7 @@ public class DataProviderCSV {
         return result;
     }
 
-
+    @Override
     public Map<String, Object> selectScheduleId(Integer Schedule_Id) {
         log.debug("selectScheduleId [1]: start working method");
         List<List<String>> getListDoctor = generateListFromCsv(schedulePath);
@@ -307,7 +308,7 @@ public class DataProviderCSV {
         return result;
     }
 
-
+    @Override
     public Map<String, Object> selectCalcReportId(Integer CalcReport_Id) {
         log.debug("selectCalcReportId [1]: start working method");
         List<List<String>> getListDoctor = generateListFromCsv(calcReportPath);
@@ -338,29 +339,34 @@ public class DataProviderCSV {
         return result;
     }
 
+    @Override
+    public StatusMethod deleteDataDoctor(Integer Doctor_ID) {
 
-    public void deleteDataDoctor(Integer Doctor_ID) {
-
+        return null;
     }
 
+    @Override
+    public StatusMethod deleteDataPatient(Integer Patient_ID) {
 
-    public void deleteDataPatient(Integer Patient_ID) {
-
+        return null;
     }
 
+    @Override
+    public StatusMethod deleteDataPreparation(Integer Preparation_ID) {
 
-    public void deleteDataPreparation(Integer Preparation_ID) {
-
+        return null;
     }
 
+    @Override
+    public StatusMethod deleteDataSchedule(Integer Schedule_ID) {
 
-    public void deleteDataSchedule(Integer Schedule_ID) {
-
+        return null;
     }
 
+    @Override
+    public StatusMethod deleteDataCalcReport(Integer CalcReport_ID) {
 
-    public void deleteDataCalcReport(Integer CalcReport_ID) {
-
+        return null;
     }
 
 

@@ -41,9 +41,9 @@ public class TestUtil {
 
     public static Preparation createPreparation(){
         Preparation prep = new Preparation();
-        prep.setFkPreparationToDoctor(-1);
+//        prep.setFkPreparationToDoctor(1);
 //        prep.setFkPreparationToDoctor(2);
-        prep.setNamePrep("ddw");
+        prep.setNamePrep("asdasdadadsda");
         prep.setDosage(12.123);
         prep.setStatusVisitPreparation(StatusVisitPreparation.LOW);
         prep.setAboutPrep("dwdqdwdqdqdqdw");

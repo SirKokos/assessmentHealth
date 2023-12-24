@@ -18,6 +18,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.Objects;
 import java.util.stream.Collectors;
 
@@ -35,11 +36,6 @@ import static ru.sfedu.assessmentHealth.utils.TestUtil.*;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 class DataProviderXMLTest {
-    final private String calcReportPath = CONST.XML_PATH_FOLDER.concat(CONST.SQL_TABLE_NAME_CALC_REPORT).concat(CONST.XML_FILE_TYPE);
-    final private String doctorPath = CONST.XML_PATH_FOLDER.concat(CONST.SQL_TABLE_NAME_DOCTOR).concat(CONST.XML_FILE_TYPE);
-    final private String patientPath = CONST.XML_PATH_FOLDER.concat(CONST.SQL_TABLE_NAME_PATIENT).concat(CONST.XML_FILE_TYPE);
-    final private String preparationPath = CONST.XML_PATH_FOLDER.concat(CONST.SQL_TABLE_NAME_PREPARATION).concat(CONST.XML_FILE_TYPE);
-    final private String schedulePath = CONST.XML_PATH_FOLDER.concat(CONST.SQL_TABLE_NAME_SCHEDULE).concat(CONST.XML_FILE_TYPE);
 
     private static final Logger log = LogManager.getLogger(DataProviderCSVTest.class.getName());
     DataProviderXML providerXML;
@@ -78,6 +74,7 @@ class DataProviderXMLTest {
     @Order(3)
     void insertDataPreparationTest() {
         log.debug("insertDataPreparationTest [1]: - Start method working insert test xml");
+        System.out.println(createPreparation());
         StatusMethod result = providerXML.InsertDataPreparation(
                 createPreparation(),
                 1,
@@ -155,43 +152,193 @@ class DataProviderXMLTest {
         log.debug("insertDataCalcReportNegativity [2]: - END method working insert test end xml ");
     }
     @Test
+    @Tag("SELECT")
+    @Order(9)
     void selectDoctorId() {
+        log.debug("selectDoctorId [1]: - Start method working select test xml");
+        Map<String,Object> actual =providerXML.selectDoctorId(1);
+        assertEquals(actual.get(CONST.KEY_PERSON),1);
+        log.debug("selectDoctorId [2]: - END method working select test xml {}",actual);
+    }
+    @Test
+    @Tag("SELECT_NEG")
+    @Order(10)
+    void selectDoctorIdNegativity() {
+        log.debug("selectDoctorIdNegativity [1]: - Start method working select test xml");
+        Map<String,Object> actual = providerXML.selectDoctorId(-1);
+        assertEquals(actual.get(CONST.KEY_PERSON),null);
+        log.debug("selectDoctorIdNegativity [2]: - END method working select test xml {}",actual);
     }
 
     @Test
+    @Tag("SELECT")
+    @Order(11)
     void selectPatientId() {
+        log.debug("selectPatientId [1]: - Start method working select test xml");
+        Map<String,Object> actual = providerXML.selectPatientId(1);
+        assertEquals(actual.get(CONST.KEY_PERSON),1);
+        log.debug("selectPatientId [2]: - END method working select test xml {}",actual);
     }
 
     @Test
+    @Tag("SELECT_NEG")
+    @Order(12)
+    void selectPatientIdNegativity() {
+        log.debug("selectPatientIdNegativity [1]: - Start method working select test xml");
+        Map<String,Object> actual = providerXML.selectPatientId(-1);
+        assertEquals(actual.get(CONST.KEY_PERSON),null);
+        log.debug("selectPatientIdNegativity [2]: - END method working select test xml {}",actual);
+
+    }
+    @Test
+    @Tag("SELECT")
+    @Order(13)
     void selectPreparationId() {
+        log.debug("selectPreparationId [1]: - Start method working select test xml");
+        Map<String,Object> actual = providerXML.selectPreparationId(1);
+        assertEquals(actual.get(CONST.KEY_PREPARATION),1);
+        log.debug("selectPreparationId [2]: - END method working select test xml {}",actual);
+
+    }
+    @Test
+    @Tag("SELECT_NEG")
+    @Order(13)
+    void selectPreparationIdNegativity() {
+        log.debug("selectPreparationIdNegativity [1]: - Start method working select test xml");
+        Map<String,Object> actual = providerXML.selectPreparationId(-1);
+        assertEquals(actual.get(CONST.KEY_PREPARATION),null);
+        log.debug("selectPreparationIdNegativity [2]: - END method working select test xml {}",actual);
+
     }
 
     @Test
+    @Tag("SELECT")
+    @Order(14)
     void selectScheduleId() {
+        log.debug("selectScheduleId [1]: - Start method working select test xml");
+        Map<String,Object> actual = providerXML.selectScheduleId(1);
+        assertEquals(actual.get(CONST.KEY_SCHEDULE),1);
+        log.debug("selectScheduleId [2]: - END method working select test xml {}",actual);
+
     }
 
     @Test
+    @Tag("SELECT_NEG")
+    @Order(15)
+    void selectScheduleIdNegativity() {
+        log.debug("selectScheduleIdNegativity [1]: - Start method working select test xml");
+        Map<String,Object> actual = providerXML.selectScheduleId(-1);
+        assertEquals(actual.get(CONST.KEY_SCHEDULE),null);
+        log.debug("selectScheduleIdNegativity [2]: - END method working select test xml {}",actual);
+
+    }
+    @Test
+    @Tag("SELECT")
+    @Order(16)
     void selectCalcReportId() {
+        log.debug("selectCalcReportId [1]: - Start method working select test xml");
+        Map<String,Object> actual = providerXML.selectCalcReportId(1);
+        assertEquals(actual.get(CONST.KEY_CALC_REPORT),1);
+        log.debug("selectCalcReportId [2]: - END method working select test xml {}",actual);
+
+    }
+    @Test
+    @Tag("SELECT_NEG")
+    @Order(17)
+    void selectCalcReportIdNegativity() {
+        log.debug("selectCalcReportIdNegativity [1]: - Start method working select test xml");
+        Map<String,Object> actual = providerXML.selectCalcReportId(-1);
+        assertEquals(actual.get(CONST.KEY_CALC_REPORT),null);
+        log.debug("selectCalcReportIdNegativity [2]: - END method working select test xml {}",actual);
+
     }
 
     @Test
+    @Tag("DELETE")
+    @Order(18)
     void deleteDataDoctor() {
+        log.debug("deleteDataDoctor [1]: - Start method working delete test xml");
+        StatusMethod result_del =  providerXML.deleteDataDoctor(1);
+        Map<String,Object> result_select = providerXML.selectDoctorId(1);
+        assertTrue(result_select.isEmpty());
+        log.debug("deleteDataDoctor [2]: - END method working delete test xml {}",result_del);
+    }
+    @Test
+    @Tag("DELETE_NEG")
+    @Order(19)
+    void deleteDataDoctorNegativity() {
+        log.debug("deleteDataDoctorNegativity [1]: - Start method working delete test xml");
+        StatusMethod result_del =  providerXML.deleteDataDoctor(-1);
+        assertEquals(result_del,StatusMethod.ERROR);
+        log.debug("deleteDataDoctorNegativity [2]: - END method working delete test xml {}",result_del);
+
     }
 
     @Test
+    @Tag("DELETE")
+    @Order(20)
     void deleteDataPatient() {
+        log.debug("deleteDataPatient [1]: - Start method working delete test xml");
+        StatusMethod result_del =  providerXML.deleteDataPatient(1);
+        Map<String,Object> result_select = providerXML.selectPatientId(1);
+        assertTrue(result_select.isEmpty());
+        log.debug("deleteDataPatient [2]: - END method working delete test xml {}",result_del);
+
     }
 
     @Test
+    @Tag("DELETE_NEG")
+    @Order(21)
+    void deleteDataPatientNegativity() {
+        log.debug("deleteDataPatientNegativity [1]: - Start method working delete test xml");
+        StatusMethod result_del =  providerXML.deleteDataPatient(-1);
+        assertEquals(result_del,StatusMethod.ERROR);
+        log.debug("deleteDataPatientNegativity [2]: - END method working delete test xml {}",result_del);
+    }
+    @Test
+    @Tag("DELETE")
+    @Order(22)
     void deleteDataPreparation() {
+        log.debug("deleteDataPreparation [1]: - Start method working delete test xml");
+        StatusMethod result_del =  providerXML.deleteDataPreparation(1);
+        Map<String,Object> result_select = providerXML.selectPreparationId(1);
+        assertTrue(result_select.isEmpty());
+        log.debug("deleteDataPreparation [2]: - END method working delete test xml {}",result_del);
+
+    }
+    @Test
+    @Tag("DELETE_NEG")
+    @Order(23)
+    void deleteDataPreparationNegativity() {
+        log.debug("deleteDataPreparationNegativity [1]: - Start method working delete test xml");
+        StatusMethod result_del =  providerXML.deleteDataPreparation(-1);
+        assertEquals(result_del,StatusMethod.ERROR);
+        log.debug("deleteDataPreparationNegativity [2]: - END method working delete test xml {}",result_del);
+
     }
 
     @Test
+    @Tag("DELETE")
+    @Order(24)
     void deleteDataSchedule() {
+        log.debug("deleteDataSchedule [1]: - Start method working delete test xml");
+        StatusMethod result_del =  providerXML.deleteDataSchedule(1);
+        Map<String,Object> result_select = providerXML.selectScheduleId(1);
+        assertTrue(result_select.isEmpty());
+        log.debug("deleteDataSchedule [2]: - END method working delete test xml {}",result_del);
+
     }
 
     @Test
+    @Tag("DELETE")
+    @Order(25)
     void deleteDataCalcReport() {
+        log.debug("deleteDataCalcReport [1]: - Start method working delete test xml");
+        StatusMethod result_del =  providerXML.deleteDataCalcReport(1);
+        Map<String,Object> result_select = providerXML.selectCalcReportId(1);
+        assertTrue(result_select.isEmpty());
+        log.debug("deleteDataCalcReport [2]: - END method working delete test xml {}",result_del);
+
     }
 
 }

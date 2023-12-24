@@ -270,8 +270,9 @@ class DataProviderPostgresTest {
         log.debug("insertDataSchedule [1]: - insert Data Schedule test started Postgres");
         Map<String,Object> actual = null;
         Schedule expected = createSchedule();
+        expected.setScheduleID(1);
         try {
-            dataProviderPostgres.InsertDataSchedule(expected,"2023-12-3","12:23:23","13:00:00");
+            dataProviderPostgres.InsertDataSchedule(expected,1,"2023-12-3","12:23:23","13:00:00");
             actual = dataProviderPostgres.selectScheduleId(expected.getScheduleID());
         }catch (Exception e){
             log.error("insertDataSchedule [2]: - error TEST {}", e.getMessage());
@@ -287,6 +288,7 @@ class DataProviderPostgresTest {
         log.debug("insertDataScheduleNegative [1]: - insert Data Schedule test started Postgres");
         Map<String,Object> actual = null;
         Schedule expected = createSchedule();
+        expected.setScheduleID(1);
         try {
             actual = dataProviderPostgres.selectScheduleId(expected.getScheduleID());
         }catch (Exception e){
@@ -461,7 +463,10 @@ class DataProviderPostgresTest {
     void selectScheduleId() {
         log.debug("selectScheduleId [1]: TEST started SELECT");
         HistoryContent wrap = new HistoryContent();
-        wrap.setObject(createSchedule());
+        Schedule schedule =  createSchedule();
+        schedule.setScheduleID(1);
+        wrap.setObject(schedule);
+
         Map<String, Object> expected = wrap.getObject();
         Map<String,Object> actual = dataProviderPostgres.selectScheduleId(1);
 
@@ -479,7 +484,9 @@ class DataProviderPostgresTest {
     void selectScheduleIdNegative() {
         log.debug("selectScheduleIdNegative [1]: TEST started SELECT");
         HistoryContent wrap = new HistoryContent();
-        wrap.setObject(createSchedule());
+        Schedule schedule =  createSchedule();
+        schedule.setScheduleID(1);
+        wrap.setObject(schedule);
         Map<String, Object> expected = wrap.getObject();
         Map<String,Object> actual = dataProviderPostgres.selectScheduleId(1);
 

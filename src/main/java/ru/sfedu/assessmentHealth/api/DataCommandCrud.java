@@ -7,15 +7,15 @@ import java.sql.SQLException;
 import java.util.Map;
 
 public interface DataCommandCrud {
-    void InsertDataDoctor(Doctor obj);
+    StatusMethod InsertDataDoctor(Doctor obj);
 
-    void InsertDataPatient(Patient obj);
+    StatusMethod InsertDataPatient(Patient obj);
 
-    void InsertDataPreparation(Preparation obj, Integer FkPreparationToDoctor, String dateEnd);
+    StatusMethod InsertDataPreparation(Preparation obj, Integer FkPreparationToDoctor, String dateEnd);
 
-    void InsertDataSchedule(Schedule obj, String dateSchedule, String timeBegin, String timeEnd);
+    StatusMethod InsertDataSchedule(Schedule obj, Integer FkScheduleToDoctor,String dateSchedule, String timeBegin, String timeEnd);
 
-    void InsertDataCalcReport(CalcReport obj);
+    StatusMethod InsertDataCalcReport(CalcReport obj);
 
     Map<String,Object> selectDoctorId(Integer Doctor_Id);
 
@@ -27,13 +27,13 @@ public interface DataCommandCrud {
 
     Map<String,Object> selectCalcReportId(Integer CalcReport_Id);
 
-    void deleteDataDoctor(Integer Doctor_ID);
+    StatusMethod deleteDataDoctor(Integer Doctor_ID);
 
-    void deleteDataPatient(Integer Patient_ID);
+    StatusMethod deleteDataPatient(Integer Patient_ID);
 
-    void deleteDataPreparation(Integer Preparation_ID);
+    StatusMethod deleteDataPreparation(Integer Preparation_ID);
 
-    void deleteDataSchedule(Integer Schedule_ID);
+    StatusMethod deleteDataSchedule(Integer Schedule_ID);
 
-    void deleteDataCalcReport(Integer CalcReport_ID);
+    StatusMethod deleteDataCalcReport(Integer CalcReport_ID);
 }

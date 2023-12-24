@@ -53,7 +53,7 @@ public class Preparation {
 
     public void setCountPrep(Integer CountPrep){this.CountPrep = CountPrep;}
     public void setPreparation_ID(Integer Preparation_ID){this.Preparation_ID = Preparation_ID;}
-    public void setFkPreparationToDoctor(Integer FkPreparationToDoctor){this.FkPreparationToDoctor = (FkPreparationToDoctor);}
+    public void setFkPreparationToDoctor(Integer FkPreparationToDoctor){this.FkPreparationToDoctor = FkPreparationToDoctor;}
     public void setNamePrep(String NamePrep){this.NamePrep = NamePrep;}
     public void setDateEnd(Date DateEnd){this.DateEnd = DateEnd;}
     public void setDosage(double Dosage){this.Dosage = Dosage;}
@@ -63,7 +63,8 @@ public class Preparation {
 
     @Override
     public String toString() {
-        return "Preparation{NamePrep = " +
+        return "Preparation{ Preparation_ID = " +Preparation_ID+
+                ",NamePrep = " +
                 ",DateEnd = " + DateEnd +
                 ",Dosage = " + Dosage +
                 ",statusVisitPreparation = " + statusVisitPreparation +

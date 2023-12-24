@@ -51,7 +51,8 @@ public class Schedule {
 
     @Override
     public String toString() {
-        return "Schedule{dateWeek = " + dateWeek +
+        return "Schedule{ Schedule_ID = " + Schedule_ID+
+                ",dateWeek = " + dateWeek +
                 ",DateSchedule = " + DateSchedule +
                 ",TimeBegin = " + TimeBegin +
                 ",TimeEnd = " + TimeEnd +
