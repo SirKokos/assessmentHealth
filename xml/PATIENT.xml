@@ -1,0 +1,41 @@
+<xmlWrapper>
+   <object class="ru.sfedu.assessmentHealth.model.Patient">
+      <id>1</id>
+      <fio>Bob</fio>
+      <age>23</age>
+      <Gender>M</Gender>
+      <statusPerson>PATIENT</statusPerson>
+      <cellsBlood>12.3</cellsBlood>
+      <hemoglobin>21.3</hemoglobin>
+      <platelets>1.2</platelets>
+      <glucose>11.3</glucose>
+      <cholesterol>12.3</cholesterol>
+      <statusVisit>IN</statusVisit>
+   </object>
+   <object class="ru.sfedu.assessmentHealth.model.Patient">
+      <id>2</id>
+      <fio>Bob</fio>
+      <age>23</age>
+      <Gender>M</Gender>
+      <statusPerson>PATIENT</statusPerson>
+      <cellsBlood>12.3</cellsBlood>
+      <hemoglobin>21.3</hemoglobin>
+      <platelets>1.2</platelets>
+      <glucose>11.3</glucose>
+      <cholesterol>12.3</cholesterol>
+      <statusVisit>IN</statusVisit>
+   </object>
+   <object class="ru.sfedu.assessmentHealth.model.Patient">
+      <id>3</id>
+      <fio>Bob</fio>
+      <age>23</age>
+      <Gender>M</Gender>
+      <statusPerson>PATIENT</statusPerson>
+      <cellsBlood>12.3</cellsBlood>
+      <hemoglobin>21.3</hemoglobin>
+      <platelets>1.2</platelets>
+      <glucose>11.3</glucose>
+      <cholesterol>12.3</cholesterol>
+      <statusVisit>IN</statusVisit>
+   </object>
+</xmlWrapper>
