@@ -9,6 +9,7 @@ import org.junit.jupiter.api.TestMethodOrder;
 import ru.sfedu.assessmentHealth.model.*;
 
 import java.io.IOException;
+import java.util.List;
 import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -170,5 +171,14 @@ class DataProviderCsvTest extends BaseTest {
 
     }
 
+    @Test
+    @Order(17)
+    void selectAllDoctor() {
+        log.debug("selectAllDoctor [1]: - start working test");
+        Optional<List<Doctor>> actual =  providerCSV.selectAllDoctor();
+        assertFalse(actual.isEmpty());
+        log.debug("selectAllDoctor [2]: - end working test");
+
+    }
 
 }

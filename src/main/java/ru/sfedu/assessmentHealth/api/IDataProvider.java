@@ -2,6 +2,8 @@ package ru.sfedu.assessmentHealth.api;
 
 import ru.sfedu.assessmentHealth.model.*;
 
+import javax.print.Doc;
+import java.util.List;
 import java.util.Optional;
 
 public interface IDataProvider {
@@ -78,6 +80,12 @@ public interface IDataProvider {
      * @return Optional<CalcReport>
      */
     Optional<CalcReport> selectCalcReport(Integer id);
+
+    /**
+     * Метод получает список всех врачей
+     * @return Optional<List<Doctor>>
+     */
+    Optional<List<Doctor>> selectAllDoctor();
 
 //-------------------------select end--------------------------------------------
 

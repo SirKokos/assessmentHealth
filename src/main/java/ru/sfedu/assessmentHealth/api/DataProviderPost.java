@@ -309,6 +309,35 @@ public class DataProviderPost implements IDataProvider {
     }
 
     /**
+     * Метод получает список всех врачей
+     *
+     * @return Optional<List < Doctor>>
+     */
+    @Override
+    public Optional<List<Doctor>> selectAllDoctor() {
+        log.debug("selectAllDoctor [1]: start working");
+        List<Doctor> result = new ArrayList<>();
+        List<Integer> listIdDoctor = new ArrayList<>();
+        try(Connection connection = DriverManager.getConnection(url,
+                PropertyConfig.getPropertyValue(Const.BD_POSTGRES_USER,Const.NAME_PROPERTY_FILE),
+                PropertyConfig.getPropertyValue(Const.BD_POSTGRES_PASSWORD,Const.NAME_PROPERTY_FILE))
+        )
+        {
+            PreparedStatement statement = connection.prepareStatement(Const.SELECT_ALL_DOCTOR);
+            ResultSet resultSet = statement.executeQuery();
+            while (resultSet.next()){
+                listIdDoctor.add(resultSet.getInt(1));
+            }
+            for(Integer i:listIdDoctor){result.add(selectDoctorId(i).get());}
+
+        } catch (SQLException e) {
+            log.error("selectAllDoctor [2]: Error {}",e.getMessage());
+        }
+        log.debug("selectAllDoctor [3]: end working");
+        return Optional.of(result);
+    }
+
+    /**
      * @param id который нужно удалить Врача
      * @return StatusAnswer
      */

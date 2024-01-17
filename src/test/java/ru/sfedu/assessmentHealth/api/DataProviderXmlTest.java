@@ -8,6 +8,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 import ru.sfedu.assessmentHealth.model.*;
 
+import java.util.List;
 import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -167,6 +168,15 @@ class DataProviderXmlTest extends BaseTest {
         Optional<CalcReport> actual =  providerXML.selectCalcReport(0);
         assertTrue(actual.isEmpty());
         log.debug("selectCalcReportNegativity [2]: - end working test");
+
+    }
+    @Test
+    @Order(17)
+    void selectAllDoctor() {
+        log.debug("selectAllDoctor [1]: - start working test");
+        Optional<List<Doctor>> actual =  providerXML.selectAllDoctor();
+        assertFalse(actual.isEmpty());
+        log.debug("selectAllDoctor [2]: - end working test");
 
     }
 }

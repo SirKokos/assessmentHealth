@@ -61,13 +61,12 @@ public class BaseTest {
                .setGender("M")
                .setStatusPerson(StatusPerson.PATIENT);
 
-       patient.setCellsBlood(12.3)
-               .setHemoglobin(21.3)
-               .setPlatelets(1.2)
-               .setGlucose(11.3)
-               .setCholesterol(12.3)
+       patient.setCellsBlood(6.6)
+               .setHemoglobin(170.3)
+               .setPlatelets(200.)
+               .setGlucose(80.3)
+               .setCholesterol(5.3)
                .setStatusVisit(StatusPatient.IN);
-
        return patient;
    }
 

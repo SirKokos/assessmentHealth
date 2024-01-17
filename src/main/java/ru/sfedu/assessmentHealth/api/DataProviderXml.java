@@ -466,6 +466,36 @@ public class DataProviderXml implements IDataProvider {
     }
 
     /**
+     * Метод получает список всех врачей
+     *
+     * @return Optional<List < Doctor>>
+     */
+    @Override
+    public Optional<List<Doctor>> selectAllDoctor() {
+        log.debug("selectAllDoctor [1]: - Start method working select xml");
+        List<Doctor> result = null;
+
+        File xmlFile = new File(doctorPath);
+
+        try {
+            switch ((int) xmlFile.length()){
+                case 0 -> {
+                    return Optional.of(result);
+                }
+                default -> {
+                    result = getXmlWrapper(doctorPath).getListObjectXml();
+                }
+            }
+        }catch (ArrayIndexOutOfBoundsException e){
+            log.error("selectAllDoctor [2]: - error Такого ключа нет {}",e.getMessage());
+
+        }
+
+        log.debug("selectAllDoctor [3]: - End working");
+        return Optional.of(result);
+    }
+
+    /**
      * @param id который нужно удалить Врача
      * @return StatusAnswer
      */

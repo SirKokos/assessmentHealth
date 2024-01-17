@@ -15,6 +15,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.util.List;
 import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -206,4 +207,16 @@ class DataProviderPostTest extends BaseTest{
         log.debug("selectCalcReportNegativity [2]: - end working test");
 
     }
+
+    @Test
+    @Order(18)
+    void selectAllDoctor() {
+        log.debug("selectAllDoctor [1]: - start working test");
+        Optional<List<Doctor>> actual =  dataProviderPostgres.selectAllDoctor();
+        System.out.println(actual.get());
+        assertFalse(actual.isEmpty());
+        log.debug("selectAllDoctor [2]: - end working test");
+
+    }
+
 }

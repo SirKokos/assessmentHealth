@@ -1,0 +1,282 @@
+package ru.sfedu.assessmentHealth.api;
+
+import org.apache.commons.lang3.tuple.Pair;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import ru.sfedu.assessmentHealth.Const;
+import ru.sfedu.assessmentHealth.model.*;
+import ru.sfedu.assessmentHealth.utils.FIgenerateListFreeDoctor;
+import ru.sfedu.assessmentHealth.utils.ServisUtil;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.function.BiPredicate;
+
+public class Servis {
+
+    private static final Logger log = LogManager.getLogger(Servis.class.getName());
+
+    /**
+     * Метод формирует текстовый файл visitDoctor в котором и находится результат работы
+     * @param patient
+     * @return StatusAnswer
+     */
+    public StatusAnswer visitDoctor(Patient patient){
+        log.debug("visitDoctor [1]: start working");
+        StatusAnswer result;
+        Map<String, Integer> mapResult = assessmentHealth(patient);
+        List<String>  recomList =  heallingRecom(mapResult);
+        File file = new File(Const.FILE_NAME_VISIT_DOCTOR);
+
+        try (FileWriter writer = new FileWriter(file,true)) {
+            for (String value : recomList) {
+                writer.write(value+"\n");
+            }
+            writer.write(Const.FILE_DELIMITER_VISIT_DOCTOR);
+            result = StatusAnswer.OK;
+        } catch (IOException e) {
+            result = StatusAnswer.ERROR;
+            log.debug("visitDoctor [2]: {} error {}",result,e.getMessage());
+        }
+        return result;
+    }
+
+    /**
+     * Вызывается для оценки здоровья пациента в процентной шкале (0% – 100%).
+     * Обрабатывает поля с его симптомами, личной информацией(пол, возраст), анализы.
+     * @param patient Объект пациента
+     * @return Map<String,Integer> с оценкой здоровья и параметрами для последующего анализа
+     */
+    public Map<String,Integer> assessmentHealth(Patient patient){
+        log.debug("assessmentHealth [1]: start working");
+        Integer health = 0;
+        Map<String,Integer> result = new HashMap<>();
+
+        BiPredicate<Pair<Double,Double>,Double> check = (pair,analyse ) ->
+                                                        (pair.getLeft() < analyse && pair.getRight() > analyse);
+
+        Integer age = patient.getAge();
+        Double redBloodCellsCount = patient.getCellsBlood();
+        Double hemoglobinLevel = patient.getHemoglobin();
+        Double plateletCount = patient.getPlatelets();
+        Double glucoseLevel = patient.getGlucose();
+        Double cholesterolLevel = patient.getCholesterol();
+        String gender = patient.getGender();
+
+        try {
+            if (age < 55) {health += 5;}
+
+            if(check.test(Const.VALID_CELLS_BLOOD,redBloodCellsCount) ){
+                health += 25;
+                result.put(Const.RESULT_CELLS_BLOOD,1);
+            }else {result.put(Const.RESULT_CELLS_BLOOD,0);}
+
+            if(gender.equals("M")){
+                if( check.test(Const.VALID_HEMOGLOBIN_M,hemoglobinLevel)){
+                    health += 20;
+                    result.put(Const.RESULT_HEMOGLOBIN,1);
+                }else {result.put(Const.RESULT_HEMOGLOBIN,0);}
+            }else {
+                if(check.test(Const.VALID_HEMOGLOBIN_G,hemoglobinLevel)){
+                    health += 20;
+                    result.put(Const.RESULT_HEMOGLOBIN,1);
+                }else {result.put(Const.RESULT_HEMOGLOBIN,0);}
+            }
+
+            if(check.test(Const.VALID_PLATELETS,plateletCount)){
+                health += 15;
+                result.put(Const.RESULT_PLATELETS,1);
+            }else {result.put(Const.RESULT_PLATELETS,0);}
+
+            if(check.test(Const.VALID_GLUCOSE,glucoseLevel) ){
+                health += 25;
+                result.put(Const.RESULT_GLUCOSE,1);
+            }else {result.put(Const.RESULT_GLUCOSE,0);}
+
+            if(check.test(Const.VALID_CHOLESTEROL,cholesterolLevel)){
+                health += 10;
+                result.put(Const.RESULT_CHOLESTEROL,1);
+            }else {result.put(Const.RESULT_CHOLESTEROL,0);}
+//            if(Const.VALID_CELLS_BLOOD.getLeft() < redBloodCellsCount && Const.VALID_CELLS_BLOOD.getRight() > redBloodCellsCount ){
+//                health += 25;
+//                result.put(Const.RESULT_CELLS_BLOOD,1);
+//            }else {result.put(Const.RESULT_CELLS_BLOOD,0);}
+//
+//            if(gender.equals("M")){
+//                if(Const.VALID_HEMOGLOBIN_M.getLeft() < hemoglobinLevel && Const.VALID_HEMOGLOBIN_M.getRight() > hemoglobinLevel ){
+//                    health += 20;
+//                    result.put(Const.RESULT_HEMOGLOBIN,1);
+//                }else {result.put(Const.RESULT_HEMOGLOBIN,0);}
+//            }else {
+//                if(Const.VALID_HEMOGLOBIN_G.getLeft() < hemoglobinLevel && Const.VALID_HEMOGLOBIN_G.getRight() > hemoglobinLevel ){
+//                    health += 20;
+//                    result.put(Const.RESULT_HEMOGLOBIN,1);
+//                }else {result.put(Const.RESULT_HEMOGLOBIN,0);}
+//            }
+//
+//            if(Const.VALID_PLATELETS.getLeft() < plateletCount && Const.VALID_PLATELETS.getRight() > plateletCount ){
+//                health += 15;
+//                result.put(Const.RESULT_PLATELETS,1);
+//            }else {result.put(Const.RESULT_HEMOGLOBIN,0);}
+//
+//            if(Const.VALID_GLUCOSE.getLeft() < glucoseLevel && Const.VALID_GLUCOSE.getRight() > glucoseLevel ){
+//                health += 25;
+//                result.put(Const.RESULT_GLUCOSE,1);
+//            }else {result.put(Const.RESULT_GLUCOSE,0);}
+//
+//            if(Const.VALID_CHOLESTEROL.getLeft() < cholesterolLevel && Const.VALID_CHOLESTEROL.getRight() > cholesterolLevel ){
+//                health += 10;
+//                result.put(Const.RESULT_CHOLESTEROL,1);
+//            }else {result.put(Const.RESULT_CHOLESTEROL,0);}
+
+            result.put(Const.RESULT_HEALTH,health);
+        }catch (Exception e){
+            log.error("assessmentHealth [2]: error {}",e.getMessage());
+        }
+        log.debug("assessmentHealth [3]: end working");
+
+        return result;
+    }
+
+    /**
+     * Метод, который вызывается если оценка здоровья пациента ниже 85%.
+     * То происходит рекомендации от системы.
+     * По которым смотрится в каких анализах или симптомах пациент нуждается.
+     * Возвращает список c возможными причинами.
+     * @param dictPatient
+     * @return List<String>
+     */
+    protected List<String> heallingRecom(Map<String,Integer> dictPatient){
+        log.debug("heallingRecom [1]: start working");
+        List<String> result = new ArrayList<>();
+
+        try{
+            if(dictPatient.get(Const.RESULT_HEALTH)<85){
+                for(String i : dictPatient.keySet()){
+                    if(dictPatient.get(i) == 0){
+                        switch (i){
+                            case Const.RESULT_CELLS_BLOOD -> {result.add(Const.RESULT_SYSTEM_CELLS_BLOOD);}
+                            case Const.RESULT_HEMOGLOBIN -> {result.add(Const.RESULT_SYSTEM_HEMOGLOBIN);}
+                            case Const.RESULT_PLATELETS -> {result.add(Const.RESULT_SYSTEM_PLATELET);}
+                            case Const.RESULT_GLUCOSE -> {result.add(Const.RESULT_SYSTEM_GLUCOSE);}
+                            case Const.RESULT_CHOLESTEROL -> {result.add(Const.RESULT_SYSTEM_CHOLESTEROL);}
+                        }
+                    }
+                }
+            }else {result.add(Const.RESULT_FULL_HEALTH);}
+        }catch (Exception e){
+            log.error("heallingRecom [2]: Error {}",e.getMessage());
+        }
+        log.debug("heallingRecom [3]: end working");
+        return result;
+    }
+
+
+    public StatusAnswer arivialDoctor(Patient patient){
+        log.debug("arivialDoctor [1]: start working");
+        StatusAnswer result;
+        Map<String,Integer> mapAssessmentHealth = assessmentHealth(patient);
+        try {
+            if(mapAssessmentHealth.get(Const.RESULT_HEALTH)<60){
+
+            }else {
+
+            }
+
+            result = StatusAnswer.OK;
+        }catch (Exception e){
+            result = StatusAnswer.ERROR;
+        }
+
+        return result;
+
+    }
+
+    /**
+     * Метод определяет свободные окна у врача.
+     * Выделяет сразу самых основных если здоровье меньше 60%
+     * Или дает на выбор всех свободных врачей если больше 60.
+     *
+     * @param mapAssessmentHealth -Словарь с данными анализов пациента valur ={0-отличе от нормы и 1 - норма} а ключи это название анализов
+     * @param dataProvider параметр IDataProvider для работы с истониками данных
+     * @return
+     */
+    public Map<Integer,List<Schedule>> determinationUrgency(Map<String,Integer> mapAssessmentHealth,IDataProvider dataProvider){
+
+        log.debug("determinationUrgency [1]: start working");
+        Map<Integer,List<Schedule>> result = new HashMap<>();
+        List<Doctor> ListGemotologDoctor;
+        List<Doctor> ListEndocriologDoctor;
+        List<Doctor> ListLiptologDoctor;
+
+        try {
+            if(mapAssessmentHealth.get(Const.RESULT_HEALTH) < 60){
+                ListGemotologDoctor = ServisUtil.generateListDoctor(dataProvider,mapAssessmentHealth,Const.RESULT_CELLS_BLOOD,Const.DOCTOR_TYPE_GEMOTOLOG);
+                ListLiptologDoctor = ServisUtil.generateListDoctor(dataProvider,mapAssessmentHealth,Const.RESULT_HEMOGLOBIN,Const.DOCTOR_TYPE_LIPIDOLOG);
+                ListEndocriologDoctor = ServisUtil.generateListDoctor(dataProvider,mapAssessmentHealth,Const.RESULT_GLUCOSE,Const.DOCTOR_TYPE_ENDOCRINOLOG);
+
+                ListGemotologDoctor.forEach(
+                        i-> {
+                            result.put(i.getId(),ServisUtil.generateListScheduleFree(i));
+                        }
+                );
+                ListLiptologDoctor.forEach(
+                        i-> {
+                            result.put(i.getId(),ServisUtil.generateListScheduleFree(i));
+                        }
+                );
+                ListEndocriologDoctor.forEach(
+                        i-> {
+                            result.put(i.getId(),ServisUtil.generateListScheduleFree(i));
+                        }
+                );
+
+//                ListGemotologDoctor.forEach(
+//                        i-> {
+//                            result.put(i.getId(),i.getLinkSchedule()
+//                                    .stream()
+//                                    .filter(j -> j.getStatSchedule().equals(StatusSchedule.FREE))
+//                                    .toList());
+//                        }
+//                );
+//                ListLiptologDoctor.forEach(
+//                        i-> {
+//                            result.put(i.getId(),i.getLinkSchedule()
+//                                    .stream()
+//                                    .filter(j -> j.getStatSchedule().equals(StatusSchedule.FREE))
+//                                    .toList());
+//                        }
+//                );
+//                ListEndocriologDoctor.forEach(
+//                        i-> {
+//                            result.put(i.getId(),i.getLinkSchedule()
+//                                    .stream()
+//                                    .filter(j -> j.getStatSchedule().equals(StatusSchedule.FREE))
+//                                    .toList());
+//                        }
+//                );
+            }
+            else {
+                List<Doctor> ListDoctor = dataProvider.selectAllDoctor().get();
+                ListDoctor.forEach(
+                        i-> {
+                            result.put(i.getId(),i.getLinkSchedule()
+                                    .stream()
+                                    .filter(j -> j.getStatSchedule().equals(StatusSchedule.FREE))
+                                    .toList());
+                        }
+                );
+            }
+        }catch (Exception e){
+            log.error("determinationUrgency [2]: end {}",e.getMessage());
+        }
+        log.debug("determinationUrgency [3]: end working");
+        return result;
+    }
+
+}

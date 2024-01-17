@@ -1,23 +1,67 @@
 package ru.sfedu.assessmentHealth;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.SerializationFeature;
-import com.opencsv.CSVReader;
-import com.opencsv.bean.CsvToBean;
-import com.opencsv.bean.CsvToBeanBuilder;
+import com.fasterxml.jackson.annotation.JsonAutoDetect;
+import ru.sfedu.assessmentHealth.api.DataProviderCsv;
+import ru.sfedu.assessmentHealth.api.IDataProvider;
+import ru.sfedu.assessmentHealth.api.Servis;
 import ru.sfedu.assessmentHealth.model.*;
-import ru.sfedu.assessmentHealth.utils.PropertyConfig;
 
-import javax.print.Doc;
-import javax.swing.text.html.parser.Parser;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.util.*;
+import java.time.temporal.ValueRange;
+import java.util.Map;
+import java.util.SortedMap;
 
 
 public class Main {
     public static void main(String[] args) {
+        Patient patient = new Patient();
+        patient.setId(1);
+
+        patient.setFio("Bob")
+                .setAge(20)
+                .setGender("M")
+                .setStatusPerson(StatusPerson.PATIENT);
+
+        patient.setCellsBlood(4.9)
+                .setHemoglobin(140.3)
+                .setPlatelets(200.)
+                .setGlucose(80.3)
+                .setCholesterol(5.3)
+                .setStatusVisit(StatusPatient.IN);
+
+
+        Patient patient2 = new Patient();
+        patient2.setId(1);
+
+        patient2.setFio("Bob")
+                .setAge(40)
+                .setGender("G")
+                .setStatusPerson(StatusPerson.PATIENT);
+
+        patient2.setCellsBlood(6.6)
+                .setHemoglobin(170.3)
+                .setPlatelets(200.)
+                .setGlucose(80.3)
+                .setCholesterol(5.3)
+                .setStatusVisit(StatusPatient.IN);
+        Servis healthScore = new Servis();
+        IDataProvider iDataProvider = new DataProviderCsv();
+//        healthScore.visitDoctor(patient2);
+        System.out.println(healthScore.determinationUrgency(healthScore.assessmentHealth(patient2),iDataProvider));
+//        System.out.println(healthScore.determinationUrgency(healthScore.assessmentHealth(patient2),iDataProvider));
+//        System.out.println(healthScore.visitDoctor(patient));
+//        System.out.println(healthScore.visitDoctor(patient2));
+
+
+       //        double[] inputs = {0.8, 0.6, 0.4, 0.2, 0.9, 0.7, 0.5, 0.3, 0.1, 0.6};
+
+//        System.out.println(Const.RESULT_SYSTEM_CELLS_BLOOD);
+//        System.out.println(Const.RESULT_SYSTEM_CHOLESTEROL);
+//        System.out.println(Const.RESULT_SYSTEM_HEMOGLOBIN);
+
+
+
+
+//        System.out.println("Оценка здоровья: " + s2);
 //        Properties p = new Properties();
 //        p.getProperty("dataBase.Mongo ");
 //        System.out.println(p.getProperty("dataBase.Mongo"));
@@ -90,12 +134,10 @@ public class Main {
 //                .setSpecialization("Genikolog");
 
 
-
-
-
-      String s = "1$Ubeprofen$2024-12-20$2.300000$LOW$this prep important";
-        String[] split = s.split("\\$", 6);
-        System.out.println(Arrays.stream(split).toList());
+//
+//      String s = "1$Ubeprofen$2024-12-20$2.300000$LOW$this prep important";
+//        String[] split = s.split("\\$", 6);
+//        System.out.println(Arrays.stream(split).toList());
 
     }
 }

@@ -1,5 +1,11 @@
 package ru.sfedu.assessmentHealth;
 
+import org.apache.commons.lang3.tuple.Pair;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class Const {
     public static final String NAME_PROPERTY_FILE = "src/main/resources/BdConnection.properties";
     public static final String NAME_MONGO_COLLECTION = "Mongo.Collection";
@@ -91,10 +97,12 @@ public class Const {
 
 
     public static final String SELECT_DOCTOR_TO_ID = String.format("SELECT * FROM %s WHERE %s",TABLE_NAME_DOCTOR,"id").concat(" = ?");
+    public static final String SELECT_ALL_DOCTOR = String.format("SELECT ID FROM %s",TABLE_NAME_DOCTOR);
     public static final String SELECT_PATIENT_TO_ID = String.format("SELECT * FROM %s WHERE %s",TABLE_NAME_PATIENT,"id").concat(" = ?");
     public static final String SELECT_PREPARATION_TO_ID = String.format("SELECT * FROM %s WHERE %s",TABLE_NAME_PREPARATION,"id").concat(" = ?");
     public static final String SELECT_SCHEDULE_TO_ID = String.format("SELECT * FROM %s WHERE %s",TABLE_NAME_SCHEDULE,"id").concat(" = ?");
     public static final String SELECT_CALC_REPORT_TO_ID = String.format("SELECT * FROM %s WHERE %s",TABLE_NAME_CALC_REPORT,"id").concat(" = ?");
+
     public static final String SELECT_CALC_REPORT_TO_ID_DOCTOR = String.format("SELECT * FROM %s WHERE %s",TABLE_NAME_CALC_REPORT,"id").concat(" = ?");
     public static final String INSERT_DOCTOR = String.format("INSERT INTO %s ( FIO, Age, Gender, Status, Experience, AvgPatient, Qualification, Specialization,LinkPreparation,LinkSchedule) ",TABLE_NAME_DOCTOR).concat("\nVALUES ( ?, ?, ?, ?, ?, ?, ?, ?,?,?);");
 
@@ -113,5 +121,102 @@ public class Const {
     public static final String TEST_INSERT_DOCTOR = "INSERT INTO doctor " +
             "(id ,FIO, Age, Gender, Status, Experience, AvgPatient, Qualification, Specialization,LinkPreparation,LinkSchedule)\n" +
             "VALUES (1,'Sim Artem Evgen',29,'M','DOCTOR',12,12.3,'Med','Genikolog','1 1','1 1');";
+
+
+    public static final String RESULT_CELLS_BLOOD = "CellsBlood";
+    public static final String RESULT_HEMOGLOBIN = "Hemoglobin";
+    public static final String RESULT_PLATELETS = "Platelets";
+    public static final String RESULT_GLUCOSE = "Glucose";
+    public static final String RESULT_CHOLESTEROL = "Cholesterol";
+    public static final String RESULT_HEALTH = "Health";
+
+
+    public static final Pair<Double,Double> VALID_CELLS_BLOOD =  Pair.of(4.0,5.1);
+    public static final Pair<Double,Double> VALID_HEMOGLOBIN_M =  Pair.of(130.0,160.0);
+    public static final Pair<Double,Double> VALID_HEMOGLOBIN_G =  Pair.of(120.0,140.0);
+    public static final Pair<Double,Double> VALID_PLATELETS =  Pair.of(180.0,320.0);
+    public static final Pair<Double,Double> VALID_GLUCOSE =  Pair.of(59.0,99.0);
+    public static final Pair<Double,Double> VALID_CHOLESTEROL =  Pair.of(2.0,6.2);
+
+
+    public static final  String DISEASE_CELLS_BLOOD_1 = "Эритремия";
+    public static final  String DISEASE_CELLS_BLOOD_2 = "Хронические болезни легких и сердца";
+    public static final  String DISEASE_CELLS_BLOOD_3 = "Гормональные болезни";
+    public static final  String DISEASE_CELLS_BLOOD_4 = "Анемия";
+    public static final  String DISEASE_CELLS_BLOOD_5 = "Хронические инфекционно-воспалительные болезни";
+
+    public static final  String RESULT_SYSTEM_CELLS_BLOOD = String.format("Возможные причины отклонения от нормы эритроцитов:\n")
+            .concat(DISEASE_CELLS_BLOOD_1)
+            .concat("\n")
+            .concat(DISEASE_CELLS_BLOOD_2)
+            .concat("\n")
+            .concat(DISEASE_CELLS_BLOOD_3)
+            .concat("\n")
+            .concat(DISEASE_CELLS_BLOOD_4)
+            .concat("\n")
+            .concat(DISEASE_CELLS_BLOOD_5).concat(";");
+
+    public static final  String DISEASE_HEMOGLOBIN_1 = "Эритроцитозы";
+    public static final  String DISEASE_HEMOGLOBIN_2 = "Обезвоживание";
+    public static final  String DISEASE_HEMOGLOBIN_3 = "Хроническое кровотечение";
+
+    public static final  String RESULT_SYSTEM_HEMOGLOBIN = String.format("Возможные причины отклонения от нормы Гемоглобина:\n")
+            .concat(DISEASE_HEMOGLOBIN_1)
+            .concat("\n")
+            .concat(DISEASE_HEMOGLOBIN_2)
+            .concat("\n")
+            .concat(DISEASE_HEMOGLOBIN_3).concat(";");
+
+    public static final  String DISEASE_PLATELET_1 = "Ревматические болезни";
+    public static final  String DISEASE_PLATELET_2 = "Онкологические болезни";
+    public static final  String DISEASE_PLATELET_3 = "Хирургические вмешательства";
+
+    public static final  String RESULT_SYSTEM_PLATELET = String.format("Возможные причины отклонения от нормы Тромбоцитов:\n")
+            .concat(DISEASE_PLATELET_1)
+            .concat("\n")
+            .concat(DISEASE_PLATELET_2)
+            .concat("\n")
+            .concat(DISEASE_PLATELET_3).concat(";");
+
+    public static final  String DISEASE_GLUCOSE_1 = "Гипергликемия";
+    public static final  String DISEASE_GLUCOSE_2 = "Диабет";
+
+    public static final  String RESULT_SYSTEM_GLUCOSE = String.format("Возможные причины отклонения от нормы Глюкозы:\n")
+            .concat(DISEASE_GLUCOSE_1)
+            .concat("\n")
+            .concat(DISEASE_GLUCOSE_2).concat(";");
+
+
+    public static final  String DISEASE_CHOLESTEROL_1 = "Атеросклероз";
+    public static final  String DISEASE_CHOLESTEROL_2 = "Гиперлипидемия";
+
+    public static final  String RESULT_SYSTEM_CHOLESTEROL = String.format("Возможные причины отклонения от нормы Холестерина:\n")
+            .concat(DISEASE_CHOLESTEROL_1)
+            .concat("\n")
+            .concat(DISEASE_CHOLESTEROL_2).concat(";");
+
+
+    public static final String RESULT_FULL_HEALTH = "Нет серьезных отклонений от нормы. Оценка здоровья выше 85";
+
+    public static final List<String> TEST_HEALTH_RECOM  =  Arrays.asList(RESULT_SYSTEM_CELLS_BLOOD,RESULT_SYSTEM_HEMOGLOBIN);
+
+
+
+
+    public static final String FILE_TYPE = "txt";
+    public static final String FILE_NAME_VISIT_DOCTOR = String.format("visitDoctor").concat(".").concat(FILE_TYPE);
+    public static final String FILE_DELIMITER_VISIT_DOCTOR = "\n---------------------------\n";
+
+
+    public static final String DOCTOR_TYPE_GEMOTOLOG = "Gemotolog";
+    public static final String DOCTOR_TYPE_ENDOCRINOLOG = "Endocriolog";
+    public static final String DOCTOR_TYPE_LIPIDOLOG = "Lipidolog";
+
+
+
+
+
+
+
 
 }

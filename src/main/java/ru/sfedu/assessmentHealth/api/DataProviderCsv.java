@@ -1,11 +1,13 @@
 package ru.sfedu.assessmentHealth.api;
 
 import com.opencsv.CSVReader;
+import com.opencsv.CSVReaderBuilder;
 import com.opencsv.bean.CsvToBean;
 import com.opencsv.bean.CsvToBeanBuilder;
 import com.opencsv.bean.StatefulBeanToCsv;
 import com.opencsv.bean.StatefulBeanToCsvBuilder;
 import com.opencsv.exceptions.CsvDataTypeMismatchException;
+import com.opencsv.exceptions.CsvException;
 import com.opencsv.exceptions.CsvRequiredFieldEmptyException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -15,8 +17,11 @@ import ru.sfedu.assessmentHealth.utils.PropertyConfig;
 
 import javax.print.Doc;
 import java.io.*;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Stream;
 
 import static ru.sfedu.assessmentHealth.utils.FileUtil.createFileIfNotExists;
 
@@ -273,7 +278,26 @@ public class DataProviderCsv implements IDataProvider {
         return result;
     }
 
+    @Override
+    public Optional<List<Doctor>> selectAllDoctor(){
+        log.debug("selectAllDoctor [1]: start working");
+        List<Doctor> result = new ArrayList<>();
+        CSVReader reader = null;
+        try {
+            reader = new CSVReaderBuilder(new FileReader(doctorPath)).build();
+            List<String[]> myEntries = reader.readAll();
+            List<Integer> listIdDoctor = myEntries.stream().map(
+                    i->Integer.valueOf(
+                            Arrays.stream(i).toList().get(0)))
+                            .toList();
 
+            for(Integer i:listIdDoctor){result.add(selectDoctorId(i).get());}
+        } catch (IOException | CsvException | ArrayIndexOutOfBoundsException e) {
+            log.error("selectAllDoctor [2]: error {}",e.getMessage());
+        }
+        log.debug("selectAllDoctor[3]: end working");
+        return Optional.of(result);
+    }
 
     /**
      * @param id - id объекта, который хотим найти
