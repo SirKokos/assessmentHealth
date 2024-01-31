@@ -38,4 +38,17 @@
       <cholesterol>12.3</cholesterol>
       <statusVisit>IN</statusVisit>
    </object>
+   <object class="ru.sfedu.assessmentHealth.model.Patient">
+      <id>4</id>
+      <fio>Bob</fio>
+      <age>23</age>
+      <Gender>M</Gender>
+      <statusPerson>PATIENT</statusPerson>
+      <cellsBlood>6.6</cellsBlood>
+      <hemoglobin>170.3</hemoglobin>
+      <platelets>200.0</platelets>
+      <glucose>80.3</glucose>
+      <cholesterol>5.3</cholesterol>
+      <statusVisit>IN</statusVisit>
+   </object>
 </xmlWrapper>

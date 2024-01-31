@@ -1,0 +1,8 @@
+
+Состояние не критическое: Выберите подходящее
+1/[{ id=1, Week=SATURDAY, DateSchedule=2024-04-23, TimeBegin=09:20:30, TimeEnd=18:23:20, StatSchedule=FREE}, { id=1, Week=SATURDAY, DateSchedule=2024-04-23, TimeBegin=09:20:30, TimeEnd=18:23:20, StatSchedule=FREE}]2/[{ id=1, Week=SATURDAY, DateSchedule=2024-04-23, TimeBegin=09:20:30, TimeEnd=18:23:20, StatSchedule=FREE}, { id=1, Week=SATURDAY, DateSchedule=2024-04-23, TimeBegin=09:20:30, TimeEnd=18:23:20, StatSchedule=FREE}]
+---------------------------
+
+Состояние не критическое: Выберите подходящее
+1/[{ id=1, Week=SATURDAY, DateSchedule=2024-04-23, TimeBegin=09:20:30, TimeEnd=18:23:20, StatSchedule=FREE}, { id=1, Week=SATURDAY, DateSchedule=2024-04-23, TimeBegin=09:20:30, TimeEnd=18:23:20, StatSchedule=FREE}]2/[{ id=1, Week=SATURDAY, DateSchedule=2024-04-23, TimeBegin=09:20:30, TimeEnd=18:23:20, StatSchedule=FREE}, { id=1, Week=SATURDAY, DateSchedule=2024-04-23, TimeBegin=09:20:30, TimeEnd=18:23:20, StatSchedule=FREE}]
+---------------------------

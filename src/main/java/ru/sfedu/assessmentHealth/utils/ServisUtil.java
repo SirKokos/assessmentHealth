@@ -7,10 +7,12 @@ import ru.sfedu.assessmentHealth.Const;
 import ru.sfedu.assessmentHealth.api.IDataProvider;
 import ru.sfedu.assessmentHealth.api.Servis;
 import ru.sfedu.assessmentHealth.model.Doctor;
+import ru.sfedu.assessmentHealth.model.Preparation;
 import ru.sfedu.assessmentHealth.model.Schedule;
 import ru.sfedu.assessmentHealth.model.StatusSchedule;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
@@ -60,6 +62,64 @@ public class ServisUtil {
                 .filter(j -> j.getStatSchedule().equals(StatusSchedule.FREE))
                 .toList();
     }
+
+
+    /**
+     * Метод для генерации списка расписаний
+     * Для Servis
+     *
+     * @param iDataProvider - провайдер
+     * @param listId - Строка разделенная пробелом id расписания
+     * @return schedules
+     */
+    public static List<Schedule> getListSchedule(IDataProvider iDataProvider,String listId){
+        log.debug("getListSchedule [1]: start working");
+        List<Schedule> schedules = new ArrayList<>();
+    try {
+        List<Integer> listScheduleId = Arrays.stream(listId.split(" ")).map(i->Integer.parseInt(i)).toList();
+        switch (listScheduleId.size()){
+            case 0 -> log.info("Список id Schedule пуст");
+            default -> {
+                listScheduleId.forEach(i->schedules.add(iDataProvider.selectScheduleId(i).get()));
+            }
+        }
+    }catch (Exception e){
+        log.error("getListSchedule [2]: ERROR {}",e.getMessage());
+    }
+        log.debug("getListSchedule [1]: end working");
+        return schedules;
+    }
+
+
+    /**
+     * Метод для генерации списка препаратов
+     * Для Servis
+     *
+     * @param iDataProvider - провайдер
+     * @param listId - Строка разделенная пробелом id расписания
+     * @return preparations
+     */
+    public static List<Preparation> getListPreparation(IDataProvider iDataProvider, String listId){
+        log.debug("getListPreparation [1]: start working");
+        List<Preparation> preparations = new ArrayList<>();
+        try {
+            List<Integer> listPreparationId = Arrays.stream(listId.split(" ")).map(i->Integer.parseInt(i)).toList();
+            switch (listPreparationId.size()){
+                case 0 -> log.info("Список id Preparation пуст");
+                default -> {
+                    listPreparationId.forEach(i->preparations.add(iDataProvider.selectPreparationId(i).get()));
+                }
+            }
+        }catch (Exception e){
+            log.error("getListPreparation [2]: error {}",e.getMessage());
+        }
+
+        log.debug("getListPreparation [3]: end working");
+        return preparations;
+    }
+
+
+
 
 
 }

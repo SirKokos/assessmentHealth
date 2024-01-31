@@ -17,10 +17,7 @@ import ru.sfedu.assessmentHealth.utils.PropertyConfig;
 
 import javax.print.Doc;
 import java.io.*;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 import java.util.stream.Stream;
 
 import static ru.sfedu.assessmentHealth.utils.FileUtil.createFileIfNotExists;
@@ -29,12 +26,18 @@ public class DataProviderCsv implements IDataProvider {
 
 
     private static final Logger log = LogManager.getLogger(DataProviderCsv.class.getName());
-    final private String calcReportPath = PropertyConfig.getPropertyValue(Const.CSV_NAME_CALCREPORT_KEY,Const.NAME_PROPERTY_FILE);
-    final private String doctorPath = PropertyConfig.getPropertyValue(Const.CSV_NAME_DOCTOR_KEY,Const.NAME_PROPERTY_FILE);
-    final private String patientPath = PropertyConfig.getPropertyValue(Const.CSV_NAME_PATIENT_KEY,Const.NAME_PROPERTY_FILE);
-    final private String preparationPath =PropertyConfig.getPropertyValue(Const.CSV_NAME_PREPARATION_KEY,Const.NAME_PROPERTY_FILE);
-    final private String schedulePath = PropertyConfig.getPropertyValue(Const.CSV_NAME_SCHEDULE_KEY,Const.NAME_PROPERTY_FILE);
+//    final private String calcReportPath = PropertyConfig.getPropertyValue(Const.CSV_NAME_CALCREPORT_KEY,Const.NAME_PROPERTY_FILE);
+//    final private String doctorPath = PropertyConfig.getPropertyValue(Const.CSV_NAME_DOCTOR_KEY,Const.NAME_PROPERTY_FILE);
+//    final private String patientPath = PropertyConfig.getPropertyValue(Const.CSV_NAME_PATIENT_KEY,Const.NAME_PROPERTY_FILE);
+//    final private String preparationPath =PropertyConfig.getPropertyValue(Const.CSV_NAME_PREPARATION_KEY,Const.NAME_PROPERTY_FILE);
+//    final private String schedulePath = PropertyConfig.getPropertyValue(Const.CSV_NAME_SCHEDULE_KEY,Const.NAME_PROPERTY_FILE);
 
+
+    final private String calcReportPath = PropertyConfig.getPropertyValue(Const.CSV_NAME_CALCREPORT_KEY,PropertyConfig.getConfigPath());
+    final private String doctorPath = PropertyConfig.getPropertyValue(Const.CSV_NAME_DOCTOR_KEY,PropertyConfig.getConfigPath());
+    final private String patientPath = PropertyConfig.getPropertyValue(Const.CSV_NAME_PATIENT_KEY,PropertyConfig.getConfigPath());
+    final private String preparationPath =PropertyConfig.getPropertyValue(Const.CSV_NAME_PREPARATION_KEY,PropertyConfig.getConfigPath());
+    final private String schedulePath = PropertyConfig.getPropertyValue(Const.CSV_NAME_SCHEDULE_KEY,PropertyConfig.getConfigPath());
     public DataProviderCsv(){
         log.debug("DataProviderCsv [1]: start constructor");
         try {
@@ -425,7 +428,7 @@ public class DataProviderCsv implements IDataProvider {
             result.get().setDoctor(doctorList);
             result.get().setPatient(patientList);
 
-        } catch (IOException | ArrayIndexOutOfBoundsException e) {
+        } catch (IOException | ArrayIndexOutOfBoundsException | NoSuchElementException e) {
             log.error("selectCalcReport [2]: Error {}",e.getMessage());
         }
         log.debug("selectCalcReport [3]: end working");

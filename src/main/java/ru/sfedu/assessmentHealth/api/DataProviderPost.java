@@ -20,9 +20,10 @@ import java.util.Optional;
 public class DataProviderPost implements IDataProvider {
     private static final Logger log = LogManager.getLogger(DataProviderPost.class.getName());
 
-    String url = PropertyConfig.getPropertyValue(Const.BD_POSTGRES_HOST,Const.NAME_PROPERTY_FILE)
-            .concat(PropertyConfig.getPropertyValue(Const.BD_POSTGRES_NAME,Const.NAME_PROPERTY_FILE));
-
+//    String url = PropertyConfig.getPropertyValue(Const.BD_POSTGRES_HOST,Const.NAME_PROPERTY_FILE)
+//            .concat(PropertyConfig.getPropertyValue(Const.BD_POSTGRES_NAME,Const.NAME_PROPERTY_FILE));
+    String url = PropertyConfig.getPropertyValue(Const.BD_POSTGRES_HOST,PropertyConfig.getConfigPath())
+            .concat(PropertyConfig.getPropertyValue(Const.BD_POSTGRES_NAME,PropertyConfig.getConfigPath()));
 
     public DataProviderPost() {
         log.debug("DataProviderPost [1]: - working constructor");

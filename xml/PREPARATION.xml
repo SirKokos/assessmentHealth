@@ -23,4 +23,12 @@
       <StatusVisitPreparation>LOW</StatusVisitPreparation>
       <AboutPrep>this prep important</AboutPrep>
    </object>
+   <object class="ru.sfedu.assessmentHealth.model.Preparation">
+      <id>4</id>
+      <NamePrep>Ubeprofen</NamePrep>
+      <DateEnd>2024-12-20 00:00:00.0 MSK</DateEnd>
+      <Dosage>2.3</Dosage>
+      <StatusVisitPreparation>LOW</StatusVisitPreparation>
+      <AboutPrep>this prep important</AboutPrep>
+   </object>
 </xmlWrapper>

@@ -1,23 +1,27 @@
 package ru.sfedu.assessmentHealth.api;
 
+import ru.sfedu.assessmentHealth.Const;
 import ru.sfedu.assessmentHealth.model.*;
+import ru.sfedu.assessmentHealth.utils.PropertyConfig;
 
 import javax.print.Doc;
 import java.util.ArrayList;
 import java.util.List;
 
 public class BaseTest {
+    {
+        PropertyConfig.setConfigPath(Const.NAME_PROPERTY_FILE);
+    }
+
     protected CalcReport getCalcReport(){
         CalcReport calcReport = new CalcReport();
-        calcReport.setId(1);
         calcReport.setFioPatient("Bob")
                 .setFioDoctor("Sim Artem Evgen")
                 .setBloodAnalysis(true)
                 .setGlucoseAnalysis(true)
                 .setArterialAnalysis(true)
                 .setPatient(List.of(getPatient()))
-                .setDoctor(List.of(getDoctor()))
-                .setPrice(123.31);
+                .setDoctor(List.of(getDoctor()));
 
         return calcReport;
     }

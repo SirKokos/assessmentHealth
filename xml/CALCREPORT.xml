@@ -10,14 +10,14 @@
          <patient>
             <id>1</id>
             <fio>Bob</fio>
-            <age>23</age>
+            <age>20</age>
             <Gender>M</Gender>
             <statusPerson>PATIENT</statusPerson>
-            <cellsBlood>12.3</cellsBlood>
-            <hemoglobin>21.3</hemoglobin>
-            <platelets>1.2</platelets>
-            <glucose>11.3</glucose>
-            <cholesterol>12.3</cholesterol>
+            <cellsBlood>4.9</cellsBlood>
+            <hemoglobin>140.3</hemoglobin>
+            <platelets>200.0</platelets>
+            <glucose>80.3</glucose>
+            <cholesterol>5.3</cholesterol>
             <statusVisit>IN</statusVisit>
          </patient>
       </patient>
@@ -70,7 +70,7 @@
             </linkSchedule>
          </doctor>
       </doctor>
-      <price>123.31</price>
+      <price>907.0</price>
    </object>
    <object class="ru.sfedu.assessmentHealth.model.CalcReport">
       <id>2</id>
@@ -79,22 +79,22 @@
       <bloodAnalysis>true</bloodAnalysis>
       <glucoseAnalysis>true</glucoseAnalysis>
       <arterialAnalysis>true</arterialAnalysis>
-      <patient class="java.util.ArrayList">
+      <patient class="java.util.ImmutableCollections$List12">
          <patient>
             <id>1</id>
             <fio>Bob</fio>
             <age>23</age>
             <Gender>M</Gender>
             <statusPerson>PATIENT</statusPerson>
-            <cellsBlood>12.3</cellsBlood>
-            <hemoglobin>21.3</hemoglobin>
-            <platelets>1.2</platelets>
-            <glucose>11.3</glucose>
-            <cholesterol>12.3</cholesterol>
+            <cellsBlood>6.6</cellsBlood>
+            <hemoglobin>170.3</hemoglobin>
+            <platelets>200.0</platelets>
+            <glucose>80.3</glucose>
+            <cholesterol>5.3</cholesterol>
             <statusVisit>IN</statusVisit>
          </patient>
       </patient>
-      <doctor class="java.util.ArrayList">
+      <doctor class="java.util.ImmutableCollections$List12">
          <doctor>
             <id>1</id>
             <fio>Sim Artem Evgen</fio>
@@ -142,80 +142,3 @@
                </schedule>
             </linkSchedule>
          </doctor>
-      </doctor>
-      <price>123.31</price>
-   </object>
-   <object class="ru.sfedu.assessmentHealth.model.CalcReport">
-      <id>3</id>
-      <fioPatient>Bob</fioPatient>
-      <fioDoctor>Sim Artem Evgen</fioDoctor>
-      <bloodAnalysis>true</bloodAnalysis>
-      <glucoseAnalysis>true</glucoseAnalysis>
-      <arterialAnalysis>true</arterialAnalysis>
-      <patient class="java.util.ArrayList">
-         <patient>
-            <id>1</id>
-            <fio>Bob</fio>
-            <age>23</age>
-            <Gender>M</Gender>
-            <statusPerson>PATIENT</statusPerson>
-            <cellsBlood>12.3</cellsBlood>
-            <hemoglobin>21.3</hemoglobin>
-            <platelets>1.2</platelets>
-            <glucose>11.3</glucose>
-            <cholesterol>12.3</cholesterol>
-            <statusVisit>IN</statusVisit>
-         </patient>
-      </patient>
-      <doctor class="java.util.ArrayList">
-         <doctor>
-            <id>1</id>
-            <fio>Sim Artem Evgen</fio>
-            <age>29</age>
-            <Gender>M</Gender>
-            <statusPerson>DOCTOR</statusPerson>
-            <experience>12</experience>
-            <avgPatient>12.3</avgPatient>
-            <qualification>Med</qualification>
-            <specialization>Genikolog</specialization>
-            <linkPreparation class="java.util.ArrayList">
-               <preparation>
-                  <id>1</id>
-                  <NamePrep>Ubeprofen</NamePrep>
-                  <DateEnd>2024-12-20 00:00:00.0 MSK</DateEnd>
-                  <Dosage>2.3</Dosage>
-                  <StatusVisitPreparation>LOW</StatusVisitPreparation>
-                  <AboutPrep>this prep important</AboutPrep>
-               </preparation>
-               <preparation>
-                  <id>1</id>
-                  <NamePrep>Ubeprofen</NamePrep>
-                  <DateEnd>2024-12-20 00:00:00.0 MSK</DateEnd>
-                  <Dosage>2.3</Dosage>
-                  <StatusVisitPreparation>LOW</StatusVisitPreparation>
-                  <AboutPrep>this prep important</AboutPrep>
-               </preparation>
-            </linkPreparation>
-            <linkSchedule class="java.util.ArrayList">
-               <schedule>
-                  <id>1</id>
-                  <Week>SATURDAY</Week>
-                  <DateSchedule>2024-04-23 00:00:00.0 MSK</DateSchedule>
-                  <TimeBegin>1970-01-01 09:20:30.0 MSK</TimeBegin>
-                  <TimeEnd>1970-01-01 18:23:20.0 MSK</TimeEnd>
-                  <StatSchedule>FREE</StatSchedule>
-               </schedule>
-               <schedule>
-                  <id>1</id>
-                  <Week>SATURDAY</Week>
-                  <DateSchedule>2024-04-23 00:00:00.0 MSK</DateSchedule>
-                  <TimeBegin>1970-01-01 09:20:30.0 MSK</TimeBegin>
-                  <TimeEnd>1970-01-01 18:23:20.0 MSK</TimeEnd>
-                  <StatSchedule>FREE</StatSchedule>
-               </schedule>
-            </linkSchedule>
-         </doctor>
-      </doctor>
-      <price>123.31</price>
-   </object>
-</xmlWrapper>

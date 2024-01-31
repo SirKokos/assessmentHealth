@@ -8,7 +8,7 @@ import ru.sfedu.assessmentHealth.model.StatusSchedule;
 import java.util.List;
 
 /**
- * Интерфейс, который перебирает расписание врача и находит свободное
+ * Тестовая штука
  * возвращает List<Schedule>
  */
 @FunctionalInterface

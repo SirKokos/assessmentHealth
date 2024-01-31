@@ -2,7 +2,6 @@ package ru.sfedu.assessmentHealth.utils;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import ru.sfedu.assessmentHealth.Const;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -10,14 +9,22 @@ import java.util.Properties;
 
 public class PropertyConfig {
     private static final Logger log = LogManager.getLogger(PropertyConfig.class.getName());
+    private static String configPath = "";
+
+    public static String getConfigPath() {
+        return configPath;
+    }
+    public static void setConfigPath(String configpath) {
+        configPath = configpath;
+    }
 
     /**
-     * РќСѓР¶РµРЅ РґР»СЏ СЂР°Р±РѕС‚С‹ СЃ property С„Р°Р№Р»Р°РјРё.
-     * @param propertyKey - String РєР»СЋС‡ РїРѕ РєРѕС‚РѕСЂРѕРјСѓ С…СЂР°РЅРёС‚СЃСЏ Р·РЅР°С‡РµРЅРёРµ РЅР°СЃС‚СЂРѕРµРє
-     * @return Р·РЅР°С‡РµРЅРёРµ С‚РёРїР° String
+     * Нужен для работы с property файлами.
+     * @param propertyKey - String ключ по которому хранится значение настроек
+     * @return значение типа String
      */
     public static String getPropertyValue(String propertyKey,String pathProperty){
-        log.debug("getPropertyValue [1]: РќР°С‡Р°Р»Рѕ СЂР°Р±РѕС‚С‹ РїРѕР»СѓС‡РµРЅРёСЏ РїРµСЂРµРјРµРЅРЅС‹С… property");
+        log.debug("getPropertyValue [1]: Начало работы получения переменных property");
         String propertyValue = "";
 
         Properties properties = new Properties();
@@ -25,9 +32,9 @@ public class PropertyConfig {
             properties.load(new FileInputStream(pathProperty));
             propertyValue = properties.getProperty(propertyKey);
         } catch (IOException e) {
-            log.error("getPropertyValue [2]: РџРѕР»СѓС‡РµРЅР° РѕС€РёР±РєР° {}",e.getMessage());
+            log.error("getPropertyValue [2]: Получена ошибка {}",e.getMessage());
         }
-        log.debug("getPropertyValue [3]: РљРѕРЅРµС† РїРѕР»СѓС‡РµРЅРёСЏ property");
+        log.debug("getPropertyValue [3]: Конец получения property");
         return propertyValue;
     }
 }

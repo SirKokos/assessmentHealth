@@ -7,7 +7,10 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Const {
-    public static final String NAME_PROPERTY_FILE = "src/main/resources/BdConnection.properties";
+
+
+
+    public static final String NAME_PROPERTY_FILE = "src/main/resources/environment.properties";
     public static final String NAME_MONGO_COLLECTION = "Mongo.Collection";
     public static final String NAME_MONGO_HOST = "dataBase.Mongo";
     public static final String NAME_MONGO_NAME = "Mongo.Name";
@@ -205,6 +208,10 @@ public class Const {
 
     public static final String FILE_TYPE = "txt";
     public static final String FILE_NAME_VISIT_DOCTOR = String.format("visitDoctor").concat(".").concat(FILE_TYPE);
+    public static final String FILE_NAME_ARIVIAL_DOCTOR = String.format("ArivialDoctor").concat(".").concat(FILE_TYPE);
+
+    public static final String FILE_NAME_CALCULATE_PRICE = String.format("calculatePrice").concat(".").concat(FILE_TYPE);
+    public static final String FILE_DELIMITER_ARIVIAL_DOCTOR_STATUS_OK = "\nСостояние не критическое: Выберите подходящее\n";
     public static final String FILE_DELIMITER_VISIT_DOCTOR = "\n---------------------------\n";
 
 
@@ -214,9 +221,69 @@ public class Const {
 
 
 
+    public static final Double DOCTOR_COF_SALARY = 100.0;
+
+    public static final List<String> DOCTOR_PRIORITY = Arrays.asList("Endocriolog","Lipidolog","Gemotolog");
 
 
 
 
 
+
+    public static final String CLI_TYPE_BD = "dType";
+    public static final String CLI_TYPE_BD_LONG = "dataType";
+
+
+    public static final String CLI_ENVIRONMENT_PROPERTIES = "Dconfig";
+    public static final String CLI_ENVIRONMENT_PROPERTIES_LONG = "Dconfig";
+
+
+    public static final String CLI_LOGGER = "Dlog4j";
+    public static final String CLI_LOGGER_LONG = "Dlog4j";
+
+    public static final String ClI_NEW_DOCTOR="doctor";
+    public static final String ClI_NEW_PATIENT="patient";
+    public static final String ClI_NEW_PREPARATION="prep";
+    public static final String ClI_NEW_SCHEDULE="sche";
+    public static final String ClI_NEW_CALC_REPORT="report";
+    public static final String ClI_ALL_DOCTOR="aD";
+
+    public static final String ClI_NEW_DOCTOR_LONG="newDoctor";
+    public static final String ClI_NEW_PATIENT_LONG="newPatient";
+    public static final String ClI_NEW_PREPARATION_LONG="newPreparation";
+    public static final String ClI_NEW_SCHEDULE_LONG="newSchedule";
+    public static final String ClI_NEW_CALC_REPORT_LONG="newReport";
+    public static final String ClI_ALL_DOCTOR_LONG="allDoctor";
+
+
+    public static final String ClI_VISIT_DOCTOR="visitDoctor";
+    public static final String ClI_CALCULATE_PRICE="calculatePrice";
+    public static final String ClI_ARIVIAL_DOCTOR="arrivialDoctor";
+
+
+
+    public static final String ClI_SELECT_DOCTOR="sd";
+    public static final String ClI_SELECT_PATIENT="sp";
+    public static final String ClI_SELECT_PREPARATION="spr";
+    public static final String ClI_SELECT_SCHEDULE= "ss";
+    public static final String ClI_SELECT_CALC_REPORT= "sc";
+
+
+    public static final String CLI_DESCRIPTION_TYPE_BD = "Укажите тип провайдера";
+    public static final String CLI_LOGGER_DESCRIPTION = "Активация консольного аппендера";
+    public static final String CLI_ENVIRONMENT_PROPERTIES_DESCRIPTION = "Путь до настройки конфигурационного файла";
+    public static final String ClI_DESCRIPTION_NEW_DOCTOR="Добавление нового Доктора";
+    public static final String ClI_DESCRIPTION_NEW_PATIENT="Добавление нового Пациента";
+    public static final String ClI_DESCRIPTION_NEW_PREPARATION="Добавление нового препарата";
+    public static final String ClI_DESCRIPTION_NEW_SCHEDULE="Добавление нового расписания";
+    public static final String ClI_DESCRIPTION_NEW_CALC_REPORT="Добавление нового отчета";
+    public static final String ClI_DESCRIPTION_ALL_DOCTOR="Вывести всех врачей";
+
+    public static final String ClI_DESCRIPTION_VISIT_DOCTOR="Получение результатов о состоянии.";
+    public static final String ClI_DESCRIPTION_CALCULATE_PRICE="Формирование отчета и его сохранение. Генерация файла с данными.";
+    public static final String ClI_DESCRIPTION_ARIVIAL_DOCTOR="Формирование подходящих дат для пациента.";
+
+
+    public static final String CLI_HELP = "help";
+    public static final String CLI_DESCRIPTION_HELP = "Информация по использованию сервиса";
 }

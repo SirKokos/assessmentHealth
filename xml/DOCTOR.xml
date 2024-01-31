@@ -1,6 +1,6 @@
 <xmlWrapper>
    <object class="ru.sfedu.assessmentHealth.model.Doctor">
-      <id>1</id>
+      <id>2</id>
       <fio>Sim Artem Evgen</fio>
       <age>29</age>
       <Gender>M</Gender>
@@ -47,7 +47,7 @@
       </linkSchedule>
    </object>
    <object class="ru.sfedu.assessmentHealth.model.Doctor">
-      <id>2</id>
+      <id>3</id>
       <fio>Sim Artem Evgen</fio>
       <age>29</age>
       <Gender>M</Gender>

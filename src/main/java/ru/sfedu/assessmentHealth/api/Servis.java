@@ -8,13 +8,11 @@ import ru.sfedu.assessmentHealth.model.*;
 import ru.sfedu.assessmentHealth.utils.FIgenerateListFreeDoctor;
 import ru.sfedu.assessmentHealth.utils.ServisUtil;
 
+import java.awt.geom.Point2D;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.function.BiPredicate;
 
 public class Servis {
@@ -52,7 +50,7 @@ public class Servis {
      * @param patient Объект пациента
      * @return Map<String,Integer> с оценкой здоровья и параметрами для последующего анализа
      */
-    public Map<String,Integer> assessmentHealth(Patient patient){
+    protected Map<String,Integer> assessmentHealth(Patient patient){
         log.debug("assessmentHealth [1]: start working");
         Integer health = 0;
         Map<String,Integer> result = new HashMap<>();
@@ -177,15 +175,41 @@ public class Servis {
     }
 
 
-    public StatusAnswer arivialDoctor(Patient patient){
+    /**
+     * Основной вариант использования, при котором происходит формирование даты приезда врача на дом.
+     * Метод heallingRecom - extend;
+     * assessmentHealth() - include
+     * determinationUrgency() - include
+     * @param patient Объект пациента
+     * @param dataProvider Дата провайдер
+     * @return StatusAnswer
+     */
+    public StatusAnswer arivialDoctor(Patient patient,IDataProvider dataProvider){
         log.debug("arivialDoctor [1]: start working");
         StatusAnswer result;
+        File file = new File(Const.FILE_NAME_ARIVIAL_DOCTOR);
+
         Map<String,Integer> mapAssessmentHealth = assessmentHealth(patient);
-        try {
+        Map<Integer, List<Schedule>> mapDoctorIdAndSchedule = determinationUrgency(mapAssessmentHealth, dataProvider);
+
+        try (FileWriter writer = new FileWriter(file,true)){
             if(mapAssessmentHealth.get(Const.RESULT_HEALTH)<60){
 
-            }else {
+                for (var value : mapDoctorIdAndSchedule.entrySet() ) {
+                    writer.write(value.getKey() + "\n" + value.getValue()+"\n");
+                }
 
+                for (String value :  heallingRecom(mapAssessmentHealth)) {
+                    writer.write(value+"\n");
+                }
+                writer.write(Const.FILE_DELIMITER_VISIT_DOCTOR);
+
+            }else {
+                writer.write(Const.FILE_DELIMITER_ARIVIAL_DOCTOR_STATUS_OK);
+                for (var value : mapDoctorIdAndSchedule.entrySet() ) {
+                    writer.write(value.getKey() + "/" + value.getValue());
+                }
+                writer.write(Const.FILE_DELIMITER_VISIT_DOCTOR);
             }
 
             result = StatusAnswer.OK;
@@ -206,7 +230,7 @@ public class Servis {
      * @param dataProvider параметр IDataProvider для работы с истониками данных
      * @return
      */
-    public Map<Integer,List<Schedule>> determinationUrgency(Map<String,Integer> mapAssessmentHealth,IDataProvider dataProvider){
+    protected Map<Integer,List<Schedule>> determinationUrgency(Map<String,Integer> mapAssessmentHealth,IDataProvider dataProvider){
 
         log.debug("determinationUrgency [1]: start working");
         Map<Integer,List<Schedule>> result = new HashMap<>();
@@ -221,20 +245,11 @@ public class Servis {
                 ListEndocriologDoctor = ServisUtil.generateListDoctor(dataProvider,mapAssessmentHealth,Const.RESULT_GLUCOSE,Const.DOCTOR_TYPE_ENDOCRINOLOG);
 
                 ListGemotologDoctor.forEach(
-                        i-> {
-                            result.put(i.getId(),ServisUtil.generateListScheduleFree(i));
-                        }
-                );
+                        i-> result.put(i.getId(),ServisUtil.generateListScheduleFree(i)));
                 ListLiptologDoctor.forEach(
-                        i-> {
-                            result.put(i.getId(),ServisUtil.generateListScheduleFree(i));
-                        }
-                );
+                        i-> result.put(i.getId(),ServisUtil.generateListScheduleFree(i)));
                 ListEndocriologDoctor.forEach(
-                        i-> {
-                            result.put(i.getId(),ServisUtil.generateListScheduleFree(i));
-                        }
-                );
+                        i-> result.put(i.getId(),ServisUtil.generateListScheduleFree(i)));
 
 //                ListGemotologDoctor.forEach(
 //                        i-> {
@@ -264,19 +279,95 @@ public class Servis {
             else {
                 List<Doctor> ListDoctor = dataProvider.selectAllDoctor().get();
                 ListDoctor.forEach(
-                        i-> {
-                            result.put(i.getId(),i.getLinkSchedule()
-                                    .stream()
-                                    .filter(j -> j.getStatSchedule().equals(StatusSchedule.FREE))
-                                    .toList());
-                        }
-                );
+                        i-> result.put(i.getId(),ServisUtil.generateListScheduleFree(i)));
+//                ListDoctor.forEach(
+//                        i-> {
+//                            result.put(i.getId(),i.getLinkSchedule()
+//                                    .stream()
+//                                    .filter(j -> j.getStatSchedule().equals(StatusSchedule.FREE))
+//                                    .toList());
+//                        }
+//                );
             }
         }catch (Exception e){
             log.error("determinationUrgency [2]: end {}",e.getMessage());
         }
         log.debug("determinationUrgency [3]: end working");
         return result;
+    }
+
+
+    /**
+     * Метод для формирования коэффициента цены врача
+     * @param doctor - Объект врача
+     * @return Double
+     */
+    protected Double calcExpDoctor(Doctor doctor){
+        log.debug("calcExpDoctor [1]: start working");
+        Double cof = Const.DOCTOR_PRIORITY.contains(doctor.getSpecialization()) ? 5.0 :0.0 ;
+        try {
+            Integer experience = doctor.getExperience();
+            Double avgPatient = doctor.getAvgPatient();
+            cof += (experience + avgPatient/2)/2;
+        }catch (Exception e){
+            log.error("calcExpDoctor [2]: error {}",e.getMessage());
+        }
+        log.debug("calcExpDoctor [3]: end working");
+        return cof;
+
+    }
+
+    /**
+     * Метод который формирует объект CalcReport который и будет загружен в базу
+     * @param doctor Врач
+     * @param patient пациент
+     * @return Optional<CalcReport>
+     */
+    protected Optional<CalcReport> TotalReport(Doctor doctor,Patient patient){
+        log.debug("TotalReport [1]: start working");
+        CalcReport calcReport = new CalcReport();
+        try {
+            calcReport.setFioPatient(patient.getFio());
+            calcReport.setFioDoctor(doctor.getFio());
+
+            calcReport.setGlucoseAnalysis(patient.getGlucose() != null);
+            calcReport.setBloodAnalysis(patient.getCellsBlood() != null);
+            calcReport.setArterialAnalysis(patient.getPlatelets() != null);
+
+            calcReport.setPatient(List.of(patient));
+            calcReport.setDoctor(List.of(doctor));
+        }catch (Exception e){
+            log.error("TotalReport [2]: error {}",e.getMessage());
+        }
+        log.debug("TotalReport [3]: end working");
+        return Optional.of(calcReport);
+
+    }
+
+
+    /**
+     * Метод формирует текстовый файл со всей информацией и цене
+     *
+     * @param patient - Пациент
+     * @param doctor - врач
+     * @param flag - Создавать файл или нет
+     * @return Optional<CalcReport>
+     */
+    public Optional<CalcReport> calculatePrice(Patient patient,Doctor doctor,Boolean flag){
+        log.debug("calculatePrice [1]: start working");
+        Double price = Const.DOCTOR_COF_SALARY;
+        Double cof = calcExpDoctor(doctor);
+        CalcReport calcReport = null;
+        File file = new File(Const.FILE_NAME_CALCULATE_PRICE);
+        try( FileWriter writer = new FileWriter(file,true)) {
+            calcReport = TotalReport(doctor,patient).get();
+            calcReport.setPrice(Math.floor(price*cof));
+            if(flag){writer.write(calcReport+"\n");}
+        }catch (Exception e){
+            log.error("calculatePrice [2]: {}",e.getMessage());
+        }
+        log.debug("calculatePrice [3]: end working");
+        return Optional.of(calcReport);
     }
 
 }

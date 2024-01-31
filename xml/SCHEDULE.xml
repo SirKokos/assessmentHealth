@@ -23,4 +23,12 @@
       <TimeEnd>1970-01-01 18:23:20.0 MSK</TimeEnd>
       <StatSchedule>FREE</StatSchedule>
    </object>
+   <object class="ru.sfedu.assessmentHealth.model.Schedule">
+      <id>4</id>
+      <Week>SATURDAY</Week>
+      <DateSchedule>2024-04-23 00:00:00.0 MSK</DateSchedule>
+      <TimeBegin>1970-01-01 09:20:30.0 MSK</TimeBegin>
+      <TimeEnd>1970-01-01 18:23:20.0 MSK</TimeEnd>
+      <StatSchedule>FREE</StatSchedule>
+   </object>
 </xmlWrapper>

@@ -1,143 +1,279 @@
 package ru.sfedu.assessmentHealth;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
-import ru.sfedu.assessmentHealth.api.DataProviderCsv;
-import ru.sfedu.assessmentHealth.api.IDataProvider;
-import ru.sfedu.assessmentHealth.api.Servis;
+import org.apache.commons.cli.*;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.core.LoggerContext;
+import ru.sfedu.assessmentHealth.api.*;
 import ru.sfedu.assessmentHealth.model.*;
+import ru.sfedu.assessmentHealth.utils.CreateObj;
+import ru.sfedu.assessmentHealth.utils.PropertyConfig;
+import ru.sfedu.assessmentHealth.utils.ServisUtil;
 
+import java.io.File;
+import java.io.OutputStream;
+import java.io.PrintWriter;
 import java.time.temporal.ValueRange;
+import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 import java.util.SortedMap;
 
 
 public class Main {
+    private static final Logger log = LogManager.getLogger(Main.class.getName());
     public static void main(String[] args) {
-        Patient patient = new Patient();
-        patient.setId(1);
 
-        patient.setFio("Bob")
-                .setAge(20)
-                .setGender("M")
-                .setStatusPerson(StatusPerson.PATIENT);
+        CommandLineParser parser = new DefaultParser();
 
-        patient.setCellsBlood(4.9)
-                .setHemoglobin(140.3)
-                .setPlatelets(200.)
-                .setGlucose(80.3)
-                .setCholesterol(5.3)
-                .setStatusVisit(StatusPatient.IN);
+        try {
+            PropertyConfig propertyConfig = new PropertyConfig();
+            log.info("------------------- Working program -------------------");
+            CommandLine cmd = parser.parse(getAllOptions(),args);
 
+            //--------------------------------env----------------------------------------------
+            if(cmd.hasOption(Const.CLI_ENVIRONMENT_PROPERTIES)){
+                String[] arguments = cmd.getOptionValues(Const.CLI_ENVIRONMENT_PROPERTIES);
+                propertyConfig.setConfigPath(arguments[0]);
+            }
+            //--------------------------------Лог----------------------------------------------
+            if (cmd.hasOption(Const.CLI_LOGGER)) {
+                String[] arguments = cmd.getOptionValues(Const.CLI_LOGGER);
+                File file = new File(arguments[0]);
+                LoggerContext context = (LoggerContext) LogManager.getContext(false);
+                context.setConfigLocation(file.toURI());
+            }
+            //--------------------------------dType----------------------------------------------
+            IDataProvider dataProvider = new DataProviderXml();
+            if (cmd.hasOption(Const.CLI_TYPE_BD)) {
+                String[] arguments = cmd.getOptionValues(Const.CLI_TYPE_BD);
+                switch (arguments[0]) {
+                    case "XML" -> dataProvider = new DataProviderXml();
+                    case "CSV" -> dataProvider = new DataProviderCsv();
+                    case "POSTGRES" -> dataProvider = new DataProviderPost();
+                    default -> log.info("Такого типа данных нет.");
+                }
+                log.info("Установлен {} дата провайдер.", dataProvider.getClass().getName());
+            }
+            //------------------------------------------------------------------------------
+            if (cmd.hasOption(Const.ClI_NEW_SCHEDULE)) {
+                String[] arguments = cmd.getOptionValues(Const.ClI_NEW_SCHEDULE);
+                Schedule schedule = CreateObj.createSchedule(arguments[0],arguments[1],arguments[2],arguments[3],arguments[4]);
+                log.info("Создание расписания: {}",schedule);
+                dataProvider.insertSchedule(schedule);
+            }
+            if (cmd.hasOption(Const.ClI_NEW_PREPARATION)) {
+                String[] arguments = cmd.getOptionValues(Const.ClI_NEW_PREPARATION);
+                Preparation preparation = CreateObj.createPreparation(arguments[0],arguments[1],arguments[2],arguments[3],arguments[4]);
+                log.info("Создание препаратов: {}",preparation);
+                dataProvider.insertPreparation(preparation);
+            }
+            if (cmd.hasOption(Const.ClI_NEW_DOCTOR)) {
+                String[] arguments = cmd.getOptionValues(Const.ClI_NEW_DOCTOR);
+                Doctor doctor = CreateObj.createDoctor(arguments[0],arguments[1],arguments[2],arguments[3],arguments[4],arguments[5],arguments[6],arguments[7]);
+                doctor.setLinkPreparation(ServisUtil.getListPreparation(dataProvider,arguments[8]));
+                doctor.setLinkSchedule(ServisUtil.getListSchedule(dataProvider,arguments[9]));
+                log.info("Создание врача: {}",doctor);
+                dataProvider.insertDoctor(doctor);
+            }
 
-        Patient patient2 = new Patient();
-        patient2.setId(1);
+            if(cmd.hasOption(Const.ClI_NEW_PATIENT)){
+                String[] arguments = cmd.getOptionValues(Const.ClI_NEW_PATIENT);
+                Patient patient = CreateObj.createPatient(arguments[0],arguments[1],arguments[2],arguments[3],arguments[4],arguments[5],arguments[6],arguments[7],arguments[8],arguments[9]);
+                log.info("Создание пациента: {}",patient);
+                dataProvider.insertPatient(patient);
+            }
 
-        patient2.setFio("Bob")
-                .setAge(40)
-                .setGender("G")
-                .setStatusPerson(StatusPerson.PATIENT);
+            if(cmd.hasOption(Const.ClI_NEW_CALC_REPORT)){
+                String[] arguments = cmd.getOptionValues(Const.ClI_NEW_CALC_REPORT);
+                CalcReport calcReport = CreateObj.createCalcReport(arguments[0],arguments[1],arguments[2],arguments[3],arguments[4]);
+                 List<Patient> patient = dataProvider.selectPatientId(Integer.valueOf(arguments[5])).stream().toList();
+                 List<Doctor> doctor = dataProvider.selectDoctorId(Integer.valueOf(arguments[6])).stream().toList();
+                calcReport.setPatient(patient);
+                calcReport.setDoctor(doctor);
+                log.info("Создание отчета: {}",calcReport);
+                dataProvider.insertCalcReport(calcReport);
+            }
 
-        patient2.setCellsBlood(6.6)
-                .setHemoglobin(170.3)
-                .setPlatelets(200.)
-                .setGlucose(80.3)
-                .setCholesterol(5.3)
-                .setStatusVisit(StatusPatient.IN);
-        Servis healthScore = new Servis();
-        IDataProvider iDataProvider = new DataProviderCsv();
-//        healthScore.visitDoctor(patient2);
-        System.out.println(healthScore.determinationUrgency(healthScore.assessmentHealth(patient2),iDataProvider));
-//        System.out.println(healthScore.determinationUrgency(healthScore.assessmentHealth(patient2),iDataProvider));
-//        System.out.println(healthScore.visitDoctor(patient));
-//        System.out.println(healthScore.visitDoctor(patient2));
+            if(cmd.hasOption(Const.ClI_ALL_DOCTOR)){
+                Optional<List<Doctor>> allDoctor = dataProvider.selectAllDoctor();
+                allDoctor.get().forEach(i-> log.info("Doctor-->{} \n",i));
+            }
+            //------------------------------------------------------------------------------
 
+            Servis servis = new Servis();
 
-       //        double[] inputs = {0.8, 0.6, 0.4, 0.2, 0.9, 0.7, 0.5, 0.3, 0.1, 0.6};
+            if(cmd.hasOption(Const.ClI_VISIT_DOCTOR)){
+                log.info("Input id patient process visitDoctor: ");
+                String[] arguments = cmd.getOptionValues(Const.ClI_VISIT_DOCTOR);
+                Optional<Patient> patient = dataProvider.selectPatientId(Integer.valueOf(arguments[0]));
+                log.info("process visitDoctor.....: {}",patient);
+                servis.visitDoctor(patient.get());
+            }
 
-//        System.out.println(Const.RESULT_SYSTEM_CELLS_BLOOD);
-//        System.out.println(Const.RESULT_SYSTEM_CHOLESTEROL);
-//        System.out.println(Const.RESULT_SYSTEM_HEMOGLOBIN);
+            if(cmd.hasOption(Const.ClI_ARIVIAL_DOCTOR)){
+                log.info("Input id patient process arivialDoctor: ");
+                String[] arguments = cmd.getOptionValues(Const.ClI_ARIVIAL_DOCTOR);
+                Optional<Patient> patient = dataProvider.selectPatientId(Integer.valueOf(arguments[0]));
+                log.info("process arivialDoctor.....: {}",patient);
+                servis.arivialDoctor(patient.get(),dataProvider);
+            }
 
+            if(cmd.hasOption(Const.ClI_CALCULATE_PRICE)){
+                log.info("Input id (patient,doctor) and flag (True or False) process visitDoctor: ");
+                String[] arguments = cmd.getOptionValues(Const.ClI_CALCULATE_PRICE);
+                Optional<Patient> patient = dataProvider.selectPatientId(Integer.valueOf(arguments[0]));
+                Optional<Doctor> doctor = dataProvider.selectDoctorId(Integer.valueOf(arguments[1]));
+                Boolean createFile = Boolean.valueOf(arguments[2]);
+                log.info("process calculatePrice.....: {}",patient);
+                servis.calculatePrice(patient.get(),doctor.get(),createFile);
+            }
 
-
-
-//        System.out.println("Оценка здоровья: " + s2);
-//        Properties p = new Properties();
-//        p.getProperty("dataBase.Mongo ");
-//        System.out.println(p.getProperty("dataBase.Mongo"));
-
-//        PropertyConfig propertyConfig = new PropertyConfig();
-//        propertyConfig.getPropertyValue("dataBase.Mongo",Const.NAME_PROPERTY_FILE);
-
-//        CalcReport c = new CalcReport();
-//        c.setId(1);
-//        c.setFioPatient("Artem")
-//                .setFioDoctor("Bob")
-//                .setBloodAnalysis(true)
-//                .setGlucoseAnalysis(true)
-//                .setArterialAnalysis(true).setPrice(102.2);
-//        System.out.println(c);
-
-//        System.out.println(System.getProperty("BdConnection.properties"));
-//        Doctor d = new Doctor();
-
-// пример использования Optional.of(T Value)
-//        String name = "foo";
-//        Optional<String> stringExample = Optional.of(name);
-//        System.out.println(stringExample.get());
-//// пример использования Optional.ofNullable(T Value)
-//        Integer age = null;
-//        Optional<Integer> integerExample= Optional.ofNullable(age);
-//        System.out.println(integerExample.isPresent());
-//// пример использования Optional.empty()
-//        Optional<Object> emptyExample = Optional.empty();
-//        System.out.println(emptyExample.get());
-
-//        Optional<Doctor> result = Optional.empty();
-//        System.out.println(result.isEmpty());
-
-
-//        CSVReader csvReader = null;
-//        try {
-//            csvReader = new CSVReader(new FileReader("csv/CALCREPORT.csv"));
-//        } catch (FileNotFoundException e) {
-//            System.out.println(e.getMessage());
-//        }
-//        CsvToBean csvToBean = new CsvToBeanBuilder(csvReader)
-//                .withType(CalcReport.class) // Замените YourBean на имя вашего класса
-//                .build();
-//        List<CalcReport> yourBeans = csvToBean.parse();
-//
-//        for (CalcReport i :yourBeans){
-//            System.out.println(i);
-//        }
-
-
-//        System.out.println(Const.SQL_TABLE_CREATE_PREPARATION);
-
-//        Person person = new Doctor();
-//        System.out.println(person.getClass());
-//        Doctor doctor = (Doctor) person;
-
-//        String d = "1 1 ";
-//        System.out.println(Arrays.stream(d.split(" ")).toList().get(0).length());
-//        doctor.setId(1);
-//
-//        doctor.setFio("Sim Artem Evgen")
-//                .setAge(29)
-//                .setGender("M")
-//                .setStatusPerson(StatusPerson.DOCTOR);
-//
-//        doctor.setExperience(12)
-//                .setAvgPatient(12.3)
-//                .setQualification("Med")
-//                .setSpecialization("Genikolog");
+            //------------------------------------------------------------------------------
 
 
-//
-//      String s = "1$Ubeprofen$2024-12-20$2.300000$LOW$this prep important";
-//        String[] split = s.split("\\$", 6);
-//        System.out.println(Arrays.stream(split).toList());
 
+
+
+
+
+
+
+
+        }
+        catch (ArrayIndexOutOfBoundsException e){
+            log.info("Неверное количество аргументов");
+        }catch (NumberFormatException e) {
+            log.info("Некорректные данные");
+        } catch (ParseException e) {
+            throw new RuntimeException(e);
+        }
+
+        printHelp(
+                getAllOptions(), // опции по которым составляем help
+                500, // ширина строки вывода
+                "Options", // строка предшествующая выводу
+                "-- HELP --", // строка следующая за выводом
+                3, // число пробелов перед выводом опции
+                5, // число пробелов перед выводом опцисания опции
+                true, // выводить ли в строке usage список команд
+                System.out // куда производить вывод
+        );
+
+        
     }
+
+
+    /**
+     * Метод нужен для генерации опцией командной строки
+     * @return Options
+     */
+    private static Options getAllOptions(){
+        Options options = new Options();
+
+
+
+        Option optionEnv = new Option(Const.CLI_ENVIRONMENT_PROPERTIES,Const.CLI_ENVIRONMENT_PROPERTIES_LONG,
+                true,Const.CLI_ENVIRONMENT_PROPERTIES_DESCRIPTION);
+        optionEnv.setArgs(1);
+
+        Option optionLog = new Option(Const.CLI_LOGGER,Const.CLI_LOGGER_LONG,
+                true,Const.CLI_LOGGER_DESCRIPTION);
+        optionLog.setArgs(1);
+
+        Option optionDataType = new Option(Const.CLI_TYPE_BD,Const.CLI_TYPE_BD_LONG,
+                true,Const.CLI_DESCRIPTION_TYPE_BD);
+        optionLog.setArgs(1);
+
+
+        Option optionDoctor = new Option(Const.ClI_NEW_DOCTOR,Const.ClI_NEW_DOCTOR_LONG,
+                true,Const.ClI_DESCRIPTION_NEW_DOCTOR);
+        optionDoctor.setArgs(10);
+
+        Option optionPatient = new Option(Const.ClI_NEW_PATIENT,Const.ClI_NEW_PATIENT_LONG,
+                true,Const.ClI_DESCRIPTION_NEW_PATIENT);
+        optionPatient.setArgs(10);
+
+
+        Option optionPreparation = new Option(Const.ClI_NEW_PREPARATION,Const.ClI_NEW_PREPARATION_LONG,
+                true,Const.ClI_DESCRIPTION_NEW_PREPARATION);
+        optionPreparation.setArgs(5);
+
+
+        Option optionSchedule = new Option(Const.ClI_NEW_SCHEDULE,Const.ClI_NEW_SCHEDULE_LONG,
+                true,Const.ClI_DESCRIPTION_NEW_SCHEDULE);
+        optionSchedule.setArgs(5);
+
+        Option optionCalc = new Option(Const.ClI_NEW_CALC_REPORT,Const.ClI_NEW_CALC_REPORT_LONG,
+                true,Const.ClI_DESCRIPTION_NEW_CALC_REPORT);
+        optionCalc.setArgs(5);
+
+        Option optionAllDoctor = new Option(Const.ClI_ALL_DOCTOR,Const.ClI_ALL_DOCTOR_LONG,
+                false,Const.ClI_DESCRIPTION_ALL_DOCTOR);
+        optionAllDoctor.setArgs(0);
+
+
+        Option visitDoctor = new Option(Const.ClI_VISIT_DOCTOR,
+                true,
+                Const.ClI_DESCRIPTION_VISIT_DOCTOR);
+        visitDoctor.setArgs(1);
+
+
+        Option totalPrice = new Option(Const.ClI_CALCULATE_PRICE,
+                true,
+                Const.ClI_DESCRIPTION_CALCULATE_PRICE);
+        totalPrice.setArgs(3);
+
+        Option arivialDoctor = new Option(Const.ClI_ARIVIAL_DOCTOR,
+                true,
+                Const.ClI_DESCRIPTION_ARIVIAL_DOCTOR);
+        arivialDoctor.setArgs(1);
+
+
+
+        options.addOption(optionEnv);
+        options.addOption(optionLog);
+        options.addOption(optionDataType);
+        options.addOption(optionDoctor);
+        options.addOption(optionPatient);
+        options.addOption(optionPreparation);
+        options.addOption(optionSchedule);
+        options.addOption(optionCalc);
+        options.addOption(optionAllDoctor);
+
+        options.addOption(visitDoctor);
+        options.addOption(totalPrice);
+        options.addOption(arivialDoctor);
+
+
+
+
+        return options;
+    }
+    public static void printHelp(
+            final Options options,
+            final int printedRowWidth,
+            final String header,
+            final String footer,
+            final int spacesBeforeOption,
+            final int spacesBeforeOptionDescription,
+            final boolean displayUsage,
+            final OutputStream out) {
+        final String commandLineSyntax = "java -jar accessHealth.jar";
+        final PrintWriter writer = new PrintWriter(out);
+        final HelpFormatter helpFormatter = new HelpFormatter();
+        helpFormatter.printHelp(
+                writer,
+                printedRowWidth,
+                commandLineSyntax,
+                header,
+                options,
+                spacesBeforeOption,
+                spacesBeforeOptionDescription,
+                footer,
+                displayUsage);
+        writer.flush();
+    }
+
 }

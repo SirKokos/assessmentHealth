@@ -23,11 +23,16 @@ import static ru.sfedu.assessmentHealth.utils.FileUtil.createFileIfNotExists;
 public class DataProviderXml implements IDataProvider {
 
     private static final Logger log = LogManager.getLogger(DataProviderXml.class.getName());
-    final private String calcReportPath = PropertyConfig.getPropertyValue(Const.XML_NAME_CALCREPORT_KEY,Const.NAME_PROPERTY_FILE);
-    final private String doctorPath = PropertyConfig.getPropertyValue(Const.XML_NAME_DOCTOR_KEY,Const.NAME_PROPERTY_FILE);
-    final private String patientPath = PropertyConfig.getPropertyValue(Const.XML_NAME_PATIENT_KEY,Const.NAME_PROPERTY_FILE);
-    final private String preparationPath =PropertyConfig.getPropertyValue(Const.XML_NAME_PREPARATION_KEY,Const.NAME_PROPERTY_FILE);
-    final private String schedulePath = PropertyConfig.getPropertyValue(Const.XML_NAME_SCHEDULE_KEY,Const.NAME_PROPERTY_FILE);
+//    final private String calcReportPath = PropertyConfig.getPropertyValue(Const.XML_NAME_CALCREPORT_KEY,Const.NAME_PROPERTY_FILE);
+//    final private String doctorPath = PropertyConfig.getPropertyValue(Const.XML_NAME_DOCTOR_KEY,Const.NAME_PROPERTY_FILE);
+//    final private String patientPath = PropertyConfig.getPropertyValue(Const.XML_NAME_PATIENT_KEY,Const.NAME_PROPERTY_FILE);
+//    final private String preparationPath =PropertyConfig.getPropertyValue(Const.XML_NAME_PREPARATION_KEY,Const.NAME_PROPERTY_FILE);
+//    final private String schedulePath = PropertyConfig.getPropertyValue(Const.XML_NAME_SCHEDULE_KEY,Const.NAME_PROPERTY_FILE);
+    final private String calcReportPath = PropertyConfig.getPropertyValue(Const.XML_NAME_CALCREPORT_KEY,PropertyConfig.getConfigPath());
+    final private String doctorPath = PropertyConfig.getPropertyValue(Const.XML_NAME_DOCTOR_KEY,PropertyConfig.getConfigPath());
+    final private String patientPath = PropertyConfig.getPropertyValue(Const.XML_NAME_PATIENT_KEY,PropertyConfig.getConfigPath());
+    final private String preparationPath =PropertyConfig.getPropertyValue(Const.XML_NAME_PREPARATION_KEY,PropertyConfig.getConfigPath());
+    final private String schedulePath = PropertyConfig.getPropertyValue(Const.XML_NAME_SCHEDULE_KEY,PropertyConfig.getConfigPath());
 
     public DataProviderXml(){
         log.debug("DataProviderXml [1]: start constructor");
