@@ -410,6 +410,7 @@ public class DataProviderCsv implements IDataProvider {
                     .build();
 
             Beans = csvToBean.parse();
+
             result = Optional.of(Beans.stream()
                     .filter(i->i.getId().equals(id))
                     .toList()
@@ -420,10 +421,13 @@ public class DataProviderCsv implements IDataProvider {
                     .stream()
                     .map(i->selectDoctorId(i.getId()).get())
                     .toList();
+
+
             patientList =  result.get().getPatient()
                     .stream()
                     .map(i->selectPatientId(i.getId()).get())
                     .toList();
+
 
             result.get().setDoctor(doctorList);
             result.get().setPatient(patientList);

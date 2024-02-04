@@ -127,7 +127,8 @@ public class Main {
                 Optional<Doctor> doctor = dataProvider.selectDoctorId(Integer.valueOf(arguments[1]));
                 Boolean createFile = Boolean.valueOf(arguments[2]);
                 log.info("process calculatePrice.....: {}",patient);
-                servis.calculatePrice(patient.get(),doctor.get(),createFile);
+                Optional<CalcReport> calcReport = servis.calculatePrice(patient.get(),doctor.get(),createFile);
+                dataProvider.insertCalcReport(calcReport.get());
             }
 
             //------------------------------------------------------------------------------
@@ -161,7 +162,7 @@ public class Main {
                 System.out // куда производить вывод
         );
 
-        
+
     }
 
 

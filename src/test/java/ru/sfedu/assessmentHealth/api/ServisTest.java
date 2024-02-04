@@ -22,7 +22,7 @@ class ServisTest extends BaseTest {
     void assessmentHealth() {
         log.debug("assessmentHealth [1]: Start working Test");
         Map<String, Integer> actual = servis.assessmentHealth(getPatient());
-        assertEquals(actual.get(Const.RESULT_HEALTH),55);
+        assertEquals(actual.get(Const.RESULT_HEALTH),Const.TEST_DATA_ASSESSMENT_HEALTH);
         log.debug("assessmentHealth [2]: end working Test");
     }
     @Test
@@ -59,6 +59,10 @@ class ServisTest extends BaseTest {
         assertNotNull(test);
         log.debug("determinationUrgency [2]: end working Test");
     }
+
+
+
+
 
     @Test
     void visitDoctor() {
@@ -112,7 +116,7 @@ class ServisTest extends BaseTest {
     void totalReport() {
         log.debug("totalReport [1]: Start working Test");
         Optional<CalcReport> actual =  servis.TotalReport(getDoctor(),getPatient());
-        System.out.println(actual.get());
+//        System.out.println(actual.get());
         assertEquals(actual.get(),getCalcReport());
         log.debug("totalReport [2] end working {}",actual);
     }
@@ -129,7 +133,7 @@ class ServisTest extends BaseTest {
         log.debug("calculatePrice [1]: Start working Test");
         Optional<CalcReport> actual =  servis.calculatePrice(getPatient(),getDoctor(),true);
         System.out.println(actual.get());
-        assertEquals(actual.get().getPrice(),907.0);
+        assertEquals(actual.get().getPrice(),Const.TEST_DATA_PRICE_CALCULATE_PRICE);
         log.debug("calculatePrice [2] end working {}",actual);
     }
     @Test

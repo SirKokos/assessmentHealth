@@ -485,13 +485,13 @@ public class DataProviderXml implements IDataProvider {
         try {
             switch ((int) xmlFile.length()){
                 case 0 -> {
-                    return Optional.of(result);
+                    return Optional.empty();
                 }
                 default -> {
                     result = getXmlWrapper(doctorPath).getListObjectXml();
                 }
             }
-        }catch (ArrayIndexOutOfBoundsException e){
+        }catch (ArrayIndexOutOfBoundsException | NullPointerException e){
             log.error("selectAllDoctor [2]: - error Такого ключа нет {}",e.getMessage());
 
         }

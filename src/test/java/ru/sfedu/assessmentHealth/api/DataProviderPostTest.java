@@ -218,5 +218,13 @@ class DataProviderPostTest extends BaseTest{
         log.debug("selectAllDoctor [2]: - end working test");
 
     }
+    @Test
+    @Order(18)
+    void selectAllDoctorNegativity() {
+        log.debug("selectAllDoctorNegativity [1]: - start working test");
+        Optional<List<Doctor>> actual =  dataProviderPostgres.selectAllDoctor();
+        assertNotEquals(actual, null);
+        log.debug("selectAllDoctorNegativity [2]: - end working test");
+    }
 
 }

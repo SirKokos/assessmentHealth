@@ -110,7 +110,6 @@ class DataProviderCsvTest extends BaseTest {
     @Order(10)
     void selectCalcReport() {
         log.debug("selectCalcReport [1]: - start working test");
-//        getCalcReport().setId(1);
         Optional<CalcReport> actual =  providerCSV.selectCalcReport(1);
         assertEquals(actual.get(),getCalcReport());
         log.debug("selectCalcReport [2]: - end working test {}",actual);
@@ -179,10 +178,19 @@ class DataProviderCsvTest extends BaseTest {
     void selectAllDoctor() {
         log.debug("selectAllDoctor [1]: - start working test");
         Optional<List<Doctor>> actual =  providerCSV.selectAllDoctor();
-        System.out.println(actual);
-//        assertFalse(actual.isEmpty());
+        assertFalse(actual.isEmpty());
         log.debug("selectAllDoctor [2]: - end working test");
 
     }
+    @Test
+    @Order(18)
+    void selectAllDoctorNegativity() {
+        log.debug("selectAllDoctorNegativity [1]: - start working test");
+        Optional<List<Doctor>> actual =  providerCSV.selectAllDoctor();
+        assertNotEquals(actual, null);
+        log.debug("selectAllDoctorNegativity [2]: - end working test");
+    }
+
+
 
 }

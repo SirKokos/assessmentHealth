@@ -207,6 +207,7 @@ public class Const {
 
 
     public static final String FILE_TYPE = "txt";
+    public static final String UNICODE_RUS = "cp1251";
     public static final String FILE_NAME_VISIT_DOCTOR = String.format("visitDoctor").concat(".").concat(FILE_TYPE);
     public static final String FILE_NAME_ARIVIAL_DOCTOR = String.format("ArivialDoctor").concat(".").concat(FILE_TYPE);
 
@@ -284,6 +285,11 @@ public class Const {
     public static final String ClI_DESCRIPTION_ARIVIAL_DOCTOR="Формирование подходящих дат для пациента.";
 
 
+    public static final String ARIVIAL_DOCTOR_ANSWER_FOR_IN_PATIENT = "К сожалению ваш статус не позволяет вызвать врача на дом.\n" +
+            "Однако вы можете выбрать Дату которая подойдет:";
     public static final String CLI_HELP = "help";
     public static final String CLI_DESCRIPTION_HELP = "Информация по использованию сервиса";
+
+    public static final Integer TEST_DATA_ASSESSMENT_HEALTH = 55;
+    public static final Double TEST_DATA_PRICE_CALCULATE_PRICE = 907.0;
 }

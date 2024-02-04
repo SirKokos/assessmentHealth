@@ -15,6 +15,7 @@ public class BaseTest {
 
     protected CalcReport getCalcReport(){
         CalcReport calcReport = new CalcReport();
+        calcReport.setId(1);
         calcReport.setFioPatient("Bob")
                 .setFioDoctor("Sim Artem Evgen")
                 .setBloodAnalysis(true)
@@ -22,7 +23,7 @@ public class BaseTest {
                 .setArterialAnalysis(true)
                 .setPatient(List.of(getPatient()))
                 .setDoctor(List.of(getDoctor()));
-
+        calcReport.setPrice(100.0);
         return calcReport;
     }
 

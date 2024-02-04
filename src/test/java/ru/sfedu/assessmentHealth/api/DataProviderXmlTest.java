@@ -1,5 +1,6 @@
 package ru.sfedu.assessmentHealth.api;
 
+import org.apache.commons.lang3.ObjectUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.MethodOrderer;
@@ -174,9 +175,20 @@ class DataProviderXmlTest extends BaseTest {
     @Order(17)
     void selectAllDoctor() {
         log.debug("selectAllDoctor [1]: - start working test");
+        providerXML.insertDoctor(getDoctor());
         Optional<List<Doctor>> actual =  providerXML.selectAllDoctor();
         assertFalse(actual.isEmpty());
+        providerXML.deleteDoctor(getDoctor().getId());
         log.debug("selectAllDoctor [2]: - end working test");
+    }
 
+
+    @Test
+    @Order(18)
+    void selectAllDoctorNegativity() {
+        log.debug("selectAllDoctorNegativity [1]: - start working test");
+        Optional<List<Doctor>> actual =  providerXML.selectAllDoctor();
+        assertNotEquals(actual, null);
+        log.debug("selectAllDoctorNegativity [2]: - end working test");
     }
 }

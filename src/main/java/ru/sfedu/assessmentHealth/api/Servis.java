@@ -1,5 +1,6 @@
 package ru.sfedu.assessmentHealth.api;
 
+import org.apache.commons.lang3.CharSet;
 import org.apache.commons.lang3.tuple.Pair;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -9,9 +10,9 @@ import ru.sfedu.assessmentHealth.utils.FIgenerateListFreeDoctor;
 import ru.sfedu.assessmentHealth.utils.ServisUtil;
 
 import java.awt.geom.Point2D;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
+import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 import java.util.*;
 import java.util.function.BiPredicate;
 
@@ -29,9 +30,12 @@ public class Servis {
         StatusAnswer result;
         Map<String, Integer> mapResult = assessmentHealth(patient);
         List<String>  recomList =  heallingRecom(mapResult);
-        File file = new File(Const.FILE_NAME_VISIT_DOCTOR);
 
-        try (FileWriter writer = new FileWriter(file,true)) {
+        File file = new File(Const.FILE_NAME_VISIT_DOCTOR);
+        try (FileOutputStream fos = new FileOutputStream(file, true);
+             OutputStreamWriter osw = new OutputStreamWriter(fos,Const.UNICODE_RUS);
+             BufferedWriter writer = new BufferedWriter(osw)) {
+            writer.write(patient+"\n");
             for (String value : recomList) {
                 writer.write(value+"\n");
             }
@@ -100,38 +104,6 @@ public class Servis {
                 health += 10;
                 result.put(Const.RESULT_CHOLESTEROL,1);
             }else {result.put(Const.RESULT_CHOLESTEROL,0);}
-//            if(Const.VALID_CELLS_BLOOD.getLeft() < redBloodCellsCount && Const.VALID_CELLS_BLOOD.getRight() > redBloodCellsCount ){
-//                health += 25;
-//                result.put(Const.RESULT_CELLS_BLOOD,1);
-//            }else {result.put(Const.RESULT_CELLS_BLOOD,0);}
-//
-//            if(gender.equals("M")){
-//                if(Const.VALID_HEMOGLOBIN_M.getLeft() < hemoglobinLevel && Const.VALID_HEMOGLOBIN_M.getRight() > hemoglobinLevel ){
-//                    health += 20;
-//                    result.put(Const.RESULT_HEMOGLOBIN,1);
-//                }else {result.put(Const.RESULT_HEMOGLOBIN,0);}
-//            }else {
-//                if(Const.VALID_HEMOGLOBIN_G.getLeft() < hemoglobinLevel && Const.VALID_HEMOGLOBIN_G.getRight() > hemoglobinLevel ){
-//                    health += 20;
-//                    result.put(Const.RESULT_HEMOGLOBIN,1);
-//                }else {result.put(Const.RESULT_HEMOGLOBIN,0);}
-//            }
-//
-//            if(Const.VALID_PLATELETS.getLeft() < plateletCount && Const.VALID_PLATELETS.getRight() > plateletCount ){
-//                health += 15;
-//                result.put(Const.RESULT_PLATELETS,1);
-//            }else {result.put(Const.RESULT_HEMOGLOBIN,0);}
-//
-//            if(Const.VALID_GLUCOSE.getLeft() < glucoseLevel && Const.VALID_GLUCOSE.getRight() > glucoseLevel ){
-//                health += 25;
-//                result.put(Const.RESULT_GLUCOSE,1);
-//            }else {result.put(Const.RESULT_GLUCOSE,0);}
-//
-//            if(Const.VALID_CHOLESTEROL.getLeft() < cholesterolLevel && Const.VALID_CHOLESTEROL.getRight() > cholesterolLevel ){
-//                health += 10;
-//                result.put(Const.RESULT_CHOLESTEROL,1);
-//            }else {result.put(Const.RESULT_CHOLESTEROL,0);}
-
             result.put(Const.RESULT_HEALTH,health);
         }catch (Exception e){
             log.error("assessmentHealth [2]: error {}",e.getMessage());
@@ -192,11 +164,14 @@ public class Servis {
         Map<String,Integer> mapAssessmentHealth = assessmentHealth(patient);
         Map<Integer, List<Schedule>> mapDoctorIdAndSchedule = determinationUrgency(mapAssessmentHealth, dataProvider);
 
-        try (FileWriter writer = new FileWriter(file,true)){
-            if(mapAssessmentHealth.get(Const.RESULT_HEALTH)<60){
+        try (FileOutputStream fos = new FileOutputStream(file, true);
+             OutputStreamWriter osw = new OutputStreamWriter(fos,Const.UNICODE_RUS);
+             BufferedWriter writer = new BufferedWriter(osw)){
+
+            if(mapAssessmentHealth.get(Const.RESULT_HEALTH)<60 && patient.getStatusVisit().equals(StatusPatient.OUT)){
 
                 for (var value : mapDoctorIdAndSchedule.entrySet() ) {
-                    writer.write(value.getKey() + "\n" + value.getValue()+"\n");
+                    writer.write(value.getKey() + "===>" + value.getValue()+"\n");
                 }
 
                 for (String value :  heallingRecom(mapAssessmentHealth)) {
@@ -205,9 +180,12 @@ public class Servis {
                 writer.write(Const.FILE_DELIMITER_VISIT_DOCTOR);
 
             }else {
+                if(patient.getStatusVisit().equals(StatusPatient.IN)){
+                    writer.write(Const.ARIVIAL_DOCTOR_ANSWER_FOR_IN_PATIENT);
+                }
                 writer.write(Const.FILE_DELIMITER_ARIVIAL_DOCTOR_STATUS_OK);
                 for (var value : mapDoctorIdAndSchedule.entrySet() ) {
-                    writer.write(value.getKey() + "/" + value.getValue());
+                    writer.write(value.getKey() +"===>"+ value.getValue()+"\n");
                 }
                 writer.write(Const.FILE_DELIMITER_VISIT_DOCTOR);
             }
@@ -228,7 +206,7 @@ public class Servis {
      *
      * @param mapAssessmentHealth -Словарь с данными анализов пациента valur ={0-отличе от нормы и 1 - норма} а ключи это название анализов
      * @param dataProvider параметр IDataProvider для работы с истониками данных
-     * @return
+     * @return result
      */
     protected Map<Integer,List<Schedule>> determinationUrgency(Map<String,Integer> mapAssessmentHealth,IDataProvider dataProvider){
 
@@ -251,43 +229,11 @@ public class Servis {
                 ListEndocriologDoctor.forEach(
                         i-> result.put(i.getId(),ServisUtil.generateListScheduleFree(i)));
 
-//                ListGemotologDoctor.forEach(
-//                        i-> {
-//                            result.put(i.getId(),i.getLinkSchedule()
-//                                    .stream()
-//                                    .filter(j -> j.getStatSchedule().equals(StatusSchedule.FREE))
-//                                    .toList());
-//                        }
-//                );
-//                ListLiptologDoctor.forEach(
-//                        i-> {
-//                            result.put(i.getId(),i.getLinkSchedule()
-//                                    .stream()
-//                                    .filter(j -> j.getStatSchedule().equals(StatusSchedule.FREE))
-//                                    .toList());
-//                        }
-//                );
-//                ListEndocriologDoctor.forEach(
-//                        i-> {
-//                            result.put(i.getId(),i.getLinkSchedule()
-//                                    .stream()
-//                                    .filter(j -> j.getStatSchedule().equals(StatusSchedule.FREE))
-//                                    .toList());
-//                        }
-//                );
             }
             else {
                 List<Doctor> ListDoctor = dataProvider.selectAllDoctor().get();
                 ListDoctor.forEach(
                         i-> result.put(i.getId(),ServisUtil.generateListScheduleFree(i)));
-//                ListDoctor.forEach(
-//                        i-> {
-//                            result.put(i.getId(),i.getLinkSchedule()
-//                                    .stream()
-//                                    .filter(j -> j.getStatSchedule().equals(StatusSchedule.FREE))
-//                                    .toList());
-//                        }
-//                );
             }
         }catch (Exception e){
             log.error("determinationUrgency [2]: end {}",e.getMessage());
@@ -359,10 +305,13 @@ public class Servis {
         Double cof = calcExpDoctor(doctor);
         CalcReport calcReport = null;
         File file = new File(Const.FILE_NAME_CALCULATE_PRICE);
-        try( FileWriter writer = new FileWriter(file,true)) {
+        try( FileOutputStream fos = new FileOutputStream(file, true);
+             OutputStreamWriter osw = new OutputStreamWriter(fos,Const.UNICODE_RUS);
+             BufferedWriter writer = new BufferedWriter(osw)) {
             calcReport = TotalReport(doctor,patient).get();
             calcReport.setPrice(Math.floor(price*cof));
             if(flag){writer.write(calcReport+"\n");}
+
         }catch (Exception e){
             log.error("calculatePrice [2]: {}",e.getMessage());
         }

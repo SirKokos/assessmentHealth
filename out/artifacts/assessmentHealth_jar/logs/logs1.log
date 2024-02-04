@@ -1,0 +1,33 @@
+2024-01-31 15:24:53 INFO  Main:32 - ------------------- Working program -------------------
+2024-01-31 15:24:53 DEBUG PropertyConfig:27 - getPropertyValue [1]: Начало работы получения переменных property
+2024-01-31 15:24:53 DEBUG PropertyConfig:37 - getPropertyValue [3]: Конец получения property
+2024-01-31 15:24:53 DEBUG PropertyConfig:27 - getPropertyValue [1]: Начало работы получения переменных property
+2024-01-31 15:24:53 DEBUG PropertyConfig:37 - getPropertyValue [3]: Конец получения property
+2024-01-31 15:24:53 DEBUG PropertyConfig:27 - getPropertyValue [1]: Начало работы получения переменных property
+2024-01-31 15:24:53 DEBUG PropertyConfig:37 - getPropertyValue [3]: Конец получения property
+2024-01-31 15:24:53 DEBUG PropertyConfig:27 - getPropertyValue [1]: Начало работы получения переменных property
+2024-01-31 15:24:53 DEBUG PropertyConfig:37 - getPropertyValue [3]: Конец получения property
+2024-01-31 15:24:53 DEBUG PropertyConfig:27 - getPropertyValue [1]: Начало работы получения переменных property
+2024-01-31 15:24:53 DEBUG PropertyConfig:37 - getPropertyValue [3]: Конец получения property
+2024-01-31 15:24:53 DEBUG DataProviderXml:38 - DataProviderXml [1]: start constructor
+2024-01-31 15:24:53 ERROR DataProviderXml:46 - DataProviderXml [2]: ERROR Системе не удается найти указанный путь
+2024-01-31 15:24:53 DEBUG DataProviderXml:48 - DataProviderXml [3]: end process
+2024-01-31 15:24:53 DEBUG PropertyConfig:27 - getPropertyValue [1]: Начало работы получения переменных property
+2024-01-31 15:24:53 DEBUG PropertyConfig:37 - getPropertyValue [3]: Конец получения property
+2024-01-31 15:24:53 DEBUG PropertyConfig:27 - getPropertyValue [1]: Начало работы получения переменных property
+2024-01-31 15:24:53 DEBUG PropertyConfig:37 - getPropertyValue [3]: Конец получения property
+2024-01-31 15:24:53 DEBUG PropertyConfig:27 - getPropertyValue [1]: Начало работы получения переменных property
+2024-01-31 15:24:53 DEBUG PropertyConfig:37 - getPropertyValue [3]: Конец получения property
+2024-01-31 15:24:53 DEBUG PropertyConfig:27 - getPropertyValue [1]: Начало работы получения переменных property
+2024-01-31 15:24:53 DEBUG PropertyConfig:37 - getPropertyValue [3]: Конец получения property
+2024-01-31 15:24:53 DEBUG PropertyConfig:27 - getPropertyValue [1]: Начало работы получения переменных property
+2024-01-31 15:24:53 DEBUG PropertyConfig:37 - getPropertyValue [3]: Конец получения property
+2024-01-31 15:24:53 DEBUG DataProviderCsv:42 - DataProviderCsv [1]: start constructor
+2024-01-31 15:24:53 ERROR DataProviderCsv:50 - DataProviderCsv [2]: ERROR Системе не удается найти указанный путь
+2024-01-31 15:24:53 DEBUG DataProviderCsv:52 - DataProviderCsv [3]: end process
+2024-01-31 15:24:53 INFO  Main:57 - РЈСЃС‚Р°РЅРѕРІР»РµРЅ ru.sfedu.assessmentHealth.api.DataProviderCsv РґР°С‚Р° РїСЂРѕРІР°Р№РґРµСЂ.
+2024-01-31 15:24:53 INFO  Main:108 - Input id patient process visitDoctor: 
+2024-01-31 15:24:53 DEBUG DataProviderCsv:311 - selectPatientId [1]: start working
+2024-01-31 15:24:53 ERROR DataProviderCsv:330 - selectPatientId [2]: Error csv\PATIENT.csv (Системе не удается найти указанный путь)
+2024-01-31 15:24:53 DEBUG DataProviderCsv:332 - selectPatientId [3]: end working
+2024-01-31 15:24:53 INFO  Main:111 - process visitDoctor.....: Optional.empty
