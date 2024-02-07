@@ -15845,3 +15845,108 @@ Message: XML document structures must start and end within the same entity.
 2024-02-04 14:55:08 DEBUG DataProviderPost:208 - selectDoctorId [3]: end working
 2024-02-04 14:55:08 DEBUG DataProviderPost:337 - selectAllDoctor [3]: end working
 2024-02-04 14:55:08 DEBUG DataProviderPostTest:227 - selectAllDoctorNegativity [2]: - end working test
+2024-02-05 17:27:22 DEBUG CreateObj:26 - createSchedule [1]: процесс создания расписания
+2024-02-05 17:27:22 DEBUG CreateObj:37 - createSchedule [3]: END { id=null, Week=SATURDAY, DateSchedule=2024-04-23, TimeBegin=09:20:30, TimeEnd=18:23:20, StatSchedule=FREE}
+2024-02-05 17:27:43 DEBUG CreateObj:26 - createSchedule [1]: процесс создания расписания
+2024-02-05 17:27:43 DEBUG CreateObj:37 - createSchedule [3]: END { id=null, Week=SATURDAY, DateSchedule=2024-04-23, TimeBegin=09:20:30, TimeEnd=18:23:20, StatSchedule=FREE}
+2024-02-05 17:28:15 DEBUG CreateObj:26 - createSchedule [1]: процесс создания расписания
+2024-02-05 17:28:15 DEBUG CreateObj:37 - createSchedule [3]: END { id=null, Week=SATURDAY, DateSchedule=2024-04-23, TimeBegin=09:20:30, TimeEnd=18:23:20, StatSchedule=FREE}
+2024-02-05 17:29:06 DEBUG CreateObj:26 - createSchedule [1]: процесс создания расписания
+2024-02-05 17:29:06 DEBUG CreateObj:37 - createSchedule [3]: END { id=null, Week=SATURDAY, DateSchedule=2024-04-23, TimeBegin=09:20:30, TimeEnd=18:23:20, StatSchedule=FREE}
+2024-02-05 19:21:45 DEBUG CreateObjTest:32 - createPreparation: [1] start working
+2024-02-05 19:21:45 DEBUG CreateObj:52 - createPreparation [1]: процесс создания расписания
+2024-02-05 19:21:45 DEBUG CreateObj:63 - createPreparation [3]: END  { id=null, NamePrep='Ubeprofen', DateEnd=2024-12-20, Dosage=2.3, StatusVisitPreparation=LOW, AboutPrep='this prep important'}
+2024-02-05 19:21:45 DEBUG CreateObjTest:42 - createPreparation: [2] end 
+2024-02-05 19:24:56 DEBUG CreateObjTest:48 - createPatient: [1] start working
+2024-02-05 19:24:56 DEBUG CreateObj:84 - createPatient [1]: процесс создания расписания
+2024-02-05 19:24:56 DEBUG CreateObj:101 - createPatient [3]: END { id=null, cellsBlood=6.6, hemoglobin=170.3, platelets=200.0, glucose=80.3, cholesterol=5.3, statusVisit=IN, fio='Bob', age=23, Gender='M', statusPerson=PATIENT}
+2024-02-05 19:32:08 DEBUG CreateObjTest:86 - createCalcReport: [1] start working
+2024-02-05 19:32:08 DEBUG CreateObj:150 - createCalcReport [1]: процесс создания расписания
+2024-02-05 19:37:35 DEBUG CreateObjTest:86 - createCalcReport: [1] start working
+2024-02-05 19:37:35 DEBUG CreateObj:150 - createCalcReport [1]: процесс создания расписания
+2024-02-05 19:38:18 DEBUG CreateObjTest:88 - createCalcReport: [1] start working
+2024-02-05 19:38:18 DEBUG CreateObj:150 - createCalcReport [1]: процесс создания расписания
+2024-02-05 19:38:38 DEBUG CreateObjTest:88 - createCalcReport: [1] start working
+2024-02-05 19:38:38 DEBUG CreateObj:150 - createCalcReport [1]: процесс создания расписания
+2024-02-05 19:39:40 DEBUG CreateObjTest:88 - createCalcReport: [1] start working
+2024-02-05 19:39:40 DEBUG CreateObj:150 - createCalcReport [1]: процесс создания расписания
+2024-02-05 19:39:40 DEBUG CreateObjTest:102 - createCalcReport: [2] end 
+2024-02-05 19:47:49 DEBUG CreateObjTest:109 - createSchedule: [1] start working
+2024-02-05 19:47:49 DEBUG CreateObj:26 - createSchedule [1]: процесс создания расписания
+2024-02-05 19:47:49 DEBUG CreateObj:37 - createSchedule [3]: END { id=null, Week=SATURDAY, DateSchedule=2024-04-23, TimeBegin=09:20:30, TimeEnd=18:23:20, StatSchedule=FREE}
+2024-02-05 19:47:49 DEBUG CreateObjTest:119 - createSchedule: [2] end 
+2024-02-05 19:51:04 DEBUG CreateObjTest:140 - createPatientNegativity: [1] start working
+2024-02-05 19:51:04 DEBUG CreateObj:84 - createPatient [1]: процесс создания расписания
+2024-02-05 19:51:04 DEBUG CreateObj:101 - createPatient [3]: END { id=null, cellsBlood=6.6, hemoglobin=170.3, platelets=200.0, glucose=80.3, cholesterol=5.3, statusVisit=IN, fio='Bob', age=23, Gender='M', statusPerson=PATIENT}
+2024-02-05 19:51:04 DEBUG CreateObjTest:157 - createPatientNegativity: [2] end 
+2024-02-05 19:51:04 DEBUG CreateObjTest:124 - createPreparationNegativity: [1] start working
+2024-02-05 19:51:04 DEBUG CreateObj:52 - createPreparation [1]: процесс создания расписания
+2024-02-05 19:51:04 DEBUG CreateObj:63 - createPreparation [3]: END  { id=null, NamePrep='Ubeprofen', DateEnd=2024-12-20, Dosage=2.3, StatusVisitPreparation=LOW, AboutPrep='this prep important'}
+2024-02-05 19:51:04 DEBUG CreateObjTest:135 - createPreparationNegativity: [2] end 
+2024-02-05 19:51:04 DEBUG CreateObjTest:34 - createPreparation: [1] start working
+2024-02-05 19:51:04 DEBUG CreateObj:52 - createPreparation [1]: процесс создания расписания
+2024-02-05 19:51:04 DEBUG CreateObj:63 - createPreparation [3]: END  { id=null, NamePrep='Ubeprofen', DateEnd=2024-12-20, Dosage=2.3, StatusVisitPreparation=LOW, AboutPrep='this prep important'}
+2024-02-05 19:51:04 DEBUG CreateObjTest:44 - createPreparation: [2] end 
+2024-02-05 19:51:04 DEBUG CreateObjTest:89 - createCalcReport: [1] start working
+2024-02-05 19:51:04 DEBUG CreateObj:150 - createCalcReport [1]: процесс создания расписания
+2024-02-05 19:51:04 DEBUG CreateObjTest:103 - createCalcReport: [2] end 
+2024-02-05 19:51:04 DEBUG CreateObjTest:20 - createSchedule: [1] start working
+2024-02-05 19:51:04 DEBUG CreateObj:26 - createSchedule [1]: процесс создания расписания
+2024-02-05 19:51:04 DEBUG CreateObj:37 - createSchedule [3]: END { id=null, Week=SATURDAY, DateSchedule=2024-04-23, TimeBegin=09:20:30, TimeEnd=18:23:20, StatSchedule=FREE}
+2024-02-05 19:51:04 DEBUG CreateObjTest:29 - createSchedule: [2] end 
+2024-02-05 19:51:04 DEBUG CreateObjTest:182 - createCalcReportNegativity: [1] start working
+2024-02-05 19:51:04 DEBUG CreateObj:150 - createCalcReport [1]: процесс создания расписания
+2024-02-05 19:51:04 DEBUG CreateObjTest:196 - createCalcReportNegativity: [2] end 
+2024-02-05 19:51:04 DEBUG CreateObjTest:109 - createScheduleNegativity: [1] start working
+2024-02-05 19:51:04 DEBUG CreateObj:26 - createSchedule [1]: процесс создания расписания
+2024-02-05 19:51:04 DEBUG CreateObj:37 - createSchedule [3]: END { id=null, Week=SATURDAY, DateSchedule=2024-04-23, TimeBegin=09:20:30, TimeEnd=18:23:20, StatSchedule=FREE}
+2024-02-05 19:51:04 DEBUG CreateObjTest:119 - createScheduleNegativity: [2] end 
+2024-02-05 19:51:04 DEBUG CreateObjTest:70 - createDoctor: [1] start working
+2024-02-05 19:51:04 DEBUG CreateObj:119 - createPatient [1]: процесс создания расписания
+2024-02-05 19:51:04 DEBUG CreateObj:135 - createPatient [3]: END { id=null, experience=12, avgPatient=12.3, qualification='Med', specialization='Genikolog', linkPreparation=[], linkSchedule=[], fio='Sim Artem Evgen', age=29, Gender='M', statusPerson=DOCTOR}
+2024-02-05 19:51:04 DEBUG CreateObjTest:49 - createPatient: [1] start working
+2024-02-05 19:51:04 DEBUG CreateObj:84 - createPatient [1]: процесс создания расписания
+2024-02-05 19:51:04 DEBUG CreateObj:101 - createPatient [3]: END { id=null, cellsBlood=6.6, hemoglobin=170.3, platelets=200.0, glucose=80.3, cholesterol=5.3, statusVisit=IN, fio='Bob', age=23, Gender='M', statusPerson=PATIENT}
+2024-02-05 19:51:04 DEBUG CreateObjTest:65 - createPatient: [2] end 
+2024-02-05 19:51:04 DEBUG CreateObjTest:162 - createDoctorNegativity: [1] start working
+2024-02-05 19:51:04 DEBUG CreateObj:119 - createPatient [1]: процесс создания расписания
+2024-02-05 19:51:04 DEBUG CreateObj:135 - createPatient [3]: END { id=null, experience=12, avgPatient=12.3, qualification='Med', specialization='Genikolog', linkPreparation=[], linkSchedule=[], fio='Sim Artem Evgen', age=29, Gender='M', statusPerson=DOCTOR}
+2024-02-05 19:51:04 DEBUG CreateObjTest:177 - createDoctorNegativity: [2] end 
+2024-02-05 19:52:00 DEBUG CreateObjTest:142 - createPatientNegativity: [1] start working
+2024-02-05 19:52:00 DEBUG CreateObj:84 - createPatient [1]: процесс создания расписания
+2024-02-05 19:52:00 DEBUG CreateObj:101 - createPatient [3]: END { id=null, cellsBlood=6.6, hemoglobin=170.3, platelets=200.0, glucose=80.3, cholesterol=5.3, statusVisit=IN, fio='Bob', age=23, Gender='M', statusPerson=PATIENT}
+2024-02-05 19:52:00 DEBUG CreateObjTest:159 - createPatientNegativity: [2] end 
+2024-02-05 19:52:00 DEBUG CreateObjTest:126 - createPreparationNegativity: [1] start working
+2024-02-05 19:52:00 DEBUG CreateObj:52 - createPreparation [1]: процесс создания расписания
+2024-02-05 19:52:00 DEBUG CreateObj:63 - createPreparation [3]: END  { id=null, NamePrep='Ubeprofen', DateEnd=2024-12-20, Dosage=2.3, StatusVisitPreparation=LOW, AboutPrep='this prep important'}
+2024-02-05 19:52:00 DEBUG CreateObjTest:137 - createPreparationNegativity: [2] end 
+2024-02-05 19:52:00 DEBUG CreateObjTest:34 - createPreparation: [1] start working
+2024-02-05 19:52:00 DEBUG CreateObj:52 - createPreparation [1]: процесс создания расписания
+2024-02-05 19:52:00 DEBUG CreateObj:63 - createPreparation [3]: END  { id=null, NamePrep='Ubeprofen', DateEnd=2024-12-20, Dosage=2.3, StatusVisitPreparation=LOW, AboutPrep='this prep important'}
+2024-02-05 19:52:00 DEBUG CreateObjTest:44 - createPreparation: [2] end 
+2024-02-05 19:52:00 DEBUG CreateObjTest:91 - createCalcReport: [1] start working
+2024-02-05 19:52:00 DEBUG CreateObj:150 - createCalcReport [1]: процесс создания расписания
+2024-02-05 19:52:00 DEBUG CreateObjTest:105 - createCalcReport: [2] end 
+2024-02-05 19:52:00 DEBUG CreateObjTest:20 - createSchedule: [1] start working
+2024-02-05 19:52:00 DEBUG CreateObj:26 - createSchedule [1]: процесс создания расписания
+2024-02-05 19:52:00 DEBUG CreateObj:37 - createSchedule [3]: END { id=null, Week=SATURDAY, DateSchedule=2024-04-23, TimeBegin=09:20:30, TimeEnd=18:23:20, StatSchedule=FREE}
+2024-02-05 19:52:00 DEBUG CreateObjTest:29 - createSchedule: [2] end 
+2024-02-05 19:52:00 DEBUG CreateObjTest:184 - createCalcReportNegativity: [1] start working
+2024-02-05 19:52:00 DEBUG CreateObj:150 - createCalcReport [1]: процесс создания расписания
+2024-02-05 19:52:00 DEBUG CreateObjTest:198 - createCalcReportNegativity: [2] end 
+2024-02-05 19:52:00 DEBUG CreateObjTest:111 - createScheduleNegativity: [1] start working
+2024-02-05 19:52:00 DEBUG CreateObj:26 - createSchedule [1]: процесс создания расписания
+2024-02-05 19:52:00 DEBUG CreateObj:37 - createSchedule [3]: END { id=null, Week=SATURDAY, DateSchedule=2024-04-23, TimeBegin=09:20:30, TimeEnd=18:23:20, StatSchedule=FREE}
+2024-02-05 19:52:00 DEBUG CreateObjTest:121 - createScheduleNegativity: [2] end 
+2024-02-05 19:52:00 DEBUG CreateObjTest:70 - createDoctor: [1] start working
+2024-02-05 19:52:00 DEBUG CreateObj:119 - createPatient [1]: процесс создания расписания
+2024-02-05 19:52:00 DEBUG CreateObj:135 - createPatient [3]: END { id=null, experience=12, avgPatient=12.3, qualification='Med', specialization='Genikolog', linkPreparation=[], linkSchedule=[], fio='Sim Artem Evgen', age=29, Gender='M', statusPerson=DOCTOR}
+2024-02-05 19:52:00 DEBUG CreateObjTest:86 - createDoctor: [2] end 
+2024-02-05 19:52:00 DEBUG CreateObjTest:49 - createPatient: [1] start working
+2024-02-05 19:52:00 DEBUG CreateObj:84 - createPatient [1]: процесс создания расписания
+2024-02-05 19:52:00 DEBUG CreateObj:101 - createPatient [3]: END { id=null, cellsBlood=6.6, hemoglobin=170.3, platelets=200.0, glucose=80.3, cholesterol=5.3, statusVisit=IN, fio='Bob', age=23, Gender='M', statusPerson=PATIENT}
+2024-02-05 19:52:00 DEBUG CreateObjTest:65 - createPatient: [2] end 
+2024-02-05 19:52:00 DEBUG CreateObjTest:164 - createDoctorNegativity: [1] start working
+2024-02-05 19:52:00 DEBUG CreateObj:119 - createPatient [1]: процесс создания расписания
+2024-02-05 19:52:00 DEBUG CreateObj:135 - createPatient [3]: END { id=null, experience=12, avgPatient=12.3, qualification='Med', specialization='Genikolog', linkPreparation=[], linkSchedule=[], fio='Sim Artem Evgen', age=29, Gender='M', statusPerson=DOCTOR}
+2024-02-05 19:52:00 DEBUG CreateObjTest:179 - createDoctorNegativity: [2] end 

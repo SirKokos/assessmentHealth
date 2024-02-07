@@ -1,18 +1,17 @@
 package ru.sfedu.assessmentHealth.api;
 
-import org.apache.commons.lang3.CharSet;
+
 import org.apache.commons.lang3.tuple.Pair;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import ru.sfedu.assessmentHealth.Const;
 import ru.sfedu.assessmentHealth.model.*;
-import ru.sfedu.assessmentHealth.utils.FIgenerateListFreeDoctor;
+
 import ru.sfedu.assessmentHealth.utils.ServisUtil;
 
-import java.awt.geom.Point2D;
+
 import java.io.*;
-import java.nio.charset.Charset;
-import java.nio.charset.StandardCharsets;
+
 import java.util.*;
 import java.util.function.BiPredicate;
 

@@ -15,32 +15,32 @@ public class BaseTest {
 
     protected CalcReport getCalcReport(){
         CalcReport calcReport = new CalcReport();
-        calcReport.setId(1);
-        calcReport.setFioPatient("Bob")
-                .setFioDoctor("Sim Artem Evgen")
-                .setBloodAnalysis(true)
-                .setGlucoseAnalysis(true)
-                .setArterialAnalysis(true)
+        calcReport.setId(Integer.valueOf(Const.TEST_CALC_REPORT_DATA_ID));
+        calcReport.setFioPatient(Const.TEST_CALC_REPORT_DATA_FIO_PATIENT)
+                .setFioDoctor(Const.TEST_CALC_REPORT_DATA_FIO_DOCTOR)
+                .setBloodAnalysis(Boolean.valueOf(Const.TEST_CALC_REPORT_DATA_BLOOD_ANALYSIS))
+                .setGlucoseAnalysis(Boolean.valueOf(Const.TEST_CALC_REPORT_DATA_GLUCOSE_ANALYSIS))
+                .setArterialAnalysis(Boolean.valueOf(Const.TEST_CALC_REPORT_DATA_ARTERIAL_ANALYSIS))
                 .setPatient(List.of(getPatient()))
                 .setDoctor(List.of(getDoctor()));
-        calcReport.setPrice(100.0);
+        calcReport.setPrice(Double.valueOf(Const.TEST_CALC_REPORT_DATA_PRICE));
         return calcReport;
     }
 
    protected Doctor getDoctor(){
        Doctor doctor = new Doctor();
 
-       doctor.setId(1);
+       doctor.setId(Integer.valueOf(Const.TEST_DOCTOR_DATA_ID));
 
-       doctor.setFio("Sim Artem Evgen")
-               .setAge(29)
-               .setGender("M")
-               .setStatusPerson(StatusPerson.DOCTOR);
+       doctor.setFio(Const.TEST_DOCTOR_DATA_FIO)
+               .setAge(Integer.valueOf(Const.TEST_DOCTOR_DATA_AGE))
+               .setGender(Const.TEST_DOCTOR_DATA_GENDER)
+               .setStatusPerson(StatusPerson.valueOf(Const.TEST_DOCTOR_DATA_STATUS_PERSON));
 
-       doctor.setExperience(12)
-               .setAvgPatient(12.3)
-               .setQualification("Med")
-               .setSpecialization("Genikolog");
+       doctor.setExperience(Integer.valueOf(Const.TEST_DOCTOR_DATA_EXP))
+               .setAvgPatient(Double.valueOf(Const.TEST_DOCTOR_DATA_AVG_PATIENT))
+               .setQualification(Const.TEST_DOCTOR_DATA_QUALIFICATION)
+               .setSpecialization(Const.TEST_DOCTOR_DATA_SPECIALIZATION);
 
 
        List<Schedule> s = new ArrayList<>();
@@ -59,19 +59,19 @@ public class BaseTest {
 
    protected Patient getPatient(){
        Patient patient = new Patient();
-       patient.setId(1);
+       patient.setId(Integer.valueOf(Const.TEST_PATIENT_DATA_ID));
 
-       patient.setFio("Bob")
-               .setAge(23)
-               .setGender("M")
-               .setStatusPerson(StatusPerson.PATIENT);
+       patient.setFio(Const.TEST_PATIENT_DATA_FIO)
+               .setAge(Integer.valueOf(Const.TEST_PATIENT_DATA_AGE))
+               .setGender(Const.TEST_PATIENT_DATA_GENDER)
+               .setStatusPerson(StatusPerson.valueOf(Const.TEST_PATIENT_DATA_STATUS_PERSON));
 
-       patient.setCellsBlood(6.6)
-               .setHemoglobin(170.3)
-               .setPlatelets(200.)
-               .setGlucose(80.3)
-               .setCholesterol(5.3)
-               .setStatusVisit(StatusPatient.IN);
+       patient.setCellsBlood(Double.valueOf(Const.TEST_PATIENT_DATA_CELLS_BLOOD))
+               .setHemoglobin(Double.valueOf(Const.TEST_PATIENT_DATA_HEMOGLOBIN))
+               .setPlatelets(Double.valueOf(Const.TEST_PATIENT_DATA_PLATELETS))
+               .setGlucose(Double.valueOf(Const.TEST_PATIENT_DATA_GLUCOSE))
+               .setCholesterol(Double.valueOf(Const.TEST_PATIENT_DATA_CHOLESTEROL))
+               .setStatusVisit(StatusPatient.valueOf(Const.TEST_PATIENT_DATA_STATUS_PATIENT));
        return patient;
    }
 
@@ -79,13 +79,13 @@ public class BaseTest {
    protected Preparation getPreparation(){
        Preparation preparation = new Preparation();
 
-       preparation.setId(1);
+       preparation.setId(Integer.valueOf(Const.TEST_PREPARATION_DATA_ID));
 
-       preparation.setNamePrep("Ubeprofen")
-               .setDateEnd("2024-12-20")
-               .setDosage(2.3)
-               .setStatusVisitPreparation(StatusPreparation.LOW)
-               .setAboutPrep("this prep important");
+       preparation.setNamePrep(Const.TEST_PREPARATION_DATA_NAME)
+               .setDateEnd(Const.TEST_PREPARATION_DATA_DATE_END)
+               .setDosage(Double.valueOf(Const.TEST_PREPARATION_DATA_DOSAGE))
+               .setStatusVisitPreparation(StatusPreparation.valueOf(Const.TEST_PREPARATION_DATA_VISIT))
+               .setAboutPrep(Const.TEST_PREPARATION_DATA_ABOUT);
 
        return preparation;
    }
@@ -93,13 +93,13 @@ public class BaseTest {
 
    protected Schedule getSchedule(){
        Schedule schedule = new Schedule();
-       schedule.setId(1);
+       schedule.setId(Integer.valueOf(Const.TEST_SCHEDULE_DATA_ID));
 
-       schedule.setWeek(DateWeek.SATURDAY)
-               .setDateSchedule("2024-04-23")
-               .setTimeBegin("9:20:30")
-               .setTimeEnd("18:23:20")
-               .setStatSchedule(StatusSchedule.FREE);
+       schedule.setWeek(DateWeek.valueOf(Const.TEST_SCHEDULE_DATA_WEEK))
+               .setDateSchedule(Const.TEST_SCHEDULE_DATA_DATE)
+               .setTimeBegin(Const.TEST_SCHEDULE_DATA_BEGIN)
+               .setTimeEnd(Const.TEST_SCHEDULE_DATA_END)
+               .setStatSchedule(StatusSchedule.valueOf(Const.TEST_SCHEDULE_DATA_STATUS));
 
        return schedule;
    }

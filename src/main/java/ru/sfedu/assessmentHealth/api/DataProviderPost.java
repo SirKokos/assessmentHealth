@@ -1,8 +1,5 @@
 package ru.sfedu.assessmentHealth.api;
 
-import com.opencsv.CSVReader;
-import com.opencsv.bean.CsvToBean;
-import com.opencsv.bean.CsvToBeanBuilder;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import ru.sfedu.assessmentHealth.Const;
@@ -10,8 +7,7 @@ import ru.sfedu.assessmentHealth.model.*;
 import ru.sfedu.assessmentHealth.utils.PostgresUtils;
 import ru.sfedu.assessmentHealth.utils.PropertyConfig;
 
-import java.io.FileReader;
-import java.io.IOException;
+
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;

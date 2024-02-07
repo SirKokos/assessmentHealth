@@ -292,4 +292,61 @@ public class Const {
 
     public static final Integer TEST_DATA_ASSESSMENT_HEALTH = 55;
     public static final Double TEST_DATA_PRICE_CALCULATE_PRICE = 907.0;
+
+
+
+    public static final String TEST_SCHEDULE_DATA_ID = "1";
+    public static final String TEST_SCHEDULE_DATA_WEEK = "SATURDAY";
+    public static final String TEST_SCHEDULE_DATA_DATE = "2024-04-23";
+    public static final String TEST_SCHEDULE_DATA_BEGIN = "9:20:30";
+    public static final String TEST_SCHEDULE_DATA_END = "18:23:20";
+    public static final String TEST_SCHEDULE_DATA_STATUS = "FREE";
+
+
+    public static final String TEST_PREPARATION_DATA_ID = "1";
+    public static final String TEST_PREPARATION_DATA_NAME = "Ubeprofen";
+    public static final String TEST_PREPARATION_DATA_DATE_END = "2024-12-20";
+    public static final String TEST_PREPARATION_DATA_DOSAGE = "2.3";
+    public static final String TEST_PREPARATION_DATA_VISIT = "LOW";
+    public static final String TEST_PREPARATION_DATA_ABOUT = "this prep important";
+
+
+
+    public static final String TEST_PATIENT_DATA_ID = "1";
+    public static final String TEST_PATIENT_DATA_FIO = "Bob";
+    public static final String TEST_PATIENT_DATA_AGE = "23";
+    public static final String TEST_PATIENT_DATA_GENDER = "M";
+    public static final String TEST_PATIENT_DATA_STATUS_PERSON = "PATIENT";
+    public static final String TEST_PATIENT_DATA_CELLS_BLOOD = "6.6";
+    public static final String TEST_PATIENT_DATA_HEMOGLOBIN = "170.3";
+    public static final String TEST_PATIENT_DATA_PLATELETS = "200.";
+    public static final String TEST_PATIENT_DATA_GLUCOSE = "80.3";
+    public static final String TEST_PATIENT_DATA_CHOLESTEROL = "5.3";
+    public static final String TEST_PATIENT_DATA_STATUS_PATIENT = "IN";
+
+
+    public static final String TEST_DOCTOR_DATA_ID = "1";
+    public static final String TEST_DOCTOR_DATA_FIO = "Sim Artem Evgen";
+    public static final String TEST_DOCTOR_DATA_AGE = "29";
+    public static final String TEST_DOCTOR_DATA_GENDER = "M";
+    public static final String TEST_DOCTOR_DATA_STATUS_PERSON = "DOCTOR";
+    public static final String TEST_DOCTOR_DATA_EXP = "12";
+    public static final String TEST_DOCTOR_DATA_AVG_PATIENT = "12.3";
+    public static final String TEST_DOCTOR_DATA_QUALIFICATION = "Med";
+    public static final String TEST_DOCTOR_DATA_SPECIALIZATION = "Genikolog";
+
+
+
+    public static final String TEST_CALC_REPORT_DATA_ID = "1";
+    public static final String TEST_CALC_REPORT_DATA_FIO_PATIENT = "Bob";
+    public static final String TEST_CALC_REPORT_DATA_FIO_DOCTOR = "Sim Artem Evgen";
+    public static final String TEST_CALC_REPORT_DATA_BLOOD_ANALYSIS = "true";
+    public static final String TEST_CALC_REPORT_DATA_GLUCOSE_ANALYSIS = "true";
+    public static final String TEST_CALC_REPORT_DATA_ARTERIAL_ANALYSIS = "true";
+    public static final String TEST_CALC_REPORT_DATA_PRICE = "100.0";
+
+
+
+
+
 }

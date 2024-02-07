@@ -11,6 +11,17 @@ public class CreateObj {
     private static final Logger log = LogManager.getLogger(CreateObj.class.getName());
 
 
+    /**
+     *
+     * Метод для создания объекта. Нужен для перевода string параметров из main в нужные типы данных
+     *
+     * @param dateWeek День недели
+     * @param dateSchedule - Дата
+     * @param timeBegin - начало работы
+     * @param timeEnd - конец работы
+     * @param statSchedule - Статус расписания
+     * @return schedule - это и есть наш объект
+     */
     public static Schedule createSchedule(String dateWeek,String dateSchedule,String timeBegin,String timeEnd,String statSchedule){
        log.debug("createSchedule [1]: процесс создания расписания");
         Schedule schedule = new Schedule();
@@ -28,6 +39,15 @@ public class CreateObj {
     }
 
 
+    /**
+     * Метод для создания объекта. Нужен для перевода string параметров из main в нужные типы данных
+     * @param namePrep Название препарата
+     * @param dateEnd Конец годности товара
+     * @param dosage Доза
+     * @param statusPrep Статус препарата
+     * @param aboutPrep Краткая информация
+     * @return preparation - это и есть наш объект
+     */
     public static Preparation createPreparation(String namePrep,String dateEnd,String dosage,String statusPrep,String aboutPrep){
         log.debug("createPreparation [1]: процесс создания расписания");
         Preparation preparation = new Preparation();
@@ -44,6 +64,22 @@ public class CreateObj {
         return preparation;
     }
 
+    /**
+     *
+     * Метод для создания объекта. Нужен для перевода string параметров из main в нужные типы данных
+     *
+     * @param fio Полное Имя фамилия отчество
+     * @param age Возраст
+     * @param gender пол
+     * @param statusPerson Статус человека
+     * @param cellsBlood  эритроциты
+     * @param hemoglobin гемоглобин
+     * @param platelets тромбоциты
+     * @param glucose глюкоза
+     * @param cholesterol холестерин
+     * @param statusVisit - статус визита
+     * @return patient это и есть наш объект
+     */
     public static Patient createPatient(String fio,String age,String gender,String statusPerson,String cellsBlood,String hemoglobin,String platelets,String glucose,String cholesterol,String statusVisit){
         log.debug("createPatient [1]: процесс создания расписания");
         Patient patient = new Patient();
@@ -77,7 +113,7 @@ public class CreateObj {
      * @param avgPatient - Среднее количество пациентов
      * @param qualification - Квалификация
      * @param special - Специализация
-     * @return Doctor
+     * @return Doctor это и есть наш объект
      */
     public static Doctor createDoctor(String fio,String age,String gender,String statusPerson,String exp,String avgPatient,String qualification,String special){
         log.debug("createPatient [1]: процесс создания расписания");
@@ -100,6 +136,16 @@ public class CreateObj {
         return doctor;
     }
 
+    /**
+     * Метод для создания объекта. Нужен для перевода string параметров из main в нужные типы данных
+     *
+     * @param fioPatient фио пациента
+     * @param fioDoctor фио доктора
+     * @param blood кровь
+     * @param glucose глюкоза
+     * @param arterial артерии
+     * @return calcReport это и есть наш объект
+     */
     public static CalcReport createCalcReport(String fioPatient,String fioDoctor, String blood, String glucose,String arterial){
         log.debug("createCalcReport [1]: процесс создания расписания");
         CalcReport calcReport = new CalcReport();
