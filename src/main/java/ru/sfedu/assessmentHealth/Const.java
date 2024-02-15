@@ -359,6 +359,13 @@ public class Const {
     public static final Integer POINT_CHOLESTEROL_HEALTH = 10;
 
 
+    public static final Integer TRIGGER_POINT_HEALTH = 60;
+    public static final Integer TRIGGER_POINT_HEALTH_POSITIVE = 85;
+    public static final Integer AVG_DIV_COF = 2;
+
+    public static final Double COF_LOW = 0.0;
+    public static final Double COF_UP = 5.0;
+
 
 
 

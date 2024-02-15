@@ -1,7 +1,7 @@
 package ru.sfedu.assessmentHealth.api;
 
 
-import org.apache.commons.lang3.tuple.Pair;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import ru.sfedu.assessmentHealth.Const;
@@ -13,10 +13,10 @@ import ru.sfedu.assessmentHealth.utils.ServisUtil;
 import java.io.*;
 
 import java.util.*;
-import java.util.function.BiPredicate;
+
 
 import static ru.sfedu.assessmentHealth.utils.ServisUtil.accumRangeCheckerValuesAssessmentHealth;
-import static ru.sfedu.assessmentHealth.utils.ServisUtil.rangeCheckerValuesAssessmentHealth;
+
 
 public class Servis {
 
@@ -58,7 +58,6 @@ public class Servis {
      */
     protected Map<String,Integer> assessmentHealth(Patient patient){
         log.debug("assessmentHealth [1]: start working");
-//        Integer health = 0;
         Map<String,Integer> result = new HashMap<>();
         Integer age = patient.getAge();
         Double redBloodCellsCount = patient.getCellsBlood();
@@ -67,14 +66,7 @@ public class Servis {
         Double glucoseLevel = patient.getGlucose();
         Double cholesterolLevel = patient.getCholesterol();
         String gender = patient.getGender();
-//        Pair<Map<String, Integer>, Integer> pairRedBloodCellsCount;
-//        Pair<Map<String, Integer>, Integer> pairHemoglobin;
-//        Pair<Map<String, Integer>, Integer> pairPlatelets;
-//        Pair<Map<String, Integer>, Integer> pairGlucose;
-//        Pair<Map<String, Integer>, Integer> pairCholesterol;
         try {
-//            if (age < Const.LIMIT_AGE_SERVIS) {health += Const.POINT_AGE_SERVIS;}
-
             result = accumRangeCheckerValuesAssessmentHealth(
                     age,
                     redBloodCellsCount,
@@ -83,61 +75,6 @@ public class Servis {
                     glucoseLevel,
                     cholesterolLevel,
                     gender);
-//            pairRedBloodCellsCount = rangeCheckerValuesAssessmentHealth(
-//                    result,
-//                    Const.VALID_CELLS_BLOOD,
-//                    redBloodCellsCount,
-//                    Const.POINT_BLOOD_HEALTH,
-//                    Const.RESULT_CELLS_BLOOD);
-//            health += pairRedBloodCellsCount.getRight();
-//
-//            if(gender.equals(Const.GENDER_SERVIS_M)){
-//                pairHemoglobin = rangeCheckerValuesAssessmentHealth(
-//                        pairRedBloodCellsCount.getLeft(),
-//                        Const.VALID_HEMOGLOBIN_M,
-//                        hemoglobinLevel,
-//                        Const.POINT_HEMOGLOBIN_HEALTH,
-//                        Const.RESULT_HEMOGLOBIN
-//                        );
-//                health += pairHemoglobin.getRight();
-//            }else {
-//                pairHemoglobin = rangeCheckerValuesAssessmentHealth(
-//                        pairRedBloodCellsCount.getLeft(),
-//                        Const.VALID_HEMOGLOBIN_G,
-//                        hemoglobinLevel,
-//                        Const.POINT_HEMOGLOBIN_HEALTH,
-//                        Const.RESULT_HEMOGLOBIN
-//                );
-//                health += pairHemoglobin.getRight();
-//            }
-//            pairPlatelets = rangeCheckerValuesAssessmentHealth(
-//                    pairHemoglobin.getLeft(),
-//                    Const.VALID_PLATELETS,
-//                    plateletCount,
-//                    Const.POINT_PLATELETS_HEALTH,
-//                    Const.RESULT_PLATELETS
-//            );
-//            health += pairPlatelets.getRight();
-//
-//            pairGlucose = rangeCheckerValuesAssessmentHealth(
-//                    pairPlatelets.getLeft(),
-//                    Const.VALID_GLUCOSE,
-//                    glucoseLevel,
-//                    Const.POINT_GLUCOSE_HEALTH,
-//                    Const.RESULT_GLUCOSE
-//                    );
-//            health += pairGlucose.getRight();
-//
-//            pairCholesterol = rangeCheckerValuesAssessmentHealth(
-//                    pairGlucose.getLeft(),
-//                    Const.VALID_CHOLESTEROL,
-//                    cholesterolLevel,
-//                    Const.POINT_CHOLESTEROL_HEALTH,
-//                    Const.RESULT_CHOLESTEROL
-//            );
-//            health += pairCholesterol.getRight();
-//            result = pairCholesterol.getLeft();
-//            result.put(Const.RESULT_HEALTH,health);
         }catch (Exception e){
             log.error("assessmentHealth [2]: error {}",e.getMessage());
         }
@@ -158,7 +95,7 @@ public class Servis {
         List<String> result = new ArrayList<>();
 
         try{
-            if(dictPatient.get(Const.RESULT_HEALTH)<85){
+            if(dictPatient.get(Const.RESULT_HEALTH)<Const.TRIGGER_POINT_HEALTH_POSITIVE){
                 for(String i : dictPatient.keySet()){
                     if(dictPatient.get(i) == 0){
                         switch (i){
@@ -200,7 +137,7 @@ public class Servis {
              OutputStreamWriter osw = new OutputStreamWriter(fos,Const.UNICODE_RUS);
              BufferedWriter writer = new BufferedWriter(osw)){
 
-            if(mapAssessmentHealth.get(Const.RESULT_HEALTH)<60 && patient.getStatusVisit().equals(StatusPatient.OUT)){
+            if(mapAssessmentHealth.get(Const.RESULT_HEALTH)<Const.TRIGGER_POINT_HEALTH && patient.getStatusVisit().equals(StatusPatient.OUT)){
 
                 for (var value : mapDoctorIdAndSchedule.entrySet() ) {
                     writer.write(value.getKey() + "===>" + value.getValue()+"\n");
@@ -249,7 +186,7 @@ public class Servis {
         List<Doctor> ListLiptologDoctor;
 
         try {
-            if(mapAssessmentHealth.get(Const.RESULT_HEALTH) < 60){
+            if(mapAssessmentHealth.get(Const.RESULT_HEALTH) < Const.TRIGGER_POINT_HEALTH){
                 ListGemotologDoctor = ServisUtil.generateListDoctor(dataProvider,mapAssessmentHealth,Const.RESULT_CELLS_BLOOD,Const.DOCTOR_TYPE_GEMOTOLOG);
                 ListLiptologDoctor = ServisUtil.generateListDoctor(dataProvider,mapAssessmentHealth,Const.RESULT_HEMOGLOBIN,Const.DOCTOR_TYPE_LIPIDOLOG);
                 ListEndocriologDoctor = ServisUtil.generateListDoctor(dataProvider,mapAssessmentHealth,Const.RESULT_GLUCOSE,Const.DOCTOR_TYPE_ENDOCRINOLOG);
@@ -282,11 +219,11 @@ public class Servis {
      */
     protected Double calcExpDoctor(Doctor doctor){
         log.debug("calcExpDoctor [1]: start working");
-        Double cof = Const.DOCTOR_PRIORITY.contains(doctor.getSpecialization()) ? 5.0 :0.0 ;
+        Double cof = Const.DOCTOR_PRIORITY.contains(doctor.getSpecialization()) ? Const.COF_UP :Const.COF_LOW ;
         try {
             Integer experience = doctor.getExperience();
             Double avgPatient = doctor.getAvgPatient();
-            cof += (experience + avgPatient/2)/2;
+            cof += (experience + avgPatient/Const.AVG_DIV_COF)/Const.AVG_DIV_COF;
         }catch (Exception e){
             log.error("calcExpDoctor [2]: error {}",e.getMessage());
         }
