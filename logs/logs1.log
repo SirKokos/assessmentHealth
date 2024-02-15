@@ -15950,3 +15950,152 @@ Message: XML document structures must start and end within the same entity.
 2024-02-05 19:52:00 DEBUG CreateObj:119 - createPatient [1]: процесс создания расписания
 2024-02-05 19:52:00 DEBUG CreateObj:135 - createPatient [3]: END { id=null, experience=12, avgPatient=12.3, qualification='Med', specialization='Genikolog', linkPreparation=[], linkSchedule=[], fio='Sim Artem Evgen', age=29, Gender='M', statusPerson=DOCTOR}
 2024-02-05 19:52:00 DEBUG CreateObjTest:179 - createDoctorNegativity: [2] end 
+2024-02-15 21:05:46 DEBUG ServisUtilTest:62 - rangeCheckerValuesAssessmentHealthTest [1]: start working
+2024-02-15 21:05:46 DEBUG ServisUtil:136 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:05:46 DEBUG ServisUtil:151 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0},0)
+2024-02-15 21:05:46 DEBUG ServisUtil:136 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:05:46 DEBUG ServisUtil:151 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0},0)
+2024-02-15 21:05:46 DEBUG ServisUtilTest:77 - rangeCheckerValuesAssessmentHealthTest [2]: end working 
+ actualRedBloodCellsCount = ({CellsBlood=0},0) 
+ actualHemoglobinLevel = ({CellsBlood=0},0)
+2024-02-15 21:08:11 DEBUG ServisUtilTest:62 - rangeCheckerValuesAssessmentHealthTest [1]: start working
+2024-02-15 21:08:11 DEBUG ServisUtil:136 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:08:11 DEBUG ServisUtil:151 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0},0)
+2024-02-15 21:08:11 DEBUG ServisUtil:136 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:08:11 DEBUG ServisUtil:151 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0},0)
+2024-02-15 21:08:11 DEBUG ServisUtilTest:85 - rangeCheckerValuesAssessmentHealthTest [2]: end working 
+ actualRedBloodCellsCount = ({CellsBlood=0, Hemoglobin=0},0) 
+ actualHemoglobinLevel = ({CellsBlood=0, Hemoglobin=0},0)
+2024-02-15 21:24:07 DEBUG ServisUtilTest:62 - rangeCheckerValuesAssessmentHealthTest [1]: start working
+2024-02-15 21:24:07 DEBUG ServisUtil:136 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:24:07 DEBUG ServisUtil:151 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=1},25)
+2024-02-15 21:24:07 DEBUG ServisUtil:136 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:24:07 DEBUG ServisUtil:151 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=1, Hemoglobin=1},20)
+2024-02-15 21:24:07 DEBUG ServisUtilTest:85 - rangeCheckerValuesAssessmentHealthTest [2]: end working 
+ actualRedBloodCellsCount = ({CellsBlood=1, Hemoglobin=1},25) 
+ actualHemoglobinLevel = ({CellsBlood=1, Hemoglobin=1},20)
+2024-02-15 21:25:29 DEBUG ServisUtilTest:62 - rangeCheckerValuesAssessmentHealthTest [1]: start working
+2024-02-15 21:25:29 DEBUG ServisUtil:136 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:25:29 DEBUG ServisUtil:151 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=1},25)
+2024-02-15 21:25:29 DEBUG ServisUtil:136 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:25:29 DEBUG ServisUtil:151 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=1, Hemoglobin=1},20)
+2024-02-15 21:26:06 DEBUG ServisUtilTest:62 - rangeCheckerValuesAssessmentHealthTest [1]: start working
+2024-02-15 21:26:06 DEBUG ServisUtil:136 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:26:06 DEBUG ServisUtil:151 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=1},25)
+2024-02-15 21:26:06 DEBUG ServisUtil:136 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:26:06 DEBUG ServisUtil:151 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=1, Hemoglobin=1},20)
+2024-02-15 21:26:06 DEBUG ServisUtilTest:83 - rangeCheckerValuesAssessmentHealthTest [2]: end working 
+ actualRedBloodCellsCount = ({CellsBlood=1, Hemoglobin=1},25) 
+ actualHemoglobinLevel = ({CellsBlood=1, Hemoglobin=1},20)
+2024-02-15 21:27:36 DEBUG ServisUtilTest:87 - rangeCheckerValuesAssessmentHealthTestNegativity [1]: start working
+2024-02-15 21:27:36 DEBUG ServisUtilTest:107 - rangeCheckerValuesAssessmentHealthTestNegativity [2]: end working 
+ actualRedBloodCellsCount = {} 
+ actualHemoglobinLevel = {}
+2024-02-15 21:28:15 DEBUG ServisUtilTest:87 - rangeCheckerValuesAssessmentHealthTestNegativity [1]: start working
+2024-02-15 21:28:15 DEBUG ServisUtilTest:108 - rangeCheckerValuesAssessmentHealthTestNegativity [2]: end working 
+ actualRedBloodCellsCount = {} 
+ actualHemoglobinLevel = {}
+2024-02-15 21:28:53 DEBUG ServisUtilTest:87 - rangeCheckerValuesAssessmentHealthTestNegativity [1]: start working
+2024-02-15 21:28:53 DEBUG ServisUtilTest:108 - rangeCheckerValuesAssessmentHealthTestNegativity [2]: end working 
+ actualRedBloodCellsCount = {} 
+ actualHemoglobinLevel = {}
+2024-02-15 21:30:00 DEBUG ServisUtilTest:87 - rangeCheckerValuesAssessmentHealthTestNegativity [1]: start working
+2024-02-15 21:30:00 DEBUG ServisUtilTest:108 - rangeCheckerValuesAssessmentHealthTestNegativity [2]: end working 
+ actualRedBloodCellsCount = {} 
+ actualHemoglobinLevel = {}
+2024-02-15 21:31:01 DEBUG ServisUtilTest:87 - rangeCheckerValuesAssessmentHealthTestNegativity [1]: start working
+2024-02-15 21:31:01 DEBUG ServisUtil:136 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:31:01 DEBUG ServisUtil:151 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=1},25)
+2024-02-15 21:31:01 DEBUG ServisUtil:136 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:31:01 DEBUG ServisUtil:151 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=1, Hemoglobin=1},20)
+2024-02-15 21:31:01 DEBUG ServisUtilTest:108 - rangeCheckerValuesAssessmentHealthTestNegativity [2]: end working 
+ actualRedBloodCellsCount = ({CellsBlood=1, Hemoglobin=1},25) 
+ actualHemoglobinLevel = ({CellsBlood=1, Hemoglobin=1},20)
+2024-02-15 21:48:19 DEBUG ServisTest:23 - assessmentHealth [1]: Start working Test
+2024-02-15 21:48:19 DEBUG Servis:59 - assessmentHealth [1]: start working
+2024-02-15 21:48:19 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:48:19 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=1},25)
+2024-02-15 21:48:19 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:48:19 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=1, Hemoglobin=1},20)
+2024-02-15 21:48:19 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:48:19 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=1, Hemoglobin=1, Platelets=1},15)
+2024-02-15 21:48:19 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:48:19 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=1, Hemoglobin=1, Glucose=1, Platelets=1},25)
+2024-02-15 21:48:19 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:48:19 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=1, Hemoglobin=1, Glucose=1, Platelets=1, Cholesterol=1},10)
+2024-02-15 21:48:19 DEBUG Servis:174 - assessmentHealth [3]: end working {CellsBlood=1, Health=100, Hemoglobin=1, Glucose=1, Platelets=1, Cholesterol=1}
+2024-02-15 21:49:29 DEBUG ServisTest:23 - assessmentHealth [1]: Start working Test
+2024-02-15 21:49:29 DEBUG Servis:59 - assessmentHealth [1]: start working
+2024-02-15 21:49:29 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:49:29 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0},0)
+2024-02-15 21:49:29 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:49:29 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0},0)
+2024-02-15 21:49:29 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:49:29 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0, Platelets=1},15)
+2024-02-15 21:49:29 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:49:29 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0, Glucose=1, Platelets=1},25)
+2024-02-15 21:49:29 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:49:29 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0, Glucose=1, Platelets=1, Cholesterol=1},10)
+2024-02-15 21:49:29 DEBUG Servis:174 - assessmentHealth [3]: end working {CellsBlood=0, Health=55, Hemoglobin=0, Glucose=1, Platelets=1, Cholesterol=1}
+2024-02-15 21:49:29 DEBUG ServisTest:26 - assessmentHealth [2]: end working Test
+2024-02-15 21:49:57 DEBUG ServisTest:23 - assessmentHealth [1]: Start working Test
+2024-02-15 21:49:57 DEBUG Servis:59 - assessmentHealth [1]: start working
+2024-02-15 21:49:57 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:49:57 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=1},25)
+2024-02-15 21:49:57 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:49:57 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=1, Hemoglobin=0},0)
+2024-02-15 21:49:57 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:49:57 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=1, Hemoglobin=0, Platelets=1},15)
+2024-02-15 21:49:57 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:49:57 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=1, Hemoglobin=0, Glucose=1, Platelets=1},25)
+2024-02-15 21:49:57 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:49:57 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=1, Hemoglobin=0, Glucose=1, Platelets=1, Cholesterol=1},10)
+2024-02-15 21:49:57 DEBUG Servis:174 - assessmentHealth [3]: end working {CellsBlood=1, Health=80, Hemoglobin=0, Glucose=1, Platelets=1, Cholesterol=1}
+2024-02-15 21:51:22 DEBUG ServisUtilTest:62 - rangeCheckerValuesAssessmentHealthTest [1]: start working
+2024-02-15 21:51:22 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:51:22 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=1},25)
+2024-02-15 21:51:22 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:51:22 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=1, Hemoglobin=0},0)
+2024-02-15 21:51:22 DEBUG ServisUtilTest:83 - rangeCheckerValuesAssessmentHealthTest [2]: end working 
+ actualRedBloodCellsCount = ({CellsBlood=1, Hemoglobin=0},25) 
+ actualHemoglobinLevel = ({CellsBlood=1, Hemoglobin=0},0)
+2024-02-15 21:51:38 DEBUG ServisTest:23 - assessmentHealth [1]: Start working Test
+2024-02-15 21:51:38 DEBUG Servis:59 - assessmentHealth [1]: start working
+2024-02-15 21:51:38 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:51:38 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=1},25)
+2024-02-15 21:51:38 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:51:38 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=1, Hemoglobin=0},0)
+2024-02-15 21:51:38 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:51:38 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=1, Hemoglobin=0, Platelets=1},15)
+2024-02-15 21:51:38 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:51:38 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=1, Hemoglobin=0, Glucose=1, Platelets=1},25)
+2024-02-15 21:51:38 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:51:38 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=1, Hemoglobin=0, Glucose=1, Platelets=1, Cholesterol=1},10)
+2024-02-15 21:51:38 DEBUG Servis:174 - assessmentHealth [3]: end working {CellsBlood=1, Health=80, Hemoglobin=0, Glucose=1, Platelets=1, Cholesterol=1}
+2024-02-15 21:52:46 DEBUG ServisUtilTest:62 - rangeCheckerValuesAssessmentHealthTest [1]: start working
+2024-02-15 21:52:46 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:52:46 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0},0)
+2024-02-15 21:52:46 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:52:46 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0},0)
+2024-02-15 21:53:02 DEBUG ServisUtilTest:62 - rangeCheckerValuesAssessmentHealthTest [1]: start working
+2024-02-15 21:53:02 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:53:02 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0},0)
+2024-02-15 21:53:02 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:53:02 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0},0)
+2024-02-15 21:53:02 DEBUG ServisUtilTest:83 - rangeCheckerValuesAssessmentHealthTest [2]: end working 
+ actualRedBloodCellsCount = ({CellsBlood=0, Hemoglobin=0},0) 
+ actualHemoglobinLevel = ({CellsBlood=0, Hemoglobin=0},0)
+2024-02-15 21:53:18 DEBUG ServisTest:23 - assessmentHealth [1]: Start working Test
+2024-02-15 21:53:18 DEBUG Servis:59 - assessmentHealth [1]: start working
+2024-02-15 21:53:18 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:53:18 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0},0)
+2024-02-15 21:53:18 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:53:18 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0},0)
+2024-02-15 21:53:18 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:53:18 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0, Platelets=1},15)
+2024-02-15 21:53:18 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:53:18 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0, Glucose=1, Platelets=1},25)
+2024-02-15 21:53:18 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:53:18 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0, Glucose=1, Platelets=1, Cholesterol=1},10)
+2024-02-15 21:53:18 DEBUG Servis:174 - assessmentHealth [3]: end working {CellsBlood=0, Health=55, Hemoglobin=0, Glucose=1, Platelets=1, Cholesterol=1}
+2024-02-15 21:53:18 DEBUG ServisTest:26 - assessmentHealth [2]: end working Test

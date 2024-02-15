@@ -1,6 +1,7 @@
 package ru.sfedu.assessmentHealth.utils;
 
 import org.apache.commons.collections.functors.PredicateTransformer;
+import org.apache.commons.lang3.tuple.Pair;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import ru.sfedu.assessmentHealth.Const;
@@ -11,10 +12,8 @@ import ru.sfedu.assessmentHealth.model.Preparation;
 import ru.sfedu.assessmentHealth.model.Schedule;
 import ru.sfedu.assessmentHealth.model.StatusSchedule;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
+import java.util.function.BiPredicate;
 
 public class ServisUtil {
     private static final Logger log = LogManager.getLogger(ServisUtil.class.getName());
@@ -116,6 +115,42 @@ public class ServisUtil {
 
         log.debug("getListPreparation [3]: end working");
         return preparations;
+    }
+
+
+    /**
+     * Метод нужен для поддержки метода assessmentHealth
+     * @param result Это словарь, который будет передавать значения здоровья
+     * @param validValuesRange Это из файла Const диапазоны допустимых значений
+     * @param patientResult Это параметры пациента, которые нужно проверить
+     * @param pointHealth  Это сколько балов стоит этот пункт
+     * @param nameParameter Это имя парамера, который проверяли
+     * @return Кортеж с на первом месте которого находится словарь а на 2 значение здоровья
+     */
+    public static Pair<Map<String,Integer>,Integer> rangeCheckerValuesAssessmentHealth(
+                                                                         Map<String,Integer> result,
+                                                                         Pair<Double,Double> validValuesRange,
+                                                                         Double patientResult,
+                                                                         Integer pointHealth,
+                                                                         String nameParameter)
+    {
+        log.debug("rangeCheckerValuesAssessmentHealth [1]: start working");
+        Map<String,Integer> resultMap = result;
+        Integer health = 0;
+        BiPredicate<Pair<Double,Double>,Double> check = (pair, analyse ) ->
+                (pair.getLeft() < analyse && pair.getRight() > analyse);
+        Pair<Map<String,Integer>,Integer> resultContainer = Pair.of(result,0);
+        try {
+            if(check.test(validValuesRange,patientResult)){
+                health += pointHealth;
+                resultMap.put(nameParameter,1);
+            }else {resultMap.put(nameParameter,0);}
+            resultContainer = Pair.of(resultMap,health);
+        }catch (Exception e){
+            log.error("rangeCheckerValuesAssessmentHealth [2]: ERROR {}",e.getMessage());
+        }
+        log.debug("rangeCheckerValuesAssessmentHealth [3]: END working {}",resultContainer);
+        return resultContainer;
     }
 
 

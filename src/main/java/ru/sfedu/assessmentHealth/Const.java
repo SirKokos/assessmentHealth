@@ -318,7 +318,7 @@ public class Const {
     public static final String TEST_PATIENT_DATA_GENDER = "M";
     public static final String TEST_PATIENT_DATA_STATUS_PERSON = "PATIENT";
     public static final String TEST_PATIENT_DATA_CELLS_BLOOD = "6.6";
-    public static final String TEST_PATIENT_DATA_HEMOGLOBIN = "170.3";
+    public static final String TEST_PATIENT_DATA_HEMOGLOBIN = "160.0";
     public static final String TEST_PATIENT_DATA_PLATELETS = "200.";
     public static final String TEST_PATIENT_DATA_GLUCOSE = "80.3";
     public static final String TEST_PATIENT_DATA_CHOLESTEROL = "5.3";
@@ -344,6 +344,23 @@ public class Const {
     public static final String TEST_CALC_REPORT_DATA_GLUCOSE_ANALYSIS = "true";
     public static final String TEST_CALC_REPORT_DATA_ARTERIAL_ANALYSIS = "true";
     public static final String TEST_CALC_REPORT_DATA_PRICE = "100.0";
+
+
+    public static final String GENDER_SERVIS_M = "M";
+
+    public static final Integer LIMIT_AGE_SERVIS = 55;
+
+
+    public static final Integer POINT_AGE_SERVIS = 5;
+    public static final Integer POINT_BLOOD_HEALTH = 25;
+    public static final Integer POINT_HEMOGLOBIN_HEALTH = 20;
+    public static final Integer POINT_PLATELETS_HEALTH = 15;
+    public static final Integer POINT_GLUCOSE_HEALTH = 25;
+    public static final Integer POINT_CHOLESTEROL_HEALTH = 10;
+
+
+
+
 
 
 

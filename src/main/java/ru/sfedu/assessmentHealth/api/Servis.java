@@ -15,6 +15,8 @@ import java.io.*;
 import java.util.*;
 import java.util.function.BiPredicate;
 
+import static ru.sfedu.assessmentHealth.utils.ServisUtil.rangeCheckerValuesAssessmentHealth;
+
 public class Servis {
 
     private static final Logger log = LogManager.getLogger(Servis.class.getName());
@@ -58,8 +60,8 @@ public class Servis {
         Integer health = 0;
         Map<String,Integer> result = new HashMap<>();
 
-        BiPredicate<Pair<Double,Double>,Double> check = (pair,analyse ) ->
-                                                        (pair.getLeft() < analyse && pair.getRight() > analyse);
+//        BiPredicate<Pair<Double,Double>,Double> check = (pair,analyse ) ->
+//                                                        (pair.getLeft() < analyse && pair.getRight() > analyse);
 
         Integer age = patient.getAge();
         Double redBloodCellsCount = patient.getCellsBlood();
@@ -69,45 +71,107 @@ public class Servis {
         Double cholesterolLevel = patient.getCholesterol();
         String gender = patient.getGender();
 
+        Pair<Map<String, Integer>, Integer> pairRedBloodCellsCount;
+        Pair<Map<String, Integer>, Integer> pairHemoglobin;
+        Pair<Map<String, Integer>, Integer> pairPlatelets;
+        Pair<Map<String, Integer>, Integer> pairGlucose;
+        Pair<Map<String, Integer>, Integer> pairCholesterol;
         try {
-            if (age < 55) {health += 5;}
+            if (age < Const.LIMIT_AGE_SERVIS) {health += Const.POINT_AGE_SERVIS;}
 
-            if(check.test(Const.VALID_CELLS_BLOOD,redBloodCellsCount) ){
-                health += 25;
-                result.put(Const.RESULT_CELLS_BLOOD,1);
-            }else {result.put(Const.RESULT_CELLS_BLOOD,0);}
 
-            if(gender.equals("M")){
-                if( check.test(Const.VALID_HEMOGLOBIN_M,hemoglobinLevel)){
-                    health += 20;
-                    result.put(Const.RESULT_HEMOGLOBIN,1);
-                }else {result.put(Const.RESULT_HEMOGLOBIN,0);}
+            pairRedBloodCellsCount = rangeCheckerValuesAssessmentHealth(
+                    result,
+                    Const.VALID_CELLS_BLOOD,
+                    redBloodCellsCount,
+                    Const.POINT_BLOOD_HEALTH,
+                    Const.RESULT_CELLS_BLOOD);
+            health += pairRedBloodCellsCount.getRight();
+//            if(check.test(Const.VALID_CELLS_BLOOD,redBloodCellsCount) ){
+//                health += Const.POINT_BLOOD_HEALTH;
+//                result.put(Const.RESULT_CELLS_BLOOD,1);
+//            }else {result.put(Const.RESULT_CELLS_BLOOD,0);}
+
+            if(gender.equals(Const.GENDER_SERVIS_M)){
+                pairHemoglobin = rangeCheckerValuesAssessmentHealth(
+                        pairRedBloodCellsCount.getLeft(),
+                        Const.VALID_HEMOGLOBIN_M,
+                        hemoglobinLevel,
+                        Const.POINT_HEMOGLOBIN_HEALTH,
+                        Const.RESULT_HEMOGLOBIN
+                        );
+                health += pairHemoglobin.getRight();
+//                if( check.test(Const.VALID_HEMOGLOBIN_M,hemoglobinLevel)){
+//                    health += Const.POINT_HEMOGLOBIN_HEALTH;
+//                    result.put(Const.RESULT_HEMOGLOBIN,1);
+//                }else {result.put(Const.RESULT_HEMOGLOBIN,0);}
+
             }else {
-                if(check.test(Const.VALID_HEMOGLOBIN_G,hemoglobinLevel)){
-                    health += 20;
-                    result.put(Const.RESULT_HEMOGLOBIN,1);
-                }else {result.put(Const.RESULT_HEMOGLOBIN,0);}
+                pairHemoglobin = rangeCheckerValuesAssessmentHealth(
+                        pairRedBloodCellsCount.getLeft(),
+                        Const.VALID_HEMOGLOBIN_G,
+                        hemoglobinLevel,
+                        Const.POINT_HEMOGLOBIN_HEALTH,
+                        Const.RESULT_HEMOGLOBIN
+                );
+                health += pairHemoglobin.getRight();
+//                if(check.test(Const.VALID_HEMOGLOBIN_G,hemoglobinLevel)){
+//                    health += Const.POINT_HEMOGLOBIN_HEALTH;
+//                    result.put(Const.RESULT_HEMOGLOBIN,1);
+//                }else {result.put(Const.RESULT_HEMOGLOBIN,0);}
             }
 
-            if(check.test(Const.VALID_PLATELETS,plateletCount)){
-                health += 15;
-                result.put(Const.RESULT_PLATELETS,1);
-            }else {result.put(Const.RESULT_PLATELETS,0);}
+            pairPlatelets = rangeCheckerValuesAssessmentHealth(
+                    pairHemoglobin.getLeft(),
+                    Const.VALID_PLATELETS,
+                    plateletCount,
+                    Const.POINT_PLATELETS_HEALTH,
+                    Const.RESULT_PLATELETS
+            );
+            health += pairPlatelets.getRight();
 
-            if(check.test(Const.VALID_GLUCOSE,glucoseLevel) ){
-                health += 25;
-                result.put(Const.RESULT_GLUCOSE,1);
-            }else {result.put(Const.RESULT_GLUCOSE,0);}
+//
+//            if(check.test(Const.VALID_PLATELETS,plateletCount)){
+//                health += Const.POINT_PLATELETS_HEALTH;
+//                result.put(Const.RESULT_PLATELETS,1);
+//            }else {result.put(Const.RESULT_PLATELETS,0);}
 
-            if(check.test(Const.VALID_CHOLESTEROL,cholesterolLevel)){
-                health += 10;
-                result.put(Const.RESULT_CHOLESTEROL,1);
-            }else {result.put(Const.RESULT_CHOLESTEROL,0);}
+            pairGlucose = rangeCheckerValuesAssessmentHealth(
+                    pairPlatelets.getLeft(),
+                    Const.VALID_GLUCOSE,
+                    glucoseLevel,
+                    Const.POINT_GLUCOSE_HEALTH,
+                    Const.RESULT_GLUCOSE
+                    );
+            health += pairGlucose.getRight();
+
+//            if(check.test(Const.VALID_GLUCOSE,glucoseLevel) ){
+//                health += Const.POINT_GLUCOSE_HEALTH;
+//                result.put(Const.RESULT_GLUCOSE,1);
+//            }else {result.put(Const.RESULT_GLUCOSE,0);}
+
+            pairCholesterol = rangeCheckerValuesAssessmentHealth(
+                    pairGlucose.getLeft(),
+                    Const.VALID_CHOLESTEROL,
+                    cholesterolLevel,
+                    Const.POINT_CHOLESTEROL_HEALTH,
+                    Const.RESULT_CHOLESTEROL
+            );
+            health += pairCholesterol.getRight();
+
+//            if(check.test(Const.VALID_CHOLESTEROL,cholesterolLevel)){
+//                health += Const.POINT_CHOLESTEROL_HEALTH;
+//                result.put(Const.RESULT_CHOLESTEROL,1);
+//            }else {result.put(Const.RESULT_CHOLESTEROL,0);}
+
+
+            result = pairCholesterol.getLeft();
             result.put(Const.RESULT_HEALTH,health);
+
         }catch (Exception e){
             log.error("assessmentHealth [2]: error {}",e.getMessage());
         }
-        log.debug("assessmentHealth [3]: end working");
+        log.debug("assessmentHealth [3]: end working {}",result);
 
         return result;
     }
