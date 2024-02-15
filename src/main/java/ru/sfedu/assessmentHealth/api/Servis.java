@@ -59,10 +59,6 @@ public class Servis {
         log.debug("assessmentHealth [1]: start working");
         Integer health = 0;
         Map<String,Integer> result = new HashMap<>();
-
-//        BiPredicate<Pair<Double,Double>,Double> check = (pair,analyse ) ->
-//                                                        (pair.getLeft() < analyse && pair.getRight() > analyse);
-
         Integer age = patient.getAge();
         Double redBloodCellsCount = patient.getCellsBlood();
         Double hemoglobinLevel = patient.getHemoglobin();
@@ -70,7 +66,6 @@ public class Servis {
         Double glucoseLevel = patient.getGlucose();
         Double cholesterolLevel = patient.getCholesterol();
         String gender = patient.getGender();
-
         Pair<Map<String, Integer>, Integer> pairRedBloodCellsCount;
         Pair<Map<String, Integer>, Integer> pairHemoglobin;
         Pair<Map<String, Integer>, Integer> pairPlatelets;
@@ -78,8 +73,6 @@ public class Servis {
         Pair<Map<String, Integer>, Integer> pairCholesterol;
         try {
             if (age < Const.LIMIT_AGE_SERVIS) {health += Const.POINT_AGE_SERVIS;}
-
-
             pairRedBloodCellsCount = rangeCheckerValuesAssessmentHealth(
                     result,
                     Const.VALID_CELLS_BLOOD,
@@ -87,10 +80,6 @@ public class Servis {
                     Const.POINT_BLOOD_HEALTH,
                     Const.RESULT_CELLS_BLOOD);
             health += pairRedBloodCellsCount.getRight();
-//            if(check.test(Const.VALID_CELLS_BLOOD,redBloodCellsCount) ){
-//                health += Const.POINT_BLOOD_HEALTH;
-//                result.put(Const.RESULT_CELLS_BLOOD,1);
-//            }else {result.put(Const.RESULT_CELLS_BLOOD,0);}
 
             if(gender.equals(Const.GENDER_SERVIS_M)){
                 pairHemoglobin = rangeCheckerValuesAssessmentHealth(
@@ -101,11 +90,6 @@ public class Servis {
                         Const.RESULT_HEMOGLOBIN
                         );
                 health += pairHemoglobin.getRight();
-//                if( check.test(Const.VALID_HEMOGLOBIN_M,hemoglobinLevel)){
-//                    health += Const.POINT_HEMOGLOBIN_HEALTH;
-//                    result.put(Const.RESULT_HEMOGLOBIN,1);
-//                }else {result.put(Const.RESULT_HEMOGLOBIN,0);}
-
             }else {
                 pairHemoglobin = rangeCheckerValuesAssessmentHealth(
                         pairRedBloodCellsCount.getLeft(),
@@ -115,12 +99,7 @@ public class Servis {
                         Const.RESULT_HEMOGLOBIN
                 );
                 health += pairHemoglobin.getRight();
-//                if(check.test(Const.VALID_HEMOGLOBIN_G,hemoglobinLevel)){
-//                    health += Const.POINT_HEMOGLOBIN_HEALTH;
-//                    result.put(Const.RESULT_HEMOGLOBIN,1);
-//                }else {result.put(Const.RESULT_HEMOGLOBIN,0);}
             }
-
             pairPlatelets = rangeCheckerValuesAssessmentHealth(
                     pairHemoglobin.getLeft(),
                     Const.VALID_PLATELETS,
@@ -129,12 +108,6 @@ public class Servis {
                     Const.RESULT_PLATELETS
             );
             health += pairPlatelets.getRight();
-
-//
-//            if(check.test(Const.VALID_PLATELETS,plateletCount)){
-//                health += Const.POINT_PLATELETS_HEALTH;
-//                result.put(Const.RESULT_PLATELETS,1);
-//            }else {result.put(Const.RESULT_PLATELETS,0);}
 
             pairGlucose = rangeCheckerValuesAssessmentHealth(
                     pairPlatelets.getLeft(),
@@ -145,11 +118,6 @@ public class Servis {
                     );
             health += pairGlucose.getRight();
 
-//            if(check.test(Const.VALID_GLUCOSE,glucoseLevel) ){
-//                health += Const.POINT_GLUCOSE_HEALTH;
-//                result.put(Const.RESULT_GLUCOSE,1);
-//            }else {result.put(Const.RESULT_GLUCOSE,0);}
-
             pairCholesterol = rangeCheckerValuesAssessmentHealth(
                     pairGlucose.getLeft(),
                     Const.VALID_CHOLESTEROL,
@@ -158,21 +126,12 @@ public class Servis {
                     Const.RESULT_CHOLESTEROL
             );
             health += pairCholesterol.getRight();
-
-//            if(check.test(Const.VALID_CHOLESTEROL,cholesterolLevel)){
-//                health += Const.POINT_CHOLESTEROL_HEALTH;
-//                result.put(Const.RESULT_CHOLESTEROL,1);
-//            }else {result.put(Const.RESULT_CHOLESTEROL,0);}
-
-
             result = pairCholesterol.getLeft();
             result.put(Const.RESULT_HEALTH,health);
-
         }catch (Exception e){
             log.error("assessmentHealth [2]: error {}",e.getMessage());
         }
         log.debug("assessmentHealth [3]: end working {}",result);
-
         return result;
     }
 

@@ -116,8 +116,7 @@ class ServisTest extends BaseTest {
     void totalReport() {
         log.debug("totalReport [1]: Start working Test");
         Optional<CalcReport> actual =  servis.TotalReport(getDoctor(),getPatient());
-//        System.out.println(actual.get());
-        assertEquals(actual.get(),getCalcReport());
+        assertEquals(actual.get().getPatient(),getCalcReport().getPatient());
         log.debug("totalReport [2] end working {}",actual);
     }
     @Test

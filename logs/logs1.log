@@ -16099,3 +16099,516 @@ Message: XML document structures must start and end within the same entity.
 2024-02-15 21:53:18 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0, Glucose=1, Platelets=1, Cholesterol=1},10)
 2024-02-15 21:53:18 DEBUG Servis:174 - assessmentHealth [3]: end working {CellsBlood=0, Health=55, Hemoglobin=0, Glucose=1, Platelets=1, Cholesterol=1}
 2024-02-15 21:53:18 DEBUG ServisTest:26 - assessmentHealth [2]: end working Test
+2024-02-15 21:56:05 DEBUG ServisTest:141 - calculatePrice [1]: Start working Test
+2024-02-15 21:56:05 DEBUG Servis:366 - calculatePrice [1]: start working
+2024-02-15 21:56:05 DEBUG Servis:315 - calcExpDoctor [1]: start working
+2024-02-15 21:56:05 DEBUG Servis:324 - calcExpDoctor [3]: end working
+2024-02-15 21:56:05 DEBUG Servis:336 - TotalReport [1]: start working
+2024-02-15 21:56:05 DEBUG Servis:351 - TotalReport [3]: end working
+2024-02-15 21:56:05 DEBUG Servis:381 - calculatePrice [3]: end working
+2024-02-15 21:56:05 DEBUG ServisTest:144 - calculatePrice [2] end working Optional[{ id=null, fioPatient='Bob', fioDoctor='Sim Artem Evgen', bloodAnalysis=true, glucoseAnalysis=true, arterialAnalysis=true, patient=[{ id=1, cellsBlood=6.6, hemoglobin=160.0, platelets=200.0, glucose=80.3, cholesterol=5.3, statusVisit=IN, fio='Bob', age=23, Gender='M', statusPerson=PATIENT}], doctor=[{ id=1, experience=12, avgPatient=12.3, qualification='Med', specialization='Genikolog', linkPreparation=[{ id=1, NamePrep='Ubeprofen', DateEnd=2024-12-20, Dosage=2.3, StatusVisitPreparation=LOW, AboutPrep='this prep important'}, { id=1, NamePrep='Ubeprofen', DateEnd=2024-12-20, Dosage=2.3, StatusVisitPreparation=LOW, AboutPrep='this prep important'}], linkSchedule=[{ id=1, Week=SATURDAY, DateSchedule=2024-04-23, TimeBegin=09:20:30, TimeEnd=18:23:20, StatSchedule=FREE}, { id=1, Week=SATURDAY, DateSchedule=2024-04-23, TimeBegin=09:20:30, TimeEnd=18:23:20, StatSchedule=FREE}], fio='Sim Artem Evgen', age=29, Gender='M', statusPerson=DOCTOR}], price=907.0}]
+2024-02-15 21:56:05 DEBUG ServisTest:101 - calcExpDoctor [1]: Start working Test
+2024-02-15 21:56:05 DEBUG Servis:315 - calcExpDoctor [1]: start working
+2024-02-15 21:56:05 DEBUG Servis:324 - calcExpDoctor [3]: end working
+2024-02-15 21:56:05 DEBUG ServisTest:104 - calcExpDoctor [2] end working 9.075
+2024-02-15 21:56:05 DEBUG ServisTest:133 - calculatePrice [1]: Start working Test
+2024-02-15 21:56:05 DEBUG Servis:366 - calculatePrice [1]: start working
+2024-02-15 21:56:05 DEBUG Servis:315 - calcExpDoctor [1]: start working
+2024-02-15 21:56:05 DEBUG Servis:324 - calcExpDoctor [3]: end working
+2024-02-15 21:56:05 DEBUG Servis:336 - TotalReport [1]: start working
+2024-02-15 21:56:05 DEBUG Servis:351 - TotalReport [3]: end working
+2024-02-15 21:56:05 DEBUG Servis:381 - calculatePrice [3]: end working
+2024-02-15 21:56:05 DEBUG ServisTest:137 - calculatePrice [2] end working Optional[{ id=null, fioPatient='Bob', fioDoctor='Sim Artem Evgen', bloodAnalysis=true, glucoseAnalysis=true, arterialAnalysis=true, patient=[{ id=1, cellsBlood=6.6, hemoglobin=160.0, platelets=200.0, glucose=80.3, cholesterol=5.3, statusVisit=IN, fio='Bob', age=23, Gender='M', statusPerson=PATIENT}], doctor=[{ id=1, experience=12, avgPatient=12.3, qualification='Med', specialization='Genikolog', linkPreparation=[{ id=1, NamePrep='Ubeprofen', DateEnd=2024-12-20, Dosage=2.3, StatusVisitPreparation=LOW, AboutPrep='this prep important'}, { id=1, NamePrep='Ubeprofen', DateEnd=2024-12-20, Dosage=2.3, StatusVisitPreparation=LOW, AboutPrep='this prep important'}], linkSchedule=[{ id=1, Week=SATURDAY, DateSchedule=2024-04-23, TimeBegin=09:20:30, TimeEnd=18:23:20, StatSchedule=FREE}, { id=1, Week=SATURDAY, DateSchedule=2024-04-23, TimeBegin=09:20:30, TimeEnd=18:23:20, StatSchedule=FREE}], fio='Sim Artem Evgen', age=29, Gender='M', statusPerson=DOCTOR}], price=907.0}]
+2024-02-15 21:56:05 DEBUG ServisTest:117 - totalReport [1]: Start working Test
+2024-02-15 21:56:05 DEBUG Servis:336 - TotalReport [1]: start working
+2024-02-15 21:56:05 DEBUG Servis:351 - TotalReport [3]: end working
+2024-02-15 21:56:05 DEBUG ServisTest:76 - visitDoctor [1]: Start working Test
+2024-02-15 21:56:05 DEBUG Servis:30 - visitDoctor [1]: start working
+2024-02-15 21:56:05 DEBUG Servis:59 - assessmentHealth [1]: start working
+2024-02-15 21:56:05 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:56:05 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0},0)
+2024-02-15 21:56:05 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:56:05 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0},0)
+2024-02-15 21:56:05 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:56:05 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0, Platelets=1},15)
+2024-02-15 21:56:05 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:56:05 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0, Glucose=1, Platelets=1},25)
+2024-02-15 21:56:05 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:56:05 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0, Glucose=1, Platelets=1, Cholesterol=1},10)
+2024-02-15 21:56:05 DEBUG Servis:174 - assessmentHealth [3]: end working {CellsBlood=0, Health=55, Hemoglobin=0, Glucose=1, Platelets=1, Cholesterol=1}
+2024-02-15 21:56:05 DEBUG Servis:188 - heallingRecom [1]: start working
+2024-02-15 21:56:05 DEBUG Servis:208 - heallingRecom [3]: end working
+2024-02-15 21:56:06 DEBUG ServisTest:79 - visitDoctor [2]: end working Test
+2024-02-15 21:56:06 DEBUG ServisTest:108 - calcExpDoctorNegativity [1]: Start working Test
+2024-02-15 21:56:06 DEBUG Servis:315 - calcExpDoctor [1]: start working
+2024-02-15 21:56:06 DEBUG Servis:324 - calcExpDoctor [3]: end working
+2024-02-15 21:56:06 DEBUG ServisTest:111 - calcExpDoctorNegativity [2] end working 9.075
+2024-02-15 21:56:06 DEBUG ServisTest:46 - heallingRecomNegativity [1]: Start working Test
+2024-02-15 21:56:06 DEBUG Servis:59 - assessmentHealth [1]: start working
+2024-02-15 21:56:06 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:56:06 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0},0)
+2024-02-15 21:56:06 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:56:06 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0},0)
+2024-02-15 21:56:06 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:56:06 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0, Platelets=1},15)
+2024-02-15 21:56:06 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:56:06 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0, Glucose=1, Platelets=1},25)
+2024-02-15 21:56:06 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:56:06 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0, Glucose=1, Platelets=1, Cholesterol=1},10)
+2024-02-15 21:56:06 DEBUG Servis:174 - assessmentHealth [3]: end working {CellsBlood=0, Health=55, Hemoglobin=0, Glucose=1, Platelets=1, Cholesterol=1}
+2024-02-15 21:56:06 DEBUG Servis:188 - heallingRecom [1]: start working
+2024-02-15 21:56:06 DEBUG Servis:208 - heallingRecom [3]: end working
+2024-02-15 21:56:06 DEBUG ServisTest:50 - heallingRecomNegativity [2]: end working Test
+2024-02-15 21:56:06 DEBUG ServisTest:38 - heallingRecom [1]: Start working Test
+2024-02-15 21:56:06 DEBUG Servis:59 - assessmentHealth [1]: start working
+2024-02-15 21:56:06 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:56:06 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0},0)
+2024-02-15 21:56:06 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:56:06 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0},0)
+2024-02-15 21:56:06 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:56:06 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0, Platelets=1},15)
+2024-02-15 21:56:06 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:56:06 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0, Glucose=1, Platelets=1},25)
+2024-02-15 21:56:06 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:56:06 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0, Glucose=1, Platelets=1, Cholesterol=1},10)
+2024-02-15 21:56:06 DEBUG Servis:174 - assessmentHealth [3]: end working {CellsBlood=0, Health=55, Hemoglobin=0, Glucose=1, Platelets=1, Cholesterol=1}
+2024-02-15 21:56:06 DEBUG Servis:188 - heallingRecom [1]: start working
+2024-02-15 21:56:06 DEBUG Servis:208 - heallingRecom [3]: end working
+2024-02-15 21:56:06 DEBUG ServisTest:42 - heallingRecom [2]: end working Test
+2024-02-15 21:56:06 DEBUG ServisTest:30 - assessmentHealthNegativity [1]: Start working Test
+2024-02-15 21:56:06 DEBUG Servis:59 - assessmentHealth [1]: start working
+2024-02-15 21:56:06 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:56:06 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0},0)
+2024-02-15 21:56:06 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:56:06 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0},0)
+2024-02-15 21:56:06 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:56:06 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0, Platelets=1},15)
+2024-02-15 21:56:06 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:56:06 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0, Glucose=1, Platelets=1},25)
+2024-02-15 21:56:06 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:56:06 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0, Glucose=1, Platelets=1, Cholesterol=1},10)
+2024-02-15 21:56:06 DEBUG Servis:174 - assessmentHealth [3]: end working {CellsBlood=0, Health=55, Hemoglobin=0, Glucose=1, Platelets=1, Cholesterol=1}
+2024-02-15 21:56:06 DEBUG ServisTest:33 - assessmentHealthNegativity [2]: end working Test
+2024-02-15 21:56:06 DEBUG ServisTest:55 - determinationUrgency [1]: Start working Test
+2024-02-15 21:56:06 DEBUG PropertyConfig:27 - getPropertyValue [1]: Начало работы получения переменных property
+2024-02-15 21:56:06 DEBUG PropertyConfig:37 - getPropertyValue [3]: Конец получения property
+2024-02-15 21:56:06 DEBUG PropertyConfig:27 - getPropertyValue [1]: Начало работы получения переменных property
+2024-02-15 21:56:06 DEBUG PropertyConfig:37 - getPropertyValue [3]: Конец получения property
+2024-02-15 21:56:06 DEBUG PropertyConfig:27 - getPropertyValue [1]: Начало работы получения переменных property
+2024-02-15 21:56:06 DEBUG PropertyConfig:37 - getPropertyValue [3]: Конец получения property
+2024-02-15 21:56:06 DEBUG PropertyConfig:27 - getPropertyValue [1]: Начало работы получения переменных property
+2024-02-15 21:56:06 DEBUG PropertyConfig:37 - getPropertyValue [3]: Конец получения property
+2024-02-15 21:56:06 DEBUG PropertyConfig:27 - getPropertyValue [1]: Начало работы получения переменных property
+2024-02-15 21:56:06 DEBUG PropertyConfig:37 - getPropertyValue [3]: Конец получения property
+2024-02-15 21:56:06 DEBUG DataProviderCsv:41 - DataProviderCsv [1]: start constructor
+2024-02-15 21:56:06 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\CALCREPORT.csv is exists
+2024-02-15 21:56:06 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\DOCTOR.csv is exists
+2024-02-15 21:56:06 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\PATIENT.csv is exists
+2024-02-15 21:56:06 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\PREPARATION.csv is exists
+2024-02-15 21:56:06 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\SCHEDULE.csv is exists
+2024-02-15 21:56:06 DEBUG DataProviderCsv:51 - DataProviderCsv [3]: end process
+2024-02-15 21:56:06 DEBUG Servis:59 - assessmentHealth [1]: start working
+2024-02-15 21:56:06 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:56:06 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0},0)
+2024-02-15 21:56:06 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:56:06 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0},0)
+2024-02-15 21:56:06 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:56:06 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0, Platelets=1},15)
+2024-02-15 21:56:06 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:56:06 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0, Glucose=1, Platelets=1},25)
+2024-02-15 21:56:06 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:56:06 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0, Glucose=1, Platelets=1, Cholesterol=1},10)
+2024-02-15 21:56:06 DEBUG Servis:174 - assessmentHealth [3]: end working {CellsBlood=0, Health=55, Hemoglobin=0, Glucose=1, Platelets=1, Cholesterol=1}
+2024-02-15 21:56:06 DEBUG Servis:276 - determinationUrgency [1]: start working
+2024-02-15 21:56:06 DEBUG ServisUtil:32 - generateListDoctor [1]: start working
+2024-02-15 21:56:06 DEBUG DataProviderCsv:285 - selectAllDoctor [1]: start working
+2024-02-15 21:56:06 DEBUG DataProviderCsv:300 - selectAllDoctor[3]: end working
+2024-02-15 21:56:06 DEBUG ServisUtil:48 - generateListDoctor [3]: end working
+2024-02-15 21:56:06 DEBUG ServisUtil:32 - generateListDoctor [1]: start working
+2024-02-15 21:56:06 DEBUG DataProviderCsv:285 - selectAllDoctor [1]: start working
+2024-02-15 21:56:06 DEBUG DataProviderCsv:300 - selectAllDoctor[3]: end working
+2024-02-15 21:56:06 DEBUG ServisUtil:48 - generateListDoctor [3]: end working
+2024-02-15 21:56:06 DEBUG ServisUtil:32 - generateListDoctor [1]: start working
+2024-02-15 21:56:06 DEBUG ServisUtil:48 - generateListDoctor [3]: end working
+2024-02-15 21:56:06 DEBUG Servis:304 - determinationUrgency [3]: end working
+2024-02-15 21:56:06 DEBUG ServisTest:60 - determinationUrgency [2]: end working Test
+2024-02-15 21:56:06 DEBUG ServisTest:125 - totalReportNegativity [1]: Start working Test
+2024-02-15 21:56:06 DEBUG Servis:336 - TotalReport [1]: start working
+2024-02-15 21:56:06 DEBUG Servis:351 - TotalReport [3]: end working
+2024-02-15 21:56:06 DEBUG ServisTest:128 - totalReportNegativity [2] end working Optional[{ id=null, fioPatient='Bob', fioDoctor='Sim Artem Evgen', bloodAnalysis=true, glucoseAnalysis=true, arterialAnalysis=true, patient=[{ id=1, cellsBlood=6.6, hemoglobin=160.0, platelets=200.0, glucose=80.3, cholesterol=5.3, statusVisit=IN, fio='Bob', age=23, Gender='M', statusPerson=PATIENT}], doctor=[{ id=1, experience=12, avgPatient=12.3, qualification='Med', specialization='Genikolog', linkPreparation=[{ id=1, NamePrep='Ubeprofen', DateEnd=2024-12-20, Dosage=2.3, StatusVisitPreparation=LOW, AboutPrep='this prep important'}, { id=1, NamePrep='Ubeprofen', DateEnd=2024-12-20, Dosage=2.3, StatusVisitPreparation=LOW, AboutPrep='this prep important'}], linkSchedule=[{ id=1, Week=SATURDAY, DateSchedule=2024-04-23, TimeBegin=09:20:30, TimeEnd=18:23:20, StatSchedule=FREE}, { id=1, Week=SATURDAY, DateSchedule=2024-04-23, TimeBegin=09:20:30, TimeEnd=18:23:20, StatSchedule=FREE}], fio='Sim Artem Evgen', age=29, Gender='M', statusPerson=DOCTOR}], price=null}]
+2024-02-15 21:56:06 DEBUG ServisTest:92 - arivialDoctorNegativity [1]: Start working Test
+2024-02-15 21:56:06 DEBUG PropertyConfig:27 - getPropertyValue [1]: Начало работы получения переменных property
+2024-02-15 21:56:06 DEBUG PropertyConfig:37 - getPropertyValue [3]: Конец получения property
+2024-02-15 21:56:06 DEBUG PropertyConfig:27 - getPropertyValue [1]: Начало работы получения переменных property
+2024-02-15 21:56:06 DEBUG PropertyConfig:37 - getPropertyValue [3]: Конец получения property
+2024-02-15 21:56:06 DEBUG PropertyConfig:27 - getPropertyValue [1]: Начало работы получения переменных property
+2024-02-15 21:56:06 DEBUG PropertyConfig:37 - getPropertyValue [3]: Конец получения property
+2024-02-15 21:56:06 DEBUG PropertyConfig:27 - getPropertyValue [1]: Начало работы получения переменных property
+2024-02-15 21:56:06 DEBUG PropertyConfig:37 - getPropertyValue [3]: Конец получения property
+2024-02-15 21:56:06 DEBUG PropertyConfig:27 - getPropertyValue [1]: Начало работы получения переменных property
+2024-02-15 21:56:06 DEBUG PropertyConfig:37 - getPropertyValue [3]: Конец получения property
+2024-02-15 21:56:06 DEBUG DataProviderCsv:41 - DataProviderCsv [1]: start constructor
+2024-02-15 21:56:06 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\CALCREPORT.csv is exists
+2024-02-15 21:56:06 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\DOCTOR.csv is exists
+2024-02-15 21:56:06 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\PATIENT.csv is exists
+2024-02-15 21:56:06 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\PREPARATION.csv is exists
+2024-02-15 21:56:06 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\SCHEDULE.csv is exists
+2024-02-15 21:56:06 DEBUG DataProviderCsv:51 - DataProviderCsv [3]: end process
+2024-02-15 21:56:06 DEBUG Servis:223 - arivialDoctor [1]: start working
+2024-02-15 21:56:06 DEBUG Servis:59 - assessmentHealth [1]: start working
+2024-02-15 21:56:06 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:56:06 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0},0)
+2024-02-15 21:56:06 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:56:06 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0},0)
+2024-02-15 21:56:06 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:56:06 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0, Platelets=1},15)
+2024-02-15 21:56:06 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:56:06 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0, Glucose=1, Platelets=1},25)
+2024-02-15 21:56:06 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:56:06 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0, Glucose=1, Platelets=1, Cholesterol=1},10)
+2024-02-15 21:56:06 DEBUG Servis:174 - assessmentHealth [3]: end working {CellsBlood=0, Health=55, Hemoglobin=0, Glucose=1, Platelets=1, Cholesterol=1}
+2024-02-15 21:56:06 DEBUG Servis:276 - determinationUrgency [1]: start working
+2024-02-15 21:56:06 DEBUG ServisUtil:32 - generateListDoctor [1]: start working
+2024-02-15 21:56:06 DEBUG DataProviderCsv:285 - selectAllDoctor [1]: start working
+2024-02-15 21:56:06 DEBUG DataProviderCsv:300 - selectAllDoctor[3]: end working
+2024-02-15 21:56:06 DEBUG ServisUtil:48 - generateListDoctor [3]: end working
+2024-02-15 21:56:06 DEBUG ServisUtil:32 - generateListDoctor [1]: start working
+2024-02-15 21:56:06 DEBUG DataProviderCsv:285 - selectAllDoctor [1]: start working
+2024-02-15 21:56:06 DEBUG DataProviderCsv:300 - selectAllDoctor[3]: end working
+2024-02-15 21:56:06 DEBUG ServisUtil:48 - generateListDoctor [3]: end working
+2024-02-15 21:56:06 DEBUG ServisUtil:32 - generateListDoctor [1]: start working
+2024-02-15 21:56:06 DEBUG ServisUtil:48 - generateListDoctor [3]: end working
+2024-02-15 21:56:06 DEBUG Servis:304 - determinationUrgency [3]: end working
+2024-02-15 21:56:06 DEBUG ServisTest:96 - arivialDoctorNegativity [2]: end working Test
+2024-02-15 21:56:06 DEBUG ServisTest:23 - assessmentHealth [1]: Start working Test
+2024-02-15 21:56:06 DEBUG Servis:59 - assessmentHealth [1]: start working
+2024-02-15 21:56:06 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:56:06 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0},0)
+2024-02-15 21:56:06 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:56:06 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0},0)
+2024-02-15 21:56:06 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:56:06 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0, Platelets=1},15)
+2024-02-15 21:56:06 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:56:06 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0, Glucose=1, Platelets=1},25)
+2024-02-15 21:56:06 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:56:06 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0, Glucose=1, Platelets=1, Cholesterol=1},10)
+2024-02-15 21:56:06 DEBUG Servis:174 - assessmentHealth [3]: end working {CellsBlood=0, Health=55, Hemoglobin=0, Glucose=1, Platelets=1, Cholesterol=1}
+2024-02-15 21:56:06 DEBUG ServisTest:26 - assessmentHealth [2]: end working Test
+2024-02-15 21:56:06 DEBUG ServisTest:84 - arivialDoctor [1]: Start working Test
+2024-02-15 21:56:06 DEBUG PropertyConfig:27 - getPropertyValue [1]: Начало работы получения переменных property
+2024-02-15 21:56:06 DEBUG PropertyConfig:37 - getPropertyValue [3]: Конец получения property
+2024-02-15 21:56:06 DEBUG PropertyConfig:27 - getPropertyValue [1]: Начало работы получения переменных property
+2024-02-15 21:56:06 DEBUG PropertyConfig:37 - getPropertyValue [3]: Конец получения property
+2024-02-15 21:56:06 DEBUG PropertyConfig:27 - getPropertyValue [1]: Начало работы получения переменных property
+2024-02-15 21:56:06 DEBUG PropertyConfig:37 - getPropertyValue [3]: Конец получения property
+2024-02-15 21:56:06 DEBUG PropertyConfig:27 - getPropertyValue [1]: Начало работы получения переменных property
+2024-02-15 21:56:06 DEBUG PropertyConfig:37 - getPropertyValue [3]: Конец получения property
+2024-02-15 21:56:06 DEBUG PropertyConfig:27 - getPropertyValue [1]: Начало работы получения переменных property
+2024-02-15 21:56:06 DEBUG PropertyConfig:37 - getPropertyValue [3]: Конец получения property
+2024-02-15 21:56:06 DEBUG DataProviderCsv:41 - DataProviderCsv [1]: start constructor
+2024-02-15 21:56:06 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\CALCREPORT.csv is exists
+2024-02-15 21:56:06 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\DOCTOR.csv is exists
+2024-02-15 21:56:06 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\PATIENT.csv is exists
+2024-02-15 21:56:06 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\PREPARATION.csv is exists
+2024-02-15 21:56:06 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\SCHEDULE.csv is exists
+2024-02-15 21:56:06 DEBUG DataProviderCsv:51 - DataProviderCsv [3]: end process
+2024-02-15 21:56:06 DEBUG Servis:223 - arivialDoctor [1]: start working
+2024-02-15 21:56:06 DEBUG Servis:59 - assessmentHealth [1]: start working
+2024-02-15 21:56:06 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:56:06 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0},0)
+2024-02-15 21:56:06 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:56:06 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0},0)
+2024-02-15 21:56:06 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:56:06 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0, Platelets=1},15)
+2024-02-15 21:56:06 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:56:06 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0, Glucose=1, Platelets=1},25)
+2024-02-15 21:56:06 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:56:06 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0, Glucose=1, Platelets=1, Cholesterol=1},10)
+2024-02-15 21:56:06 DEBUG Servis:174 - assessmentHealth [3]: end working {CellsBlood=0, Health=55, Hemoglobin=0, Glucose=1, Platelets=1, Cholesterol=1}
+2024-02-15 21:56:06 DEBUG Servis:276 - determinationUrgency [1]: start working
+2024-02-15 21:56:06 DEBUG ServisUtil:32 - generateListDoctor [1]: start working
+2024-02-15 21:56:06 DEBUG DataProviderCsv:285 - selectAllDoctor [1]: start working
+2024-02-15 21:56:06 DEBUG DataProviderCsv:300 - selectAllDoctor[3]: end working
+2024-02-15 21:56:06 DEBUG ServisUtil:48 - generateListDoctor [3]: end working
+2024-02-15 21:56:06 DEBUG ServisUtil:32 - generateListDoctor [1]: start working
+2024-02-15 21:56:06 DEBUG DataProviderCsv:285 - selectAllDoctor [1]: start working
+2024-02-15 21:56:06 DEBUG DataProviderCsv:300 - selectAllDoctor[3]: end working
+2024-02-15 21:56:06 DEBUG ServisUtil:48 - generateListDoctor [3]: end working
+2024-02-15 21:56:06 DEBUG ServisUtil:32 - generateListDoctor [1]: start working
+2024-02-15 21:56:06 DEBUG ServisUtil:48 - generateListDoctor [3]: end working
+2024-02-15 21:56:06 DEBUG Servis:304 - determinationUrgency [3]: end working
+2024-02-15 21:56:06 DEBUG ServisTest:88 - arivialDoctor [2]: end working Test
+2024-02-15 21:56:06 DEBUG ServisTest:69 - visitDoctor [1]: Start working Test
+2024-02-15 21:56:06 DEBUG Servis:30 - visitDoctor [1]: start working
+2024-02-15 21:56:06 DEBUG Servis:59 - assessmentHealth [1]: start working
+2024-02-15 21:56:06 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:56:06 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0},0)
+2024-02-15 21:56:06 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:56:06 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0},0)
+2024-02-15 21:56:06 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:56:06 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0, Platelets=1},15)
+2024-02-15 21:56:06 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:56:06 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0, Glucose=1, Platelets=1},25)
+2024-02-15 21:56:06 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:56:06 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0, Glucose=1, Platelets=1, Cholesterol=1},10)
+2024-02-15 21:56:06 DEBUG Servis:174 - assessmentHealth [3]: end working {CellsBlood=0, Health=55, Hemoglobin=0, Glucose=1, Platelets=1, Cholesterol=1}
+2024-02-15 21:56:06 DEBUG Servis:188 - heallingRecom [1]: start working
+2024-02-15 21:56:06 DEBUG Servis:208 - heallingRecom [3]: end working
+2024-02-15 21:56:06 DEBUG ServisTest:72 - visitDoctor [2]: end working Test
+2024-02-15 21:59:52 DEBUG ServisTest:140 - calculatePrice [1]: Start working Test
+2024-02-15 21:59:52 DEBUG Servis:366 - calculatePrice [1]: start working
+2024-02-15 21:59:52 DEBUG Servis:315 - calcExpDoctor [1]: start working
+2024-02-15 21:59:52 DEBUG Servis:324 - calcExpDoctor [3]: end working
+2024-02-15 21:59:52 DEBUG Servis:336 - TotalReport [1]: start working
+2024-02-15 21:59:52 DEBUG Servis:351 - TotalReport [3]: end working
+2024-02-15 21:59:52 DEBUG Servis:381 - calculatePrice [3]: end working
+2024-02-15 21:59:52 DEBUG ServisTest:143 - calculatePrice [2] end working Optional[{ id=null, fioPatient='Bob', fioDoctor='Sim Artem Evgen', bloodAnalysis=true, glucoseAnalysis=true, arterialAnalysis=true, patient=[{ id=1, cellsBlood=6.6, hemoglobin=160.0, platelets=200.0, glucose=80.3, cholesterol=5.3, statusVisit=IN, fio='Bob', age=23, Gender='M', statusPerson=PATIENT}], doctor=[{ id=1, experience=12, avgPatient=12.3, qualification='Med', specialization='Genikolog', linkPreparation=[{ id=1, NamePrep='Ubeprofen', DateEnd=2024-12-20, Dosage=2.3, StatusVisitPreparation=LOW, AboutPrep='this prep important'}, { id=1, NamePrep='Ubeprofen', DateEnd=2024-12-20, Dosage=2.3, StatusVisitPreparation=LOW, AboutPrep='this prep important'}], linkSchedule=[{ id=1, Week=SATURDAY, DateSchedule=2024-04-23, TimeBegin=09:20:30, TimeEnd=18:23:20, StatSchedule=FREE}, { id=1, Week=SATURDAY, DateSchedule=2024-04-23, TimeBegin=09:20:30, TimeEnd=18:23:20, StatSchedule=FREE}], fio='Sim Artem Evgen', age=29, Gender='M', statusPerson=DOCTOR}], price=907.0}]
+2024-02-15 21:59:53 DEBUG ServisTest:101 - calcExpDoctor [1]: Start working Test
+2024-02-15 21:59:53 DEBUG Servis:315 - calcExpDoctor [1]: start working
+2024-02-15 21:59:53 DEBUG Servis:324 - calcExpDoctor [3]: end working
+2024-02-15 21:59:53 DEBUG ServisTest:104 - calcExpDoctor [2] end working 9.075
+2024-02-15 21:59:53 DEBUG ServisTest:132 - calculatePrice [1]: Start working Test
+2024-02-15 21:59:53 DEBUG Servis:366 - calculatePrice [1]: start working
+2024-02-15 21:59:53 DEBUG Servis:315 - calcExpDoctor [1]: start working
+2024-02-15 21:59:53 DEBUG Servis:324 - calcExpDoctor [3]: end working
+2024-02-15 21:59:53 DEBUG Servis:336 - TotalReport [1]: start working
+2024-02-15 21:59:53 DEBUG Servis:351 - TotalReport [3]: end working
+2024-02-15 21:59:53 DEBUG Servis:381 - calculatePrice [3]: end working
+2024-02-15 21:59:53 DEBUG ServisTest:136 - calculatePrice [2] end working Optional[{ id=null, fioPatient='Bob', fioDoctor='Sim Artem Evgen', bloodAnalysis=true, glucoseAnalysis=true, arterialAnalysis=true, patient=[{ id=1, cellsBlood=6.6, hemoglobin=160.0, platelets=200.0, glucose=80.3, cholesterol=5.3, statusVisit=IN, fio='Bob', age=23, Gender='M', statusPerson=PATIENT}], doctor=[{ id=1, experience=12, avgPatient=12.3, qualification='Med', specialization='Genikolog', linkPreparation=[{ id=1, NamePrep='Ubeprofen', DateEnd=2024-12-20, Dosage=2.3, StatusVisitPreparation=LOW, AboutPrep='this prep important'}, { id=1, NamePrep='Ubeprofen', DateEnd=2024-12-20, Dosage=2.3, StatusVisitPreparation=LOW, AboutPrep='this prep important'}], linkSchedule=[{ id=1, Week=SATURDAY, DateSchedule=2024-04-23, TimeBegin=09:20:30, TimeEnd=18:23:20, StatSchedule=FREE}, { id=1, Week=SATURDAY, DateSchedule=2024-04-23, TimeBegin=09:20:30, TimeEnd=18:23:20, StatSchedule=FREE}], fio='Sim Artem Evgen', age=29, Gender='M', statusPerson=DOCTOR}], price=907.0}]
+2024-02-15 21:59:53 DEBUG ServisTest:117 - totalReport [1]: Start working Test
+2024-02-15 21:59:53 DEBUG Servis:336 - TotalReport [1]: start working
+2024-02-15 21:59:53 DEBUG Servis:351 - TotalReport [3]: end working
+2024-02-15 21:59:53 DEBUG ServisTest:120 - totalReport [2] end working Optional[{ id=null, fioPatient='Bob', fioDoctor='Sim Artem Evgen', bloodAnalysis=true, glucoseAnalysis=true, arterialAnalysis=true, patient=[{ id=1, cellsBlood=6.6, hemoglobin=160.0, platelets=200.0, glucose=80.3, cholesterol=5.3, statusVisit=IN, fio='Bob', age=23, Gender='M', statusPerson=PATIENT}], doctor=[{ id=1, experience=12, avgPatient=12.3, qualification='Med', specialization='Genikolog', linkPreparation=[{ id=1, NamePrep='Ubeprofen', DateEnd=2024-12-20, Dosage=2.3, StatusVisitPreparation=LOW, AboutPrep='this prep important'}, { id=1, NamePrep='Ubeprofen', DateEnd=2024-12-20, Dosage=2.3, StatusVisitPreparation=LOW, AboutPrep='this prep important'}], linkSchedule=[{ id=1, Week=SATURDAY, DateSchedule=2024-04-23, TimeBegin=09:20:30, TimeEnd=18:23:20, StatSchedule=FREE}, { id=1, Week=SATURDAY, DateSchedule=2024-04-23, TimeBegin=09:20:30, TimeEnd=18:23:20, StatSchedule=FREE}], fio='Sim Artem Evgen', age=29, Gender='M', statusPerson=DOCTOR}], price=null}]
+2024-02-15 21:59:53 DEBUG ServisTest:76 - visitDoctor [1]: Start working Test
+2024-02-15 21:59:53 DEBUG Servis:30 - visitDoctor [1]: start working
+2024-02-15 21:59:53 DEBUG Servis:59 - assessmentHealth [1]: start working
+2024-02-15 21:59:53 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:59:53 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0},0)
+2024-02-15 21:59:53 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:59:53 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0},0)
+2024-02-15 21:59:53 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:59:53 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0, Platelets=1},15)
+2024-02-15 21:59:53 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:59:53 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0, Glucose=1, Platelets=1},25)
+2024-02-15 21:59:53 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:59:53 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0, Glucose=1, Platelets=1, Cholesterol=1},10)
+2024-02-15 21:59:53 DEBUG Servis:174 - assessmentHealth [3]: end working {CellsBlood=0, Health=55, Hemoglobin=0, Glucose=1, Platelets=1, Cholesterol=1}
+2024-02-15 21:59:53 DEBUG Servis:188 - heallingRecom [1]: start working
+2024-02-15 21:59:53 DEBUG Servis:208 - heallingRecom [3]: end working
+2024-02-15 21:59:53 DEBUG ServisTest:79 - visitDoctor [2]: end working Test
+2024-02-15 21:59:53 DEBUG ServisTest:108 - calcExpDoctorNegativity [1]: Start working Test
+2024-02-15 21:59:53 DEBUG Servis:315 - calcExpDoctor [1]: start working
+2024-02-15 21:59:53 DEBUG Servis:324 - calcExpDoctor [3]: end working
+2024-02-15 21:59:53 DEBUG ServisTest:111 - calcExpDoctorNegativity [2] end working 9.075
+2024-02-15 21:59:53 DEBUG ServisTest:46 - heallingRecomNegativity [1]: Start working Test
+2024-02-15 21:59:53 DEBUG Servis:59 - assessmentHealth [1]: start working
+2024-02-15 21:59:53 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:59:53 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0},0)
+2024-02-15 21:59:53 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:59:53 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0},0)
+2024-02-15 21:59:53 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:59:53 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0, Platelets=1},15)
+2024-02-15 21:59:53 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:59:53 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0, Glucose=1, Platelets=1},25)
+2024-02-15 21:59:53 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:59:53 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0, Glucose=1, Platelets=1, Cholesterol=1},10)
+2024-02-15 21:59:53 DEBUG Servis:174 - assessmentHealth [3]: end working {CellsBlood=0, Health=55, Hemoglobin=0, Glucose=1, Platelets=1, Cholesterol=1}
+2024-02-15 21:59:53 DEBUG Servis:188 - heallingRecom [1]: start working
+2024-02-15 21:59:53 DEBUG Servis:208 - heallingRecom [3]: end working
+2024-02-15 21:59:53 DEBUG ServisTest:50 - heallingRecomNegativity [2]: end working Test
+2024-02-15 21:59:53 DEBUG ServisTest:38 - heallingRecom [1]: Start working Test
+2024-02-15 21:59:53 DEBUG Servis:59 - assessmentHealth [1]: start working
+2024-02-15 21:59:53 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:59:53 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0},0)
+2024-02-15 21:59:53 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:59:53 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0},0)
+2024-02-15 21:59:53 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:59:53 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0, Platelets=1},15)
+2024-02-15 21:59:53 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:59:53 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0, Glucose=1, Platelets=1},25)
+2024-02-15 21:59:53 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:59:53 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0, Glucose=1, Platelets=1, Cholesterol=1},10)
+2024-02-15 21:59:53 DEBUG Servis:174 - assessmentHealth [3]: end working {CellsBlood=0, Health=55, Hemoglobin=0, Glucose=1, Platelets=1, Cholesterol=1}
+2024-02-15 21:59:53 DEBUG Servis:188 - heallingRecom [1]: start working
+2024-02-15 21:59:53 DEBUG Servis:208 - heallingRecom [3]: end working
+2024-02-15 21:59:53 DEBUG ServisTest:42 - heallingRecom [2]: end working Test
+2024-02-15 21:59:53 DEBUG ServisTest:30 - assessmentHealthNegativity [1]: Start working Test
+2024-02-15 21:59:53 DEBUG Servis:59 - assessmentHealth [1]: start working
+2024-02-15 21:59:53 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:59:53 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0},0)
+2024-02-15 21:59:53 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:59:53 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0},0)
+2024-02-15 21:59:53 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:59:53 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0, Platelets=1},15)
+2024-02-15 21:59:53 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:59:53 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0, Glucose=1, Platelets=1},25)
+2024-02-15 21:59:53 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:59:53 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0, Glucose=1, Platelets=1, Cholesterol=1},10)
+2024-02-15 21:59:53 DEBUG Servis:174 - assessmentHealth [3]: end working {CellsBlood=0, Health=55, Hemoglobin=0, Glucose=1, Platelets=1, Cholesterol=1}
+2024-02-15 21:59:53 DEBUG ServisTest:33 - assessmentHealthNegativity [2]: end working Test
+2024-02-15 21:59:53 DEBUG ServisTest:55 - determinationUrgency [1]: Start working Test
+2024-02-15 21:59:53 DEBUG PropertyConfig:27 - getPropertyValue [1]: Начало работы получения переменных property
+2024-02-15 21:59:53 DEBUG PropertyConfig:37 - getPropertyValue [3]: Конец получения property
+2024-02-15 21:59:53 DEBUG PropertyConfig:27 - getPropertyValue [1]: Начало работы получения переменных property
+2024-02-15 21:59:53 DEBUG PropertyConfig:37 - getPropertyValue [3]: Конец получения property
+2024-02-15 21:59:53 DEBUG PropertyConfig:27 - getPropertyValue [1]: Начало работы получения переменных property
+2024-02-15 21:59:53 DEBUG PropertyConfig:37 - getPropertyValue [3]: Конец получения property
+2024-02-15 21:59:53 DEBUG PropertyConfig:27 - getPropertyValue [1]: Начало работы получения переменных property
+2024-02-15 21:59:53 DEBUG PropertyConfig:37 - getPropertyValue [3]: Конец получения property
+2024-02-15 21:59:53 DEBUG PropertyConfig:27 - getPropertyValue [1]: Начало работы получения переменных property
+2024-02-15 21:59:53 DEBUG PropertyConfig:37 - getPropertyValue [3]: Конец получения property
+2024-02-15 21:59:53 DEBUG DataProviderCsv:41 - DataProviderCsv [1]: start constructor
+2024-02-15 21:59:53 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\CALCREPORT.csv is exists
+2024-02-15 21:59:53 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\DOCTOR.csv is exists
+2024-02-15 21:59:53 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\PATIENT.csv is exists
+2024-02-15 21:59:53 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\PREPARATION.csv is exists
+2024-02-15 21:59:53 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\SCHEDULE.csv is exists
+2024-02-15 21:59:53 DEBUG DataProviderCsv:51 - DataProviderCsv [3]: end process
+2024-02-15 21:59:53 DEBUG Servis:59 - assessmentHealth [1]: start working
+2024-02-15 21:59:53 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:59:53 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0},0)
+2024-02-15 21:59:53 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:59:53 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0},0)
+2024-02-15 21:59:53 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:59:53 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0, Platelets=1},15)
+2024-02-15 21:59:53 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:59:53 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0, Glucose=1, Platelets=1},25)
+2024-02-15 21:59:53 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:59:53 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0, Glucose=1, Platelets=1, Cholesterol=1},10)
+2024-02-15 21:59:53 DEBUG Servis:174 - assessmentHealth [3]: end working {CellsBlood=0, Health=55, Hemoglobin=0, Glucose=1, Platelets=1, Cholesterol=1}
+2024-02-15 21:59:53 DEBUG Servis:276 - determinationUrgency [1]: start working
+2024-02-15 21:59:53 DEBUG ServisUtil:32 - generateListDoctor [1]: start working
+2024-02-15 21:59:53 DEBUG DataProviderCsv:285 - selectAllDoctor [1]: start working
+2024-02-15 21:59:53 DEBUG DataProviderCsv:300 - selectAllDoctor[3]: end working
+2024-02-15 21:59:53 DEBUG ServisUtil:48 - generateListDoctor [3]: end working
+2024-02-15 21:59:53 DEBUG ServisUtil:32 - generateListDoctor [1]: start working
+2024-02-15 21:59:53 DEBUG DataProviderCsv:285 - selectAllDoctor [1]: start working
+2024-02-15 21:59:53 DEBUG DataProviderCsv:300 - selectAllDoctor[3]: end working
+2024-02-15 21:59:53 DEBUG ServisUtil:48 - generateListDoctor [3]: end working
+2024-02-15 21:59:53 DEBUG ServisUtil:32 - generateListDoctor [1]: start working
+2024-02-15 21:59:53 DEBUG ServisUtil:48 - generateListDoctor [3]: end working
+2024-02-15 21:59:53 DEBUG Servis:304 - determinationUrgency [3]: end working
+2024-02-15 21:59:53 DEBUG ServisTest:60 - determinationUrgency [2]: end working Test
+2024-02-15 21:59:53 DEBUG ServisTest:124 - totalReportNegativity [1]: Start working Test
+2024-02-15 21:59:53 DEBUG Servis:336 - TotalReport [1]: start working
+2024-02-15 21:59:53 DEBUG Servis:351 - TotalReport [3]: end working
+2024-02-15 21:59:53 DEBUG ServisTest:127 - totalReportNegativity [2] end working Optional[{ id=null, fioPatient='Bob', fioDoctor='Sim Artem Evgen', bloodAnalysis=true, glucoseAnalysis=true, arterialAnalysis=true, patient=[{ id=1, cellsBlood=6.6, hemoglobin=160.0, platelets=200.0, glucose=80.3, cholesterol=5.3, statusVisit=IN, fio='Bob', age=23, Gender='M', statusPerson=PATIENT}], doctor=[{ id=1, experience=12, avgPatient=12.3, qualification='Med', specialization='Genikolog', linkPreparation=[{ id=1, NamePrep='Ubeprofen', DateEnd=2024-12-20, Dosage=2.3, StatusVisitPreparation=LOW, AboutPrep='this prep important'}, { id=1, NamePrep='Ubeprofen', DateEnd=2024-12-20, Dosage=2.3, StatusVisitPreparation=LOW, AboutPrep='this prep important'}], linkSchedule=[{ id=1, Week=SATURDAY, DateSchedule=2024-04-23, TimeBegin=09:20:30, TimeEnd=18:23:20, StatSchedule=FREE}, { id=1, Week=SATURDAY, DateSchedule=2024-04-23, TimeBegin=09:20:30, TimeEnd=18:23:20, StatSchedule=FREE}], fio='Sim Artem Evgen', age=29, Gender='M', statusPerson=DOCTOR}], price=null}]
+2024-02-15 21:59:53 DEBUG ServisTest:92 - arivialDoctorNegativity [1]: Start working Test
+2024-02-15 21:59:53 DEBUG PropertyConfig:27 - getPropertyValue [1]: Начало работы получения переменных property
+2024-02-15 21:59:53 DEBUG PropertyConfig:37 - getPropertyValue [3]: Конец получения property
+2024-02-15 21:59:53 DEBUG PropertyConfig:27 - getPropertyValue [1]: Начало работы получения переменных property
+2024-02-15 21:59:53 DEBUG PropertyConfig:37 - getPropertyValue [3]: Конец получения property
+2024-02-15 21:59:53 DEBUG PropertyConfig:27 - getPropertyValue [1]: Начало работы получения переменных property
+2024-02-15 21:59:53 DEBUG PropertyConfig:37 - getPropertyValue [3]: Конец получения property
+2024-02-15 21:59:53 DEBUG PropertyConfig:27 - getPropertyValue [1]: Начало работы получения переменных property
+2024-02-15 21:59:53 DEBUG PropertyConfig:37 - getPropertyValue [3]: Конец получения property
+2024-02-15 21:59:53 DEBUG PropertyConfig:27 - getPropertyValue [1]: Начало работы получения переменных property
+2024-02-15 21:59:53 DEBUG PropertyConfig:37 - getPropertyValue [3]: Конец получения property
+2024-02-15 21:59:53 DEBUG DataProviderCsv:41 - DataProviderCsv [1]: start constructor
+2024-02-15 21:59:53 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\CALCREPORT.csv is exists
+2024-02-15 21:59:53 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\DOCTOR.csv is exists
+2024-02-15 21:59:53 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\PATIENT.csv is exists
+2024-02-15 21:59:53 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\PREPARATION.csv is exists
+2024-02-15 21:59:53 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\SCHEDULE.csv is exists
+2024-02-15 21:59:53 DEBUG DataProviderCsv:51 - DataProviderCsv [3]: end process
+2024-02-15 21:59:53 DEBUG Servis:223 - arivialDoctor [1]: start working
+2024-02-15 21:59:53 DEBUG Servis:59 - assessmentHealth [1]: start working
+2024-02-15 21:59:53 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:59:53 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0},0)
+2024-02-15 21:59:53 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:59:53 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0},0)
+2024-02-15 21:59:53 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:59:53 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0, Platelets=1},15)
+2024-02-15 21:59:53 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:59:53 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0, Glucose=1, Platelets=1},25)
+2024-02-15 21:59:53 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:59:53 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0, Glucose=1, Platelets=1, Cholesterol=1},10)
+2024-02-15 21:59:53 DEBUG Servis:174 - assessmentHealth [3]: end working {CellsBlood=0, Health=55, Hemoglobin=0, Glucose=1, Platelets=1, Cholesterol=1}
+2024-02-15 21:59:53 DEBUG Servis:276 - determinationUrgency [1]: start working
+2024-02-15 21:59:53 DEBUG ServisUtil:32 - generateListDoctor [1]: start working
+2024-02-15 21:59:53 DEBUG DataProviderCsv:285 - selectAllDoctor [1]: start working
+2024-02-15 21:59:53 DEBUG DataProviderCsv:300 - selectAllDoctor[3]: end working
+2024-02-15 21:59:53 DEBUG ServisUtil:48 - generateListDoctor [3]: end working
+2024-02-15 21:59:53 DEBUG ServisUtil:32 - generateListDoctor [1]: start working
+2024-02-15 21:59:53 DEBUG DataProviderCsv:285 - selectAllDoctor [1]: start working
+2024-02-15 21:59:53 DEBUG DataProviderCsv:300 - selectAllDoctor[3]: end working
+2024-02-15 21:59:53 DEBUG ServisUtil:48 - generateListDoctor [3]: end working
+2024-02-15 21:59:53 DEBUG ServisUtil:32 - generateListDoctor [1]: start working
+2024-02-15 21:59:53 DEBUG ServisUtil:48 - generateListDoctor [3]: end working
+2024-02-15 21:59:53 DEBUG Servis:304 - determinationUrgency [3]: end working
+2024-02-15 21:59:53 DEBUG ServisTest:96 - arivialDoctorNegativity [2]: end working Test
+2024-02-15 21:59:53 DEBUG ServisTest:23 - assessmentHealth [1]: Start working Test
+2024-02-15 21:59:53 DEBUG Servis:59 - assessmentHealth [1]: start working
+2024-02-15 21:59:53 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:59:53 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0},0)
+2024-02-15 21:59:53 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:59:53 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0},0)
+2024-02-15 21:59:53 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:59:53 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0, Platelets=1},15)
+2024-02-15 21:59:53 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:59:53 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0, Glucose=1, Platelets=1},25)
+2024-02-15 21:59:53 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:59:53 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0, Glucose=1, Platelets=1, Cholesterol=1},10)
+2024-02-15 21:59:53 DEBUG Servis:174 - assessmentHealth [3]: end working {CellsBlood=0, Health=55, Hemoglobin=0, Glucose=1, Platelets=1, Cholesterol=1}
+2024-02-15 21:59:53 DEBUG ServisTest:26 - assessmentHealth [2]: end working Test
+2024-02-15 21:59:53 DEBUG ServisTest:84 - arivialDoctor [1]: Start working Test
+2024-02-15 21:59:53 DEBUG PropertyConfig:27 - getPropertyValue [1]: Начало работы получения переменных property
+2024-02-15 21:59:53 DEBUG PropertyConfig:37 - getPropertyValue [3]: Конец получения property
+2024-02-15 21:59:53 DEBUG PropertyConfig:27 - getPropertyValue [1]: Начало работы получения переменных property
+2024-02-15 21:59:53 DEBUG PropertyConfig:37 - getPropertyValue [3]: Конец получения property
+2024-02-15 21:59:53 DEBUG PropertyConfig:27 - getPropertyValue [1]: Начало работы получения переменных property
+2024-02-15 21:59:53 DEBUG PropertyConfig:37 - getPropertyValue [3]: Конец получения property
+2024-02-15 21:59:53 DEBUG PropertyConfig:27 - getPropertyValue [1]: Начало работы получения переменных property
+2024-02-15 21:59:53 DEBUG PropertyConfig:37 - getPropertyValue [3]: Конец получения property
+2024-02-15 21:59:53 DEBUG PropertyConfig:27 - getPropertyValue [1]: Начало работы получения переменных property
+2024-02-15 21:59:53 DEBUG PropertyConfig:37 - getPropertyValue [3]: Конец получения property
+2024-02-15 21:59:53 DEBUG DataProviderCsv:41 - DataProviderCsv [1]: start constructor
+2024-02-15 21:59:53 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\CALCREPORT.csv is exists
+2024-02-15 21:59:53 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\DOCTOR.csv is exists
+2024-02-15 21:59:53 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\PATIENT.csv is exists
+2024-02-15 21:59:53 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\PREPARATION.csv is exists
+2024-02-15 21:59:53 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\SCHEDULE.csv is exists
+2024-02-15 21:59:53 DEBUG DataProviderCsv:51 - DataProviderCsv [3]: end process
+2024-02-15 21:59:53 DEBUG Servis:223 - arivialDoctor [1]: start working
+2024-02-15 21:59:53 DEBUG Servis:59 - assessmentHealth [1]: start working
+2024-02-15 21:59:53 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:59:53 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0},0)
+2024-02-15 21:59:53 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:59:53 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0},0)
+2024-02-15 21:59:53 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:59:53 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0, Platelets=1},15)
+2024-02-15 21:59:53 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:59:53 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0, Glucose=1, Platelets=1},25)
+2024-02-15 21:59:53 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:59:53 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0, Glucose=1, Platelets=1, Cholesterol=1},10)
+2024-02-15 21:59:53 DEBUG Servis:174 - assessmentHealth [3]: end working {CellsBlood=0, Health=55, Hemoglobin=0, Glucose=1, Platelets=1, Cholesterol=1}
+2024-02-15 21:59:53 DEBUG Servis:276 - determinationUrgency [1]: start working
+2024-02-15 21:59:53 DEBUG ServisUtil:32 - generateListDoctor [1]: start working
+2024-02-15 21:59:53 DEBUG DataProviderCsv:285 - selectAllDoctor [1]: start working
+2024-02-15 21:59:53 DEBUG DataProviderCsv:300 - selectAllDoctor[3]: end working
+2024-02-15 21:59:53 DEBUG ServisUtil:48 - generateListDoctor [3]: end working
+2024-02-15 21:59:53 DEBUG ServisUtil:32 - generateListDoctor [1]: start working
+2024-02-15 21:59:53 DEBUG DataProviderCsv:285 - selectAllDoctor [1]: start working
+2024-02-15 21:59:53 DEBUG DataProviderCsv:300 - selectAllDoctor[3]: end working
+2024-02-15 21:59:53 DEBUG ServisUtil:48 - generateListDoctor [3]: end working
+2024-02-15 21:59:53 DEBUG ServisUtil:32 - generateListDoctor [1]: start working
+2024-02-15 21:59:53 DEBUG ServisUtil:48 - generateListDoctor [3]: end working
+2024-02-15 21:59:53 DEBUG Servis:304 - determinationUrgency [3]: end working
+2024-02-15 21:59:53 DEBUG ServisTest:88 - arivialDoctor [2]: end working Test
+2024-02-15 21:59:53 DEBUG ServisTest:69 - visitDoctor [1]: Start working Test
+2024-02-15 21:59:53 DEBUG Servis:30 - visitDoctor [1]: start working
+2024-02-15 21:59:53 DEBUG Servis:59 - assessmentHealth [1]: start working
+2024-02-15 21:59:53 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:59:53 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0},0)
+2024-02-15 21:59:53 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:59:53 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0},0)
+2024-02-15 21:59:53 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:59:53 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0, Platelets=1},15)
+2024-02-15 21:59:53 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:59:53 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0, Glucose=1, Platelets=1},25)
+2024-02-15 21:59:53 DEBUG ServisUtil:137 - rangeCheckerValuesAssessmentHealth [1]: start working
+2024-02-15 21:59:53 DEBUG ServisUtil:152 - rangeCheckerValuesAssessmentHealth [3]: END working ({CellsBlood=0, Hemoglobin=0, Glucose=1, Platelets=1, Cholesterol=1},10)
+2024-02-15 21:59:53 DEBUG Servis:174 - assessmentHealth [3]: end working {CellsBlood=0, Health=55, Hemoglobin=0, Glucose=1, Platelets=1, Cholesterol=1}
+2024-02-15 21:59:53 DEBUG Servis:188 - heallingRecom [1]: start working
+2024-02-15 21:59:53 DEBUG Servis:208 - heallingRecom [3]: end working
+2024-02-15 21:59:53 DEBUG ServisTest:72 - visitDoctor [2]: end working Test
