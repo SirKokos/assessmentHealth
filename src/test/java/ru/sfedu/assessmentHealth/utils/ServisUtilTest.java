@@ -18,6 +18,7 @@ import java.util.List;
 import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static ru.sfedu.assessmentHealth.utils.ServisUtil.accumRangeCheckerValuesAssessmentHealth;
 import static ru.sfedu.assessmentHealth.utils.ServisUtil.rangeCheckerValuesAssessmentHealth;
 
 class ServisUtilTest extends CreateObjTest{
@@ -107,7 +108,35 @@ class ServisUtilTest extends CreateObjTest{
         assertFalse(actualHemoglobinLevel.getLeft().isEmpty());
         log.debug("rangeCheckerValuesAssessmentHealthTestNegativity [2]: end working \n actualRedBloodCellsCount = {} \n actualHemoglobinLevel = {}",actualRedBloodCellsCount,actualHemoglobinLevel);
 
+    }
 
-
+    @Test
+    void accumRangeCheckerValuesAssessmentHealthTest() {
+        log.debug("accumRangeCheckerValuesAssessmentHealthTest [1]: start working");
+        Patient patient = getPatient();
+        Integer age = patient.getAge();
+        Double redBloodCellsCount = patient.getCellsBlood();
+        Double hemoglobinLevel = patient.getHemoglobin();
+        Double plateletCount = patient.getPlatelets();
+        Double glucoseLevel = patient.getGlucose();
+        Double cholesterolLevel = patient.getCholesterol();
+        String gender = patient.getGender();
+        Map<String, Integer> actual = accumRangeCheckerValuesAssessmentHealth(age,redBloodCellsCount, hemoglobinLevel, plateletCount, glucoseLevel, cholesterolLevel, gender);
+        log.debug("accumRangeCheckerValuesAssessmentHealthTest [2]: end working {}",actual);
+    }
+    @Test
+    void accumRangeCheckerValuesAssessmentHealthTestNegativity() {
+        log.debug("accumRangeCheckerValuesAssessmentHealthTestNegativity [1]: start working");
+        Patient patient = getPatient();
+        Integer age = patient.getAge();
+        Double redBloodCellsCount = patient.getCellsBlood();
+        Double hemoglobinLevel = patient.getHemoglobin();
+        Double plateletCount = patient.getPlatelets();
+        Double glucoseLevel = patient.getGlucose();
+        Double cholesterolLevel = patient.getCholesterol();
+        String gender = patient.getGender();
+        Map<String, Integer> actual = accumRangeCheckerValuesAssessmentHealth(age,redBloodCellsCount, hemoglobinLevel, plateletCount, glucoseLevel, cholesterolLevel, gender);
+        assertFalse(actual.isEmpty());
+        log.debug("accumRangeCheckerValuesAssessmentHealthTestNegativity [2]: end working {}",actual);
     }
 }
