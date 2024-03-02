@@ -39,9 +39,6 @@ public class DataProviderMongo {
         StatusHistory statusHistory;
 
         HistoryContent historyContent = new HistoryContent();
-//        try (MongoClient mongoClient = MongoClients.create(PropertyConfig.getPropertyValue(Const.NAME_MONGO_HOST,Const.NAME_PROPERTY_FILE))){
-//            MongoDatabase database = mongoClient.getDatabase(PropertyConfig.getPropertyValue(Const.NAME_MONGO_NAME,Const.NAME_PROPERTY_FILE));
-//            database.createCollection(PropertyConfig.getPropertyValue(Const.NAME_MONGO_COLLECTION,Const.NAME_PROPERTY_FILE));
         try (MongoClient mongoClient = MongoClients.create(PropertyConfig.getPropertyValue(Const.NAME_MONGO_HOST,PropertyConfig.getConfigPath()))){
             MongoDatabase database = mongoClient.getDatabase(PropertyConfig.getPropertyValue(Const.NAME_MONGO_NAME,PropertyConfig.getConfigPath()));
             database.createCollection(PropertyConfig.getPropertyValue(Const.NAME_MONGO_COLLECTION,PropertyConfig.getConfigPath()));

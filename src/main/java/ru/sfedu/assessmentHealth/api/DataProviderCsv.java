@@ -25,11 +25,6 @@ public class DataProviderCsv implements IDataProvider {
 
 
     private static final Logger log = LogManager.getLogger(DataProviderCsv.class.getName());
-//    final private String calcReportPath = PropertyConfig.getPropertyValue(Const.CSV_NAME_CALCREPORT_KEY,Const.NAME_PROPERTY_FILE);
-//    final private String doctorPath = PropertyConfig.getPropertyValue(Const.CSV_NAME_DOCTOR_KEY,Const.NAME_PROPERTY_FILE);
-//    final private String patientPath = PropertyConfig.getPropertyValue(Const.CSV_NAME_PATIENT_KEY,Const.NAME_PROPERTY_FILE);
-//    final private String preparationPath =PropertyConfig.getPropertyValue(Const.CSV_NAME_PREPARATION_KEY,Const.NAME_PROPERTY_FILE);
-//    final private String schedulePath = PropertyConfig.getPropertyValue(Const.CSV_NAME_SCHEDULE_KEY,Const.NAME_PROPERTY_FILE);
 
 
     final private String calcReportPath = PropertyConfig.getPropertyValue(Const.CSV_NAME_CALCREPORT_KEY,PropertyConfig.getConfigPath());
@@ -53,6 +48,8 @@ public class DataProviderCsv implements IDataProvider {
     }
 
 
+    DataProviderMongo dataProviderMongo = new DataProviderMongo();
+
     /**
      * @param obj - Экземпляр класса Doctor
      * @return StatusAnswer(OK / ERROR)
@@ -73,12 +70,16 @@ public class DataProviderCsv implements IDataProvider {
                 case 0-> {
                     obj.setId(1);
                     beanToCsv.write(obj);
+                    dataProviderMongo.save(CommandType.UPDATED,obj);
                     return StatusAnswer.OK;}
                 default -> {
                     obj.setId(BaseId.getObjectLastIdCsv(doctorPath));
                     beanToCsv.write(obj);
+                    dataProviderMongo.save(CommandType.UPDATED,obj);
                     return StatusAnswer.OK;}
             }
+
+
 
         } catch (IOException | CsvRequiredFieldEmptyException | CsvDataTypeMismatchException e) {
             log.debug("InsertDataDoctor [2]: - ERROR result = {}, error = {}",response,e.getMessage());
@@ -109,11 +110,13 @@ public class DataProviderCsv implements IDataProvider {
                     obj.setId(1);
                     beanToCsv.write(obj);
                     writer.close();
+                    dataProviderMongo.save(CommandType.UPDATED,obj);
                     return StatusAnswer.OK;}
                 default -> {
                     obj.setId(BaseId.getObjectLastIdCsv(patientPath));
                     beanToCsv.write(obj);
                     writer.close();
+                    dataProviderMongo.save(CommandType.UPDATED,obj);
                     return StatusAnswer.OK;}
             }
 
@@ -145,11 +148,13 @@ public class DataProviderCsv implements IDataProvider {
                     obj.setId(1);
                     beanToCsv.write(obj);
                     writer.close();
+                    dataProviderMongo.save(CommandType.UPDATED,obj);
                     return StatusAnswer.OK;}
                 default -> {
                     obj.setId(BaseId.getObjectLastIdCsv(preparationPath));
                     beanToCsv.write(obj);
                     writer.close();
+                    dataProviderMongo.save(CommandType.UPDATED,obj);
                     return StatusAnswer.OK;}
             }
 
@@ -184,11 +189,13 @@ public class DataProviderCsv implements IDataProvider {
                     obj.setId(1);
                     beanToCsv.write(obj);
                     writer.close();
+                    dataProviderMongo.save(CommandType.UPDATED,obj);
                     return StatusAnswer.OK;}
                 default -> {
                     obj.setId(BaseId.getObjectLastIdCsv(schedulePath));
                     beanToCsv.write(obj);
                     writer.close();
+                    dataProviderMongo.save(CommandType.UPDATED,obj);
                     return StatusAnswer.OK;}
             }
 
@@ -221,11 +228,13 @@ public class DataProviderCsv implements IDataProvider {
                     obj.setId(1);
                     beanToCsv.write(obj);
                     writer.close();
+                    dataProviderMongo.save(CommandType.UPDATED,obj);
                     return StatusAnswer.OK;}
                 default -> {
                     obj.setId(BaseId.getObjectLastIdCsv(calcReportPath));
                     beanToCsv.write(obj);
                     writer.close();
+                    dataProviderMongo.save(CommandType.UPDATED,obj);
                     return StatusAnswer.OK;}
             }
 
@@ -445,6 +454,7 @@ public class DataProviderCsv implements IDataProvider {
     @Override
     public StatusAnswer deleteDoctor(Integer id) {
         log.debug("deleteDoctor [1]: Start working");
+        dataProviderMongo.save(CommandType.DELETED,selectDoctorId(id).get());
         StatusAnswer response = StatusAnswer.ERROR;
         CsvToBean csvToBean;
         List<Doctor> Beans;
@@ -459,6 +469,8 @@ public class DataProviderCsv implements IDataProvider {
             file.delete();
 
             List<Doctor> listDoctor = Beans.stream().filter(i->!(i.getId().equals(id))).toList();
+
+
             listDoctor.forEach(i-> {
                 try (Writer writer = new FileWriter(doctorPath,true)){
 
@@ -469,6 +481,7 @@ public class DataProviderCsv implements IDataProvider {
                 }
             });
             response = StatusAnswer.OK;
+
         } catch (IOException e) {
             log.error("deleteDoctor [2]: Error {}",e.getMessage());
         }
