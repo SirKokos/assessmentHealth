@@ -77,7 +77,7 @@ class DataProviderPostTest extends BaseTest{
         assertEquals(actual,StatusAnswer.OK);
         log.debug("insertCalcReport [2]: - working end succeeded status {}",actual);
     }
-//
+
     @Test
     @Order(6)
     void selectDoctorId() {

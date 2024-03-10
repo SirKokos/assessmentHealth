@@ -37,9 +37,9 @@ public class Servis {
         try (FileOutputStream fos = new FileOutputStream(file, true);
              OutputStreamWriter osw = new OutputStreamWriter(fos,Const.UNICODE_RUS);
              BufferedWriter writer = new BufferedWriter(osw)) {
-            writer.write(patient+"\n");
+            writer.write(patient+Const.SEPARATOR_ESCAPE);
             for (String value : recomList) {
-                writer.write(value+"\n");
+                writer.write(value+Const.SEPARATOR_ESCAPE);
             }
             writer.write(Const.FILE_DELIMITER_VISIT_DOCTOR);
             result = StatusAnswer.OK;
@@ -140,11 +140,11 @@ public class Servis {
             if(mapAssessmentHealth.get(Const.RESULT_HEALTH)<Const.TRIGGER_POINT_HEALTH && patient.getStatusVisit().equals(StatusPatient.OUT)){
 
                 for (var value : mapDoctorIdAndSchedule.entrySet() ) {
-                    writer.write(value.getKey() + "===>" + value.getValue()+"\n");
+                    writer.write(value.getKey() +Const.SEPARATOR_ARROW + value.getValue()+Const.SEPARATOR_ESCAPE);
                 }
 
                 for (String value :  heallingRecom(mapAssessmentHealth)) {
-                    writer.write(value+"\n");
+                    writer.write(value+Const.SEPARATOR_ESCAPE);
                 }
                 writer.write(Const.FILE_DELIMITER_VISIT_DOCTOR);
 
@@ -154,7 +154,7 @@ public class Servis {
                 }
                 writer.write(Const.FILE_DELIMITER_ARIVIAL_DOCTOR_STATUS_OK);
                 for (var value : mapDoctorIdAndSchedule.entrySet() ) {
-                    writer.write(value.getKey() +"===>"+ value.getValue()+"\n");
+                    writer.write(value.getKey() +Const.SEPARATOR_ARROW+ value.getValue()+Const.SEPARATOR_ESCAPE);
                 }
                 writer.write(Const.FILE_DELIMITER_VISIT_DOCTOR);
             }

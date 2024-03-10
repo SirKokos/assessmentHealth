@@ -9,7 +9,8 @@ import java.util.List;
 public class Const {
 
 
-
+    public static final String SEPARATOR_ESCAPE = "\n";
+    public static final String SEPARATOR_ARROW = "===>";
     public static final String NAME_PROPERTY_FILE = "src/main/resources/environment.properties";
     public static final String NAME_MONGO_COLLECTION = "Mongo.Collection";
     public static final String NAME_MONGO_HOST = "dataBase.Mongo";

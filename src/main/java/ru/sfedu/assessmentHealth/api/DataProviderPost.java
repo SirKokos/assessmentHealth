@@ -31,7 +31,7 @@ public class DataProviderPost implements IDataProvider {
         }
         log.debug("DataProviderPost [3]: - End constructor");
     }
-
+    DataProviderMongo dataProviderMongo = new DataProviderMongo();
     protected void createTables(Connection connection){
         log.debug("createTables [1] - start working method ");
         List<String> nameTab = new ArrayList<>();
@@ -67,6 +67,7 @@ public class DataProviderPost implements IDataProvider {
         {
             PreparedStatement statement = connection.prepareStatement(Const.INSERT_DOCTOR);
             PostgresUtils.createDoctor(statement,obj).executeUpdate();
+            dataProviderMongo.save(CommandType.UPDATED,obj);
             result = StatusAnswer.OK;
         } catch (SQLException e) {
             log.debug("insertDoctor [2]: Error {}",e.getMessage());
@@ -91,6 +92,7 @@ public class DataProviderPost implements IDataProvider {
         {
             PreparedStatement statement = connection.prepareStatement(Const.INSERT_PATIENT);
             PostgresUtils.createPatient(statement,obj).executeUpdate();
+            dataProviderMongo.save(CommandType.UPDATED,obj);
             result = StatusAnswer.OK;
         } catch (SQLException e) {
             log.debug("insertPatient [2]: Error {}",e.getMessage());
@@ -115,6 +117,7 @@ public class DataProviderPost implements IDataProvider {
         {
             PreparedStatement statement = connection.prepareStatement(Const.INSERT_PREPARATION);
             PostgresUtils.createPreparation(statement,obj).executeUpdate();
+            dataProviderMongo.save(CommandType.UPDATED,obj);
             result = StatusAnswer.OK;
         } catch (SQLException e) {
             log.debug("insertPreparation [2]: Error {}",e.getMessage());
@@ -142,6 +145,7 @@ public class DataProviderPost implements IDataProvider {
         {
             PreparedStatement statement = connection.prepareStatement(Const.INSERT_SCHEDULE);
             PostgresUtils.createSchedule(statement,obj).executeUpdate();
+            dataProviderMongo.save(CommandType.UPDATED,obj);
             result = StatusAnswer.OK;
         } catch (SQLException e) {
             log.debug("insertSchedule [2]: Error {}",e.getMessage());
@@ -166,6 +170,7 @@ public class DataProviderPost implements IDataProvider {
         {
             PreparedStatement statement = connection.prepareStatement(Const.INSERT_CALC_REPORT);
             PostgresUtils.createCalcReport(statement,obj).executeUpdate();
+            dataProviderMongo.save(CommandType.UPDATED,obj);
             result = StatusAnswer.OK;
         } catch (SQLException e) {
             log.debug("insertCalcReport [2]: Error {}",e.getMessage());
@@ -191,9 +196,6 @@ public class DataProviderPost implements IDataProvider {
             PreparedStatement statement = connection.prepareStatement(Const.SELECT_DOCTOR_TO_ID);
             statement.setInt(1,id);
             ResultSet resultSet = statement.executeQuery();
-//            resultSet.next();
-//            System.out.println(resultSet.getString(10));
-
             result = Optional.of(PostgresUtils.getDoctor(resultSet));
 
         } catch (SQLException e) {
@@ -340,6 +342,7 @@ public class DataProviderPost implements IDataProvider {
     public StatusAnswer deleteDoctor(Integer id) {
         log.debug("deleteDoctor [1]: start working");
         StatusAnswer result = StatusAnswer.ERROR;
+        dataProviderMongo.save(CommandType.DELETED,selectDoctorId(id).get());
         try(Connection connection = DriverManager.getConnection(url,
                 PropertyConfig.getPropertyValue(Const.BD_POSTGRES_USER,Const.NAME_PROPERTY_FILE),
                 PropertyConfig.getPropertyValue(Const.BD_POSTGRES_PASSWORD,Const.NAME_PROPERTY_FILE))

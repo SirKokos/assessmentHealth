@@ -43,6 +43,7 @@ public class DataProviderXml implements IDataProvider {
 
     }
 
+    DataProviderMongo dataProviderMongo = new DataProviderMongo();
 
     /**
      * Этот метод считывает XML-файл и возвращает объект типа XmlWrapper
@@ -87,7 +88,7 @@ public class DataProviderXml implements IDataProvider {
                 case 0 -> {
                     dataContainer.setListObject(List.of(obj));
                     serializer.write(dataContainer, xmlFile);
-
+                    dataProviderMongo.save(CommandType.UPDATED,obj);
                     return StatusAnswer.OK;
                 }
                 default -> {
@@ -101,7 +102,7 @@ public class DataProviderXml implements IDataProvider {
 
                     serializer.write(dataContainer, xmlFile);
 
-
+                    dataProviderMongo.save(CommandType.UPDATED,obj);
                     return StatusAnswer.OK;
                 }
             }
@@ -136,7 +137,7 @@ public class DataProviderXml implements IDataProvider {
                 case 0 -> {
                     dataContainer.setListObject(List.of(obj));
                     serializer.write(dataContainer, xmlFile);
-
+                    dataProviderMongo.save(CommandType.UPDATED,obj);
                     return StatusAnswer.OK;
                 }
                 default -> {
@@ -150,7 +151,7 @@ public class DataProviderXml implements IDataProvider {
 
                     serializer.write(dataContainer, xmlFile);
 
-
+                    dataProviderMongo.save(CommandType.UPDATED,obj);
                     return StatusAnswer.OK;
                 }
             }
@@ -184,7 +185,7 @@ public class DataProviderXml implements IDataProvider {
                 case 0 -> {
                     dataContainer.setListObject(List.of(obj));
                     serializer.write(dataContainer, xmlFile);
-
+                    dataProviderMongo.save(CommandType.UPDATED,obj);
                     return StatusAnswer.OK;
                 }
                 default -> {
@@ -198,7 +199,7 @@ public class DataProviderXml implements IDataProvider {
 
                     serializer.write(dataContainer, xmlFile);
 
-
+                    dataProviderMongo.save(CommandType.UPDATED,obj);
                     return StatusAnswer.OK;
                 }
             }
@@ -235,7 +236,7 @@ public class DataProviderXml implements IDataProvider {
                 case 0 -> {
                     dataContainer.setListObject(List.of(obj));
                     serializer.write(dataContainer, xmlFile);
-
+                    dataProviderMongo.save(CommandType.UPDATED,obj);
                     return StatusAnswer.OK;
                 }
                 default -> {
@@ -248,7 +249,7 @@ public class DataProviderXml implements IDataProvider {
                     dataContainer.setListObject(ListSchedule);
 
                     serializer.write(dataContainer, xmlFile);
-
+                    dataProviderMongo.save(CommandType.UPDATED,obj);
 
                     return StatusAnswer.OK;
                 }
@@ -283,7 +284,7 @@ public class DataProviderXml implements IDataProvider {
                 case 0 -> {
                     dataContainer.setListObject(List.of(obj));
                     serializer.write(dataContainer, xmlFile);
-
+                    dataProviderMongo.save(CommandType.UPDATED,obj);
                     return StatusAnswer.OK;
                 }
                 default -> {
@@ -296,7 +297,7 @@ public class DataProviderXml implements IDataProvider {
                     dataContainer.setListObject(ListCalc);
 
                     serializer.write(dataContainer, xmlFile);
-
+                    dataProviderMongo.save(CommandType.UPDATED,obj);
 
                     return StatusAnswer.OK;
                 }
@@ -502,7 +503,7 @@ public class DataProviderXml implements IDataProvider {
     public StatusAnswer deleteDoctor(Integer id) {
         log.debug("deleteDoctor [1]: - Start method working insert xml");
         StatusAnswer result = StatusAnswer.ERROR;
-
+        dataProviderMongo.save(CommandType.DELETED,selectDoctorId(id).get());
         List<Doctor> ListDoctor;
         XmlWrapper<Doctor> dataContainer =  new XmlWrapper<>();;
         File xmlFile = new File(doctorPath);
