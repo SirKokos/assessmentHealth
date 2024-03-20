@@ -320,3 +320,328 @@ SQL = SELECT pg_relation_size('%s')
 2024-03-20 20:29:12 DEBUG LogicalConnectionManagedImpl:174 - Initiating JDBC connection release from afterTransaction
 2024-03-20 20:29:12 DEBUG HibernateDataProviderPostgresTest:51 - getUsers[2]: Test result [postgres] 
 SQL = SELECT usename FROM pg_catalog.pg_user
+2024-03-20 20:54:03 DEBUG HibernateDataProviderPostgresTest:28 - executeQuery[1]: Test start working
+2024-03-20 20:54:03 DEBUG HibernateDataProviderPostgres:35 - executeQuery [1]: start execute
+2024-03-20 20:54:03 DEBUG HibernateDataProviderPostgres:23 - getSession [1]: start get session
+2024-03-20 20:54:03 DEBUG HibernateUtil:38 - getSessionFactory [1]: start session factory
+2024-03-20 20:54:03 DEBUG HibernateUtil:62 - getConfiguration [1]: start getConfiguration
+2024-03-20 20:54:03 DEBUG HibernateUtil:69 - getConfiguration [3]: default configuration file
+2024-03-20 20:54:03 DEBUG logging:152 - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2024-03-20 20:54:03 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+2024-03-20 20:54:03 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+2024-03-20 20:54:03 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+2024-03-20 20:54:03 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.envers.boot.internal.EnversIntegrator].
+2024-03-20 20:54:03 INFO  Version:44 - HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-03-20 20:54:03 DEBUG Environment:199 - HHH000206: hibernate.properties not found
+2024-03-20 20:54:03 DEBUG LocalXmlResourceResolver:63 - Interpreting public/system identifier : [-//Hibernate/Hibernate Configuration DTD//EN] - [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd]
+2024-03-20 20:54:03 DEBUG LocalXmlResourceResolver:87 - Recognized hibernate-configuration identifier; attempting to resolve on classpath under org/hibernate/
+2024-03-20 20:54:03 DEBUG JaxbCfgProcessor:117 - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+2024-03-20 20:54:04 DEBUG HibernateUtil:75 - getConfiguration [5]: end working
+2024-03-20 20:54:04 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+2024-03-20 20:54:04 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+2024-03-20 20:54:04 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+2024-03-20 20:54:04 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.envers.boot.internal.EnversIntegrator].
+2024-03-20 20:54:04 DEBUG ServiceBinding:68 - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+2024-03-20 20:54:04 DEBUG RegionFactoryInitiator:118 - Cannot default RegionFactory based on registered strategies as `[class org.hibernate.cache.ehcache.internal.EhcacheRegionFactory, class org.hibernate.cache.ehcache.internal.SingletonEhcacheRegionFactory]` RegionFactory strategies were registered
+2024-03-20 20:54:04 DEBUG RegionFactoryInitiator:49 - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2024-03-20 20:54:04 INFO  Version:56 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration boolean -> org.hibernate.type.BooleanType@46678e49
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration boolean -> org.hibernate.type.BooleanType@46678e49
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@46678e49
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@50f40653
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration true_false -> org.hibernate.type.TrueFalseType@6a0ac48e
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration yes_no -> org.hibernate.type.YesNoType@35636217
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration byte -> org.hibernate.type.ByteType@4f82663e
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration byte -> org.hibernate.type.ByteType@4f82663e
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@4f82663e
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration character -> org.hibernate.type.CharacterType@6a9b0a6f
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration char -> org.hibernate.type.CharacterType@6a9b0a6f
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@6a9b0a6f
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration short -> org.hibernate.type.ShortType@640dc4c6
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration short -> org.hibernate.type.ShortType@640dc4c6
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@640dc4c6
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration integer -> org.hibernate.type.IntegerType@6411d3c8
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration int -> org.hibernate.type.IntegerType@6411d3c8
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@6411d3c8
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration long -> org.hibernate.type.LongType@4441d567
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration long -> org.hibernate.type.LongType@4441d567
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.Long -> org.hibernate.type.LongType@4441d567
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration float -> org.hibernate.type.FloatType@f3fcd59
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration float -> org.hibernate.type.FloatType@f3fcd59
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@f3fcd59
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration double -> org.hibernate.type.DoubleType@6ee8dcd3
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration double -> org.hibernate.type.DoubleType@6ee8dcd3
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@6ee8dcd3
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@1cc9cfb2
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@1cc9cfb2
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@17740dae
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@17740dae
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration string -> org.hibernate.type.StringType@5c82cd4f
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.String -> org.hibernate.type.StringType@5c82cd4f
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@30814f43
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@11a00961
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration url -> org.hibernate.type.UrlType@53ac845a
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration java.net.URL -> org.hibernate.type.UrlType@53ac845a
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration Duration -> org.hibernate.type.DurationType@3cee53dc
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@3cee53dc
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration Instant -> org.hibernate.type.InstantType@4393593c
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@4393593c
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@2c43eb8
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@2c43eb8
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@889d9e8
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@889d9e8
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@4a05d8ae
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@4a05d8ae
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@3910fe11
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@3910fe11
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@2c2db130
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@2c2db130
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@60737b23
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@60737b23
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration date -> org.hibernate.type.DateType@7f8633ae
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration java.sql.Date -> org.hibernate.type.DateType@7f8633ae
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration time -> org.hibernate.type.TimeType@58496dc
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@58496dc
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration timestamp -> org.hibernate.type.TimestampType@34e20e6b
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@34e20e6b
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@34e20e6b
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@4a8df3e2
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration calendar -> org.hibernate.type.CalendarType@1f51431
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@1f51431
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@1f51431
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@10ee04df
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration calendar_time -> org.hibernate.type.CalendarTimeType@3900fa71
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration locale -> org.hibernate.type.LocaleType@61e3cf4d
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@61e3cf4d
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration currency -> org.hibernate.type.CurrencyType@72e789cb
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@72e789cb
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration timezone -> org.hibernate.type.TimeZoneType@18eec010
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@18eec010
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration class -> org.hibernate.type.ClassType@1d61c6dc
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@1d61c6dc
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@26f7cdf8
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@26f7cdf8
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@4f824872
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration binary -> org.hibernate.type.BinaryType@35fb22a9
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration byte[] -> org.hibernate.type.BinaryType@35fb22a9
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration [B -> org.hibernate.type.BinaryType@35fb22a9
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@359ff4d9
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@359ff4d9
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@359ff4d9
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration row_version -> org.hibernate.type.RowVersionType@c6634d
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration image -> org.hibernate.type.ImageType@784c5ef5
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration characters -> org.hibernate.type.CharArrayType@b965857
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration char[] -> org.hibernate.type.CharArrayType@b965857
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration [C -> org.hibernate.type.CharArrayType@b965857
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@7495699f
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@7495699f
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@7495699f
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration text -> org.hibernate.type.TextType@74abbb
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration ntext -> org.hibernate.type.NTextType@40298285
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration blob -> org.hibernate.type.BlobType@2fc2a205
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@2fc2a205
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@58a63629
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration clob -> org.hibernate.type.ClobType@4f4c789f
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@4f4c789f
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration nclob -> org.hibernate.type.NClobType@724c5cbe
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@724c5cbe
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@51351f28
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@4d7aaca2
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration serializable -> org.hibernate.type.SerializableType@11bd803
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration object -> org.hibernate.type.ObjectType@67110f71
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@67110f71
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@62628e78
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@44841b43
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@7c75db8b
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@4ab550d5
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@3cd206b5
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@58e85c6f
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@a137d7a
+2024-03-20 20:54:04 DEBUG BasicTypeRegistry:157 - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@6ac0b715
+2024-03-20 20:54:04 DEBUG DefaultIdentifierGeneratorFactory:98 - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+2024-03-20 20:54:04 DEBUG DefaultIdentifierGeneratorFactory:98 - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+2024-03-20 20:54:04 DEBUG DefaultIdentifierGeneratorFactory:98 - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+2024-03-20 20:54:04 DEBUG DefaultIdentifierGeneratorFactory:98 - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+2024-03-20 20:54:04 DEBUG DefaultIdentifierGeneratorFactory:98 - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+2024-03-20 20:54:04 DEBUG DefaultIdentifierGeneratorFactory:98 - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+2024-03-20 20:54:04 DEBUG DefaultIdentifierGeneratorFactory:98 - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+2024-03-20 20:54:04 DEBUG DefaultIdentifierGeneratorFactory:98 - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2024-03-20 20:54:04 DEBUG DefaultIdentifierGeneratorFactory:98 - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+2024-03-20 20:54:04 DEBUG DefaultIdentifierGeneratorFactory:98 - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+2024-03-20 20:54:04 DEBUG DefaultIdentifierGeneratorFactory:98 - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+2024-03-20 20:54:04 DEBUG DefaultIdentifierGeneratorFactory:98 - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+2024-03-20 20:54:04 DEBUG DefaultIdentifierGeneratorFactory:98 - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2024-03-20 20:54:04 DEBUG DefaultIdentifierGeneratorFactory:98 - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+2024-03-20 20:54:04 WARN  pooling:75 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2024-03-20 20:54:04 INFO  pooling:119 - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/assessmentHealth]
+2024-03-20 20:54:04 INFO  pooling:125 - HHH10001001: Connection properties: {password=root, useUnicode=true, CharSet=utf8, characterEncoding=utf8, user=postgres}
+2024-03-20 20:54:04 INFO  pooling:132 - HHH10001003: Autocommit mode: false
+2024-03-20 20:54:04 DEBUG DriverManagerConnectionProviderImpl:384 - Initializing Connection pool with 1 Connections
+2024-03-20 20:54:04 INFO  DriverManagerConnectionProviderImpl:322 - HHH000115: Hibernate connection pool size: 1 (min=1)
+2024-03-20 20:54:04 DEBUG JdbcEnvironmentInitiator:72 - Database ->
+       name : PostgreSQL
+    version : 14.5
+      major : 14
+      minor : 5
+2024-03-20 20:54:04 DEBUG JdbcEnvironmentInitiator:83 - Driver ->
+       name : PostgreSQL JDBC Driver
+    version : 42.7.1
+      major : 42
+      minor : 7
+2024-03-20 20:54:04 DEBUG JdbcEnvironmentInitiator:389 - JDBC version : 4.2
+2024-03-20 20:54:04 INFO  Dialect:175 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2024-03-20 20:54:05 DEBUG IdentifierHelperBuilder:114 - JDBC driver metadata reported database stores quoted identifiers in neither upper, lower nor mixed case
+2024-03-20 20:54:05 DEBUG BasicTypeRegistry:157 - Adding type registration pg-uuid -> org.hibernate.type.PostgresUUIDType@1e469dfd
+2024-03-20 20:54:05 DEBUG BasicTypeRegistry:157 - Adding type registration java.util.UUID -> org.hibernate.type.PostgresUUIDType@1e469dfd
+2024-03-20 20:54:05 DEBUG BasicTypeRegistry:160 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@26f7cdf8
+2024-03-20 20:54:05 INFO  EnversServiceImpl:88 - Envers integration enabled? : true
+2024-03-20 20:54:05 DEBUG BasicTypeRegistry:157 - Adding type registration org.hibernate.envers.internal.entities.RevisionTypeType -> org.hibernate.type.CustomType@5fa23c
+2024-03-20 20:54:05 DEBUG TypeConfiguration$Scope:149 - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@2f236de0] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@4eba373c]
+2024-03-20 20:54:05 DEBUG Namespace:51 - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+2024-03-20 20:54:05 DEBUG SessionFactoryImpl:208 - Building session factory
+2024-03-20 20:54:05 DEBUG Settings:68 - SessionFactory name : null
+2024-03-20 20:54:05 DEBUG Settings:69 - Automatic flush during beforeCompletion(): enabled
+2024-03-20 20:54:05 DEBUG Settings:70 - Automatic session close at end of transaction: disabled
+2024-03-20 20:54:05 DEBUG Settings:72 - Statistics: disabled
+2024-03-20 20:54:05 DEBUG Settings:74 - Deleted entity synthetic identifier rollback: disabled
+2024-03-20 20:54:05 DEBUG Settings:75 - Default entity-mode: pojo
+2024-03-20 20:54:05 DEBUG Settings:76 - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2024-03-20 20:54:05 DEBUG Settings:77 - Allow initialization of lazy state outside session : disabled
+2024-03-20 20:54:05 DEBUG Settings:79 - Using BatchFetchStyle : LEGACY
+2024-03-20 20:54:05 DEBUG Settings:80 - Default batch fetch size: -1
+2024-03-20 20:54:05 DEBUG Settings:81 - Maximum outer join fetch depth: null
+2024-03-20 20:54:05 DEBUG Settings:82 - Default null ordering: NONE
+2024-03-20 20:54:05 DEBUG Settings:83 - Order SQL updates by primary key: disabled
+2024-03-20 20:54:05 DEBUG Settings:84 - Order SQL inserts for batching: disabled
+2024-03-20 20:54:05 DEBUG Settings:86 - multi-tenancy strategy : NONE
+2024-03-20 20:54:05 DEBUG Settings:88 - JTA Track by Thread: enabled
+2024-03-20 20:54:05 DEBUG Settings:90 - Query language substitutions: {}
+2024-03-20 20:54:05 DEBUG Settings:91 - Named query checking : enabled
+2024-03-20 20:54:05 DEBUG Settings:93 - Second-level cache: disabled
+2024-03-20 20:54:05 DEBUG Settings:94 - Second-level query cache: disabled
+2024-03-20 20:54:05 DEBUG Settings:95 - Second-level query cache factory: null
+2024-03-20 20:54:05 DEBUG Settings:96 - Second-level cache region prefix: null
+2024-03-20 20:54:05 DEBUG Settings:97 - Optimize second-level cache for minimal puts: disabled
+2024-03-20 20:54:05 DEBUG Settings:98 - Structured second-level cache entries: disabled
+2024-03-20 20:54:05 DEBUG Settings:99 - Second-level cache direct-reference entries: disabled
+2024-03-20 20:54:05 DEBUG Settings:100 - Automatic eviction of collection cache: disabled
+2024-03-20 20:54:05 DEBUG Settings:102 - JDBC batch size: 15
+2024-03-20 20:54:05 DEBUG Settings:103 - JDBC batch updates for versioned data: enabled
+2024-03-20 20:54:05 DEBUG Settings:104 - Scrollable result sets: enabled
+2024-03-20 20:54:05 DEBUG Settings:105 - Wrap result sets: disabled
+2024-03-20 20:54:05 DEBUG Settings:106 - JDBC3 getGeneratedKeys(): enabled
+2024-03-20 20:54:05 DEBUG Settings:107 - JDBC result set fetch size: null
+2024-03-20 20:54:05 DEBUG Settings:108 - Connection release mode: AFTER_TRANSACTION
+2024-03-20 20:54:05 DEBUG Settings:109 - Generate SQL with comments: disabled
+2024-03-20 20:54:05 DEBUG Settings:111 - JPA compliance - query : disabled
+2024-03-20 20:54:05 DEBUG Settings:112 - JPA compliance - closed-handling : disabled
+2024-03-20 20:54:05 DEBUG Settings:113 - JPA compliance - lists : disabled
+2024-03-20 20:54:05 DEBUG Settings:114 - JPA compliance - transactions : disabled
+2024-03-20 20:54:05 DEBUG SessionFactoryServiceRegistryImpl:92 - EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+2024-03-20 20:54:05 DEBUG SessionFactoryServiceRegistryImpl:92 - EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+2024-03-20 20:54:05 DEBUG SessionFactoryImpl:276 - Session factory constructed with filter configurations : {}
+2024-03-20 20:54:05 DEBUG SessionFactoryImpl:277 - Instantiating session factory with properties: {hibernate.connection.characterEncoding=utf8, dialect=org.hibernate.dialect.PostgreSQLDialect, java.specification.version=19, sun.cpu.isalist=amd64, sun.jnu.encoding=Cp1251, hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect, java.class.path=C:\Users\79897\.m2\repository\org\junit\platform\junit-platform-launcher\1.8.2\junit-platform-launcher-1.8.2.jar;D:\java\IntelliJ IDEA Community Edition 2023.3.4\lib\idea_rt.jar;D:\java\IntelliJ IDEA Community Edition 2023.3.4\plugins\junit\lib\junit5-rt.jar;D:\java\IntelliJ IDEA Community Edition 2023.3.4\plugins\junit\lib\junit-rt.jar;D:\Рабочий стол\Курсовая_Долг\assessmentHealth\target\test-classes;D:\Рабочий стол\Курсовая_Долг\assessmentHealth\target\classes;C:\Users\79897\.m2\repository\org\apache\logging\log4j\log4j-api\2.16.0\log4j-api-2.16.0.jar;C:\Users\79897\.m2\repository\org\apache\logging\log4j\log4j-core\2.16.0\log4j-core-2.16.0.jar;C:\Users\79897\.m2\repository\org\junit\jupiter\junit-jupiter\5.8.2\junit-jupiter-5.8.2.jar;C:\Users\79897\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.2\junit-jupiter-api-5.8.2.jar;C:\Users\79897\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\79897\.m2\repository\org\junit\platform\junit-platform-commons\1.8.2\junit-platform-commons-1.8.2.jar;C:\Users\79897\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\79897\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.8.2\junit-jupiter-params-5.8.2.jar;C:\Users\79897\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.2\junit-jupiter-engine-5.8.2.jar;C:\Users\79897\.m2\repository\org\junit\platform\junit-platform-engine\1.8.2\junit-platform-engine-1.8.2.jar;C:\Users\79897\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.1\jackson-databind-2.15.1.jar;C:\Users\79897\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.1\jackson-annotations-2.15.1.jar;C:\Users\79897\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.1\jackson-core-2.15.1.jar;C:\Users\79897\.m2\repository\org\mongodb\mongodb-driver-sync\4.11.1\mongodb-driver-sync-4.11.1.jar;C:\Users\79897\.m2\repository\org\mongodb\bson\4.11.1\bson-4.11.1.jar;C:\Users\79897\.m2\repository\org\mongodb\mongodb-driver-core\4.11.1\mongodb-driver-core-4.11.1.jar;C:\Users\79897\.m2\repository\org\mongodb\bson-record-codec\4.11.1\bson-record-codec-4.11.1.jar;C:\Users\79897\.m2\repository\org\apache\logging\log4j\log4j-slf4j-impl\2.20.0\log4j-slf4j-impl-2.20.0.jar;C:\Users\79897\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\79897\.m2\repository\com\opencsv\opencsv\5.9\opencsv-5.9.jar;C:\Users\79897\.m2\repository\org\apache\commons\commons-lang3\3.13.0\commons-lang3-3.13.0.jar;C:\Users\79897\.m2\repository\org\apache\commons\commons-text\1.11.0\commons-text-1.11.0.jar;C:\Users\79897\.m2\repository\commons-beanutils\commons-beanutils\1.9.4\commons-beanutils-1.9.4.jar;C:\Users\79897\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\79897\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\79897\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\79897\.m2\repository\org\simpleframework\simple-xml\2.7.1\simple-xml-2.7.1.jar;C:\Users\79897\.m2\repository\stax\stax-api\1.0.1\stax-api-1.0.1.jar;C:\Users\79897\.m2\repository\stax\stax\1.2.0\stax-1.2.0.jar;C:\Users\79897\.m2\repository\xpp3\xpp3\1.1.3.3\xpp3-1.1.3.3.jar;C:\Users\79897\.m2\repository\org\postgresql\postgresql\42.7.1\postgresql-42.7.1.jar;C:\Users\79897\.m2\repository\org\checkerframework\checker-qual\3.41.0\checker-qual-3.41.0.jar;C:\Users\79897\.m2\repository\commons-cli\commons-cli\1.6.0\commons-cli-1.6.0.jar;C:\Users\79897\.m2\repository\org\hibernate\hibernate-entitymanager\5.6.15.Final\hibernate-entitymanager-5.6.15.Final.jar;C:\Users\79897\.m2\repository\org\jboss\logging\jboss-logging\3.4.3.Final\jboss-logging-3.4.3.Final.jar;C:\Users\79897\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.1.2.Final\hibernate-commons-annotations-5.1.2.Final.jar;C:\Users\79897\.m2\repository\javax\persistence\javax.persistence-api\2.2\javax.persistence-api-2.2.jar;C:\Users\79897\.m2\repository\net\bytebuddy\byte-buddy\1.12.18\byte-buddy-1.12.18.jar;C:\Users\79897\.m2\repository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.2_spec\1.1.1.Final\jboss-transaction-api_1.2_spec-1.1.1.Final.jar;C:\Users\79897\.m2\repository\org\hibernate\hibernate-envers\5.6.15.Final\hibernate-envers-5.6.15.Final.jar;C:\Users\79897\.m2\repository\org\dom4j\dom4j\2.1.3\dom4j-2.1.3.jar;C:\Users\79897\.m2\repository\org\hibernate\hibernate-c3p0\5.6.15.Final\hibernate-c3p0-5.6.15.Final.jar;C:\Users\79897\.m2\repository\com\mchange\c3p0\0.9.5.5\c3p0-0.9.5.5.jar;C:\Users\79897\.m2\repository\com\mchange\mchange-commons-java\0.2.19\mchange-commons-java-0.2.19.jar;C:\Users\79897\.m2\repository\org\hibernate\hibernate-proxool\5.6.15.Final\hibernate-proxool-5.6.15.Final.jar;C:\Users\79897\.m2\repository\proxool\proxool\0.8.3\proxool-0.8.3.jar;C:\Users\79897\.m2\repository\org\hibernate\hibernate-ehcache\5.6.15.Final\hibernate-ehcache-5.6.15.Final.jar;C:\Users\79897\.m2\repository\net\sf\ehcache\ehcache\2.10.6\ehcache-2.10.6.jar;C:\Users\79897\.m2\repository\org\hibernate\hibernate-core\5.6.15.Final\hibernate-core-5.6.15.Final.jar;C:\Users\79897\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\79897\.m2\repository\org\jboss\jandex\2.4.2.Final\jandex-2.4.2.Final.jar;C:\Users\79897\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\79897\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\79897\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\79897\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-runtime-2.3.1.jar;C:\Users\79897\.m2\repository\org\glassfish\jaxb\txw2\2.3.1\txw2-2.3.1.jar;C:\Users\79897\.m2\repository\com\sun\istack\istack-commons-runtime\3.0.7\istack-commons-runtime-3.0.7.jar;C:\Users\79897\.m2\repository\org\jvnet\staxex\stax-ex\1.8\stax-ex-1.8.jar;C:\Users\79897\.m2\repository\com\sun\xml\fastinfoset\FastInfoset\1.2.15\FastInfoset-1.2.15.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, idea.test.cyclic.buffer.size=1048576, user.variant=, java.vendor.url=https://java.oracle.com/, user.timezone=Europe/Moscow, java.vm.specification.version=19, os.name=Windows 11, sun.java.launcher=SUN_STANDARD, user.country=RU, sun.boot.library.path=C:\Users\79897\.jdks\openjdk-19.0.1\bin, sun.java.command=com.intellij.rt.junit.JUnitStarter -ideVersion5 -junit5 ru.sfedu.assessmentHealth.lab1.api.HibernateDataProviderPostgresTest, jdk.debug=release, sun.cpu.endian=little, user.home=C:\Users\79897, user.language=ru, sun.stderr.encoding=windows-1251, java.specification.vendor=Oracle Corporation, hibernate.cache.provider_class=org.hibernate.cache.internal.NoCacheProvider, java.version.date=2022-10-18, java.home=C:\Users\79897\.jdks\openjdk-19.0.1, file.separator=\, java.vm.compressedOopsMode=Zero based, sun.stdout.encoding=windows-1251, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, hibernate.connection.CharSet=utf8, cache.provider_class=org.hibernate.cache.internal.NoCacheProvider, user.script=, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, hibernate.connection.useUnicode=true, java.runtime.version=19.0.1+10-21, user.name=79897, stdout.encoding=windows-1251, path.separator=;, hibernate.connection.username=****, os.version=10.0, java.runtime.name=OpenJDK Runtime Environment, hibernate.connection.url=jdbc:postgresql://localhost:5432/assessmentHealth, file.encoding=windows-1251, java.vm.name=OpenJDK 64-Bit Server VM, hibernate.show_sql=true, hibernate.current_session_context_class=thread, show_sql=true, hibernate.connection.driver_class=org.postgresql.Driver, java.vendor.url.bug=https://bugreport.java.com/bugreport/, java.io.tmpdir=C:\Users\79897\AppData\Local\Temp\, java.version=19.0.1, user.dir=D:\Рабочий стол\Курсовая_Долг\assessmentHealth, os.arch=amd64, java.vm.specification.name=Java Virtual Machine Specification, hibernate.connection.password=****, sun.os.patch.level=, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@6f798482, native.encoding=Cp1251, java.library.path=C:\Users\79897\.jdks\openjdk-19.0.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\Рабочий стол\Nodejs\;C:\Program Files\Git\cmd;C:\Program Files\PuTTY\;C:\Program Files\Docker\Docker\resources\bin;D:\python\Scripts\;D:\python\;C:\Users\79897\AppData\Local\Microsoft\WindowsApps;;D:\pycharm\JetBrains\PyCharm Community Edition 2023.3.3\bin;;D:\java\IntelliJ IDEA 2022.3.2\bin;;D:\VsCode\Microsoft VS Code\bin;C:\Users\79897\AppData\Roaming\npm;C:\Users\79897\AppData\Local\Programs\mongosh\;D:\java\IntelliJ IDEA Community Edition 2023.3.4\bin;;., stderr.encoding=windows-1251, java.vendor=Oracle Corporation, java.vm.info=mixed mode, sharing, java.vm.version=19.0.1+10-21, hibernate.bytecode.use_reflection_optimizer=false, sun.io.unicode.encoding=UnicodeLittle, hibernate.connection.pool_size=1, java.class.version=63.0}
+2024-03-20 20:54:05 DEBUG JaccIntegrator:84 - Skipping JACC integration as it was not enabled
+2024-03-20 20:54:05 DEBUG EnversIntegrator:76 - Skipping Envers listener registrations : No audited entities found
+2024-03-20 20:54:05 DEBUG SessionFactoryImpl:316 - Instantiated session factory
+2024-03-20 20:54:05 DEBUG TypeConfiguration$Scope:154 - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@2f236de0] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@73809e7]
+2024-03-20 20:54:05 DEBUG SchemaManagementToolCoordinator:556 - No schema actions specified
+2024-03-20 20:54:05 DEBUG SchemaManagementToolCoordinator:69 - No actions specified; doing nothing
+2024-03-20 20:54:05 DEBUG SessionFactoryServiceRegistryImpl:92 - EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+2024-03-20 20:54:05 DEBUG QueryTranslatorFactoryInitiator:45 - QueryTranslatorFactory: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@2fd954f
+2024-03-20 20:54:05 DEBUG NamedQueryRepository:171 - Checking 0 named HQL queries
+2024-03-20 20:54:05 DEBUG NamedQueryRepository:185 - Checking 0 named SQL queries
+2024-03-20 20:54:05 DEBUG SessionFactoryRegistry:51 - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@7377781e
+2024-03-20 20:54:05 DEBUG SessionFactoryRegistry:73 - Registering SessionFactory: a5a1f455-43b5-47fc-8d33-4cc9449dfe2f (<unnamed>)
+2024-03-20 20:54:05 DEBUG SessionFactoryRegistry:80 - Not binding SessionFactory to JNDI, no JNDI name configured
+2024-03-20 20:54:05 DEBUG HibernateUtil:53 - getSessionFactory [3]: end working
+2024-03-20 20:54:05 DEBUG HibernateDataProviderPostgres:25 - getSession [2]: end work
+2024-03-20 20:54:05 DEBUG StatisticsInitiator:101 - Statistics initialized [enabled=false]
+2024-03-20 20:54:05 DEBUG SQL:144 - SELECT tablename FROM pg_catalog.pg_tables WHERE schemaname='public'
+2024-03-20 20:54:05 DEBUG Loader:384 - Result set row: 0
+2024-03-20 20:54:05 DEBUG Loader:1595 - Result row: 
+2024-03-20 20:54:05 DEBUG Loader:384 - Result set row: 1
+2024-03-20 20:54:05 DEBUG Loader:1595 - Result row: 
+2024-03-20 20:54:05 DEBUG Loader:384 - Result set row: 2
+2024-03-20 20:54:05 DEBUG Loader:1595 - Result row: 
+2024-03-20 20:54:05 DEBUG Loader:384 - Result set row: 3
+2024-03-20 20:54:05 DEBUG Loader:1595 - Result row: 
+2024-03-20 20:54:05 DEBUG Loader:384 - Result set row: 4
+2024-03-20 20:54:05 DEBUG Loader:1595 - Result row: 
+2024-03-20 20:54:05 DEBUG LogicalConnectionManagedImpl:174 - Initiating JDBC connection release from afterTransaction
+2024-03-20 20:54:05 DEBUG HibernateDataProviderPostgresTest:30 - executeQuery[2]: Test end working result = [doctor, patient, preparation, schedule, calcreport]
+2024-03-20 20:54:05 DEBUG HibernateDataProviderPostgresTest:21 - getSession[1]: Test start working
+2024-03-20 20:54:05 DEBUG HibernateDataProviderPostgres:23 - getSession [1]: start get session
+2024-03-20 20:54:05 DEBUG HibernateUtil:38 - getSessionFactory [1]: start session factory
+2024-03-20 20:54:05 DEBUG HibernateUtil:53 - getSessionFactory [3]: end working
+2024-03-20 20:54:05 DEBUG HibernateDataProviderPostgres:25 - getSession [2]: end work
+2024-03-20 20:54:05 DEBUG HibernateDataProviderPostgresTest:23 - getSession[2]: Test end working
+2024-03-20 20:54:05 DEBUG HibernateDataProviderPostgresTest:56 - getInfoValues[1]: Test start working
+2024-03-20 20:54:05 DEBUG HibernateDataProviderPostgres:104 - getInfoValues [1]: start get list user
+2024-03-20 20:54:05 DEBUG HibernateDataProviderPostgres:35 - executeQuery [1]: start execute
+2024-03-20 20:54:05 DEBUG HibernateDataProviderPostgres:111 - getInfoValues [2]: end working
+2024-03-20 20:54:05 DEBUG SQL:144 - SELECT column_name,data_type FROM information_schema.columns WHERE table_name='doctor'
+2024-03-20 20:54:05 DEBUG Loader:384 - Result set row: 0
+2024-03-20 20:54:05 DEBUG Loader:1595 - Result row: 
+2024-03-20 20:54:05 DEBUG Loader:384 - Result set row: 1
+2024-03-20 20:54:05 DEBUG Loader:1595 - Result row: 
+2024-03-20 20:54:05 DEBUG Loader:384 - Result set row: 2
+2024-03-20 20:54:05 DEBUG Loader:1595 - Result row: 
+2024-03-20 20:54:05 DEBUG Loader:384 - Result set row: 3
+2024-03-20 20:54:05 DEBUG Loader:1595 - Result row: 
+2024-03-20 20:54:05 DEBUG Loader:384 - Result set row: 4
+2024-03-20 20:54:05 DEBUG Loader:1595 - Result row: 
+2024-03-20 20:54:05 DEBUG Loader:384 - Result set row: 5
+2024-03-20 20:54:05 DEBUG Loader:1595 - Result row: 
+2024-03-20 20:54:05 DEBUG Loader:384 - Result set row: 6
+2024-03-20 20:54:05 DEBUG Loader:1595 - Result row: 
+2024-03-20 20:54:05 DEBUG Loader:384 - Result set row: 7
+2024-03-20 20:54:05 DEBUG Loader:1595 - Result row: 
+2024-03-20 20:54:05 DEBUG Loader:384 - Result set row: 8
+2024-03-20 20:54:05 DEBUG Loader:1595 - Result row: 
+2024-03-20 20:54:05 DEBUG Loader:384 - Result set row: 9
+2024-03-20 20:54:05 DEBUG Loader:1595 - Result row: 
+2024-03-20 20:54:05 DEBUG Loader:384 - Result set row: 10
+2024-03-20 20:54:05 DEBUG Loader:1595 - Result row: 
+2024-03-20 20:54:05 DEBUG LogicalConnectionManagedImpl:174 - Initiating JDBC connection release from afterTransaction
+2024-03-20 20:54:05 DEBUG HibernateDataProviderPostgresTest:58 - getInfoValues[2]: Test result [[id, integer], [age, integer], [experience, integer], [avgpatient, numeric], [status, character varying], [linkpreparation, text], [linkschedule, text], [qualification, character varying], [fio, character varying], [specialization, character varying], [gender, character]] 
+SQL = SELECT column_name,data_type FROM information_schema.columns WHERE table_name='%s'
+2024-03-20 20:54:05 DEBUG HibernateDataProviderPostgresTest:42 - getListTables[1]: Test start working
+2024-03-20 20:54:05 DEBUG HibernateDataProviderPostgres:70 - getListTables [1]: start get list table
+2024-03-20 20:54:05 DEBUG HibernateDataProviderPostgres:35 - executeQuery [1]: start execute
+2024-03-20 20:54:05 DEBUG HibernateDataProviderPostgres:77 - getListTables [3]: end working
+2024-03-20 20:54:05 DEBUG SQL:144 - SELECT tablename FROM pg_catalog.pg_tables WHERE schemaname='public'
+2024-03-20 20:54:05 DEBUG Loader:384 - Result set row: 0
+2024-03-20 20:54:05 DEBUG Loader:1595 - Result row: 
+2024-03-20 20:54:05 DEBUG Loader:384 - Result set row: 1
+2024-03-20 20:54:05 DEBUG Loader:1595 - Result row: 
+2024-03-20 20:54:05 DEBUG Loader:384 - Result set row: 2
+2024-03-20 20:54:05 DEBUG Loader:1595 - Result row: 
+2024-03-20 20:54:05 DEBUG Loader:384 - Result set row: 3
+2024-03-20 20:54:05 DEBUG Loader:1595 - Result row: 
+2024-03-20 20:54:05 DEBUG Loader:384 - Result set row: 4
+2024-03-20 20:54:05 DEBUG Loader:1595 - Result row: 
+2024-03-20 20:54:05 DEBUG LogicalConnectionManagedImpl:174 - Initiating JDBC connection release from afterTransaction
+2024-03-20 20:54:05 DEBUG HibernateDataProviderPostgresTest:44 - getListTables[2]: Test result [doctor, patient, preparation, schedule, calcreport] 
+SQL = SELECT tablename FROM pg_catalog.pg_tables WHERE schemaname='public'
+2024-03-20 20:54:05 DEBUG HibernateDataProviderPostgresTest:35 - getSizeTable[1]: Test start working
+2024-03-20 20:54:05 DEBUG HibernateDataProviderPostgres:55 - getSizeTable [1]: start get size table
+2024-03-20 20:54:05 DEBUG HibernateDataProviderPostgres:35 - executeQuery [1]: start execute
+2024-03-20 20:54:05 DEBUG HibernateDataProviderPostgres:61 - getSizeTable [3]: end working
+2024-03-20 20:54:05 DEBUG SQL:144 - SELECT pg_relation_size('doctor')
+2024-03-20 20:54:05 DEBUG Loader:384 - Result set row: 0
+2024-03-20 20:54:05 DEBUG Loader:1595 - Result row: 
+2024-03-20 20:54:05 DEBUG LogicalConnectionManagedImpl:174 - Initiating JDBC connection release from afterTransaction
+2024-03-20 20:54:05 DEBUG HibernateDataProviderPostgresTest:37 - getSizeTable[2]: Test result = 8192 
+SQL = SELECT pg_relation_size('%s')
+2024-03-20 20:54:05 DEBUG HibernateDataProviderPostgresTest:49 - getUsers[1]: Test start working
+2024-03-20 20:54:05 DEBUG HibernateDataProviderPostgres:87 - getUsers [1]: start get list user
+2024-03-20 20:54:05 DEBUG HibernateDataProviderPostgres:35 - executeQuery [1]: start execute
+2024-03-20 20:54:05 DEBUG HibernateDataProviderPostgres:94 - getUsers [3]: end working
+2024-03-20 20:54:05 DEBUG SQL:144 - SELECT usename FROM pg_catalog.pg_user
+2024-03-20 20:54:05 DEBUG Loader:384 - Result set row: 0
+2024-03-20 20:54:05 DEBUG Loader:1595 - Result row: 
+2024-03-20 20:54:05 DEBUG LogicalConnectionManagedImpl:174 - Initiating JDBC connection release from afterTransaction
+2024-03-20 20:54:05 DEBUG HibernateDataProviderPostgresTest:51 - getUsers[2]: Test result [postgres] 
+SQL = SELECT usename FROM pg_catalog.pg_user
