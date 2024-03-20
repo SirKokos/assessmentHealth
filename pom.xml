@@ -89,5 +89,70 @@
             <version>1.6.0</version>
         </dependency>
         <!--CLI - Конец -->
+
+
+
+        <!--    HIBERNATE    -->
+        <!--https://mvnrepository.com/artifact/org.hibernate/hibernate-entitymanager-->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-entitymanager</artifactId>
+            <version>5.6.15.Final</version>
+        </dependency>
+
+        <!--https://mvnrepository.com/artifact/org.hibernate/hibernate-envers-->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-envers</artifactId>
+            <version>5.6.15.Final</version>
+        </dependency>
+
+        <!--https://mvnrepository.com/artifact/org.hibernate/hibernate-c3p0-->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-c3p0</artifactId>
+            <version>5.6.15.Final</version>
+        </dependency>
+
+        <!--https://mvnrepository.com/artifact/org.hibernate/hibernate-proxool-->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-proxool</artifactId>
+            <version>5.6.15.Final</version>
+        </dependency>
+
+        <!--https://mvnrepository.com/artifact/org.hibernate/hibernate-ehcache-->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-ehcache</artifactId>
+            <version>5.6.15.Final</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>5.6.15.Final</version>
+        </dependency>
+
+
+        <!--
+        •hibernate-core — основной обязательный артефакт, необходимый для запуска приложений с
+        использованием Hibernate API;
+        •hibernate-entitymanager — представляет собой реализацию JPA в Hibernate. Java Persistence
+        API (JPA) — API, предоставляющие возможность сохранять в удобном виде Java-объекты в
+        базе данных
+        •hibernate-envers — опциональный модуль, который предоставляет возможность ведения
+        истории изменений в сущностях. Требует подключения hibernate-core иhibernate-entitymanager;
+        •hibernate-c3p0 — предоставляет интеграцию Hibernate с библиотекой пула подключений C3P0;
+        •hibernate-proxool — предоставляет интеграцию Hibernate с библиотекой пула подключений
+        Proxool;
+        •hibernate-ehcache — предоставляет интеграцию Hibernate с EhCache, в качестве кеша второго
+        уровня;
+        •hibernate-infinispan — предоставляет интеграцию Hibernate с Infinispan, в качестве кеша
+        второго уровня;-->
+
+        <!--    HIBERNATE    -->
+
     </dependencies>
 </project>

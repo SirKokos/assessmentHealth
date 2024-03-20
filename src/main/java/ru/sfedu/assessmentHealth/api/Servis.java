@@ -279,7 +279,7 @@ public class Servis {
              BufferedWriter writer = new BufferedWriter(osw)) {
             calcReport = TotalReport(doctor,patient).get();
             calcReport.setPrice(Math.floor(price*cof));
-            if(flag){writer.write(calcReport+"\n");}
+            if(flag){writer.write(calcReport+Const.SEPARATOR_ESCAPE);}
 
         }catch (Exception e){
             log.error("calculatePrice [2]: {}",e.getMessage());

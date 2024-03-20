@@ -1,0 +1,819 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="ru.sfedu.assessmentHealth.api.DataProviderCsvTest" time="6.431" tests="18" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1251"/>
+    <property name="java.class.path" value="D:\Рабочий стол\Курсовая_Долг\assessmentHealth\target\test-classes;D:\Рабочий стол\Курсовая_Долг\assessmentHealth\target\classes;C:\Users\79897\.m2\repository\org\apache\logging\log4j\log4j-api\2.16.0\log4j-api-2.16.0.jar;C:\Users\79897\.m2\repository\org\apache\logging\log4j\log4j-core\2.16.0\log4j-core-2.16.0.jar;C:\Users\79897\.m2\repository\org\junit\jupiter\junit-jupiter\5.8.2\junit-jupiter-5.8.2.jar;C:\Users\79897\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.2\junit-jupiter-api-5.8.2.jar;C:\Users\79897\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\79897\.m2\repository\org\junit\platform\junit-platform-commons\1.8.2\junit-platform-commons-1.8.2.jar;C:\Users\79897\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\79897\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.8.2\junit-jupiter-params-5.8.2.jar;C:\Users\79897\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.2\junit-jupiter-engine-5.8.2.jar;C:\Users\79897\.m2\repository\org\junit\platform\junit-platform-engine\1.8.2\junit-platform-engine-1.8.2.jar;C:\Users\79897\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.1\jackson-databind-2.15.1.jar;C:\Users\79897\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.1\jackson-annotations-2.15.1.jar;C:\Users\79897\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.1\jackson-core-2.15.1.jar;C:\Users\79897\.m2\repository\org\mongodb\mongodb-driver-sync\4.11.1\mongodb-driver-sync-4.11.1.jar;C:\Users\79897\.m2\repository\org\mongodb\bson\4.11.1\bson-4.11.1.jar;C:\Users\79897\.m2\repository\org\mongodb\mongodb-driver-core\4.11.1\mongodb-driver-core-4.11.1.jar;C:\Users\79897\.m2\repository\org\mongodb\bson-record-codec\4.11.1\bson-record-codec-4.11.1.jar;C:\Users\79897\.m2\repository\org\apache\logging\log4j\log4j-slf4j-impl\2.20.0\log4j-slf4j-impl-2.20.0.jar;C:\Users\79897\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\79897\.m2\repository\com\opencsv\opencsv\5.9\opencsv-5.9.jar;C:\Users\79897\.m2\repository\org\apache\commons\commons-lang3\3.13.0\commons-lang3-3.13.0.jar;C:\Users\79897\.m2\repository\org\apache\commons\commons-text\1.11.0\commons-text-1.11.0.jar;C:\Users\79897\.m2\repository\commons-beanutils\commons-beanutils\1.9.4\commons-beanutils-1.9.4.jar;C:\Users\79897\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\79897\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\79897\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\79897\.m2\repository\org\simpleframework\simple-xml\2.7.1\simple-xml-2.7.1.jar;C:\Users\79897\.m2\repository\stax\stax-api\1.0.1\stax-api-1.0.1.jar;C:\Users\79897\.m2\repository\stax\stax\1.2.0\stax-1.2.0.jar;C:\Users\79897\.m2\repository\xpp3\xpp3\1.1.3.3\xpp3-1.1.3.3.jar;C:\Users\79897\.m2\repository\org\postgresql\postgresql\42.7.1\postgresql-42.7.1.jar;C:\Users\79897\.m2\repository\org\checkerframework\checker-qual\3.41.0\checker-qual-3.41.0.jar;C:\Users\79897\.m2\repository\commons-cli\commons-cli\1.6.0\commons-cli-1.6.0.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Moscow"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="user.country" value="RU"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
+    <property name="sun.java.command" value="C:\Users\79897\AppData\Local\Temp\surefire13561176310838886410\surefirebooter-20240314095149362_3.jar C:\Users\79897\AppData\Local\Temp\surefire13561176310838886410 2024-03-14T09-51-46_814-jvmRun1 surefire-20240314095149362_1tmp surefire_0-20240314095149362_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="test" value="ru.sfedu.assessmentHealth.api.DataProviderCsvTest"/>
+    <property name="surefire.test.class.path" value="D:\Рабочий стол\Курсовая_Долг\assessmentHealth\target\test-classes;D:\Рабочий стол\Курсовая_Долг\assessmentHealth\target\classes;C:\Users\79897\.m2\repository\org\apache\logging\log4j\log4j-api\2.16.0\log4j-api-2.16.0.jar;C:\Users\79897\.m2\repository\org\apache\logging\log4j\log4j-core\2.16.0\log4j-core-2.16.0.jar;C:\Users\79897\.m2\repository\org\junit\jupiter\junit-jupiter\5.8.2\junit-jupiter-5.8.2.jar;C:\Users\79897\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.2\junit-jupiter-api-5.8.2.jar;C:\Users\79897\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\79897\.m2\repository\org\junit\platform\junit-platform-commons\1.8.2\junit-platform-commons-1.8.2.jar;C:\Users\79897\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\79897\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.8.2\junit-jupiter-params-5.8.2.jar;C:\Users\79897\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.2\junit-jupiter-engine-5.8.2.jar;C:\Users\79897\.m2\repository\org\junit\platform\junit-platform-engine\1.8.2\junit-platform-engine-1.8.2.jar;C:\Users\79897\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.1\jackson-databind-2.15.1.jar;C:\Users\79897\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.1\jackson-annotations-2.15.1.jar;C:\Users\79897\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.1\jackson-core-2.15.1.jar;C:\Users\79897\.m2\repository\org\mongodb\mongodb-driver-sync\4.11.1\mongodb-driver-sync-4.11.1.jar;C:\Users\79897\.m2\repository\org\mongodb\bson\4.11.1\bson-4.11.1.jar;C:\Users\79897\.m2\repository\org\mongodb\mongodb-driver-core\4.11.1\mongodb-driver-core-4.11.1.jar;C:\Users\79897\.m2\repository\org\mongodb\bson-record-codec\4.11.1\bson-record-codec-4.11.1.jar;C:\Users\79897\.m2\repository\org\apache\logging\log4j\log4j-slf4j-impl\2.20.0\log4j-slf4j-impl-2.20.0.jar;C:\Users\79897\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\79897\.m2\repository\com\opencsv\opencsv\5.9\opencsv-5.9.jar;C:\Users\79897\.m2\repository\org\apache\commons\commons-lang3\3.13.0\commons-lang3-3.13.0.jar;C:\Users\79897\.m2\repository\org\apache\commons\commons-text\1.11.0\commons-text-1.11.0.jar;C:\Users\79897\.m2\repository\commons-beanutils\commons-beanutils\1.9.4\commons-beanutils-1.9.4.jar;C:\Users\79897\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\79897\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\79897\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\79897\.m2\repository\org\simpleframework\simple-xml\2.7.1\simple-xml-2.7.1.jar;C:\Users\79897\.m2\repository\stax\stax-api\1.0.1\stax-api-1.0.1.jar;C:\Users\79897\.m2\repository\stax\stax\1.2.0\stax-1.2.0.jar;C:\Users\79897\.m2\repository\xpp3\xpp3\1.1.3.3\xpp3-1.1.3.3.jar;C:\Users\79897\.m2\repository\org\postgresql\postgresql\42.7.1\postgresql-42.7.1.jar;C:\Users\79897\.m2\repository\org\checkerframework\checker-qual\3.41.0\checker-qual-3.41.0.jar;C:\Users\79897\.m2\repository\commons-cli\commons-cli\1.6.0\commons-cli-1.6.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\79897"/>
+    <property name="user.language" value="ru"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-10-17"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-21"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\Рабочий стол\Курсовая_Долг\assessmentHealth"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\79897\AppData\Local\Temp\surefire13561176310838886410\surefirebooter-20240314095149362_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.1+12-LTS-29"/>
+    <property name="user.name" value="79897"/>
+    <property name="stdout.encoding" value="Cp1251"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\NetBeans-20\netbeans\java\maven-nblib\netbeans-eventspy.jar"/>
+    <property name="localRepository" value="C:\Users\79897\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\79897\AppData\Local\Temp\"/>
+    <property name="java.version" value="21.0.1"/>
+    <property name="user.dir" value="D:\Рабочий стол\Курсовая_Долг\assessmentHealth"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1251"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\Рабочий стол\Nodejs\;C:\Program Files\Git\cmd;C:\Program Files\PuTTY\;C:\Program Files\Docker\Docker\resources\bin;D:\python\Scripts\;D:\python\;C:\Users\79897\AppData\Local\Microsoft\WindowsApps;;D:\pycharm\JetBrains\PyCharm Community Edition 2023.3.3\bin;;D:\java\IntelliJ IDEA 2022.3.2\bin;;D:\VsCode\Microsoft VS Code\bin;C:\Users\79897\AppData\Roaming\npm;C:\Users\79897\AppData\Local\Programs\mongosh\;D:\java\IntelliJ IDEA Community Edition 2023.3.4\bin;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1251"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="21.0.1+12-LTS-29"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="insertDoctor" classname="ru.sfedu.assessmentHealth.api.DataProviderCsvTest" time="2.398">
+    <system-out><![CDATA[2024-03-14 09:51:51 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:51 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:51 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:51 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:51 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:51 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:51 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:51 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:51 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:51 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:51 DEBUG DataProviderCsv:36 - DataProviderCsv [1]: start constructor
+2024-03-14 09:51:51 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\CALCREPORT.csv is exists
+2024-03-14 09:51:51 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\DOCTOR.csv is exists
+2024-03-14 09:51:51 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\PATIENT.csv is exists
+2024-03-14 09:51:51 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\PREPARATION.csv is exists
+2024-03-14 09:51:51 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\SCHEDULE.csv is exists
+2024-03-14 09:51:51 DEBUG DataProviderCsv:46 - DataProviderCsv [3]: end process
+2024-03-14 09:51:51 DEBUG DataProviderCsvTest:26 - insertDataDoctor [1]: - start working test 
+2024-03-14 09:51:51 DEBUG DataProviderCsv:60 - InsertDataDoctor [1]: Start working
+2024-03-14 09:51:52 DEBUG ConvertCsvPreparation:32 - convertToWrite [1]: start { id=1, NamePrep='Ubeprofen', DateEnd=2024-12-20, Dosage=2.3, StatusVisitPreparation=LOW, AboutPrep='this prep important'}
+2024-03-14 09:51:52 DEBUG ConvertCsvPreparation:38 - convertToWrite [3]: end { id=1, NamePrep='Ubeprofen', DateEnd=2024-12-20, Dosage=2.3, StatusVisitPreparation=LOW, AboutPrep='this prep important'}
+2024-03-14 09:51:52 DEBUG ConvertCsvPreparation:32 - convertToWrite [1]: start { id=1, NamePrep='Ubeprofen', DateEnd=2024-12-20, Dosage=2.3, StatusVisitPreparation=LOW, AboutPrep='this prep important'}
+2024-03-14 09:51:52 DEBUG ConvertCsvPreparation:38 - convertToWrite [3]: end { id=1, NamePrep='Ubeprofen', DateEnd=2024-12-20, Dosage=2.3, StatusVisitPreparation=LOW, AboutPrep='this prep important'}
+2024-03-14 09:51:52 DEBUG ConvertCsvSchedule:33 - convertToWrite [1]: start { id=1, Week=SATURDAY, DateSchedule=2024-04-23, TimeBegin=09:20:30, TimeEnd=18:23:20, StatSchedule=FREE}
+2024-03-14 09:51:52 DEBUG ConvertCsvSchedule:38 - convertToWrite [3]: end { id=1, Week=SATURDAY, DateSchedule=2024-04-23, TimeBegin=09:20:30, TimeEnd=18:23:20, StatSchedule=FREE}
+2024-03-14 09:51:52 DEBUG ConvertCsvSchedule:33 - convertToWrite [1]: start { id=1, Week=SATURDAY, DateSchedule=2024-04-23, TimeBegin=09:20:30, TimeEnd=18:23:20, StatSchedule=FREE}
+2024-03-14 09:51:52 DEBUG ConvertCsvSchedule:38 - convertToWrite [3]: end { id=1, Week=SATURDAY, DateSchedule=2024-04-23, TimeBegin=09:20:30, TimeEnd=18:23:20, StatSchedule=FREE}
+2024-03-14 09:51:52 DEBUG DataProviderMongo:38 - save [1]: command = UPDATED,object = { id=1, experience=12, avgPatient=12.3, qualification='Med', specialization='Genikolog', linkPreparation=[{ id=1, NamePrep='Ubeprofen', DateEnd=2024-12-20, Dosage=2.3, StatusVisitPreparation=LOW, AboutPrep='this prep important'}, { id=1, NamePrep='Ubeprofen', DateEnd=2024-12-20, Dosage=2.3, StatusVisitPreparation=LOW, AboutPrep='this prep important'}], linkSchedule=[{ id=1, Week=SATURDAY, DateSchedule=2024-04-23, TimeBegin=09:20:30, TimeEnd=18:23:20, StatSchedule=FREE}, { id=1, Week=SATURDAY, DateSchedule=2024-04-23, TimeBegin=09:20:30, TimeEnd=18:23:20, StatSchedule=FREE}], fio='Sim Artem Evgen', age=29, Gender='M', statusPerson=DOCTOR}
+2024-03-14 09:51:52 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:52 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:52 DEBUG connection:56 - Connection pool created for localhost:27017 using options maxIdleTimeMS=0, minPoolSize=0, maxPoolSize=100, maxConnecting=2, waitQueueTimeoutMS=120000
+2024-03-14 09:51:52 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING}]
+2024-03-14 09:51:52 INFO  client:71 - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync", "version": "4.11.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/21.0.1+12-LTS-29"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@59221b97, com.mongodb.Jep395RecordCodecProvider@6ac4944a, com.mongodb.KotlinCodecProvider@5a772895]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=UNSPECIFIED, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2024-03-14 09:51:52 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:52 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:52 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:52 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:52 INFO  cluster:71 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=118683300}
+2024-03-14 09:51:53 DEBUG connection:56 - Connection pool ready for localhost:27017
+2024-03-14 09:51:53 DEBUG cluster:56 - Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=118.7 ms, state=CONNECTED}]
+2024-03-14 09:51:53 DEBUG cluster:56 - Checking status of localhost:27017
+2024-03-14 09:51:53 DEBUG connection:56 - Checkout started for connection to localhost:27017
+2024-03-14 09:51:53 DEBUG connection:56 - Connection created: address=localhost:27017, driver-generated ID=3
+2024-03-14 09:51:53 DEBUG connection:56 - Connection ready: address=localhost:27017, driver-generated ID=3, established in=3 ms
+2024-03-14 09:51:53 DEBUG connection:56 - Connection checked out: address=localhost:27017, driver-generated ID=3, duration=31 ms
+2024-03-14 09:51:53 DEBUG command:56 - Command "create" started on database "assessmentHealth" using a connection with driver-generated ID 3 and server-generated ID 3 to localhost:27017. The request ID is 5 and the operation ID is 3. Command: {"create": "HistoryClass", "capped": false, "$db": "assessmentHealth", "lsid": {"id": {"$binary": {"base64": "19HBNSJqSoOGckVyhEaAyg==", "subType": "04"}}}}
+2024-03-14 09:51:53 DEBUG command:56 - Command "create" succeeded on database "assessmentHealth" in 41.7051 ms using a connection with driver-generated ID 3 and server-generated ID 3 to localhost:27017. The request ID is 5 and the operation ID is 3. Command reply: {"ok": 1.0}
+2024-03-14 09:51:53 DEBUG connection:56 - Connection checked in: address=localhost:27017, driver-generated ID=3
+2024-03-14 09:51:53 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:53 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:53 DEBUG DataProviderMongo:77 - objToJson [1]: start working method
+2024-03-14 09:51:53 DEBUG DataProviderMongo:85 - objToJson [3]: End working
+2024-03-14 09:51:53 DEBUG connection:56 - Checkout started for connection to localhost:27017
+2024-03-14 09:51:53 DEBUG connection:56 - Connection checked out: address=localhost:27017, driver-generated ID=3, duration=0 ms
+2024-03-14 09:51:53 DEBUG operation:56 - retryWrites set to true but the server is a standalone server.
+2024-03-14 09:51:53 DEBUG operation:56 - retryWrites set to true but the server is a standalone server.
+2024-03-14 09:51:53 DEBUG command:56 - Command "insert" started on database "assessmentHealth" using a connection with driver-generated ID 3 and server-generated ID 3 to localhost:27017. The request ID is 6 and the operation ID is 5. Command: {"insert": "HistoryClass", "ordered": true, "$db": "assessmentHealth", "lsid": {"id": {"$binary": {"base64": "19HBNSJqSoOGckVyhEaAyg==", "subType": "04"}}}, "documents": [{"_id": {"$oid": "65f29e89324c1a6f9673ca98"}, "id": "a030ea7c-7a59-46aa-9e49-dae6d62d26b8", "createdDate": 1710399113545, "actor": "system", "methodName": null, "status": "UPDATED", "object": {"id": 1, "fio": "Sim Artem Evgen", "age": 29, "statusPerson": "DOCTOR", "experience": 12, "avgPatient": 12.3, "qualification": "Med", "specialization": "Genikolog", "linkPreparation": [{"id": 1, "statusVisitPreparation": "LOW", "dateEnd": 1734642000000, "dosage": 2.3, "namePrep": "Ubeprofen", "aboutPrep": "this prep important"}, {"id": 1, "statusVisitPreparation": "LOW", "dateEnd": 1734642000000, "dosage": 2.3, "namePrep": "Ubeprofen", "aboutPrep": "this prep important"}], "linkSchedule": [{"id": 1, "week": "SATURDAY", "timeEnd": "18:23:20", "statSchedule": "FREE", "dateSchedule": 1713819600000, "timeBegin": "09:20:30"}, {"id":  ...
+2024-03-14 09:51:53 DEBUG command:56 - Command "insert" succeeded on database "assessmentHealth" in 23.7506 ms using a connection with driver-generated ID 3 and server-generated ID 3 to localhost:27017. The request ID is 6 and the operation ID is 5. Command reply: {"n": 1, "ok": 1.0}
+2024-03-14 09:51:53 DEBUG connection:56 - Connection checked in: address=localhost:27017, driver-generated ID=3
+2024-03-14 09:51:53 DEBUG connection:56 - Checkout started for connection to localhost:27017
+2024-03-14 09:51:53 DEBUG connection:56 - Connection checked out: address=localhost:27017, driver-generated ID=3, duration=0 ms
+2024-03-14 09:51:53 DEBUG command:56 - Command "endSessions" started on database "admin" using a connection with driver-generated ID 3 and server-generated ID 3 to localhost:27017. The request ID is 7 and the operation ID is 6. Command: {"endSessions": [{"id": {"$binary": {"base64": "19HBNSJqSoOGckVyhEaAyg==", "subType": "04"}}}], "$db": "admin", "$readPreference": {"mode": "primaryPreferred"}}
+2024-03-14 09:51:53 DEBUG command:56 - Command "endSessions" succeeded on database "admin" in 3.1522 ms using a connection with driver-generated ID 3 and server-generated ID 3 to localhost:27017. The request ID is 7 and the operation ID is 6. Command reply: {"ok": 1.0}
+2024-03-14 09:51:53 DEBUG connection:56 - Connection checked in: address=localhost:27017, driver-generated ID=3
+2024-03-14 09:51:54 DEBUG connection:56 - Connection closed: address=localhost:27017, driver-generated ID=3. Reason: Connection pool was closed.
+2024-03-14 09:51:54 DEBUG connection:56 - Connection pool closed for localhost:27017
+2024-03-14 09:51:54 DEBUG DataProviderCsvTest:30 - insertDataDoctor [2]: - working end succeeded status OK
+]]></system-out>
+  </testcase>
+  <testcase name="insertPatient" classname="ru.sfedu.assessmentHealth.api.DataProviderCsvTest" time="0.07">
+    <system-out><![CDATA[2024-03-14 09:51:54 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:54 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:54 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:54 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:54 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:54 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:54 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:54 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:54 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:54 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:54 DEBUG DataProviderCsv:36 - DataProviderCsv [1]: start constructor
+2024-03-14 09:51:54 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\CALCREPORT.csv is exists
+2024-03-14 09:51:54 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\DOCTOR.csv is exists
+2024-03-14 09:51:54 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\PATIENT.csv is exists
+2024-03-14 09:51:54 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\PREPARATION.csv is exists
+2024-03-14 09:51:54 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\SCHEDULE.csv is exists
+2024-03-14 09:51:54 DEBUG DataProviderCsv:46 - DataProviderCsv [3]: end process
+2024-03-14 09:51:54 DEBUG DataProviderCsvTest:36 - insertPatient [1]: - start working test 
+2024-03-14 09:51:54 DEBUG DataProviderCsv:99 - InsertDataPatient [1]: Start working
+2024-03-14 09:51:54 DEBUG DataProviderMongo:38 - save [1]: command = UPDATED,object = { id=1, cellsBlood=6.6, hemoglobin=160.0, platelets=200.0, glucose=80.3, cholesterol=5.3, statusVisit=IN, fio='Bob', age=23, Gender='M', statusPerson=PATIENT}
+2024-03-14 09:51:54 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:54 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:54 DEBUG connection:56 - Connection pool created for localhost:27017 using options maxIdleTimeMS=0, minPoolSize=0, maxPoolSize=100, maxConnecting=2, waitQueueTimeoutMS=120000
+2024-03-14 09:51:54 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING}]
+2024-03-14 09:51:54 INFO  client:71 - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync", "version": "4.11.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/21.0.1+12-LTS-29"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@59221b97, com.mongodb.Jep395RecordCodecProvider@6ac4944a, com.mongodb.KotlinCodecProvider@5a772895]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=UNSPECIFIED, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2024-03-14 09:51:54 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:54 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:54 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:54 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:54 INFO  cluster:71 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2975400}
+2024-03-14 09:51:54 INFO  cluster:71 - No server chosen by WritableServerSelector from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, serverDescriptions=[ServerDescription{address=localhost:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+2024-03-14 09:51:54 DEBUG connection:56 - Connection pool ready for localhost:27017
+2024-03-14 09:51:54 DEBUG cluster:56 - Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=3.0 ms, state=CONNECTED}]
+2024-03-14 09:51:54 DEBUG cluster:56 - Checking status of localhost:27017
+2024-03-14 09:51:54 DEBUG connection:56 - Checkout started for connection to localhost:27017
+2024-03-14 09:51:54 DEBUG connection:56 - Connection created: address=localhost:27017, driver-generated ID=6
+2024-03-14 09:51:54 DEBUG connection:56 - Connection ready: address=localhost:27017, driver-generated ID=6, established in=2 ms
+2024-03-14 09:51:54 DEBUG connection:56 - Connection checked out: address=localhost:27017, driver-generated ID=6, duration=3 ms
+2024-03-14 09:51:54 DEBUG command:56 - Command "create" started on database "assessmentHealth" using a connection with driver-generated ID 6 and server-generated ID 6 to localhost:27017. The request ID is 12 and the operation ID is 9. Command: {"create": "HistoryClass", "capped": false, "$db": "assessmentHealth", "lsid": {"id": {"$binary": {"base64": "YhdoZPRcQ6Ckc4FpfAMVeQ==", "subType": "04"}}}}
+2024-03-14 09:51:54 DEBUG command:56 - Command "create" succeeded on database "assessmentHealth" in 1.8714 ms using a connection with driver-generated ID 6 and server-generated ID 6 to localhost:27017. The request ID is 12 and the operation ID is 9. Command reply: {"ok": 1.0}
+2024-03-14 09:51:54 DEBUG connection:56 - Connection checked in: address=localhost:27017, driver-generated ID=6
+2024-03-14 09:51:54 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:54 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:54 DEBUG DataProviderMongo:77 - objToJson [1]: start working method
+2024-03-14 09:51:54 DEBUG DataProviderMongo:85 - objToJson [3]: End working
+2024-03-14 09:51:54 DEBUG connection:56 - Checkout started for connection to localhost:27017
+2024-03-14 09:51:54 DEBUG connection:56 - Connection checked out: address=localhost:27017, driver-generated ID=6, duration=0 ms
+2024-03-14 09:51:54 DEBUG operation:56 - retryWrites set to true but the server is a standalone server.
+2024-03-14 09:51:54 DEBUG operation:56 - retryWrites set to true but the server is a standalone server.
+2024-03-14 09:51:54 DEBUG command:56 - Command "insert" started on database "assessmentHealth" using a connection with driver-generated ID 6 and server-generated ID 6 to localhost:27017. The request ID is 13 and the operation ID is 11. Command: {"insert": "HistoryClass", "ordered": true, "$db": "assessmentHealth", "lsid": {"id": {"$binary": {"base64": "YhdoZPRcQ6Ckc4FpfAMVeQ==", "subType": "04"}}}, "documents": [{"_id": {"$oid": "65f29e8a324c1a6f9673ca9a"}, "id": "140ce387-6776-4070-a2a4-f248c6c64b3e", "createdDate": 1710399114101, "actor": "system", "methodName": null, "status": "UPDATED", "object": {"id": 1, "fio": "Bob", "age": 23, "statusPerson": "PATIENT", "cellsBlood": 6.6, "hemoglobin": 160.0, "platelets": 200.0, "glucose": 80.3, "cholesterol": 5.3, "statusVisit": "IN", "gender": "M"}, "simpleName": "ru.sfedu.assessmentHealth.model.Patient"}]}
+2024-03-14 09:51:54 DEBUG command:56 - Command "insert" succeeded on database "assessmentHealth" in 2.7343 ms using a connection with driver-generated ID 6 and server-generated ID 6 to localhost:27017. The request ID is 13 and the operation ID is 11. Command reply: {"n": 1, "ok": 1.0}
+2024-03-14 09:51:54 DEBUG connection:56 - Connection checked in: address=localhost:27017, driver-generated ID=6
+2024-03-14 09:51:54 DEBUG connection:56 - Checkout started for connection to localhost:27017
+2024-03-14 09:51:54 DEBUG connection:56 - Connection checked out: address=localhost:27017, driver-generated ID=6, duration=0 ms
+2024-03-14 09:51:54 DEBUG command:56 - Command "endSessions" started on database "admin" using a connection with driver-generated ID 6 and server-generated ID 6 to localhost:27017. The request ID is 14 and the operation ID is 12. Command: {"endSessions": [{"id": {"$binary": {"base64": "YhdoZPRcQ6Ckc4FpfAMVeQ==", "subType": "04"}}}], "$db": "admin", "$readPreference": {"mode": "primaryPreferred"}}
+2024-03-14 09:51:54 DEBUG command:56 - Command "endSessions" succeeded on database "admin" in 1.6944 ms using a connection with driver-generated ID 6 and server-generated ID 6 to localhost:27017. The request ID is 14 and the operation ID is 12. Command reply: {"ok": 1.0}
+2024-03-14 09:51:54 DEBUG connection:56 - Connection checked in: address=localhost:27017, driver-generated ID=6
+2024-03-14 09:51:54 DEBUG connection:56 - Connection closed: address=localhost:27017, driver-generated ID=6. Reason: Connection pool was closed.
+2024-03-14 09:51:54 DEBUG connection:56 - Connection pool closed for localhost:27017
+2024-03-14 09:51:54 DEBUG DataProviderCsvTest:40 - insertPatient [2]: - working end succeeded status OK
+]]></system-out>
+  </testcase>
+  <testcase name="insertPreparation" classname="ru.sfedu.assessmentHealth.api.DataProviderCsvTest" time="0.154">
+    <system-out><![CDATA[2024-03-14 09:51:54 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:54 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:54 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:54 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:54 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:54 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:54 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:54 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:54 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:54 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:54 DEBUG DataProviderCsv:36 - DataProviderCsv [1]: start constructor
+2024-03-14 09:51:54 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\CALCREPORT.csv is exists
+2024-03-14 09:51:54 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\DOCTOR.csv is exists
+2024-03-14 09:51:54 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\PATIENT.csv is exists
+2024-03-14 09:51:54 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\PREPARATION.csv is exists
+2024-03-14 09:51:54 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\SCHEDULE.csv is exists
+2024-03-14 09:51:54 DEBUG DataProviderCsv:46 - DataProviderCsv [3]: end process
+2024-03-14 09:51:54 DEBUG DataProviderCsvTest:46 - insertPreparation [1]: - start working test 
+2024-03-14 09:51:54 DEBUG DataProviderCsv:138 - InsertDataPreparation [1]: Start working
+2024-03-14 09:51:54 DEBUG DataProviderMongo:38 - save [1]: command = UPDATED,object = { id=1, NamePrep='Ubeprofen', DateEnd=2024-12-20, Dosage=2.3, StatusVisitPreparation=LOW, AboutPrep='this prep important'}
+2024-03-14 09:51:54 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:54 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:54 DEBUG connection:56 - Connection pool created for localhost:27017 using options maxIdleTimeMS=0, minPoolSize=0, maxPoolSize=100, maxConnecting=2, waitQueueTimeoutMS=120000
+2024-03-14 09:51:54 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING}]
+2024-03-14 09:51:54 INFO  client:71 - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync", "version": "4.11.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/21.0.1+12-LTS-29"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@59221b97, com.mongodb.Jep395RecordCodecProvider@6ac4944a, com.mongodb.KotlinCodecProvider@5a772895]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=UNSPECIFIED, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2024-03-14 09:51:54 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:54 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:54 INFO  cluster:71 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2582800}
+2024-03-14 09:51:54 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:54 DEBUG connection:56 - Connection pool ready for localhost:27017
+2024-03-14 09:51:54 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:54 INFO  cluster:71 - No server chosen by WritableServerSelector from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, serverDescriptions=[ServerDescription{address=localhost:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+2024-03-14 09:51:54 DEBUG cluster:56 - Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=2.6 ms, state=CONNECTED}]
+2024-03-14 09:51:54 DEBUG cluster:56 - Checking status of localhost:27017
+2024-03-14 09:51:54 DEBUG connection:56 - Checkout started for connection to localhost:27017
+2024-03-14 09:51:54 DEBUG connection:56 - Connection created: address=localhost:27017, driver-generated ID=9
+2024-03-14 09:51:54 DEBUG connection:56 - Connection ready: address=localhost:27017, driver-generated ID=9, established in=2 ms
+2024-03-14 09:51:54 DEBUG connection:56 - Connection checked out: address=localhost:27017, driver-generated ID=9, duration=3 ms
+2024-03-14 09:51:54 DEBUG command:56 - Command "create" started on database "assessmentHealth" using a connection with driver-generated ID 9 and server-generated ID 9 to localhost:27017. The request ID is 19 and the operation ID is 15. Command: {"create": "HistoryClass", "capped": false, "$db": "assessmentHealth", "lsid": {"id": {"$binary": {"base64": "N7gL4xDOTZyJwGTU4zJ60A==", "subType": "04"}}}}
+2024-03-14 09:51:54 DEBUG command:56 - Command "create" succeeded on database "assessmentHealth" in 3.9544 ms using a connection with driver-generated ID 9 and server-generated ID 9 to localhost:27017. The request ID is 19 and the operation ID is 15. Command reply: {"ok": 1.0}
+2024-03-14 09:51:54 DEBUG connection:56 - Connection checked in: address=localhost:27017, driver-generated ID=9
+2024-03-14 09:51:54 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:54 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:54 DEBUG DataProviderMongo:77 - objToJson [1]: start working method
+2024-03-14 09:51:54 DEBUG DataProviderMongo:85 - objToJson [3]: End working
+2024-03-14 09:51:54 DEBUG connection:56 - Checkout started for connection to localhost:27017
+2024-03-14 09:51:54 DEBUG connection:56 - Connection checked out: address=localhost:27017, driver-generated ID=9, duration=0 ms
+2024-03-14 09:51:54 DEBUG operation:56 - retryWrites set to true but the server is a standalone server.
+2024-03-14 09:51:54 DEBUG operation:56 - retryWrites set to true but the server is a standalone server.
+2024-03-14 09:51:54 DEBUG command:56 - Command "insert" started on database "assessmentHealth" using a connection with driver-generated ID 9 and server-generated ID 9 to localhost:27017. The request ID is 20 and the operation ID is 17. Command: {"insert": "HistoryClass", "ordered": true, "$db": "assessmentHealth", "lsid": {"id": {"$binary": {"base64": "N7gL4xDOTZyJwGTU4zJ60A==", "subType": "04"}}}, "documents": [{"_id": {"$oid": "65f29e8a324c1a6f9673ca9c"}, "id": "a24da371-fe54-43ed-966c-708fab66fea7", "createdDate": 1710399114269, "actor": "system", "methodName": null, "status": "UPDATED", "object": {"id": 1, "statusVisitPreparation": "LOW", "dateEnd": 1734642000000, "dosage": 2.3, "namePrep": "Ubeprofen", "aboutPrep": "this prep important"}, "simpleName": "ru.sfedu.assessmentHealth.model.Preparation"}]}
+2024-03-14 09:51:54 DEBUG command:56 - Command "insert" succeeded on database "assessmentHealth" in 3.5842 ms using a connection with driver-generated ID 9 and server-generated ID 9 to localhost:27017. The request ID is 20 and the operation ID is 17. Command reply: {"n": 1, "ok": 1.0}
+2024-03-14 09:51:54 DEBUG connection:56 - Connection checked in: address=localhost:27017, driver-generated ID=9
+2024-03-14 09:51:54 DEBUG connection:56 - Checkout started for connection to localhost:27017
+2024-03-14 09:51:54 DEBUG connection:56 - Connection checked out: address=localhost:27017, driver-generated ID=9, duration=0 ms
+2024-03-14 09:51:54 DEBUG command:56 - Command "endSessions" started on database "admin" using a connection with driver-generated ID 9 and server-generated ID 9 to localhost:27017. The request ID is 21 and the operation ID is 18. Command: {"endSessions": [{"id": {"$binary": {"base64": "N7gL4xDOTZyJwGTU4zJ60A==", "subType": "04"}}}], "$db": "admin", "$readPreference": {"mode": "primaryPreferred"}}
+2024-03-14 09:51:54 DEBUG command:56 - Command "endSessions" succeeded on database "admin" in 1.6217 ms using a connection with driver-generated ID 9 and server-generated ID 9 to localhost:27017. The request ID is 21 and the operation ID is 18. Command reply: {"ok": 1.0}
+2024-03-14 09:51:54 DEBUG connection:56 - Connection checked in: address=localhost:27017, driver-generated ID=9
+2024-03-14 09:51:54 DEBUG connection:56 - Connection closed: address=localhost:27017, driver-generated ID=9. Reason: Connection pool was closed.
+2024-03-14 09:51:54 DEBUG connection:56 - Connection pool closed for localhost:27017
+2024-03-14 09:51:54 DEBUG DataProviderCsvTest:50 - insertPreparation [2]: - working end succeeded status OK
+]]></system-out>
+  </testcase>
+  <testcase name="insertSchedule" classname="ru.sfedu.assessmentHealth.api.DataProviderCsvTest" time="0.06">
+    <system-out><![CDATA[2024-03-14 09:51:54 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:54 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:54 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:54 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:54 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:54 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:54 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:54 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:54 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:54 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:54 DEBUG DataProviderCsv:36 - DataProviderCsv [1]: start constructor
+2024-03-14 09:51:54 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\CALCREPORT.csv is exists
+2024-03-14 09:51:54 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\DOCTOR.csv is exists
+2024-03-14 09:51:54 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\PATIENT.csv is exists
+2024-03-14 09:51:54 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\PREPARATION.csv is exists
+2024-03-14 09:51:54 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\SCHEDULE.csv is exists
+2024-03-14 09:51:54 DEBUG DataProviderCsv:46 - DataProviderCsv [3]: end process
+2024-03-14 09:51:54 DEBUG DataProviderCsvTest:56 - insertSchedule [1]: - start working test 
+2024-03-14 09:51:54 DEBUG DataProviderCsv:179 - InsertDataSchedule [1]: Start working
+2024-03-14 09:51:54 DEBUG DataProviderMongo:38 - save [1]: command = UPDATED,object = { id=1, Week=SATURDAY, DateSchedule=2024-04-23, TimeBegin=09:20:30, TimeEnd=18:23:20, StatSchedule=FREE}
+2024-03-14 09:51:54 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:54 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:54 DEBUG connection:56 - Connection pool created for localhost:27017 using options maxIdleTimeMS=0, minPoolSize=0, maxPoolSize=100, maxConnecting=2, waitQueueTimeoutMS=120000
+2024-03-14 09:51:54 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING}]
+2024-03-14 09:51:54 INFO  cluster:71 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1627400}
+2024-03-14 09:51:54 DEBUG connection:56 - Connection pool ready for localhost:27017
+2024-03-14 09:51:54 INFO  client:71 - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync", "version": "4.11.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/21.0.1+12-LTS-29"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@59221b97, com.mongodb.Jep395RecordCodecProvider@6ac4944a, com.mongodb.KotlinCodecProvider@5a772895]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=UNSPECIFIED, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2024-03-14 09:51:54 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:54 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:54 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:54 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:54 INFO  cluster:71 - No server chosen by WritableServerSelector from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, serverDescriptions=[ServerDescription{address=localhost:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+2024-03-14 09:51:54 DEBUG cluster:56 - Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=1.6 ms, state=CONNECTED}]
+2024-03-14 09:51:54 DEBUG cluster:56 - Checking status of localhost:27017
+2024-03-14 09:51:54 DEBUG connection:56 - Checkout started for connection to localhost:27017
+2024-03-14 09:51:54 DEBUG connection:56 - Connection created: address=localhost:27017, driver-generated ID=12
+2024-03-14 09:51:54 DEBUG connection:56 - Connection ready: address=localhost:27017, driver-generated ID=12, established in=2 ms
+2024-03-14 09:51:54 DEBUG connection:56 - Connection checked out: address=localhost:27017, driver-generated ID=12, duration=4 ms
+2024-03-14 09:51:54 DEBUG command:56 - Command "create" started on database "assessmentHealth" using a connection with driver-generated ID 12 and server-generated ID 12 to localhost:27017. The request ID is 26 and the operation ID is 21. Command: {"create": "HistoryClass", "capped": false, "$db": "assessmentHealth", "lsid": {"id": {"$binary": {"base64": "UsF3wujETpS8pzD/oILcrA==", "subType": "04"}}}}
+2024-03-14 09:51:54 DEBUG command:56 - Command "create" succeeded on database "assessmentHealth" in 1.4298 ms using a connection with driver-generated ID 12 and server-generated ID 12 to localhost:27017. The request ID is 26 and the operation ID is 21. Command reply: {"ok": 1.0}
+2024-03-14 09:51:54 DEBUG connection:56 - Connection checked in: address=localhost:27017, driver-generated ID=12
+2024-03-14 09:51:54 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:54 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:54 DEBUG DataProviderMongo:77 - objToJson [1]: start working method
+2024-03-14 09:51:54 DEBUG DataProviderMongo:85 - objToJson [3]: End working
+2024-03-14 09:51:54 DEBUG connection:56 - Checkout started for connection to localhost:27017
+2024-03-14 09:51:54 DEBUG connection:56 - Connection checked out: address=localhost:27017, driver-generated ID=12, duration=0 ms
+2024-03-14 09:51:54 DEBUG operation:56 - retryWrites set to true but the server is a standalone server.
+2024-03-14 09:51:54 DEBUG operation:56 - retryWrites set to true but the server is a standalone server.
+2024-03-14 09:51:54 DEBUG command:56 - Command "insert" started on database "assessmentHealth" using a connection with driver-generated ID 12 and server-generated ID 12 to localhost:27017. The request ID is 27 and the operation ID is 23. Command: {"insert": "HistoryClass", "ordered": true, "$db": "assessmentHealth", "lsid": {"id": {"$binary": {"base64": "UsF3wujETpS8pzD/oILcrA==", "subType": "04"}}}, "documents": [{"_id": {"$oid": "65f29e8a324c1a6f9673ca9e"}, "id": "601ea50b-c6e4-4056-a3dd-87d8256eb1fb", "createdDate": 1710399114342, "actor": "system", "methodName": null, "status": "UPDATED", "object": {"id": 1, "week": "SATURDAY", "timeEnd": "18:23:20", "statSchedule": "FREE", "dateSchedule": 1713819600000, "timeBegin": "09:20:30"}, "simpleName": "ru.sfedu.assessmentHealth.model.Schedule"}]}
+2024-03-14 09:51:54 DEBUG command:56 - Command "insert" succeeded on database "assessmentHealth" in 2.4672 ms using a connection with driver-generated ID 12 and server-generated ID 12 to localhost:27017. The request ID is 27 and the operation ID is 23. Command reply: {"n": 1, "ok": 1.0}
+2024-03-14 09:51:54 DEBUG connection:56 - Connection checked in: address=localhost:27017, driver-generated ID=12
+2024-03-14 09:51:54 DEBUG connection:56 - Checkout started for connection to localhost:27017
+2024-03-14 09:51:54 DEBUG connection:56 - Connection checked out: address=localhost:27017, driver-generated ID=12, duration=0 ms
+2024-03-14 09:51:54 DEBUG command:56 - Command "endSessions" started on database "admin" using a connection with driver-generated ID 12 and server-generated ID 12 to localhost:27017. The request ID is 28 and the operation ID is 24. Command: {"endSessions": [{"id": {"$binary": {"base64": "UsF3wujETpS8pzD/oILcrA==", "subType": "04"}}}], "$db": "admin", "$readPreference": {"mode": "primaryPreferred"}}
+2024-03-14 09:51:54 DEBUG command:56 - Command "endSessions" succeeded on database "admin" in 1.3186 ms using a connection with driver-generated ID 12 and server-generated ID 12 to localhost:27017. The request ID is 28 and the operation ID is 24. Command reply: {"ok": 1.0}
+2024-03-14 09:51:54 DEBUG connection:56 - Connection checked in: address=localhost:27017, driver-generated ID=12
+2024-03-14 09:51:54 DEBUG connection:56 - Connection closed: address=localhost:27017, driver-generated ID=12. Reason: Connection pool was closed.
+2024-03-14 09:51:54 DEBUG connection:56 - Connection pool closed for localhost:27017
+2024-03-14 09:51:54 DEBUG DataProviderCsvTest:60 - insertSchedule [2]: - working end succeeded status OK
+]]></system-out>
+  </testcase>
+  <testcase name="insertCalcReport" classname="ru.sfedu.assessmentHealth.api.DataProviderCsvTest" time="0.204">
+    <system-out><![CDATA[2024-03-14 09:51:54 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:54 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:54 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:54 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:54 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:54 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:54 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:54 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:54 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:54 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:54 DEBUG DataProviderCsv:36 - DataProviderCsv [1]: start constructor
+2024-03-14 09:51:54 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\CALCREPORT.csv is exists
+2024-03-14 09:51:54 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\DOCTOR.csv is exists
+2024-03-14 09:51:54 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\PATIENT.csv is exists
+2024-03-14 09:51:54 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\PREPARATION.csv is exists
+2024-03-14 09:51:54 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\SCHEDULE.csv is exists
+2024-03-14 09:51:54 DEBUG DataProviderCsv:46 - DataProviderCsv [3]: end process
+2024-03-14 09:51:54 DEBUG DataProviderCsvTest:66 - insertCalcReport [1]: - start working test 
+2024-03-14 09:51:54 DEBUG DataProviderCsv:217 - InsertDataCalcReport [1]: Start working
+2024-03-14 09:51:54 DEBUG ConvertCsvPatient:34 - convertToWrite [1]: start { id=1, cellsBlood=6.6, hemoglobin=160.0, platelets=200.0, glucose=80.3, cholesterol=5.3, statusVisit=IN, fio='Bob', age=23, Gender='M', statusPerson=PATIENT}
+2024-03-14 09:51:54 DEBUG ConvertCsvPatient:39 - convertToWrite [3]: end { id=1, cellsBlood=6.6, hemoglobin=160.0, platelets=200.0, glucose=80.3, cholesterol=5.3, statusVisit=IN, fio='Bob', age=23, Gender='M', statusPerson=PATIENT}
+2024-03-14 09:51:54 DEBUG ConvertCsvDoctor:34 - convertToWrite [1]: start { id=1, experience=12, avgPatient=12.3, qualification='Med', specialization='Genikolog', linkPreparation=[{ id=1, NamePrep='Ubeprofen', DateEnd=2024-12-20, Dosage=2.3, StatusVisitPreparation=LOW, AboutPrep='this prep important'}, { id=1, NamePrep='Ubeprofen', DateEnd=2024-12-20, Dosage=2.3, StatusVisitPreparation=LOW, AboutPrep='this prep important'}], linkSchedule=[{ id=1, Week=SATURDAY, DateSchedule=2024-04-23, TimeBegin=09:20:30, TimeEnd=18:23:20, StatSchedule=FREE}, { id=1, Week=SATURDAY, DateSchedule=2024-04-23, TimeBegin=09:20:30, TimeEnd=18:23:20, StatSchedule=FREE}], fio='Sim Artem Evgen', age=29, Gender='M', statusPerson=DOCTOR}
+2024-03-14 09:51:54 DEBUG ConvertCsvDoctor:39 - convertToWrite [3]: end { id=1, experience=12, avgPatient=12.3, qualification='Med', specialization='Genikolog', linkPreparation=[{ id=1, NamePrep='Ubeprofen', DateEnd=2024-12-20, Dosage=2.3, StatusVisitPreparation=LOW, AboutPrep='this prep important'}, { id=1, NamePrep='Ubeprofen', DateEnd=2024-12-20, Dosage=2.3, StatusVisitPreparation=LOW, AboutPrep='this prep important'}], linkSchedule=[{ id=1, Week=SATURDAY, DateSchedule=2024-04-23, TimeBegin=09:20:30, TimeEnd=18:23:20, StatSchedule=FREE}, { id=1, Week=SATURDAY, DateSchedule=2024-04-23, TimeBegin=09:20:30, TimeEnd=18:23:20, StatSchedule=FREE}], fio='Sim Artem Evgen', age=29, Gender='M', statusPerson=DOCTOR}
+2024-03-14 09:51:54 DEBUG DataProviderMongo:38 - save [1]: command = UPDATED,object = { id=1, fioPatient='Bob', fioDoctor='Sim Artem Evgen', bloodAnalysis=true, glucoseAnalysis=true, arterialAnalysis=true, patient=[{ id=1, cellsBlood=6.6, hemoglobin=160.0, platelets=200.0, glucose=80.3, cholesterol=5.3, statusVisit=IN, fio='Bob', age=23, Gender='M', statusPerson=PATIENT}], doctor=[{ id=1, experience=12, avgPatient=12.3, qualification='Med', specialization='Genikolog', linkPreparation=[{ id=1, NamePrep='Ubeprofen', DateEnd=2024-12-20, Dosage=2.3, StatusVisitPreparation=LOW, AboutPrep='this prep important'}, { id=1, NamePrep='Ubeprofen', DateEnd=2024-12-20, Dosage=2.3, StatusVisitPreparation=LOW, AboutPrep='this prep important'}], linkSchedule=[{ id=1, Week=SATURDAY, DateSchedule=2024-04-23, TimeBegin=09:20:30, TimeEnd=18:23:20, StatSchedule=FREE}, { id=1, Week=SATURDAY, DateSchedule=2024-04-23, TimeBegin=09:20:30, TimeEnd=18:23:20, StatSchedule=FREE}], fio='Sim Artem Evgen', age=29, Gender='M', statusPerson=DOCTOR}], price=100.0}
+2024-03-14 09:51:54 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:54 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:54 DEBUG connection:56 - Connection pool created for localhost:27017 using options maxIdleTimeMS=0, minPoolSize=0, maxPoolSize=100, maxConnecting=2, waitQueueTimeoutMS=120000
+2024-03-14 09:51:54 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING}]
+2024-03-14 09:51:54 INFO  cluster:71 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2332000}
+2024-03-14 09:51:54 INFO  client:71 - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync", "version": "4.11.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/21.0.1+12-LTS-29"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@59221b97, com.mongodb.Jep395RecordCodecProvider@6ac4944a, com.mongodb.KotlinCodecProvider@5a772895]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=UNSPECIFIED, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2024-03-14 09:51:54 DEBUG connection:56 - Connection pool ready for localhost:27017
+2024-03-14 09:51:54 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:54 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:54 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:54 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:54 INFO  cluster:71 - No server chosen by WritableServerSelector from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, serverDescriptions=[ServerDescription{address=localhost:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+2024-03-14 09:51:54 DEBUG cluster:56 - Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=2.3 ms, state=CONNECTED}]
+2024-03-14 09:51:54 DEBUG cluster:56 - Checking status of localhost:27017
+2024-03-14 09:51:54 DEBUG connection:56 - Checkout started for connection to localhost:27017
+2024-03-14 09:51:54 DEBUG connection:56 - Connection created: address=localhost:27017, driver-generated ID=15
+2024-03-14 09:51:54 DEBUG connection:56 - Connection ready: address=localhost:27017, driver-generated ID=15, established in=3 ms
+2024-03-14 09:51:54 DEBUG connection:56 - Connection checked out: address=localhost:27017, driver-generated ID=15, duration=4 ms
+2024-03-14 09:51:54 DEBUG command:56 - Command "create" started on database "assessmentHealth" using a connection with driver-generated ID 15 and server-generated ID 15 to localhost:27017. The request ID is 33 and the operation ID is 27. Command: {"create": "HistoryClass", "capped": false, "$db": "assessmentHealth", "lsid": {"id": {"$binary": {"base64": "Xh/rlkbnQNSEb5kgHgieeg==", "subType": "04"}}}}
+2024-03-14 09:51:54 DEBUG command:56 - Command "create" succeeded on database "assessmentHealth" in 2.3783 ms using a connection with driver-generated ID 15 and server-generated ID 15 to localhost:27017. The request ID is 33 and the operation ID is 27. Command reply: {"ok": 1.0}
+2024-03-14 09:51:54 DEBUG connection:56 - Connection checked in: address=localhost:27017, driver-generated ID=15
+2024-03-14 09:51:54 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:54 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:54 DEBUG DataProviderMongo:77 - objToJson [1]: start working method
+2024-03-14 09:51:54 DEBUG DataProviderMongo:85 - objToJson [3]: End working
+2024-03-14 09:51:54 DEBUG connection:56 - Checkout started for connection to localhost:27017
+2024-03-14 09:51:54 DEBUG connection:56 - Connection checked out: address=localhost:27017, driver-generated ID=15, duration=0 ms
+2024-03-14 09:51:54 DEBUG operation:56 - retryWrites set to true but the server is a standalone server.
+2024-03-14 09:51:54 DEBUG operation:56 - retryWrites set to true but the server is a standalone server.
+2024-03-14 09:51:54 DEBUG command:56 - Command "insert" started on database "assessmentHealth" using a connection with driver-generated ID 15 and server-generated ID 15 to localhost:27017. The request ID is 34 and the operation ID is 29. Command: {"insert": "HistoryClass", "ordered": true, "$db": "assessmentHealth", "lsid": {"id": {"$binary": {"base64": "Xh/rlkbnQNSEb5kgHgieeg==", "subType": "04"}}}, "documents": [{"_id": {"$oid": "65f29e8a324c1a6f9673caa0"}, "id": "adfb7a55-8e16-45d1-9d6d-f1e3065f4d9d", "createdDate": 1710399114515, "actor": "system", "methodName": null, "status": "UPDATED", "object": {"id": 1, "fioPatient": "Bob", "fioDoctor": "Sim Artem Evgen", "bloodAnalysis": true, "glucoseAnalysis": true, "arterialAnalysis": true, "patient": [{"id": 1, "fio": "Bob", "age": 23, "statusPerson": "PATIENT", "cellsBlood": 6.6, "hemoglobin": 160.0, "platelets": 200.0, "glucose": 80.3, "cholesterol": 5.3, "statusVisit": "IN", "gender": "M"}], "doctor": [{"id": 1, "fio": "Sim Artem Evgen", "age": 29, "statusPerson": "DOCTOR", "experience": 12, "avgPatient": 12.3, "qualification": "Med", "specialization": "Genikolog", "linkPreparation": [{"id": 1, "statusVisitPreparation": "LOW", "dateEnd": 1734642000000, "dosage": 2.3, "namePrep" ...
+2024-03-14 09:51:54 DEBUG command:56 - Command "insert" succeeded on database "assessmentHealth" in 3.6658 ms using a connection with driver-generated ID 15 and server-generated ID 15 to localhost:27017. The request ID is 34 and the operation ID is 29. Command reply: {"n": 1, "ok": 1.0}
+2024-03-14 09:51:54 DEBUG connection:56 - Connection checked in: address=localhost:27017, driver-generated ID=15
+2024-03-14 09:51:54 DEBUG connection:56 - Checkout started for connection to localhost:27017
+2024-03-14 09:51:54 DEBUG connection:56 - Connection checked out: address=localhost:27017, driver-generated ID=15, duration=0 ms
+2024-03-14 09:51:54 DEBUG command:56 - Command "endSessions" started on database "admin" using a connection with driver-generated ID 15 and server-generated ID 15 to localhost:27017. The request ID is 35 and the operation ID is 30. Command: {"endSessions": [{"id": {"$binary": {"base64": "Xh/rlkbnQNSEb5kgHgieeg==", "subType": "04"}}}], "$db": "admin", "$readPreference": {"mode": "primaryPreferred"}}
+2024-03-14 09:51:54 DEBUG command:56 - Command "endSessions" succeeded on database "admin" in 1.295 ms using a connection with driver-generated ID 15 and server-generated ID 15 to localhost:27017. The request ID is 35 and the operation ID is 30. Command reply: {"ok": 1.0}
+2024-03-14 09:51:54 DEBUG connection:56 - Connection checked in: address=localhost:27017, driver-generated ID=15
+2024-03-14 09:51:54 DEBUG connection:56 - Connection closed: address=localhost:27017, driver-generated ID=15. Reason: Connection pool was closed.
+2024-03-14 09:51:54 DEBUG connection:56 - Connection pool closed for localhost:27017
+2024-03-14 09:51:54 DEBUG DataProviderCsvTest:70 - insertCalcReport [2]: - working end succeeded status OK
+]]></system-out>
+  </testcase>
+  <testcase name="selectDoctorId" classname="ru.sfedu.assessmentHealth.api.DataProviderCsvTest" time="0.799">
+    <system-out><![CDATA[2024-03-14 09:51:54 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:54 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:54 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:54 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:54 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:54 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:54 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:54 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:54 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:54 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:54 DEBUG DataProviderCsv:36 - DataProviderCsv [1]: start constructor
+2024-03-14 09:51:54 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\CALCREPORT.csv is exists
+2024-03-14 09:51:54 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\DOCTOR.csv is exists
+2024-03-14 09:51:54 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\PATIENT.csv is exists
+2024-03-14 09:51:54 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\PREPARATION.csv is exists
+2024-03-14 09:51:54 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\SCHEDULE.csv is exists
+2024-03-14 09:51:54 DEBUG DataProviderCsv:46 - DataProviderCsv [3]: end process
+2024-03-14 09:51:54 DEBUG DataProviderCsvTest:76 - selectDoctorId [1]: - start working test
+2024-03-14 09:51:54 DEBUG DataProviderCsv:254 - selectDoctorId [1]: start working
+2024-03-14 09:51:55 DEBUG ConvertCsvPreparation:17 - ConvertCsvPrep.convertToRead [1]: start - 1
+2024-03-14 09:51:55 DEBUG ConvertCsvPreparation:23 - convertToRead [2]: end { id=1, NamePrep='null', DateEnd=null, Dosage=null, StatusVisitPreparation=null, AboutPrep='null'}
+2024-03-14 09:51:55 DEBUG ConvertCsvPreparation:17 - ConvertCsvPrep.convertToRead [1]: start - 1
+2024-03-14 09:51:55 DEBUG ConvertCsvPreparation:23 - convertToRead [2]: end { id=1, NamePrep='null', DateEnd=null, Dosage=null, StatusVisitPreparation=null, AboutPrep='null'}
+2024-03-14 09:51:55 DEBUG ConvertCsvSchedule:18 - ConvertCsvSchedule.convertToRead [1]: start - 1
+2024-03-14 09:51:55 DEBUG ConvertCsvSchedule:24 - convertToRead [3]: end { id=1, Week=null, DateSchedule=null, TimeBegin=null, TimeEnd=null, StatSchedule=null}
+2024-03-14 09:51:55 DEBUG ConvertCsvSchedule:18 - ConvertCsvSchedule.convertToRead [1]: start - 1
+2024-03-14 09:51:55 DEBUG ConvertCsvSchedule:24 - convertToRead [3]: end { id=1, Week=null, DateSchedule=null, TimeBegin=null, TimeEnd=null, StatSchedule=null}
+2024-03-14 09:51:55 DEBUG DataProviderCsv:350 - selectScheduleId [1]: start working
+2024-03-14 09:51:55 DEBUG DataProviderCsv:369 - selectScheduleId [3]: end working
+2024-03-14 09:51:55 DEBUG DataProviderCsv:350 - selectScheduleId [1]: start working
+2024-03-14 09:51:55 DEBUG DataProviderCsv:369 - selectScheduleId [3]: end working
+2024-03-14 09:51:55 DEBUG DataProviderCsv:379 - selectPreparationId [1]: start working
+2024-03-14 09:51:55 DEBUG DataProviderCsv:398 - selectPreparationId [3]: end working
+2024-03-14 09:51:55 DEBUG DataProviderCsv:379 - selectPreparationId [1]: start working
+2024-03-14 09:51:55 DEBUG DataProviderCsv:398 - selectPreparationId [3]: end working
+2024-03-14 09:51:55 DEBUG DataProviderCsv:288 - selectDoctorId [3]: end working
+2024-03-14 09:51:55 DEBUG DataProviderCsvTest:79 - selectDoctorId [2]: - end working test 
+]]></system-out>
+  </testcase>
+  <testcase name="selectPatientId" classname="ru.sfedu.assessmentHealth.api.DataProviderCsvTest" time="0.062">
+    <system-out><![CDATA[2024-03-14 09:51:55 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:55 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:55 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:55 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:55 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:55 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:55 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:55 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:55 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:55 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:55 DEBUG DataProviderCsv:36 - DataProviderCsv [1]: start constructor
+2024-03-14 09:51:55 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\CALCREPORT.csv is exists
+2024-03-14 09:51:55 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\DOCTOR.csv is exists
+2024-03-14 09:51:55 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\PATIENT.csv is exists
+2024-03-14 09:51:55 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\PREPARATION.csv is exists
+2024-03-14 09:51:55 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\SCHEDULE.csv is exists
+2024-03-14 09:51:55 DEBUG DataProviderCsv:46 - DataProviderCsv [3]: end process
+2024-03-14 09:51:55 DEBUG DataProviderCsvTest:85 - selectPatientId [1]: - start working test
+2024-03-14 09:51:55 DEBUG DataProviderCsv:319 - selectPatientId [1]: start working
+2024-03-14 09:51:55 DEBUG DataProviderCsv:340 - selectPatientId [3]: end working
+2024-03-14 09:51:55 DEBUG DataProviderCsvTest:88 - selectPatientId [2]: - end working test
+]]></system-out>
+  </testcase>
+  <testcase name="selectScheduleId" classname="ru.sfedu.assessmentHealth.api.DataProviderCsvTest" time="0.047">
+    <system-out><![CDATA[2024-03-14 09:51:55 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:55 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:55 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:55 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:55 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:55 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:55 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:55 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:55 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:55 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:55 DEBUG DataProviderCsv:36 - DataProviderCsv [1]: start constructor
+2024-03-14 09:51:55 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\CALCREPORT.csv is exists
+2024-03-14 09:51:55 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\DOCTOR.csv is exists
+2024-03-14 09:51:55 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\PATIENT.csv is exists
+2024-03-14 09:51:55 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\PREPARATION.csv is exists
+2024-03-14 09:51:55 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\SCHEDULE.csv is exists
+2024-03-14 09:51:55 DEBUG DataProviderCsv:46 - DataProviderCsv [3]: end process
+2024-03-14 09:51:55 DEBUG DataProviderCsvTest:94 - selectScheduleId [1]: - start working test
+2024-03-14 09:51:55 DEBUG DataProviderCsv:350 - selectScheduleId [1]: start working
+2024-03-14 09:51:55 DEBUG DataProviderCsv:369 - selectScheduleId [3]: end working
+2024-03-14 09:51:55 DEBUG DataProviderCsvTest:97 - selectScheduleId [2]: - end working test
+]]></system-out>
+  </testcase>
+  <testcase name="selectPreparationId" classname="ru.sfedu.assessmentHealth.api.DataProviderCsvTest" time="0.036">
+    <system-out><![CDATA[2024-03-14 09:51:55 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:55 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:55 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:55 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:55 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:55 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:55 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:55 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:55 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:55 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:55 DEBUG DataProviderCsv:36 - DataProviderCsv [1]: start constructor
+2024-03-14 09:51:55 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\CALCREPORT.csv is exists
+2024-03-14 09:51:55 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\DOCTOR.csv is exists
+2024-03-14 09:51:55 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\PATIENT.csv is exists
+2024-03-14 09:51:55 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\PREPARATION.csv is exists
+2024-03-14 09:51:55 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\SCHEDULE.csv is exists
+2024-03-14 09:51:55 DEBUG DataProviderCsv:46 - DataProviderCsv [3]: end process
+2024-03-14 09:51:55 DEBUG DataProviderCsvTest:103 - selectPreparationId [1]: - start working test
+2024-03-14 09:51:55 DEBUG DataProviderCsv:379 - selectPreparationId [1]: start working
+2024-03-14 09:51:55 DEBUG DataProviderCsv:398 - selectPreparationId [3]: end working
+2024-03-14 09:51:55 DEBUG DataProviderCsvTest:106 - selectPreparationId [2]: - end working test
+]]></system-out>
+  </testcase>
+  <testcase name="selectCalcReport" classname="ru.sfedu.assessmentHealth.api.DataProviderCsvTest" time="0.419">
+    <system-out><![CDATA[2024-03-14 09:51:55 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:55 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:55 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:55 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:55 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:55 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:55 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:55 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:55 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:55 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:55 DEBUG DataProviderCsv:36 - DataProviderCsv [1]: start constructor
+2024-03-14 09:51:55 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\CALCREPORT.csv is exists
+2024-03-14 09:51:55 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\DOCTOR.csv is exists
+2024-03-14 09:51:55 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\PATIENT.csv is exists
+2024-03-14 09:51:55 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\PREPARATION.csv is exists
+2024-03-14 09:51:55 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\SCHEDULE.csv is exists
+2024-03-14 09:51:55 DEBUG DataProviderCsv:46 - DataProviderCsv [3]: end process
+2024-03-14 09:51:55 DEBUG DataProviderCsvTest:112 - selectCalcReport [1]: - start working test
+2024-03-14 09:51:55 DEBUG DataProviderCsv:408 - selectCalcReport [1]: start working
+2024-03-14 09:51:55 DEBUG ConvertCsvPatient:19 - ConvertCsvDoctor.convertToRead [1]: start - 1
+2024-03-14 09:51:55 DEBUG ConvertCsvPatient:25 - convertToRead [3]: end { id=1, cellsBlood=null, hemoglobin=null, platelets=null, glucose=null, cholesterol=null, statusVisit=null, fio='null', age=null, Gender='null', statusPerson=null}
+2024-03-14 09:51:55 DEBUG ConvertCsvDoctor:19 - ConvertCsvDoctor.convertToRead [1]: start - 1
+2024-03-14 09:51:55 DEBUG ConvertCsvDoctor:25 - convertToRead [3]: end { id=1, experience=null, avgPatient=null, qualification='null', specialization='null', linkPreparation=[], linkSchedule=[], fio='null', age=null, Gender='null', statusPerson=null}
+2024-03-14 09:51:55 DEBUG DataProviderCsv:254 - selectDoctorId [1]: start working
+2024-03-14 09:51:55 DEBUG ConvertCsvPreparation:17 - ConvertCsvPrep.convertToRead [1]: start - 1
+2024-03-14 09:51:55 DEBUG ConvertCsvPreparation:23 - convertToRead [2]: end { id=1, NamePrep='null', DateEnd=null, Dosage=null, StatusVisitPreparation=null, AboutPrep='null'}
+2024-03-14 09:51:55 DEBUG ConvertCsvPreparation:17 - ConvertCsvPrep.convertToRead [1]: start - 1
+2024-03-14 09:51:55 DEBUG ConvertCsvPreparation:23 - convertToRead [2]: end { id=1, NamePrep='null', DateEnd=null, Dosage=null, StatusVisitPreparation=null, AboutPrep='null'}
+2024-03-14 09:51:55 DEBUG ConvertCsvSchedule:18 - ConvertCsvSchedule.convertToRead [1]: start - 1
+2024-03-14 09:51:55 DEBUG ConvertCsvSchedule:24 - convertToRead [3]: end { id=1, Week=null, DateSchedule=null, TimeBegin=null, TimeEnd=null, StatSchedule=null}
+2024-03-14 09:51:55 DEBUG ConvertCsvSchedule:18 - ConvertCsvSchedule.convertToRead [1]: start - 1
+2024-03-14 09:51:55 DEBUG ConvertCsvSchedule:24 - convertToRead [3]: end { id=1, Week=null, DateSchedule=null, TimeBegin=null, TimeEnd=null, StatSchedule=null}
+2024-03-14 09:51:55 DEBUG DataProviderCsv:350 - selectScheduleId [1]: start working
+2024-03-14 09:51:55 DEBUG DataProviderCsv:369 - selectScheduleId [3]: end working
+2024-03-14 09:51:55 DEBUG DataProviderCsv:350 - selectScheduleId [1]: start working
+2024-03-14 09:51:55 DEBUG DataProviderCsv:369 - selectScheduleId [3]: end working
+2024-03-14 09:51:55 DEBUG DataProviderCsv:379 - selectPreparationId [1]: start working
+2024-03-14 09:51:55 DEBUG DataProviderCsv:398 - selectPreparationId [3]: end working
+2024-03-14 09:51:55 DEBUG DataProviderCsv:379 - selectPreparationId [1]: start working
+2024-03-14 09:51:55 DEBUG DataProviderCsv:398 - selectPreparationId [3]: end working
+2024-03-14 09:51:55 DEBUG DataProviderCsv:288 - selectDoctorId [3]: end working
+2024-03-14 09:51:55 DEBUG DataProviderCsv:319 - selectPatientId [1]: start working
+2024-03-14 09:51:55 DEBUG DataProviderCsv:340 - selectPatientId [3]: end working
+2024-03-14 09:51:55 DEBUG DataProviderCsv:446 - selectCalcReport [3]: end working
+2024-03-14 09:51:55 DEBUG DataProviderCsvTest:115 - selectCalcReport [2]: - end working test Optional[{ id=1, fioPatient='Bob', fioDoctor='Sim Artem Evgen', bloodAnalysis=true, glucoseAnalysis=true, arterialAnalysis=true, patient=[{ id=1, cellsBlood=6.6, hemoglobin=160.0, platelets=200.0, glucose=80.3, cholesterol=5.3, statusVisit=IN, fio='Bob', age=23, Gender='M', statusPerson=PATIENT}], doctor=[{ id=1, experience=12, avgPatient=12.3, qualification='Med', specialization='Genikolog', linkPreparation=[{ id=1, NamePrep='Ubeprofen', DateEnd=2024-12-20, Dosage=2.3, StatusVisitPreparation=LOW, AboutPrep='this prep important'}, { id=1, NamePrep='Ubeprofen', DateEnd=2024-12-20, Dosage=2.3, StatusVisitPreparation=LOW, AboutPrep='this prep important'}], linkSchedule=[{ id=1, Week=SATURDAY, DateSchedule=2024-04-23, TimeBegin=09:20:30, TimeEnd=18:23:20, StatSchedule=FREE}, { id=1, Week=SATURDAY, DateSchedule=2024-04-23, TimeBegin=09:20:30, TimeEnd=18:23:20, StatSchedule=FREE}], fio='Sim Artem Evgen', age=29, Gender='M', statusPerson=DOCTOR}], price=100.0}]
+]]></system-out>
+  </testcase>
+  <testcase name="deleteDoctor" classname="ru.sfedu.assessmentHealth.api.DataProviderCsvTest" time="0.419">
+    <system-out><![CDATA[2024-03-14 09:51:55 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:55 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:55 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:55 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:55 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:55 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:55 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:55 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:55 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:55 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:55 DEBUG DataProviderCsv:36 - DataProviderCsv [1]: start constructor
+2024-03-14 09:51:55 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\CALCREPORT.csv is exists
+2024-03-14 09:51:55 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\DOCTOR.csv is exists
+2024-03-14 09:51:55 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\PATIENT.csv is exists
+2024-03-14 09:51:55 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\PREPARATION.csv is exists
+2024-03-14 09:51:55 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\SCHEDULE.csv is exists
+2024-03-14 09:51:55 DEBUG DataProviderCsv:46 - DataProviderCsv [3]: end process
+2024-03-14 09:51:55 DEBUG DataProviderCsvTest:122 - deleteDoctor [1]: - start working test
+2024-03-14 09:51:56 DEBUG DataProviderCsv:456 - deleteDoctor [1]: Start working
+2024-03-14 09:51:56 DEBUG DataProviderCsv:254 - selectDoctorId [1]: start working
+2024-03-14 09:51:56 DEBUG ConvertCsvPreparation:17 - ConvertCsvPrep.convertToRead [1]: start - 1
+2024-03-14 09:51:56 DEBUG ConvertCsvPreparation:23 - convertToRead [2]: end { id=1, NamePrep='null', DateEnd=null, Dosage=null, StatusVisitPreparation=null, AboutPrep='null'}
+2024-03-14 09:51:56 DEBUG ConvertCsvPreparation:17 - ConvertCsvPrep.convertToRead [1]: start - 1
+2024-03-14 09:51:56 DEBUG ConvertCsvPreparation:23 - convertToRead [2]: end { id=1, NamePrep='null', DateEnd=null, Dosage=null, StatusVisitPreparation=null, AboutPrep='null'}
+2024-03-14 09:51:56 DEBUG ConvertCsvSchedule:18 - ConvertCsvSchedule.convertToRead [1]: start - 1
+2024-03-14 09:51:56 DEBUG ConvertCsvSchedule:24 - convertToRead [3]: end { id=1, Week=null, DateSchedule=null, TimeBegin=null, TimeEnd=null, StatSchedule=null}
+2024-03-14 09:51:56 DEBUG ConvertCsvSchedule:18 - ConvertCsvSchedule.convertToRead [1]: start - 1
+2024-03-14 09:51:56 DEBUG ConvertCsvSchedule:24 - convertToRead [3]: end { id=1, Week=null, DateSchedule=null, TimeBegin=null, TimeEnd=null, StatSchedule=null}
+2024-03-14 09:51:56 DEBUG DataProviderCsv:350 - selectScheduleId [1]: start working
+2024-03-14 09:51:56 DEBUG DataProviderCsv:369 - selectScheduleId [3]: end working
+2024-03-14 09:51:56 DEBUG DataProviderCsv:350 - selectScheduleId [1]: start working
+2024-03-14 09:51:56 DEBUG DataProviderCsv:369 - selectScheduleId [3]: end working
+2024-03-14 09:51:56 DEBUG DataProviderCsv:379 - selectPreparationId [1]: start working
+2024-03-14 09:51:56 DEBUG DataProviderCsv:398 - selectPreparationId [3]: end working
+2024-03-14 09:51:56 DEBUG DataProviderCsv:379 - selectPreparationId [1]: start working
+2024-03-14 09:51:56 DEBUG DataProviderCsv:398 - selectPreparationId [3]: end working
+2024-03-14 09:51:56 DEBUG DataProviderCsv:288 - selectDoctorId [3]: end working
+2024-03-14 09:51:56 DEBUG DataProviderMongo:38 - save [1]: command = DELETED,object = { id=1, experience=12, avgPatient=12.3, qualification='Med', specialization='Genikolog', linkPreparation=[{ id=1, NamePrep='Ubeprofen', DateEnd=2024-12-20, Dosage=2.3, StatusVisitPreparation=LOW, AboutPrep='this prep important'}, { id=1, NamePrep='Ubeprofen', DateEnd=2024-12-20, Dosage=2.3, StatusVisitPreparation=LOW, AboutPrep='this prep important'}], linkSchedule=[{ id=1, Week=SATURDAY, DateSchedule=2024-04-23, TimeBegin=09:20:30, TimeEnd=18:23:20, StatSchedule=FREE}, { id=1, Week=SATURDAY, DateSchedule=2024-04-23, TimeBegin=09:20:30, TimeEnd=18:23:20, StatSchedule=FREE}], fio='Sim Artem Evgen', age=29, Gender='M', statusPerson=DOCTOR}
+2024-03-14 09:51:56 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:56 DEBUG connection:56 - Connection pool created for localhost:27017 using options maxIdleTimeMS=0, minPoolSize=0, maxPoolSize=100, maxConnecting=2, waitQueueTimeoutMS=120000
+2024-03-14 09:51:56 DEBUG cluster:56 - Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING}]
+2024-03-14 09:51:56 INFO  client:71 - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync", "version": "4.11.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/21.0.1+12-LTS-29"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@59221b97, com.mongodb.Jep395RecordCodecProvider@6ac4944a, com.mongodb.KotlinCodecProvider@5a772895]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=UNSPECIFIED, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2024-03-14 09:51:56 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:56 INFO  cluster:71 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=3321900}
+2024-03-14 09:51:56 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:56 DEBUG connection:56 - Connection pool ready for localhost:27017
+2024-03-14 09:51:56 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:56 INFO  cluster:71 - No server chosen by WritableServerSelector from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, serverDescriptions=[ServerDescription{address=localhost:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+2024-03-14 09:51:56 DEBUG cluster:56 - Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=3.3 ms, state=CONNECTED}]
+2024-03-14 09:51:56 DEBUG cluster:56 - Checking status of localhost:27017
+2024-03-14 09:51:56 DEBUG connection:56 - Checkout started for connection to localhost:27017
+2024-03-14 09:51:56 DEBUG connection:56 - Connection created: address=localhost:27017, driver-generated ID=18
+2024-03-14 09:51:56 DEBUG connection:56 - Connection ready: address=localhost:27017, driver-generated ID=18, established in=4 ms
+2024-03-14 09:51:56 DEBUG connection:56 - Connection checked out: address=localhost:27017, driver-generated ID=18, duration=5 ms
+2024-03-14 09:51:56 DEBUG command:56 - Command "create" started on database "assessmentHealth" using a connection with driver-generated ID 18 and server-generated ID 18 to localhost:27017. The request ID is 40 and the operation ID is 33. Command: {"create": "HistoryClass", "capped": false, "$db": "assessmentHealth", "lsid": {"id": {"$binary": {"base64": "FuzsivYPQwm7mrlfBfY9fQ==", "subType": "04"}}}}
+2024-03-14 09:51:56 DEBUG command:56 - Command "create" succeeded on database "assessmentHealth" in 1.9428 ms using a connection with driver-generated ID 18 and server-generated ID 18 to localhost:27017. The request ID is 40 and the operation ID is 33. Command reply: {"ok": 1.0}
+2024-03-14 09:51:56 DEBUG connection:56 - Connection checked in: address=localhost:27017, driver-generated ID=18
+2024-03-14 09:51:56 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:56 DEBUG DataProviderMongo:77 - objToJson [1]: start working method
+2024-03-14 09:51:56 DEBUG DataProviderMongo:85 - objToJson [3]: End working
+2024-03-14 09:51:56 DEBUG connection:56 - Checkout started for connection to localhost:27017
+2024-03-14 09:51:56 DEBUG connection:56 - Connection checked out: address=localhost:27017, driver-generated ID=18, duration=0 ms
+2024-03-14 09:51:56 DEBUG operation:56 - retryWrites set to true but the server is a standalone server.
+2024-03-14 09:51:56 DEBUG operation:56 - retryWrites set to true but the server is a standalone server.
+2024-03-14 09:51:56 DEBUG command:56 - Command "insert" started on database "assessmentHealth" using a connection with driver-generated ID 18 and server-generated ID 18 to localhost:27017. The request ID is 41 and the operation ID is 35. Command: {"insert": "HistoryClass", "ordered": true, "$db": "assessmentHealth", "lsid": {"id": {"$binary": {"base64": "FuzsivYPQwm7mrlfBfY9fQ==", "subType": "04"}}}, "documents": [{"_id": {"$oid": "65f29e8c324c1a6f9673caa2"}, "id": "434a0a34-b57c-4cbf-8ca4-2151c6eb7ae8", "createdDate": 1710399116283, "actor": "system", "methodName": null, "status": "DELETED", "object": {"id": 1, "fio": "Sim Artem Evgen", "age": 29, "statusPerson": "DOCTOR", "experience": 12, "avgPatient": 12.3, "qualification": "Med", "specialization": "Genikolog", "linkPreparation": [{"id": 1, "statusVisitPreparation": "LOW", "dateEnd": 1734642000000, "dosage": 2.3, "namePrep": "Ubeprofen", "aboutPrep": "this prep important"}, {"id": 1, "statusVisitPreparation": "LOW", "dateEnd": 1734642000000, "dosage": 2.3, "namePrep": "Ubeprofen", "aboutPrep": "this prep important"}], "linkSchedule": [{"id": 1, "week": "SATURDAY", "timeEnd": "18:23:20", "statSchedule": "FREE", "dateSchedule": 1713819600000, "timeBegin": "09:20:30"}, {"id":  ...
+2024-03-14 09:51:56 DEBUG command:56 - Command "insert" succeeded on database "assessmentHealth" in 3.8913 ms using a connection with driver-generated ID 18 and server-generated ID 18 to localhost:27017. The request ID is 41 and the operation ID is 35. Command reply: {"n": 1, "ok": 1.0}
+2024-03-14 09:51:56 DEBUG connection:56 - Connection checked in: address=localhost:27017, driver-generated ID=18
+2024-03-14 09:51:56 DEBUG connection:56 - Checkout started for connection to localhost:27017
+2024-03-14 09:51:56 DEBUG connection:56 - Connection checked out: address=localhost:27017, driver-generated ID=18, duration=0 ms
+2024-03-14 09:51:56 DEBUG command:56 - Command "endSessions" started on database "admin" using a connection with driver-generated ID 18 and server-generated ID 18 to localhost:27017. The request ID is 42 and the operation ID is 36. Command: {"endSessions": [{"id": {"$binary": {"base64": "FuzsivYPQwm7mrlfBfY9fQ==", "subType": "04"}}}], "$db": "admin", "$readPreference": {"mode": "primaryPreferred"}}
+2024-03-14 09:51:56 DEBUG command:56 - Command "endSessions" succeeded on database "admin" in 2.3241 ms using a connection with driver-generated ID 18 and server-generated ID 18 to localhost:27017. The request ID is 42 and the operation ID is 36. Command reply: {"ok": 1.0}
+2024-03-14 09:51:56 DEBUG connection:56 - Connection checked in: address=localhost:27017, driver-generated ID=18
+2024-03-14 09:51:56 DEBUG connection:56 - Connection closed: address=localhost:27017, driver-generated ID=18. Reason: Connection pool was closed.
+2024-03-14 09:51:56 DEBUG connection:56 - Connection pool closed for localhost:27017
+2024-03-14 09:51:56 DEBUG ConvertCsvPreparation:17 - ConvertCsvPrep.convertToRead [1]: start - 1
+2024-03-14 09:51:56 DEBUG ConvertCsvPreparation:23 - convertToRead [2]: end { id=1, NamePrep='null', DateEnd=null, Dosage=null, StatusVisitPreparation=null, AboutPrep='null'}
+2024-03-14 09:51:56 DEBUG ConvertCsvPreparation:17 - ConvertCsvPrep.convertToRead [1]: start - 1
+2024-03-14 09:51:56 DEBUG ConvertCsvPreparation:23 - convertToRead [2]: end { id=1, NamePrep='null', DateEnd=null, Dosage=null, StatusVisitPreparation=null, AboutPrep='null'}
+2024-03-14 09:51:56 DEBUG ConvertCsvSchedule:18 - ConvertCsvSchedule.convertToRead [1]: start - 1
+2024-03-14 09:51:56 DEBUG ConvertCsvSchedule:24 - convertToRead [3]: end { id=1, Week=null, DateSchedule=null, TimeBegin=null, TimeEnd=null, StatSchedule=null}
+2024-03-14 09:51:56 DEBUG ConvertCsvSchedule:18 - ConvertCsvSchedule.convertToRead [1]: start - 1
+2024-03-14 09:51:56 DEBUG ConvertCsvSchedule:24 - convertToRead [3]: end { id=1, Week=null, DateSchedule=null, TimeBegin=null, TimeEnd=null, StatSchedule=null}
+2024-03-14 09:51:56 DEBUG DataProviderCsv:488 - deleteDoctor [3]: end working
+2024-03-14 09:51:56 DEBUG DataProviderCsv:254 - selectDoctorId [1]: start working
+2024-03-14 09:51:56 ERROR DataProviderCsv:286 - selectDoctorId [2]: Error csv\DOCTOR.csv (Не удается найти указанный файл)
+2024-03-14 09:51:56 DEBUG DataProviderCsv:288 - selectDoctorId [3]: end working
+2024-03-14 09:51:56 DEBUG DataProviderCsvTest:126 - deleteDoctor [2]: - end working test
+]]></system-out>
+  </testcase>
+  <testcase name="selectDoctorIdNegativity" classname="ru.sfedu.assessmentHealth.api.DataProviderCsvTest" time="0.066">
+    <system-out><![CDATA[2024-03-14 09:51:56 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:56 DEBUG DataProviderCsv:36 - DataProviderCsv [1]: start constructor
+2024-03-14 09:51:56 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\CALCREPORT.csv is exists
+2024-03-14 09:51:56 DEBUG FileUtil:18 - createFileIfNotExists [1]: New file D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\DOCTOR.csv, is created: true
+2024-03-14 09:51:56 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\PATIENT.csv is exists
+2024-03-14 09:51:56 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\PREPARATION.csv is exists
+2024-03-14 09:51:56 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\SCHEDULE.csv is exists
+2024-03-14 09:51:56 DEBUG DataProviderCsv:46 - DataProviderCsv [3]: end process
+2024-03-14 09:51:56 DEBUG DataProviderCsvTest:133 - selectDoctorIdNegativity [1]: - start working test
+2024-03-14 09:51:56 DEBUG DataProviderCsv:254 - selectDoctorId [1]: start working
+2024-03-14 09:51:56 ERROR DataProviderCsv:286 - selectDoctorId [2]: Error Index 0 out of bounds for length 0
+2024-03-14 09:51:56 DEBUG DataProviderCsv:288 - selectDoctorId [3]: end working
+2024-03-14 09:51:56 DEBUG DataProviderCsvTest:136 - selectDoctorIdNegativity [2]: - end working test
+]]></system-out>
+  </testcase>
+  <testcase name="selectPatientIdNegativity" classname="ru.sfedu.assessmentHealth.api.DataProviderCsvTest" time="0.055">
+    <system-out><![CDATA[2024-03-14 09:51:56 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:56 DEBUG DataProviderCsv:36 - DataProviderCsv [1]: start constructor
+2024-03-14 09:51:56 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\CALCREPORT.csv is exists
+2024-03-14 09:51:56 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\DOCTOR.csv is exists
+2024-03-14 09:51:56 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\PATIENT.csv is exists
+2024-03-14 09:51:56 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\PREPARATION.csv is exists
+2024-03-14 09:51:56 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\SCHEDULE.csv is exists
+2024-03-14 09:51:56 DEBUG DataProviderCsv:46 - DataProviderCsv [3]: end process
+2024-03-14 09:51:56 DEBUG DataProviderCsvTest:142 - selectPatientIdNegativity [1]: - start working test
+2024-03-14 09:51:56 DEBUG DataProviderCsv:319 - selectPatientId [1]: start working
+2024-03-14 09:51:56 ERROR DataProviderCsv:338 - selectPatientId [2]: Error Index 0 out of bounds for length 0
+2024-03-14 09:51:56 DEBUG DataProviderCsv:340 - selectPatientId [3]: end working
+2024-03-14 09:51:56 DEBUG DataProviderCsvTest:145 - selectPatientIdNegativity [2]: - end working test
+]]></system-out>
+  </testcase>
+  <testcase name="selectScheduleIdNegativity" classname="ru.sfedu.assessmentHealth.api.DataProviderCsvTest" time="0.056">
+    <system-out><![CDATA[2024-03-14 09:51:56 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:56 DEBUG DataProviderCsv:36 - DataProviderCsv [1]: start constructor
+2024-03-14 09:51:56 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\CALCREPORT.csv is exists
+2024-03-14 09:51:56 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\DOCTOR.csv is exists
+2024-03-14 09:51:56 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\PATIENT.csv is exists
+2024-03-14 09:51:56 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\PREPARATION.csv is exists
+2024-03-14 09:51:56 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\SCHEDULE.csv is exists
+2024-03-14 09:51:56 DEBUG DataProviderCsv:46 - DataProviderCsv [3]: end process
+2024-03-14 09:51:56 DEBUG DataProviderCsvTest:151 - selectScheduleIdNegativity [1]: - start working test
+2024-03-14 09:51:56 DEBUG DataProviderCsv:350 - selectScheduleId [1]: start working
+2024-03-14 09:51:56 ERROR DataProviderCsv:367 - selectScheduleId [2]: Error Index 0 out of bounds for length 0
+2024-03-14 09:51:56 DEBUG DataProviderCsv:369 - selectScheduleId [3]: end working
+2024-03-14 09:51:56 DEBUG DataProviderCsvTest:154 - selectScheduleIdNegativity [2]: - end working test
+]]></system-out>
+  </testcase>
+  <testcase name="selectPreparationIdNegativity" classname="ru.sfedu.assessmentHealth.api.DataProviderCsvTest" time="0.038">
+    <system-out><![CDATA[2024-03-14 09:51:56 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:56 DEBUG DataProviderCsv:36 - DataProviderCsv [1]: start constructor
+2024-03-14 09:51:56 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\CALCREPORT.csv is exists
+2024-03-14 09:51:56 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\DOCTOR.csv is exists
+2024-03-14 09:51:56 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\PATIENT.csv is exists
+2024-03-14 09:51:56 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\PREPARATION.csv is exists
+2024-03-14 09:51:56 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\SCHEDULE.csv is exists
+2024-03-14 09:51:56 DEBUG DataProviderCsv:46 - DataProviderCsv [3]: end process
+2024-03-14 09:51:56 DEBUG DataProviderCsvTest:160 - selectPreparationIdNegativity [1]: - start working test
+2024-03-14 09:51:56 DEBUG DataProviderCsv:379 - selectPreparationId [1]: start working
+2024-03-14 09:51:56 ERROR DataProviderCsv:396 - selectPreparationId [2]: Error Index 0 out of bounds for length 0
+2024-03-14 09:51:56 DEBUG DataProviderCsv:398 - selectPreparationId [3]: end working
+2024-03-14 09:51:56 DEBUG DataProviderCsvTest:163 - selectPreparationIdNegativity [2]: - end working test
+]]></system-out>
+  </testcase>
+  <testcase name="selectCalcReportNegativity" classname="ru.sfedu.assessmentHealth.api.DataProviderCsvTest" time="0.06">
+    <system-out><![CDATA[2024-03-14 09:51:56 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:56 DEBUG DataProviderCsv:36 - DataProviderCsv [1]: start constructor
+2024-03-14 09:51:56 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\CALCREPORT.csv is exists
+2024-03-14 09:51:56 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\DOCTOR.csv is exists
+2024-03-14 09:51:56 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\PATIENT.csv is exists
+2024-03-14 09:51:56 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\PREPARATION.csv is exists
+2024-03-14 09:51:56 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\SCHEDULE.csv is exists
+2024-03-14 09:51:56 DEBUG DataProviderCsv:46 - DataProviderCsv [3]: end process
+2024-03-14 09:51:56 DEBUG DataProviderCsvTest:169 - selectCalcReportNegativity [1]: - start working test
+2024-03-14 09:51:56 DEBUG DataProviderCsv:408 - selectCalcReport [1]: start working
+2024-03-14 09:51:56 DEBUG ConvertCsvPatient:19 - ConvertCsvDoctor.convertToRead [1]: start - 1
+2024-03-14 09:51:56 DEBUG ConvertCsvPatient:25 - convertToRead [3]: end { id=1, cellsBlood=null, hemoglobin=null, platelets=null, glucose=null, cholesterol=null, statusVisit=null, fio='null', age=null, Gender='null', statusPerson=null}
+2024-03-14 09:51:56 DEBUG ConvertCsvDoctor:19 - ConvertCsvDoctor.convertToRead [1]: start - 1
+2024-03-14 09:51:56 DEBUG ConvertCsvDoctor:25 - convertToRead [3]: end { id=1, experience=null, avgPatient=null, qualification='null', specialization='null', linkPreparation=[], linkSchedule=[], fio='null', age=null, Gender='null', statusPerson=null}
+2024-03-14 09:51:56 ERROR DataProviderCsv:444 - selectCalcReport [2]: Error Index 0 out of bounds for length 0
+2024-03-14 09:51:56 DEBUG DataProviderCsv:446 - selectCalcReport [3]: end working
+2024-03-14 09:51:56 DEBUG DataProviderCsvTest:172 - selectCalcReportNegativity [2]: - end working test
+]]></system-out>
+  </testcase>
+  <testcase name="selectAllDoctor" classname="ru.sfedu.assessmentHealth.api.DataProviderCsvTest" time="0.124">
+    <system-out><![CDATA[2024-03-14 09:51:56 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:56 DEBUG DataProviderCsv:36 - DataProviderCsv [1]: start constructor
+2024-03-14 09:51:56 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\CALCREPORT.csv is exists
+2024-03-14 09:51:56 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\DOCTOR.csv is exists
+2024-03-14 09:51:56 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\PATIENT.csv is exists
+2024-03-14 09:51:56 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\PREPARATION.csv is exists
+2024-03-14 09:51:56 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\SCHEDULE.csv is exists
+2024-03-14 09:51:56 DEBUG DataProviderCsv:46 - DataProviderCsv [3]: end process
+2024-03-14 09:51:56 DEBUG DataProviderCsvTest:179 - selectAllDoctor [1]: - start working test
+2024-03-14 09:51:56 DEBUG DataProviderCsv:294 - selectAllDoctor [1]: start working
+2024-03-14 09:51:56 DEBUG DataProviderCsv:309 - selectAllDoctor[3]: end working
+2024-03-14 09:51:56 DEBUG DataProviderCsvTest:182 - selectAllDoctor [2]: - end working test
+]]></system-out>
+  </testcase>
+  <testcase name="selectAllDoctorNegativity" classname="ru.sfedu.assessmentHealth.api.DataProviderCsvTest" time="0.076">
+    <system-out><![CDATA[2024-03-14 09:51:56 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:27 - getPropertyValue [1]: ������ ������ ��������� ���������� property
+2024-03-14 09:51:56 DEBUG PropertyConfig:37 - getPropertyValue [3]: ����� ��������� property
+2024-03-14 09:51:56 DEBUG DataProviderCsv:36 - DataProviderCsv [1]: start constructor
+2024-03-14 09:51:56 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\CALCREPORT.csv is exists
+2024-03-14 09:51:56 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\DOCTOR.csv is exists
+2024-03-14 09:51:56 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\PATIENT.csv is exists
+2024-03-14 09:51:56 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\PREPARATION.csv is exists
+2024-03-14 09:51:56 DEBUG FileUtil:20 - createFileIfNotExists [2]: File D:\Рабочий стол\Курсовая_Долг\assessmentHealth\csv\SCHEDULE.csv is exists
+2024-03-14 09:51:56 DEBUG DataProviderCsv:46 - DataProviderCsv [3]: end process
+2024-03-14 09:51:56 DEBUG DataProviderCsvTest:188 - selectAllDoctorNegativity [1]: - start working test
+2024-03-14 09:51:56 DEBUG DataProviderCsv:294 - selectAllDoctor [1]: start working
+2024-03-14 09:51:56 DEBUG DataProviderCsv:309 - selectAllDoctor[3]: end working
+2024-03-14 09:51:56 DEBUG DataProviderCsvTest:191 - selectAllDoctorNegativity [2]: - end working test
+]]></system-out>
+  </testcase>
+</testsuite>

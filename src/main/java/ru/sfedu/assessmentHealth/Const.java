@@ -74,8 +74,7 @@ public class Const {
             "Cholesterol DECIMAL,\n" +
             "StatusVisit VARCHAR(20)\n").concat(");");
     public static final String SQL_TABLE_CREATE_CALC_REPORT= "CREATE TABLE IF NOT EXISTS ".concat(TABLE_NAME_CALC_REPORT)
-            .concat("(").concat("id").concat("" +
-                            " SERIAL PRIMARY KEY,\n" +
+            .concat("(").concat("id").concat(" SERIAL PRIMARY KEY,\n" +
                             "PatientName VARCHAR(30),\n" +
                             "DoctorName VARCHAR(30),\n" +
                             "BloodAnalyse BOOLEAN,\n" +
@@ -149,7 +148,7 @@ public class Const {
     public static final  String DISEASE_CELLS_BLOOD_4 = "Анемия";
     public static final  String DISEASE_CELLS_BLOOD_5 = "Хронические инфекционно-воспалительные болезни";
 
-    public static final  String RESULT_SYSTEM_CELLS_BLOOD = String.format("Возможные причины отклонения от нормы эритроцитов:\n")
+    public static final  String RESULT_SYSTEM_CELLS_BLOOD = "Возможные причины отклонения от нормы эритроцитов:\n"
             .concat(DISEASE_CELLS_BLOOD_1)
             .concat("\n")
             .concat(DISEASE_CELLS_BLOOD_2)
@@ -164,7 +163,7 @@ public class Const {
     public static final  String DISEASE_HEMOGLOBIN_2 = "Обезвоживание";
     public static final  String DISEASE_HEMOGLOBIN_3 = "Хроническое кровотечение";
 
-    public static final  String RESULT_SYSTEM_HEMOGLOBIN = String.format("Возможные причины отклонения от нормы Гемоглобина:\n")
+    public static final  String RESULT_SYSTEM_HEMOGLOBIN = "Возможные причины отклонения от нормы Гемоглобина:\n"
             .concat(DISEASE_HEMOGLOBIN_1)
             .concat("\n")
             .concat(DISEASE_HEMOGLOBIN_2)
@@ -175,7 +174,7 @@ public class Const {
     public static final  String DISEASE_PLATELET_2 = "Онкологические болезни";
     public static final  String DISEASE_PLATELET_3 = "Хирургические вмешательства";
 
-    public static final  String RESULT_SYSTEM_PLATELET = String.format("Возможные причины отклонения от нормы Тромбоцитов:\n")
+    public static final  String RESULT_SYSTEM_PLATELET = "Возможные причины отклонения от нормы Тромбоцитов:\n"
             .concat(DISEASE_PLATELET_1)
             .concat("\n")
             .concat(DISEASE_PLATELET_2)
@@ -185,7 +184,7 @@ public class Const {
     public static final  String DISEASE_GLUCOSE_1 = "Гипергликемия";
     public static final  String DISEASE_GLUCOSE_2 = "Диабет";
 
-    public static final  String RESULT_SYSTEM_GLUCOSE = String.format("Возможные причины отклонения от нормы Глюкозы:\n")
+    public static final  String RESULT_SYSTEM_GLUCOSE = "Возможные причины отклонения от нормы Глюкозы:\n"
             .concat(DISEASE_GLUCOSE_1)
             .concat("\n")
             .concat(DISEASE_GLUCOSE_2).concat(";");
@@ -194,7 +193,7 @@ public class Const {
     public static final  String DISEASE_CHOLESTEROL_1 = "Атеросклероз";
     public static final  String DISEASE_CHOLESTEROL_2 = "Гиперлипидемия";
 
-    public static final  String RESULT_SYSTEM_CHOLESTEROL = String.format("Возможные причины отклонения от нормы Холестерина:\n")
+    public static final  String RESULT_SYSTEM_CHOLESTEROL = "Возможные причины отклонения от нормы Холестерина:\n"
             .concat(DISEASE_CHOLESTEROL_1)
             .concat("\n")
             .concat(DISEASE_CHOLESTEROL_2).concat(";");
@@ -209,10 +208,10 @@ public class Const {
 
     public static final String FILE_TYPE = "txt";
     public static final String UNICODE_RUS = "cp1251";
-    public static final String FILE_NAME_VISIT_DOCTOR = String.format("visitDoctor").concat(".").concat(FILE_TYPE);
-    public static final String FILE_NAME_ARIVIAL_DOCTOR = String.format("ArivialDoctor").concat(".").concat(FILE_TYPE);
+    public static final String FILE_NAME_VISIT_DOCTOR = "visitDoctor".concat(".").concat(FILE_TYPE);
+    public static final String FILE_NAME_ARIVIAL_DOCTOR = "ArivialDoctor".concat(".").concat(FILE_TYPE);
 
-    public static final String FILE_NAME_CALCULATE_PRICE = String.format("calculatePrice").concat(".").concat(FILE_TYPE);
+    public static final String FILE_NAME_CALCULATE_PRICE = "calculatePrice".concat(".").concat(FILE_TYPE);
     public static final String FILE_DELIMITER_ARIVIAL_DOCTOR_STATUS_OK = "\nСостояние не критическое: Выберите подходящее\n";
     public static final String FILE_DELIMITER_VISIT_DOCTOR = "\n---------------------------\n";
 
@@ -366,6 +365,31 @@ public class Const {
 
     public static final Double COF_LOW = 0.0;
     public static final Double COF_UP = 5.0;
+
+    public static final String  HIBERNATE_QUERY_LAB1_GET_SIZE_TABLE = "SELECT"
+            .concat(" ").concat("pg_relation_size").concat("(").concat("'%s'").concat(")");
+    public static final String  HIBERNATE_QUERY_LAB1_GET_LIST_TABLE = "SELECT"
+            .concat(" ").concat("tablename")
+            .concat(" ").concat("FROM")
+            .concat(" ").concat("pg_catalog.pg_tables")
+            .concat(" ").concat("WHERE")
+            .concat(" ").concat("schemaname")
+            .concat("=").concat("'public'");
+    public static final String  HIBERNATE_QUERY_LAB1_GET_LIST_USERS = "SELECT"
+            .concat(" ").concat("usename")
+            .concat(" ").concat("FROM")
+            .concat(" ").concat("pg_catalog.pg_user");
+
+    public static final String  HIBERNATE_QUERY_LAB1_GET_LIST_INFO = "SELECT"
+            .concat(" ").concat("column_name").concat(",").concat("data_type")
+            .concat(" ").concat( "FROM")
+            .concat(" ").concat("information_schema.columns")
+            .concat(" ").concat( "WHERE")
+            .concat(" ").concat("table_name")
+            .concat("=")
+            .concat("'%s'");
+
+
 
 
 
