@@ -7,7 +7,7 @@
 <session-factory>
     <!-- Настройки подключения к БД -->
     <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
-    <property name="hibernate.connection.url"> jdbc:postgresql://localhost:5432/assessmentHealth</property>
+    <property name="hibernate.connection.url"> jdbc:postgresql://localhost:5432/lab2</property>
     <property name="hibernate.connection.username">postgres</property>
     <property name="hibernate.connection.password">root</property>
 
@@ -29,7 +29,7 @@
 
     <!-- Вывод в консоль SQL-запросов -->
     <property name="show_sql">true</property>
-
+    <mapping class="ru.sfedu.assessmentHealth.lab2.model.TestEntity"/>
 
 </session-factory>
 </hibernate-configuration>

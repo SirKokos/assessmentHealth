@@ -10,6 +10,8 @@ import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
 import java.io.File;
 import ru.sfedu.assessmentHealth.lab1.api.HibernateDataProviderPostgres;
+import ru.sfedu.assessmentHealth.lab2.model.Person;
+import ru.sfedu.assessmentHealth.lab2.model.TestEntity;
 
 /**
         *
@@ -45,7 +47,10 @@ public class HibernateUtil {
                         .applySettings(configuration.getProperties()).build();
 
                 MetadataSources metadataSources = new MetadataSources(serviceRegistry);
+                metadataSources.addAnnotatedClass(TestEntity.class);
+                metadataSources.addAnnotatedClass(Person.class);
                 sessionFactory = metadataSources.buildMetadata().buildSessionFactory();
+
             }
         } catch (HibernateException e) {
             log.error("getSessionFactory [2]: error {}",e.getMessage());

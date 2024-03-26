@@ -392,6 +392,9 @@ public class Const {
 
 
 
+    public static String LAB2_HBN_CFG = "lab2.hbn_cfg";
+
+
 
 
 

@@ -13,7 +13,7 @@ import java.util.List;
 
 public class HibernateDataProviderPostgres {
     private static final Logger log = LogManager.getLogger(HibernateDataProviderPostgres.class.getName());
-    private static Session session;
+    protected static Session session;
 
     /**
      * Open session.
