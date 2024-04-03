@@ -8,7 +8,6 @@ import ru.sfedu.assessmentHealth.model.*;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -118,7 +117,7 @@ public class PostgresUtils {
         result.setFio(resultSet.getString(2));
         result.setAge(resultSet.getInt(3));
         result.setGender(resultSet.getString(4));
-        result.setStatusPerson(StatusPerson.valueOf(resultSet.getString(5)));
+        result.setStatusPerson(StatusPat.valueOf(resultSet.getString(5)));
         result.setExperience(resultSet.getInt(6));
         result.setAvgPatient(Double.valueOf(resultSet.getDouble(7)));
         result.setQualification(resultSet.getString(8));
@@ -189,14 +188,14 @@ public class PostgresUtils {
         result.setFio(resultSet.getString(2));
         result.setAge(resultSet.getInt(3));
         result.setGender(resultSet.getString(4));
-        result.setStatusPerson(StatusPerson.valueOf(resultSet.getString(5)));
+        result.setStatusPerson(StatusPat.valueOf(resultSet.getString(5)));
 
         result.setCellsBlood(resultSet.getDouble(6));
         result.setHemoglobin(resultSet.getDouble(7));
         result.setPlatelets(resultSet.getDouble(8));
         result.setGlucose(resultSet.getDouble(9));
         result.setCholesterol(resultSet.getDouble(10));
-        result.setStatusVisit(StatusPatient.valueOf((resultSet.getString(11))));
+        result.setStatusVisit(StatusVisitEn.valueOf((resultSet.getString(11))));
 
         return result;
     }

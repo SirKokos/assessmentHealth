@@ -4,7 +4,6 @@ import ru.sfedu.assessmentHealth.Const;
 import ru.sfedu.assessmentHealth.model.*;
 import ru.sfedu.assessmentHealth.utils.PropertyConfig;
 
-import javax.print.Doc;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -35,7 +34,7 @@ public class BaseTest {
        doctor.setFio(Const.TEST_DOCTOR_DATA_FIO)
                .setAge(Integer.valueOf(Const.TEST_DOCTOR_DATA_AGE))
                .setGender(Const.TEST_DOCTOR_DATA_GENDER)
-               .setStatusPerson(StatusPerson.valueOf(Const.TEST_DOCTOR_DATA_STATUS_PERSON));
+               .setStatusPerson(StatusPat.valueOf(Const.TEST_DOCTOR_DATA_STATUS_PERSON));
 
        doctor.setExperience(Integer.valueOf(Const.TEST_DOCTOR_DATA_EXP))
                .setAvgPatient(Double.valueOf(Const.TEST_DOCTOR_DATA_AVG_PATIENT))
@@ -64,14 +63,14 @@ public class BaseTest {
        patient.setFio(Const.TEST_PATIENT_DATA_FIO)
                .setAge(Integer.valueOf(Const.TEST_PATIENT_DATA_AGE))
                .setGender(Const.TEST_PATIENT_DATA_GENDER)
-               .setStatusPerson(StatusPerson.valueOf(Const.TEST_PATIENT_DATA_STATUS_PERSON));
+               .setStatusPerson(StatusPat.valueOf(Const.TEST_PATIENT_DATA_STATUS_PERSON));
 
        patient.setCellsBlood(Double.valueOf(Const.TEST_PATIENT_DATA_CELLS_BLOOD))
                .setHemoglobin(Double.valueOf(Const.TEST_PATIENT_DATA_HEMOGLOBIN))
                .setPlatelets(Double.valueOf(Const.TEST_PATIENT_DATA_PLATELETS))
                .setGlucose(Double.valueOf(Const.TEST_PATIENT_DATA_GLUCOSE))
                .setCholesterol(Double.valueOf(Const.TEST_PATIENT_DATA_CHOLESTEROL))
-               .setStatusVisit(StatusPatient.valueOf(Const.TEST_PATIENT_DATA_STATUS_PATIENT));
+               .setStatusVisit(StatusVisitEn.valueOf(Const.TEST_PATIENT_DATA_STATUS_PATIENT));
        return patient;
    }
 

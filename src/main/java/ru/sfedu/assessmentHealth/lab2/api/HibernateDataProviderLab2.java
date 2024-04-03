@@ -3,18 +3,13 @@ package ru.sfedu.assessmentHealth.lab2.api;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-
-import org.hibernate.Session;
-import org.hibernate.Transaction;
 import ru.sfedu.assessmentHealth.lab1.api.HibernateDataProviderPostgres;
 
 
-import ru.sfedu.assessmentHealth.lab1.utils.HibernateUtil;
 import ru.sfedu.assessmentHealth.lab2.model.StatusResponse;
 import ru.sfedu.assessmentHealth.lab2.model.TestEntity;
 
-import javax.persistence.Query;
-import java.util.List;
+
 
 public class HibernateDataProviderLab2 extends HibernateDataProviderPostgres{
     private static final Logger log = LogManager.getLogger(HibernateDataProviderLab2.class.getName());

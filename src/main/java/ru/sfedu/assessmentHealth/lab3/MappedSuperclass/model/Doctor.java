@@ -1,19 +1,24 @@
-package ru.sfedu.assessmentHealth.model;
+package ru.sfedu.assessmentHealth.lab3.MappedSuperclass.model;
 
 import com.opencsv.bean.CsvBindAndSplitByPosition;
 import com.opencsv.bean.CsvBindByPosition;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.ElementList;
 import org.simpleframework.xml.Root;
+import ru.sfedu.assessmentHealth.model.Person;
+import ru.sfedu.assessmentHealth.model.Preparation;
+import ru.sfedu.assessmentHealth.model.Schedule;
 import ru.sfedu.assessmentHealth.utils.ConvertCsvPreparation;
 import ru.sfedu.assessmentHealth.utils.ConvertCsvSchedule;
 
+import javax.persistence.Entity;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
 @Root
-public class Doctor extends Person{
+@Entity(name = "Doctor")
+public class Doctor extends Person {
     @Element
     @CsvBindByPosition(position = 5)
     protected Integer experience;

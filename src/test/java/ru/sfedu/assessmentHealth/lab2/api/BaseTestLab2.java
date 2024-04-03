@@ -12,7 +12,7 @@ import java.util.Date;
 
 public class BaseTestLab2 {
     HibernateDataProviderLab2 hibernateDataProviderLab2 = new HibernateDataProviderLab2();
-    {
+    static {
         PropertyConfig.setConfigPath(Const.NAME_PROPERTY_FILE);
         HibernateUtil.setPathConfig(PropertyConfig.getPropertyValue(Const.LAB2_HBN_CFG,Const.NAME_PROPERTY_FILE));
     }

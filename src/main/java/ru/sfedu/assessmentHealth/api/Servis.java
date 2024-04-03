@@ -137,7 +137,7 @@ public class Servis {
              OutputStreamWriter osw = new OutputStreamWriter(fos,Const.UNICODE_RUS);
              BufferedWriter writer = new BufferedWriter(osw)){
 
-            if(mapAssessmentHealth.get(Const.RESULT_HEALTH)<Const.TRIGGER_POINT_HEALTH && patient.getStatusVisit().equals(StatusPatient.OUT)){
+            if(mapAssessmentHealth.get(Const.RESULT_HEALTH)<Const.TRIGGER_POINT_HEALTH && patient.getStatusVisit().equals(StatusVisitEn.OUT)){
 
                 for (var value : mapDoctorIdAndSchedule.entrySet() ) {
                     writer.write(value.getKey() +Const.SEPARATOR_ARROW + value.getValue()+Const.SEPARATOR_ESCAPE);
@@ -149,7 +149,7 @@ public class Servis {
                 writer.write(Const.FILE_DELIMITER_VISIT_DOCTOR);
 
             }else {
-                if(patient.getStatusVisit().equals(StatusPatient.IN)){
+                if(patient.getStatusVisit().equals(StatusVisitEn.IN)){
                     writer.write(Const.ARIVIAL_DOCTOR_ANSWER_FOR_IN_PATIENT);
                 }
                 writer.write(Const.FILE_DELIMITER_ARIVIAL_DOCTOR_STATUS_OK);

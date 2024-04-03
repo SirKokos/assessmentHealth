@@ -1,11 +1,16 @@
-package ru.sfedu.assessmentHealth.model;
+package ru.sfedu.assessmentHealth.lab3.MappedSuperclass.model;
 
 import com.opencsv.bean.CsvBindByPosition;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
+import ru.sfedu.assessmentHealth.model.Person;
+import ru.sfedu.assessmentHealth.model.StatusVisitEn;
 
+import javax.persistence.Entity;
 import java.util.Objects;
+
 @Root
+@Entity(name = "Patient")
 public class Patient extends Person {
     @Element
     @CsvBindByPosition(position = 5)

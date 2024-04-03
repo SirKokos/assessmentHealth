@@ -2,10 +2,7 @@ package ru.sfedu.assessmentHealth.utils;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import ru.sfedu.assessmentHealth.api.IDataProvider;
 import ru.sfedu.assessmentHealth.model.*;
-
-import java.util.List;
 
 public class CreateObj {
     private static final Logger log = LogManager.getLogger(CreateObj.class.getName());
@@ -87,14 +84,14 @@ public class CreateObj {
             patient.setFio(fio)
                     .setAge(Integer.parseInt(age))
                     .setGender(gender)
-                    .setStatusPerson(StatusPerson.valueOf(statusPerson));
+                    .setStatusPerson(StatusPat.valueOf(statusPerson));
 
             patient.setCellsBlood(Double.parseDouble(cellsBlood))
                     .setHemoglobin(Double.parseDouble(hemoglobin))
                     .setPlatelets(Double.parseDouble(platelets))
                     .setGlucose(Double.parseDouble(glucose))
                     .setCholesterol(Double.parseDouble(cholesterol))
-                    .setStatusVisit(StatusPatient.valueOf(statusVisit));
+                    .setStatusVisit(StatusVisitEn.valueOf(statusVisit));
         }catch (Exception e) {
             log.error("createPatient [2]: при создании произошла ошибка {}", e.getMessage());
         }
@@ -122,7 +119,7 @@ public class CreateObj {
             doctor.setFio(fio)
                     .setAge(Integer.parseInt(age))
                     .setGender(gender)
-                    .setStatusPerson(StatusPerson.valueOf(statusPerson));
+                    .setStatusPerson(StatusPat.valueOf(statusPerson));
 
             doctor.setExperience(Integer.parseInt(exp))
                     .setAvgPatient(Double.parseDouble(avgPatient))

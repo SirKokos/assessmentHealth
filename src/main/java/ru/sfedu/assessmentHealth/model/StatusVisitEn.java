@@ -1,6 +1,6 @@
 package ru.sfedu.assessmentHealth.model;
 
-public enum StatusPatient {
+public enum StatusVisitEn {
     OUT,
     IN,
 }

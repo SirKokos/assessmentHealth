@@ -1,24 +1,34 @@
-package ru.sfedu.assessmentHealth.model;
+package ru.sfedu.assessmentHealth.lab3.MappedSuperclass.model;
 
 import com.opencsv.bean.CsvBindByPosition;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
+import ru.sfedu.assessmentHealth.model.BaseId;
+import ru.sfedu.assessmentHealth.model.StatusPat;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.MappedSuperclass;
 import java.util.Objects;
 
 @Root
-public class Person extends BaseId{
+@Entity(name = "Person")
+public class Person extends BaseId {
     @Element
     @CsvBindByPosition(position = 1)
+    @Column(name = "fio", nullable = false)
     protected String fio;
     @Element
     @CsvBindByPosition(position = 2)
+    @Column(name = "age", nullable = false)
     protected Integer age;
     @Element
     @CsvBindByPosition(position = 3)
+    @Column(name = "gender", nullable = false)
     protected String Gender;
     @Element
     @CsvBindByPosition(position = 4)
+    @Column(name = "statusPat", nullable = false)
     protected StatusPat statusPat;
 
     public String getFio() {
