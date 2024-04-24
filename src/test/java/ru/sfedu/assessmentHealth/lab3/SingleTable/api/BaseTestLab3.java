@@ -3,8 +3,7 @@ package ru.sfedu.assessmentHealth.lab3.SingleTable.api;
 
 import lombok.extern.slf4j.Slf4j;
 import ru.sfedu.assessmentHealth.Const;
-import ru.sfedu.assessmentHealth.lab1.utils.HibernateUtil;
-import ru.sfedu.assessmentHealth.lab3.SingleTable.api.HibernateDataProviderLab3;
+import ru.sfedu.assessmentHealth.lab3.SingleTable.utils.HibernateUtil;
 import ru.sfedu.assessmentHealth.lab3.SingleTable.model.*;
 import ru.sfedu.assessmentHealth.utils.PropertyConfig;
 
@@ -16,7 +15,7 @@ public class BaseTestLab3 {
      HibernateDataProviderLab3 hibernateDataProviderLab3 = new HibernateDataProviderLab3();
     static {
         PropertyConfig.setConfigPath(Const.NAME_PROPERTY_FILE);
-        HibernateUtil.setPathConfig(PropertyConfig.getPropertyValue(Const.LAB3_HBN_CFG,Const.NAME_PROPERTY_FILE));
+        HibernateUtil.setPathConfig(PropertyConfig.getPropertyValue(Const.LAB3_HBN_CFG_SINGLE,Const.NAME_PROPERTY_FILE));
     }
 
     public Person getPerson(){
