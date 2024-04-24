@@ -8,6 +8,12 @@
     <!-- Настройки подключения к БД -->
     <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
     <property name="hibernate.connection.url"> jdbc:postgresql://localhost:5432/lab3_1</property>
+<!--    <property name="hibernate.connection.url"> jdbc:postgresql://localhost:5432/lab3_2</property>-->
+<!--    <property name="hibernate.connection.url"> jdbc:postgresql://localhost:5432/lab3_3</property>-->
+<!--        <property name="hibernate.connection.url"> jdbc:postgresql://localhost:5432/lab3_4</property>-->
+
+
+
     <property name="hibernate.connection.username">postgres</property>
     <property name="hibernate.connection.password">root</property>
 
@@ -26,13 +32,33 @@
     <property name="hibernate.connection.useUnicode">true</property>
     <!-- Отключение кеша второго уровня-->
     <property name="cache.provider_class">org.hibernate.cache.internal.NoCacheProvider</property>
-    <!--автоматическое создание и обновление схемы базы данных-->
+    <!--автоматическое создание и обновление схемы базы данных create-->
+<!--    <property name="hibernate.hbm2ddl.auto">update</property>-->
     <property name="hibernate.hbm2ddl.auto">update</property>
 
     <!-- Вывод в консоль SQL-запросов -->
     <property name="show_sql">true</property>
 
-    <mapping class="ru.sfedu.assessmentHealth.lab2.model.TestEntity" />
+
+<!--    <mapping class="ru.sfedu.assessmentHealth.lab3.Joined.model.Doctor" />-->
+<!--    <mapping class="ru.sfedu.assessmentHealth.lab3.Joined.model.Patient" />-->
+<!--    <mapping class="ru.sfedu.assessmentHealth.lab3.Joined.model.Person" />-->
+
+<!--    <mapping class="ru.sfedu.assessmentHealth.lab3.SingleTable.model.Doctor" />-->
+<!--    <mapping class="ru.sfedu.assessmentHealth.lab3.SingleTable.model.Patient" />-->
+<!--    <mapping class="ru.sfedu.assessmentHealth.lab3.SingleTable.model.Person" />-->
+
+    <mapping class="ru.sfedu.assessmentHealth.lab3.TablePerClass.model.Doctor" />
+    <mapping class="ru.sfedu.assessmentHealth.lab3.TablePerClass.model.Patient" />
+    <mapping class="ru.sfedu.assessmentHealth.lab3.TablePerClass.model.Person" />
+
+<!--    <mapping class="ru.sfedu.assessmentHealth.lab3.MappedSuperclass.model.Doctor" />-->
+<!--    <mapping class="ru.sfedu.assessmentHealth.lab3.MappedSuperclass.model.Patient" />-->
+<!--    <mapping class="ru.sfedu.assessmentHealth.lab3.MappedSuperclass.model.Person" />-->
+
+<!--    <mapping class="ru.sfedu.assessmentHealth.lab2.model.TestEntity" />-->
+<!--        <mapping class="ru.sfedu.assessmentHealth.lab2.model.TestEntity" />-->
+
 </session-factory>
 </hibernate-configuration>
 

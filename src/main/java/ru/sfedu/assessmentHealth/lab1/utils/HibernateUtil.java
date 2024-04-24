@@ -8,10 +8,12 @@ import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
+import ru.sfedu.assessmentHealth.lab3.MappedSuperclass.model.Doctor;
+import ru.sfedu.assessmentHealth.lab3.MappedSuperclass.model.Patient;
+import ru.sfedu.assessmentHealth.lab3.MappedSuperclass.model.Person;
+
 import java.io.File;
-import ru.sfedu.assessmentHealth.lab1.api.HibernateDataProviderPostgres;
-import ru.sfedu.assessmentHealth.lab2.model.Person;
-import ru.sfedu.assessmentHealth.lab2.model.TestEntity;
+
 
 /**
         *
@@ -47,8 +49,37 @@ public class HibernateUtil {
                         .applySettings(configuration.getProperties()).build();
 
                 MetadataSources metadataSources = new MetadataSources(serviceRegistry);
-                metadataSources.addAnnotatedClass(TestEntity.class);
-                metadataSources.addAnnotatedClass(Person.class);
+//                metadataSources.addAnnotatedClass(TestEntity.class);
+//                ----------------MappedSuper---------------------------
+//                metadataSources.addAnnotatedClass(Person.class);
+//                metadataSources.addAnnotatedClass(Doctor.class);
+//                metadataSources.addAnnotatedClass(Patient.class);
+//                ----------------1---------------------------
+//                ---------------PerTable---------------------------
+//                metadataSources.addAnnotatedClass(ru.sfedu.assessmentHealth.lab3.TablePerClass.model.Person.class);
+//                metadataSources.addAnnotatedClass(ru.sfedu.assessmentHealth.lab3.TablePerClass.model.Doctor.class);
+//                metadataSources.addAnnotatedClass(ru.sfedu.assessmentHealth.lab3.TablePerClass.model.Patient.class);
+//                ---------------2---------------------------
+//                ---------------3Single---------------------------
+
+//                metadataSources.addAnnotatedClass(ru.sfedu.assessmentHealth.lab3.SingleTable.model.Person.class);
+//                metadataSources.addAnnotatedClass(ru.sfedu.assessmentHealth.lab3.SingleTable.model.Doctor.class);
+//                metadataSources.addAnnotatedClass(ru.sfedu.assessmentHealth.lab3.SingleTable.model.Patient.class);
+//                ---------------3---------------------------
+//                ---------------4Joined---------------------------
+//                metadataSources.addAnnotatedClass(ru.sfedu.assessmentHealth.lab3.Joined.model.Person.class);
+//                metadataSources.addAnnotatedClass(ru.sfedu.assessmentHealth.lab3.Joined.model.Doctor.class);
+//                metadataSources.addAnnotatedClass(ru.sfedu.assessmentHealth.lab3.Joined.model.Patient.class);
+
+//                ----------------------Lab4--------------------------------
+
+//                metadataSources.addAnnotatedClass(ru.sfedu.assessmentHealth.lab4.model.Preparation.class);
+//                metadataSources.addAnnotatedClass(ru.sfedu.assessmentHealth.lab4.model.Schedule.class);
+//                metadataSources.addAnnotatedClass(ru.sfedu.assessmentHealth.lab4.model.Person.class);
+//                metadataSources.addAnnotatedClass(ru.sfedu.assessmentHealth.lab4.model.Doctor.class);
+//                metadataSources.addAnnotatedClass(ru.sfedu.assessmentHealth.lab4.model.Patient.class);
+//                metadataSources.addAnnotatedClass(ru.sfedu.assessmentHealth.lab4.model.CalcReport.class);
+
                 sessionFactory = metadataSources.buildMetadata().buildSessionFactory();
 
             }

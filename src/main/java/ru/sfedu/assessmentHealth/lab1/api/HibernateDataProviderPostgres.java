@@ -8,7 +8,7 @@ import org.hibernate.query.NativeQuery;
 import ru.sfedu.assessmentHealth.Const;
 import ru.sfedu.assessmentHealth.lab1.utils.HibernateUtil;
 
-import java.util.ArrayList;
+
 import java.util.List;
 
 public class HibernateDataProviderPostgres {

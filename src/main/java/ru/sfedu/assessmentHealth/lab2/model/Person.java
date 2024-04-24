@@ -1,36 +1,22 @@
 package ru.sfedu.assessmentHealth.lab2.model;
 
 
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
-import javax.persistence.Embedded;
 
+
+@Getter
+@Setter
+@NoArgsConstructor
 @Embeddable
 public class Person {
-    @Column(name = "NAME", nullable = false)
+    @Column(name = "Person_name")
     private String name;
-    @Column(name = "AGE", nullable = false)
+    @Column
     private Integer age;
-
-
-    public Person(){
-
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public Integer getAge() {
-        return age;
-    }
-
-    public void setAge(Integer age) {
-        this.age = age;
-    }
 
 }
