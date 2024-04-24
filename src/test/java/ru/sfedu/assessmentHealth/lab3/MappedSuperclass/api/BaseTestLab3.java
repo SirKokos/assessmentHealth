@@ -3,8 +3,9 @@ package ru.sfedu.assessmentHealth.lab3.MappedSuperclass.api;
 
 import lombok.extern.slf4j.Slf4j;
 import ru.sfedu.assessmentHealth.Const;
-import ru.sfedu.assessmentHealth.lab1.utils.HibernateUtil;
+
 import ru.sfedu.assessmentHealth.lab3.MappedSuperclass.model.*;
+import ru.sfedu.assessmentHealth.lab3.MappedSuperclass.utils.HibernateUtil;
 import ru.sfedu.assessmentHealth.utils.PropertyConfig;
 
 @Slf4j
@@ -12,7 +13,7 @@ public class BaseTestLab3 {
     HibernateDataProviderLab3 hibernateDataProviderLab3 = new HibernateDataProviderLab3();
     static {
         PropertyConfig.setConfigPath(Const.NAME_PROPERTY_FILE);
-        HibernateUtil.setPathConfig(PropertyConfig.getPropertyValue(Const.LAB3_HBN_CFG,Const.NAME_PROPERTY_FILE));
+        HibernateUtil.setPathConfig(PropertyConfig.getPropertyValue(Const.LAB3_HBN_CFG_MAPPED,Const.NAME_PROPERTY_FILE));
     }
 
     public Person getPerson(){

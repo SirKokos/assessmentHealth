@@ -397,6 +397,7 @@ public class Const {
 
     public static String LAB3_HBN_CFG = "";
     public static String LAB3_HBN_CFG_JOINED = "lab3_joined.hbn_cfg";
+    public static String LAB3_HBN_CFG_MAPPED = "lab3_mapped.hbn_cfg";
     public static String LAB4_HBN_CFG = "lab4.hbn_cfg";
 
 

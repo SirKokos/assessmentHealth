@@ -6,9 +6,11 @@ import lombok.*;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import java.util.Objects;
 
 
-//@Builder
 @ToString
 @NoArgsConstructor
 @Setter
@@ -25,8 +27,21 @@ public class Patient extends Person{
     protected Double glucose;
     @Column
     protected Double cholesterol;
-    @Column
+    @Enumerated(EnumType.STRING)
     protected StatusVisit statusVisit;
 
 
+    @Override
+    public boolean equals(Object object) {
+        if (this == object) return true;
+        if (object == null || getClass() != object.getClass()) return false;
+        if (!super.equals(object)) return false;
+        Patient patient = (Patient) object;
+        return Objects.equals(cellsBlood, patient.cellsBlood) && Objects.equals(hemoglobin, patient.hemoglobin) && Objects.equals(platelets, patient.platelets) && Objects.equals(glucose, patient.glucose) && Objects.equals(cholesterol, patient.cholesterol) && statusVisit == patient.statusVisit;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(super.hashCode(), cellsBlood, hemoglobin, platelets, glucose, cholesterol, statusVisit);
+    }
 }

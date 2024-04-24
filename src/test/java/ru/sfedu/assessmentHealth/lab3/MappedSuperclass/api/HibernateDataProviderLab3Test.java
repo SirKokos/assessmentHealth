@@ -1,49 +1,136 @@
 package ru.sfedu.assessmentHealth.lab3.MappedSuperclass.api;
 
 import lombok.extern.slf4j.Slf4j;
-//import org.apache.logging.log4j.LogManager;
-//import org.apache.logging.log4j.Logger;
+
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
+
 import ru.sfedu.assessmentHealth.lab3.MappedSuperclass.model.Doctor;
+import ru.sfedu.assessmentHealth.lab3.MappedSuperclass.model.StatusResponse;
+
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNull;
 
 
 @Slf4j
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 class HibernateDataProviderLab3Test extends BaseTestLab3{
-    @Test
+
+    /**
+     *  save obj
+     *  type : Positive
+     */
     @Order(1)
-    void saveRecord() {
-        log.debug("saveRecord [1]: process load obj BD");
-        hibernateDataProviderLab3.saveRecord(getDoctor());
-        log.debug("saveRecord [2]: end load obj BD");
-    }
-
     @Test
+    void saveRecordTest(){
+        log.debug("saveRecordTest [1]: process load obj BD");
+       StatusResponse expected =hibernateDataProviderLab3.saveRecord(getDoctor());
+        assertEquals(expected, StatusResponse.OK);
+        log.debug("saveRecordTest [2]: end working");
+    }
+    /**
+     *  save obj
+     *  type : Negative
+     */
     @Order(2)
-    void deleteRecord() {
-        log.debug("deleteRecord [1]: process delete");
-//        hibernateDataProviderLab3.deleteRecord(getDoctor());
-        log.debug("deleteRecord [2]: end process delete");
+    @Test
+    void saveRecordTest_negative() {
+        log.debug("saveRecordTest_negative [1]: process save obj BD");
+        StatusResponse expected = hibernateDataProviderLab3.saveRecord(null);
+        assertEquals(StatusResponse.ERROR, expected);
+        log.debug("saveRecordTest_negative [2]: end working");
     }
 
-    @Test
+    /**
+     *  get obj
+     *  type : Positive
+     */
     @Order(3)
-    void updateRecord() {
-        log.debug("updateRecord [1]: process update");
-        Doctor doctor = getDoctor();
-        doctor.setFio("Bob SSSSOOOSS");
-        hibernateDataProviderLab3.updateRecord(doctor);
-        log.debug("updateRecord [2]: end process update");
+    @Test
+    void getRecordTest() {
+        log.debug("getRecordTest [1]: process select obj ");
+        Doctor expected = (Doctor) hibernateDataProviderLab3.getRecord(Doctor.class,1);
+        assertEquals(getDoctor(), expected);
+        log.debug("getRecordTest [2]: result  = {}",expected);
+    }
+    /**
+     *  get obj
+     *  type : Negative
+     */
+    @Order(4)
+    @Test
+    void getRecordTest_negative() {
+        log.debug("getRecordTest_negative [1]: process select obj ");
+        Doctor expected = (Doctor) hibernateDataProviderLab3.getRecord(Doctor.class,5);
+        assertNull(expected);
+        log.debug("getRecordTest_negative [2]: result  = {}", expected);
     }
 
+    /**
+     *  del obj
+     *  type : Positive
+     */
+    @Order(5)
     @Test
-    @Order(4)
-    void getRecord() {
-        log.debug("getRecord [1]: process get obj");
-        Object obj = hibernateDataProviderLab3.getRecord(Doctor.class,1);
-        log.debug("getRecord [2]: end process get obj = {}",obj);
+    void deleteRecordTest() {
+        log.debug("deleteRecordTest [1]: process select obj ");
+        StatusResponse expected = hibernateDataProviderLab3.deleteRecord(getDoctor());
+        assertEquals(expected, StatusResponse.OK);
+        log.debug("deleteRecordTest [2]: end working");
+
+    }
+    /**
+     *  del obj
+     *  type : Negative
+     */
+    @Order(6)
+    @Test
+    void deleteRecordTest_negative() {
+        log.debug("deleteRecordTest_negative [1]: process delete obj ");
+        Doctor obj = getDoctor();
+        obj.setId(10);
+        StatusResponse expected = hibernateDataProviderLab3.deleteRecord(obj);
+        assertEquals(StatusResponse.ERROR, expected);
+        log.debug("deleteRecordTest_negative [2]: end working");
+    }
+
+
+    /**
+     *  update obj
+     *  type : Positive
+     */
+    @Order(7)
+    @Test
+    void updateRecordTest() {
+        log.debug("updateTestEntity [1]: process update TestEntity ");
+        hibernateDataProviderLab3.saveRecord(getDoctor());
+        Doctor obj = getDoctor();
+        obj.setId(2);
+        obj.setAge(60);
+        obj.setFio("Arte");
+        StatusResponse expected = hibernateDataProviderLab3.updateRecord(obj);
+        log.debug("updateTestEntity [2]: end working {}",expected);
+        assertEquals(expected,StatusResponse.OK);
+
+    }
+
+    /**
+     *  update obj
+     *  type : Negative
+     */
+    @Order(8)
+    @Test
+    void updateRecordTest_negative() {
+        log.debug("updateTestEntity_negative [1]: process update TestEntity ");
+        Doctor obj = getDoctor();
+        obj.setId(10);
+        obj.setAge(60);
+        obj.setFio("BobBOOO");
+        StatusResponse expected = hibernateDataProviderLab3.updateRecord(obj);
+        assertEquals(expected, StatusResponse.ERROR);
+        log.debug("updateTestEntity_negative [2]: end working");
     }
 }

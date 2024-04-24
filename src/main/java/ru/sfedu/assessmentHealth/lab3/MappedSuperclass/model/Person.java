@@ -4,6 +4,7 @@ import lombok.*;
 
 
 import javax.persistence.*;
+import java.util.Objects;
 
 
 //@Builder
@@ -27,4 +28,16 @@ public class Person {
     @Enumerated(EnumType.STRING)
     protected StatusPerson statusPerson;
 
+    @Override
+    public boolean equals(Object object) {
+        if (this == object) return true;
+        if (object == null || getClass() != object.getClass()) return false;
+        Person person = (Person) object;
+        return Objects.equals(Id, person.Id) && Objects.equals(Fio, person.Fio) && Objects.equals(Age, person.Age) && Objects.equals(Gender, person.Gender) && statusPerson == person.statusPerson;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(Id, Fio, Age, Gender, statusPerson);
+    }
 }
