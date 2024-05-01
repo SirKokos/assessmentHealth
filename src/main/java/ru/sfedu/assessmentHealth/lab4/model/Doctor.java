@@ -7,10 +7,7 @@ import lombok.Setter;
 import lombok.ToString;
 
 import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 
 @ToString
@@ -25,13 +22,30 @@ public class Doctor extends Person {
     protected Double avgPatient;
     @Column
     protected String qualification;
-    @Column
-    protected String specialization;
+    @ElementCollection(fetch = FetchType.EAGER)
+    protected Set<String> specialization;
 
-    @ElementCollection
-    @OrderColumn
-    protected List<Preparation> linkPreparation = new ArrayList<>();
+    @Override
+    public boolean equals(Object object) {
+        if (this == object) return true;
+        if (object == null || getClass() != object.getClass()) return false;
+        if (!super.equals(object)) return false;
+        Doctor doctor = (Doctor) object;
+        return Objects.equals(experience, doctor.experience) && Objects.equals(avgPatient, doctor.avgPatient) && Objects.equals(qualification, doctor.qualification) && Objects.equals(specialization, doctor.specialization);
+    }
 
-    @ElementCollection
-    protected Set<Schedule> linkSchedule = new HashSet<>();
+    @Override
+    public int hashCode() {
+        return Objects.hash(super.hashCode(), experience, avgPatient, qualification, specialization);
+    }
+
+    //    @ElementCollection
+//    @CollectionTable
+//    @OrderColumn
+//    @Column
+//    protected List<Preparation> linkPreparation = new ArrayList<>();
+//
+//    @ElementCollection
+//    protected Set<Schedule> linkSchedule = new HashSet<>();
+
 }

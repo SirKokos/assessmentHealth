@@ -36,15 +36,6 @@
     <!-- Вывод в консоль SQL-запросов -->
     <property name="show_sql">true</property>
 
-
-    <mapping class="ru.sfedu.assessmentHealth.lab4.model.Schedule" />
-    <mapping class="ru.sfedu.assessmentHealth.lab4.model.Preparation" />
-    <mapping class="ru.sfedu.assessmentHealth.lab4.model.Person" />
-    <mapping class="ru.sfedu.assessmentHealth.lab4.model.Patient" />
-    <mapping class="ru.sfedu.assessmentHealth.lab4.model.Doctor" />
-    <mapping class="ru.sfedu.assessmentHealth.lab4.model.CalcReport" />
-
-
 </session-factory>
 </hibernate-configuration>
 

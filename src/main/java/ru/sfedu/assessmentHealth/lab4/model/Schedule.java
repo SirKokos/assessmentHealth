@@ -19,9 +19,8 @@ import java.sql.Time;
 @Entity
 public class Schedule{
 
-    @javax.persistence.Id
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column
     protected Integer Id;
 
     @Enumerated(EnumType.STRING)

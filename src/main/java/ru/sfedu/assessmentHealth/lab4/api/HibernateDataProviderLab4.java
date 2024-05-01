@@ -2,33 +2,58 @@ package ru.sfedu.assessmentHealth.lab4.api;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import ru.sfedu.assessmentHealth.lab1.api.HibernateDataProviderPostgres;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
 import ru.sfedu.assessmentHealth.lab4.model.StatusResponse;
+import ru.sfedu.assessmentHealth.lab4.utils.HibernateUtil;
 
 
-public class HibernateDataProviderLab4 extends HibernateDataProviderPostgres {
+
+public class HibernateDataProviderLab4 {
     private static final Logger log = LogManager.getLogger(HibernateDataProviderLab4.class.getName());
 
+
+    protected static Session session;
+
+
+    /**
+     * Open session.
+     * @return session
+     */
+    public static Session getSession(){
+        log.debug("getSession [1]: start get session");
+        SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
+        log.debug("getSession [2]: end work");
+        return sessionFactory.openSession();
+    }
+
+    public void closeSession(){
+        log.debug("closeSession [1]: close session");
+        if(session != null && session.isOpen()){
+            session.close();
+        }
+        log.debug("closeSession [2]: close session");
+    }
 
     /**
      * insert
      * @param object - obj which want save
      * @return StatusResponse (ok/error)
      */
-    StatusResponse saveRecord(Object object){
+    public <T> StatusResponse saveRecord(T object){
         log.debug("saveRecord [1]: start method save");
         StatusResponse statusResponse = StatusResponse.ERROR;
-        if(session == null ){
-            session = getSession();
-        }
+        session = getSession();
+        Transaction t = session.beginTransaction();
         try {
-            session.beginTransaction();
             session.save(object);
-            session.getTransaction().commit();
-            session.close();
+            t.commit();
             statusResponse = StatusResponse.OK;
         }catch (Exception e){
             log.error("saveRecord [2]: ERROR {}",e.getMessage());
+        }finally {
+            closeSession();
         }
         log.debug("saveRecord [3]: end working");
         return statusResponse;
@@ -39,20 +64,19 @@ public class HibernateDataProviderLab4 extends HibernateDataProviderPostgres {
      * @param object - obj which want del
      * @return StatusResponse (ok/error)
      */
-    StatusResponse deleteRecord(Object object) {
+    public <T>StatusResponse deleteRecord(T object) {
         log.debug("deleteRecord [1]: delete TestEntity");
-        StatusResponse statusResponse = StatusResponse.ERROR;
-        if(session == null ){
-            session = getSession();
-        }
+       StatusResponse statusResponse = StatusResponse.ERROR;
+        session = getSession();
+        Transaction t = session.beginTransaction();
         try {
-            session.beginTransaction();
             session.delete(object);
-            session.getTransaction().commit();
-            session.close();
+            t.commit();
             statusResponse = StatusResponse.OK;
         }catch (Exception e){
             log.error("deleteRecord [2]: ERROR {}",e.getMessage());
+        }finally {
+            closeSession();
         }
         log.debug("deleteRecord [3]: End working");
         return statusResponse;
@@ -63,21 +87,22 @@ public class HibernateDataProviderLab4 extends HibernateDataProviderPostgres {
      * @param object - obj which want update
      * @return StatusResponse (ok/error)
      */
-    Object updateRecord(Object object){
+    public <T> StatusResponse updateRecord(T object){
         log.debug("updateRecord [1]: update obj");
-        if(session == null ){
-            session = getSession();
-        }
+        StatusResponse statusResponse = StatusResponse.ERROR;
+        session = getSession();
+        Transaction t = session.beginTransaction();
         try {
-            session.beginTransaction();
             session.update(object);
-            session.getTransaction().commit();
-            session.close();
+            t.commit();
+            statusResponse = StatusResponse.OK;
         }catch (Exception e){
             log.error("updateRecord [2]: ERROR {}" ,e.getMessage());
+        }finally {
+            closeSession();
         }
         log.debug("updateRecord [3]: end working");
-        return object;
+        return statusResponse;
     }
 
     /**
@@ -86,47 +111,24 @@ public class HibernateDataProviderLab4 extends HibernateDataProviderPostgres {
      * @param id - Id obj
      * @return Object
      */
-    Object getRecord(Class cl, Integer id){
+    public Object getRecord(Class cl, Integer id){
         log.debug("getRecord [1]: select TestEntity");
-        if(session == null ){
-            session = getSession();
-        }
+
+        session = getSession();
+        Transaction t = session.beginTransaction();
         Object object = new Object();
         try {
-            session.beginTransaction();
             object =  session.get(cl, id);
-            session.getTransaction().commit();
-            session.close();
+            t.commit();
         }catch (Exception e){
             log.error("getRecord [2]: ERROR {}",e.getMessage());
+        }finally {
+            closeSession();
         }
 
         log.debug("getRecord [3]: end working");
 
         return object;
-    };
-
-
-
-
-
-//    public StatusResponse saveB(B b){
-//        log.debug("saveTestEntity [1]: start method save");
-//        StatusResponse statusResponse = StatusResponse.ERROR;
-//        if(session == null ){
-//            session = getSession();
-//        }
-//        try {
-//            session.beginTransaction();
-//            session.save(b);
-//            session.getTransaction().commit();
-//            session.close();
-//            statusResponse = StatusResponse.OK;
-//        }catch (Exception e){
-//            log.error("saveTestEntity [2]: ERROR {}",e.getMessage());
-//        }
-//        log.debug("saveTestEntity [3]: end working");
-//        return statusResponse;
-//    }
+    }
 
 }

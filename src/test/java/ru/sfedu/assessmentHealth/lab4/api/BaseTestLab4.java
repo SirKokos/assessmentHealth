@@ -3,7 +3,7 @@ package ru.sfedu.assessmentHealth.lab4.api;
 
 import lombok.extern.slf4j.Slf4j;
 import ru.sfedu.assessmentHealth.Const;
-import ru.sfedu.assessmentHealth.lab1.utils.HibernateUtil;
+import ru.sfedu.assessmentHealth.lab4.utils.HibernateUtil;
 
 import ru.sfedu.assessmentHealth.lab4.model.*;
 import ru.sfedu.assessmentHealth.utils.PropertyConfig;
@@ -14,9 +14,6 @@ import java.util.*;
 
 @Slf4j
 public class BaseTestLab4 {
-
-
-
      HibernateDataProviderLab4 hibernateDataProviderLab4 = new HibernateDataProviderLab4();
     static {
         PropertyConfig.setConfigPath(Const.NAME_PROPERTY_FILE);
@@ -34,7 +31,7 @@ public class BaseTestLab4 {
     public Patient getPatient(){
         Patient patient = new Patient();
 
-//        patient.setId(Integer.valueOf(Const.TEST_PATIENT_DATA_ID));
+        patient.setId(Integer.valueOf(Const.TEST_PATIENT_DATA_ID));
 
         patient.setFio(Const.TEST_PATIENT_DATA_FIO);
         patient .setAge(Integer.valueOf(Const.TEST_PATIENT_DATA_AGE));
@@ -48,14 +45,17 @@ public class BaseTestLab4 {
         patient.setGlucose(Double.valueOf(Const.TEST_PATIENT_DATA_GLUCOSE));
         patient.setCholesterol(Double.valueOf(Const.TEST_PATIENT_DATA_CHOLESTEROL));
         patient.setStatusVisit(StatusVisit.valueOf(Const.TEST_PATIENT_DATA_STATUS_PATIENT));
-
+        List<String> symptoms = new ArrayList<>();
+        symptoms.add(Const.TEST_PATIENT_DATA_SYMPTOM_PATIENT);
+        symptoms.add(Const.TEST_PATIENT_DATA_SYMPTOM_PATIENT_2);
+        patient.setSymptoms(symptoms);
 
         return patient;
     }
     public Doctor getDoctor(){
         Doctor doctor = new Doctor();
 
-//        doctor.setId(Integer.valueOf(Const.TEST_DOCTOR_DATA_ID));
+        doctor.setId(Integer.valueOf(Const.TEST_DOCTOR_DATA_ID));
         doctor.setFio(Const.TEST_DOCTOR_DATA_FIO);
         doctor.setAge(Integer.valueOf(Const.TEST_DOCTOR_DATA_AGE));
         doctor.setGender(Const.TEST_DOCTOR_DATA_GENDER);
@@ -64,17 +64,15 @@ public class BaseTestLab4 {
         doctor.setExperience(Integer.valueOf(Const.TEST_DOCTOR_DATA_EXP));
         doctor.setAvgPatient(Double.valueOf(Const.TEST_DOCTOR_DATA_AVG_PATIENT));
         doctor.setQualification(Const.TEST_DOCTOR_DATA_QUALIFICATION);
-        doctor.setSpecialization(Const.TEST_DOCTOR_DATA_SPECIALIZATION);
+
+        Set<String> s = new HashSet<>();
+        s.add(Const.TEST_DOCTOR_DATA_SPECIALIZATION);
+        s.add(Const.TEST_DOCTOR_DATA_SPECIALIZATION_2);
+        doctor.setSpecialization(s);
 
 
-        Set<Schedule> s = new HashSet<>();
-        s.add(getSchedule());
 
-        List<Preparation> p = new ArrayList<>();
-        p.add(getPreparation());
 
-        doctor.setLinkSchedule(s);
-        doctor.setLinkPreparation(p);
         return doctor;
     }
 
@@ -114,10 +112,10 @@ public class BaseTestLab4 {
         calcReport.setGlucoseAnalysis(Boolean.valueOf(Const.TEST_CALC_REPORT_DATA_GLUCOSE_ANALYSIS));
         calcReport.setArterialAnalysis(Boolean.valueOf(Const.TEST_CALC_REPORT_DATA_ARTERIAL_ANALYSIS));
 
-        Map<Doctor,Patient> doctorPatientMap = new HashMap<>();
-        doctorPatientMap.put(getDoctor(),getPatient());
+        Map<Integer,Integer> doctorPatientMapId = new HashMap<>();
+        doctorPatientMapId.put(getDoctor().getId(),getPatient().getId());
 
-        calcReport.setDoctorPatientMap(doctorPatientMap);
+        calcReport.setDoctorPatientMapId(doctorPatientMapId);
         calcReport.setPrice(Double.valueOf(Const.TEST_CALC_REPORT_DATA_PRICE));
         return calcReport;
     }

@@ -1,18 +1,19 @@
 package ru.sfedu.assessmentHealth.lab4.model;
 
 import lombok.*;
+import ru.sfedu.assessmentHealth.lab4.model.*;
 
 import javax.persistence.*;
+import java.util.Objects;
 
 
-//@Builder
-@EqualsAndHashCode
 @ToString
 @NoArgsConstructor
 @Setter
 @Getter
-@Entity
-@Inheritance(strategy = InheritanceType.JOINED)
+//@Entity
+@MappedSuperclass
+//@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 public class Person {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -27,4 +28,17 @@ public class Person {
     @Enumerated(EnumType.STRING)
     protected StatusPerson statusPerson;
 
+    @Override
+    public boolean equals(Object object) {
+        if (this == object) return true;
+        if (object == null || getClass() != object.getClass()) return false;
+        Person person = (Person) object;
+        return Objects.equals(Id, person.Id);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(Id);
+    }
 }
+

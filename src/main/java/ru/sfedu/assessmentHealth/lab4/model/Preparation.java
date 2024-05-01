@@ -9,18 +9,19 @@ import lombok.ToString;
 
 import javax.persistence.*;
 import java.sql.Date;
-import java.util.Objects;
+
 
 @ToString
 @NoArgsConstructor
 @Setter
 @Getter
+
 @Entity
+
 public class Preparation{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column
     protected Integer Id;
     @Column
     protected String NamePrep;

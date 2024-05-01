@@ -323,6 +323,8 @@ public class Const {
     public static final String TEST_PATIENT_DATA_GLUCOSE = "80.3";
     public static final String TEST_PATIENT_DATA_CHOLESTEROL = "5.3";
     public static final String TEST_PATIENT_DATA_STATUS_PATIENT = "IN";
+    public static final String TEST_PATIENT_DATA_SYMPTOM_PATIENT = "Головная боль";
+    public static final String TEST_PATIENT_DATA_SYMPTOM_PATIENT_2 = "Жар";
 
 
     public static final String TEST_DOCTOR_DATA_ID = "1";
@@ -334,7 +336,7 @@ public class Const {
     public static final String TEST_DOCTOR_DATA_AVG_PATIENT = "12.3";
     public static final String TEST_DOCTOR_DATA_QUALIFICATION = "Med";
     public static final String TEST_DOCTOR_DATA_SPECIALIZATION = "Genikolog";
-
+    public static final String TEST_DOCTOR_DATA_SPECIALIZATION_2 = "Proctolog";
 
 
     public static final String TEST_CALC_REPORT_DATA_ID = "1";
@@ -394,13 +396,16 @@ public class Const {
 
     public static String LAB1_HBN_CFG = "lab1.hbn_cfg";
     public static String LAB2_HBN_CFG = "lab2.hbn_cfg";
-
+//-------------------------------------------------------------------
     public static String LAB3_HBN_CFG_JOINED = "lab3_joined.hbn_cfg";
     public static String LAB3_HBN_CFG_MAPPED = "lab3_mapped.hbn_cfg";
     public static String LAB3_HBN_CFG_SINGLE = "lab3_single.hbn_cfg";
     public static String LAB3_HBN_CFG_PER_TABLE = "lab3_table_per.hbn_cfg";
-
+//-------------------------------------------------------------------
     public static String LAB4_HBN_CFG = "lab4.hbn_cfg";
+
+//-------------------------------------------------------------------
+
 
 
 
