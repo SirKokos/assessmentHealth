@@ -19,7 +19,7 @@ class HibernateDataProviderLab5ManyToOneSingleTest extends BaseTestLab5ManyToOne
     @Order(1)
     @Test
     void saveRecordTest(){
-
+        
         log.debug("saveRecordTest [1]: process load obj BD");
         hibernateDataProviderLab5ManyToOneSingle.saveRecord(getPatient());
         HistoryMedical historyMedical = getHistoryMedical();
