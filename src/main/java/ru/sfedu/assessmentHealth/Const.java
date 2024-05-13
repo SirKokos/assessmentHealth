@@ -406,6 +406,7 @@ public class Const {
 
 //-------------------------------------------------------------------
 
+    public static String LAB5_MANY_TO_ONE_SINGLE_HBN_CFG = "lab5_ManyToOneSingle";
 
 
 

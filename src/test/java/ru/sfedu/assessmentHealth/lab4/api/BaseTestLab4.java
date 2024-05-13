@@ -105,7 +105,7 @@ public class BaseTestLab4 {
     }
     protected CalcReport getCalcReport(){
         CalcReport calcReport = new CalcReport();
-//        calcReport.setId(Integer.valueOf(Const.TEST_CALC_REPORT_DATA_ID));
+        calcReport.setId(Integer.valueOf(Const.TEST_CALC_REPORT_DATA_ID));
         calcReport.setFioPatient(Const.TEST_CALC_REPORT_DATA_FIO_PATIENT);
         calcReport.setFioDoctor(Const.TEST_CALC_REPORT_DATA_FIO_DOCTOR);
         calcReport.setBloodAnalysis(Boolean.valueOf(Const.TEST_CALC_REPORT_DATA_BLOOD_ANALYSIS));

@@ -2,7 +2,9 @@ package ru.sfedu.assessmentHealth.lab4.api;
 
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.*;
+import ru.sfedu.assessmentHealth.lab4.model.CalcReport;
 import ru.sfedu.assessmentHealth.lab4.model.Doctor;
+import ru.sfedu.assessmentHealth.lab4.model.Patient;
 import ru.sfedu.assessmentHealth.lab4.model.StatusResponse;
 
 
@@ -51,9 +53,14 @@ class HibernateDataProviderLab4Test extends BaseTestLab4 {
     @Test
     void getRecordTest() {
         log.debug("getRecordTest [1]: process select obj ");
-        Doctor expected = (Doctor) hibernateDataProviderLab4.getRecord(Doctor.class,1);
-        assertEquals(getDoctor(), expected);
-        log.debug("getRecordTest [2]: result  = ===================={}",expected);
+        Doctor expectedDoc = (Doctor) hibernateDataProviderLab4.getRecord(Doctor.class,1);
+        Patient expectedPat = (Patient) hibernateDataProviderLab4.getRecord(Patient.class,1);
+        CalcReport expectedCalc = (CalcReport) hibernateDataProviderLab4.getRecord(CalcReport.class,1);
+        assertEquals(getDoctor(), expectedDoc);
+        assertEquals(getPatient(), expectedPat);
+        assertEquals(getCalcReport(), expectedCalc);
+
+        log.debug("getRecordTest [2]: result {}, {}, {}",expectedDoc,expectedPat,expectedCalc);
     }
     /**
      *  get obj
