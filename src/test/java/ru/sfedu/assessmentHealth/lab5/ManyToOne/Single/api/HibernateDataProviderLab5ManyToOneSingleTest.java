@@ -19,10 +19,11 @@ class HibernateDataProviderLab5ManyToOneSingleTest extends BaseTestLab5ManyToOne
     @Order(1)
     @Test
     void saveRecordTest(){
-        
+
         log.debug("saveRecordTest [1]: process load obj BD");
         hibernateDataProviderLab5ManyToOneSingle.saveRecord(getPatient());
         HistoryMedical historyMedical = getHistoryMedical();
+        historyMedical.setId(1);
         historyMedical.setPatient(getPatient());
         StatusResponse expectedHisMed = hibernateDataProviderLab5ManyToOneSingle.saveRecord(historyMedical);
         assertEquals(expectedHisMed, StatusResponse.OK);
@@ -77,6 +78,9 @@ class HibernateDataProviderLab5ManyToOneSingleTest extends BaseTestLab5ManyToOne
     void deleteRecordTest() {
         log.debug("deleteRecordTest [1]: process select obj ");
         HistoryMedical historyMedical = getHistoryMedical();
+        historyMedical.setId(1);
+        historyMedical.setPatient(getPatient());
+        hibernateDataProviderLab5ManyToOneSingle.saveRecord(historyMedical);
         StatusResponse expected = hibernateDataProviderLab5ManyToOneSingle.deleteRecord(historyMedical);
         assertEquals(expected,StatusResponse.OK);
         log.debug("deleteRecordTest [2]: end working");
@@ -104,10 +108,18 @@ class HibernateDataProviderLab5ManyToOneSingleTest extends BaseTestLab5ManyToOne
     @Test
     void updateRecordTest() {
         log.debug("updateTestEntity [1]: process update TestEntity ");
-        hibernateDataProviderLab5ManyToOneSingle.saveRecord(getHistoryMedical());
-        HistoryMedical obj = getHistoryMedical();
-        obj.setFIODoctor("Update name ");
-        StatusResponse expected = hibernateDataProviderLab5ManyToOneSingle.updateRecord(obj);
+        Patient patient = getPatient();
+        patient.setId(2);
+
+        HistoryMedical historyMedical = getHistoryMedical();
+        historyMedical.setId(2);
+        historyMedical.setPatient(patient);
+
+        hibernateDataProviderLab5ManyToOneSingle.saveRecord(patient);
+        hibernateDataProviderLab5ManyToOneSingle.saveRecord(historyMedical);
+
+        historyMedical.setFIODoctor("Update");
+        StatusResponse expected = hibernateDataProviderLab5ManyToOneSingle.updateRecord(historyMedical);
         log.debug("updateTestEntity [2]: end working {}",expected);
         assertEquals(expected,StatusResponse.OK);
 

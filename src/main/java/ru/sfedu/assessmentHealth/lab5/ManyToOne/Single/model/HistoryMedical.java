@@ -20,8 +20,8 @@ public class HistoryMedical {
     @Id
     @Column
     protected Integer id;
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "person_ID",nullable = true )
+    @ManyToOne(fetch = FetchType.EAGER,cascade = CascadeType.ALL)
+    @JoinColumn(name = "person_ID",nullable = false )
     protected Patient patient;
     @Column
     protected Date dateHistory;

@@ -405,9 +405,10 @@ public class Const {
     public static String LAB4_HBN_CFG = "lab4.hbn_cfg";
 
 //-------------------------------------------------------------------
-
     public static String LAB5_MANY_TO_ONE_SINGLE_HBN_CFG = "lab5_ManyToOneSingle";
+//-------------------------------------------------------------------
 
+    public static String LAB5_MANY_TO_ONE_TWO_HBN_CFG = "lab5_ManyToOneTwo";
 
 
 

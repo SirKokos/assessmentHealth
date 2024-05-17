@@ -19,6 +19,7 @@
     </Appenders>
 
     <Loggers>
+        <Logger name="org.hibernate" level="WARN"/>
         <Root level="info" additivity="false"/>
         <Logger name="ru.sfedu.Main" level="INFO">
             <AppenderRef ref="console"/>
