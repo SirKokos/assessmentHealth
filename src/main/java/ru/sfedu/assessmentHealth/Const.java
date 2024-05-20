@@ -409,9 +409,11 @@ public class Const {
 //-------------------------------------------------------------------
 
     public static String LAB5_MANY_TO_ONE_TWO_HBN_CFG = "lab5_ManyToOneTwo";
+//    ----------------------------------------
+    public static String LAB5_ONE_TO_ONE_SPLIT_HBN_CFG = "lab5_OneToOneSplitKey";
 
-
-
+    public static String LAB5_ONE_TO_ONE_FOREIGN_HBN_CFG = "lab5_OneToOneForeignKey";
+    public static String LAB5_ONE_TO_ONE_GENERATE_HBN_CFG = "lab5_OneToOneGenerateKey";
 
 
 }

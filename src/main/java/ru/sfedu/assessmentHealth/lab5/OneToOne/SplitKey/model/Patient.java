@@ -1,4 +1,4 @@
-package ru.sfedu.assessmentHealth.lab5.ManyToOne.Two.model;
+package ru.sfedu.assessmentHealth.lab5.OneToOne.SplitKey.model;
 
 
 import lombok.Getter;

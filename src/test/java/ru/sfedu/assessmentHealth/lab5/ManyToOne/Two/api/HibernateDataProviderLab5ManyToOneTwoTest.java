@@ -19,20 +19,14 @@ class HibernateDataProviderLab5ManyToOneTwoTest extends BaseTestLab5ManyToOneTwo
     @Order(1)
     @Test
     void saveRecordTest(){
-
         log.debug("saveRecordTest [1]: process load obj BD");
         Patient patient = getPatient();
         HistoryMedical historyMedical = getHistoryMedical();
-
-        patient.setId(1);
-        historyMedical.setId(1);
-        historyMedical.setPatient(patient);
         patient.getHistoryMedicals().add(historyMedical);
-        hibernateDataProviderLab5ManyToOneTwo.saveRecord(historyMedical);
+        historyMedical.setPatient(patient);
 
         StatusResponse expectedHisMed = hibernateDataProviderLab5ManyToOneTwo.saveRecord(patient);
-
-
+        
         assertEquals(expectedHisMed, StatusResponse.OK);
         log.debug("saveRecordTest [2]: end working");
     }
@@ -41,13 +35,11 @@ class HibernateDataProviderLab5ManyToOneTwoTest extends BaseTestLab5ManyToOneTwo
      *  type : Negative
      */
     @Order(2)
-    @Disabled
     @Test
     void saveRecordTest_negative() {
         log.debug("saveRecordTest_negative [1]: process save obj BD");
-        Patient patient = getPatient();
-        patient.setHistoryMedicals(null);
-        StatusResponse expectedHisMed = hibernateDataProviderLab5ManyToOneTwo.saveRecord(patient);
+        HistoryMedical historyMedical = new HistoryMedical();
+        StatusResponse expectedHisMed = hibernateDataProviderLab5ManyToOneTwo.saveRecord(historyMedical);
         assertEquals(expectedHisMed, StatusResponse.ERROR);
         log.debug("saveRecordTest_negative [2]: end working");
     }
@@ -60,16 +52,15 @@ class HibernateDataProviderLab5ManyToOneTwoTest extends BaseTestLab5ManyToOneTwo
     @Test
     void getRecordTest() {
         log.debug("getRecordTest [1]: process select obj ");
-        Patient expectedMedHis = (Patient) hibernateDataProviderLab5ManyToOneTwo.getRecord(Patient.class,1);
-        assertEquals(getPatient(), expectedMedHis);
-        log.debug("getRecordTest [2]: result -----> {},",expectedMedHis.getHistoryMedicals().size());
+        Patient expectedPat = (Patient) hibernateDataProviderLab5ManyToOneTwo.getRecord(Patient.class,1);
+        assertEquals(getPatient(), expectedPat);
+        log.debug("getRecordTest [2]: result -----> {},",expectedPat.getFio());
     }
     /**
      *  get obj
      *  type : Negative
      */
     @Order(4)
-    @Disabled
     @Test
     void getRecordTest_negative() {
         log.debug("getRecordTest_negative [1]: process select obj ");
@@ -78,44 +69,12 @@ class HibernateDataProviderLab5ManyToOneTwoTest extends BaseTestLab5ManyToOneTwo
         log.debug("getRecordTest_negative [2]: result  = {}", expectedPat);
     }
 
-    /**
-     *  del obj
-     *  type : Positive
-     */
-    @Order(5)
-    @Disabled
-    @Test
-    void deleteRecordTest() {
-        log.debug("deleteRecordTest [1]: process select obj ");
-        Patient patient = getPatient();
-        StatusResponse expected = hibernateDataProviderLab5ManyToOneTwo.deleteRecord(patient);
-        assertEquals(expected,StatusResponse.OK);
-        log.debug("deleteRecordTest [2]: end working");
-
-    }
-    /**
-     *  del obj
-     *  type : Negative
-     */
-    @Order(6)
-    @Disabled
-    @Test
-    void deleteRecordTest_negative() {
-        log.debug("deleteRecordTest_negative [1]: process delete obj ");
-        Patient patient = getPatient();
-        patient.setId(10);
-        StatusResponse expected = hibernateDataProviderLab5ManyToOneTwo.deleteRecord(patient);
-        assertEquals( expected,StatusResponse.ERROR);
-        log.debug("deleteRecordTest_negative [2]: end working");
-    }
-
 
     /**
      *  update obj
      *  type : Positive
      */
-    @Order(7)
-    @Disabled
+    @Order(5)
     @Test
     void updateRecordTest() {
         log.debug("updateTestEntity [1]: process update TestEntity ");
@@ -134,8 +93,7 @@ class HibernateDataProviderLab5ManyToOneTwoTest extends BaseTestLab5ManyToOneTwo
      *  update obj
      *  type : Negative
      */
-    @Order(8)
-    @Disabled
+    @Order(6)
     @Test
     void updateRecordTest_negative() {
         log.debug("updateTestEntity_negative [1]: process update TestEntity ");
@@ -146,4 +104,36 @@ class HibernateDataProviderLab5ManyToOneTwoTest extends BaseTestLab5ManyToOneTwo
         assertEquals(expected,StatusResponse.ERROR);
         log.debug("updateTestEntity_negative [2]: end working");
     }
+    /**
+     *  del obj
+     *  type : Positive
+     */
+    @Order(7)
+    @Test
+    void deleteRecordTest() {
+        log.debug("deleteRecordTest [1]: process select obj ");
+        Patient patient = getPatient();
+        HistoryMedical historyMedical = getHistoryMedical();
+        hibernateDataProviderLab5ManyToOneTwo.deleteRecord(historyMedical);
+        StatusResponse expected = hibernateDataProviderLab5ManyToOneTwo.deleteRecord(patient);
+        assertEquals(expected,StatusResponse.OK);
+        log.debug("deleteRecordTest [2]: end working");
+
+    }
+    /**
+     *  del obj
+     *  type : Negative
+     */
+    @Order(8)
+    @Test
+    void deleteRecordTest_negative() {
+        log.debug("deleteRecordTest_negative [1]: process delete obj ");
+        Patient patient = getPatient();
+        patient.setId(10);
+        StatusResponse expected = hibernateDataProviderLab5ManyToOneTwo.deleteRecord(patient);
+        assertEquals( expected,StatusResponse.ERROR);
+        log.debug("deleteRecordTest_negative [2]: end working");
+    }
+
+
 }
