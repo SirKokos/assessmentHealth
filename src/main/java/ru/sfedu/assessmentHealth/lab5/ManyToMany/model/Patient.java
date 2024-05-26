@@ -7,8 +7,10 @@ import lombok.Setter;
 import lombok.ToString;
 
 import javax.persistence.*;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Objects;
+import java.util.Set;
 
 
 //@Builder
@@ -18,6 +20,8 @@ import java.util.Objects;
 @Getter
 @Entity
 public class Patient extends Person {
+    @ManyToMany(mappedBy = "patients",fetch = FetchType.EAGER)
+    protected Set<Doctor> doctors = new HashSet<>();
     @Column
     protected Double cellsBlood;
     @Column

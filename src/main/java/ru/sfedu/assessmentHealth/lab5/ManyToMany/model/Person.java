@@ -13,13 +13,11 @@ import java.util.Objects;
 @NoArgsConstructor
 @Setter
 @Getter
-//@Entity
 @MappedSuperclass
-//@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 public class Person {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column
+    @Column(name = "person_id")
     protected Integer Id;
     @Column
     protected String Fio;

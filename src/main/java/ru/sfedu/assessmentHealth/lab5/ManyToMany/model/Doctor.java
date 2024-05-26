@@ -6,10 +6,8 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
-import javax.persistence.Column;
-import javax.persistence.ElementCollection;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
+import javax.persistence.*;
+import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 
@@ -29,6 +27,14 @@ public class Doctor extends Person {
     @ElementCollection(fetch = FetchType.EAGER)
     protected Set<String> specialization;
 
+    @ManyToMany(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+    @JoinTable(
+            name = "doctor_patient",
+            joinColumns = @JoinColumn(name = "patient_id"),
+            inverseJoinColumns = @JoinColumn(name = "doctor_id")
+    )
+    protected Set<Patient> patients = new HashSet<Patient>();
+
     @Override
     public boolean equals(Object object) {
         if (this == object) return true;
@@ -43,13 +49,5 @@ public class Doctor extends Person {
         return Objects.hash(super.hashCode(), experience, avgPatient, qualification, specialization);
     }
 
-    //    @ElementCollection
-//    @CollectionTable
-//    @OrderColumn
-//    @Column
-//    protected List<Preparation> linkPreparation = new ArrayList<>();
-//
-//    @ElementCollection
-//    protected Set<Schedule> linkSchedule = new HashSet<>();
 
 }

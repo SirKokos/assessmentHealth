@@ -111,7 +111,7 @@ public class HibernateDataProviderLab5ManyToOneTwo {
      * @return Object
      */
     public Object getRecord(Class cl, Integer id){
-        log.debug("getRecord [1]: select TestEntity");
+        log.debug("getRecord [1]: select Entity");
 
         session = getSession();
         Transaction t = session.beginTransaction();

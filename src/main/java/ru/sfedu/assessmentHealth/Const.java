@@ -415,5 +415,12 @@ public class Const {
     public static String LAB5_ONE_TO_ONE_FOREIGN_HBN_CFG = "lab5_OneToOneForeignKey";
     public static String LAB5_ONE_TO_ONE_GENERATE_HBN_CFG = "lab5_OneToOneGenerateKey";
 
+    public static String LAB5_MANY_TO_MANY = "lab5_ManyToMany";
 
+
+    public static String HIBERNATE_NATIVE_SQL = "HIBERNATE_NATIVE_SQL";
+
+    public static String HIBERNATE_NATIVE_SQL_PATH = "src/main/resources/sql_query.properties";
+
+    public static String HIBERNATE_HQL_SQL = "HIBERNATE_HQL_SQL";
 }

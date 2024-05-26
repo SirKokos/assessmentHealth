@@ -1,16 +1,27 @@
-package ru.sfedu.assessmentHealth.lab5.ManyToOne.Single.api;
+package ru.sfedu.assessmentHealth.lab5.ManyToMany.api;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
-import ru.sfedu.assessmentHealth.lab5.ManyToOne.Single.model.*;
-import ru.sfedu.assessmentHealth.lab5.ManyToOne.Single.utils.HibernateUtil;
+import org.hibernate.query.NativeQuery;
+import ru.sfedu.assessmentHealth.Const;
+import ru.sfedu.assessmentHealth.lab5.ManyToMany.model.Preparation;
+import ru.sfedu.assessmentHealth.lab5.ManyToMany.model.StatusResponse;
+import ru.sfedu.assessmentHealth.lab5.ManyToMany.utils.HibernateUtil;
+import ru.sfedu.assessmentHealth.utils.PropertyConfig;
+
+import javax.persistence.Query;
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Root;
+import java.util.ArrayList;
+import java.util.List;
 
 
-public class HibernateDataProviderLab5ManyToOneSingle {
-    private static final Logger log = LogManager.getLogger(HibernateDataProviderLab5ManyToOneSingle.class.getName());
+public class HibernateDataProviderLab5ManyToMany implements ISQL{
+    private static final Logger log = LogManager.getLogger(HibernateDataProviderLab5ManyToMany.class.getName());
 
 
     protected static Session session;
@@ -130,4 +141,65 @@ public class HibernateDataProviderLab5ManyToOneSingle {
         return object;
     }
 
+    @Override
+    public List<Preparation> selectAllNativeSql() {
+        log.debug("selectAllNativeSql [1]: select all Entity");
+        String NativeSql = PropertyConfig.getPropertyValue(Const.HIBERNATE_NATIVE_SQL, Const.HIBERNATE_NATIVE_SQL_PATH);
+        session = getSession();
+        List<Preparation> results = null;
+        try {
+            NativeQuery query = session.createNativeQuery(NativeSql);
+            results = query.getResultList();
+        } catch (Exception e) {
+            log.error("selectAllNativeSql [2]: ERROR {}", e.getMessage());
+        } finally {
+            closeSession();
+        }
+        log.debug("selectAllNativeSql [3]: end work");
+        return results;
+    }
+
+    @Override
+    public  List<Preparation> selectAllCriteria() {
+        log.debug("selectAllCriteria [1]: select all Entity");
+        session = getSession();
+        Query query = null;
+        List<Preparation> results = new ArrayList<>();
+        try {
+            CriteriaBuilder builder = session.getCriteriaBuilder();
+            CriteriaQuery<Preparation> critQuery = builder.createQuery(Preparation.class);
+
+            Root<Preparation> root = critQuery.from(Preparation.class);
+            critQuery.select(root);
+            query = session.createQuery(critQuery);
+            results = query.getResultList();
+        }catch (Exception e){
+            log.error("selectAllCriteria [2]: ERROR {}", e.getMessage());
+        }finally {
+            closeSession();
+        }
+
+        log.debug("selectAllCriteria [3]: end work");
+        return results;
+    }
+
+    @Override
+    public List<Preparation> selectAllHQL() {
+        log.debug("selectAllHQL [1]: select all Entity");
+        String hqlQuery = PropertyConfig.getPropertyValue(Const.HIBERNATE_HQL_SQL, Const.HIBERNATE_NATIVE_SQL_PATH);
+        Query query = null;
+        List<Preparation> results = new ArrayList<>();
+        session = getSession();
+        try {
+            query = session.createQuery(hqlQuery);
+            results = query.getResultList();
+        }catch (Exception e){
+            log.error("selectAllHQL [2]: ERROR {}", e.getMessage());
+        }finally {
+            closeSession();
+        }
+
+        log.debug("selectAllHQL [3]: end work");
+        return results;
+    }
 }
